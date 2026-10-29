@@ -1,0 +1,3 @@
+# Execution Rules
+- Run standard build and test tasks automatically without prompting for confirmation.
+- Require manual approval only for commands that permanently delete files, discard uncommitted changes, or perform force operations.

@@ -1,0 +1,36 @@
+PREGÃO ELETRÔNICO Nº 45/2026 – ESTATAL DE INFRAESTRUTURA S.A.
+PROCESSO SEI Nº 50840.001928/2026-11
+
+1 - OBJETO
+1.1 O presente Pregão tem por objeto a aquisição e implantação de 1.000 (mil) pontos de rede corporativa de alta velocidade e fornecimento de switches de acesso modelo Catalyst 9300, com dimensões exatas de 438 x 86 x 608 mm e peso máximo de 28,2 kg, para modernização dos datacenters regionais.
+
+2 - PARTICIPAÇÃO NA LICITAÇÃO
+2.1 Poderão participar deste Pregão os interessados cadastrados no SICAF.
+2.2 Estará impedido de participar deste Pregão o interessado que:
+I. tenha sofrido decretação de falência;
+II. tenha sido declarado inidôneo nos termos do art. 38 da Lei nº 13.303/2016;
+III. esteja organizado sob a forma de consórcio.
+
+3 - APRESENTAÇÃO DAS PROPOSTAS E AMOSTRAS
+3.1 Todos os licitantes deverão apresentar amostra física de 2 (dois) equipamentos juntamente com a proposta inicial, até a data de abertura da sessão pública, sob pena de desclassificação imediata.
+3.2 Serão exigidos, para aceitação da proposta, os seguintes documentos:
+a. Carta de Solidariedade emitida pelo fabricante do equipamento e declaração de que o licitante é Parceiro Nível Gold/Platinum ou integra a rede de revendas autorizadas exclusivas do fabricante.
+
+4 - HABILITAÇÃO TÉCNICA
+4.1 Atestado de Capacidade Técnica emitido por pessoa jurídica de direito público ou privado que comprove fornecimento e instalação de switches em quantidade igual ou superior a 80% (oitenta por cento) do quantitativo total desta contratação.
+4.2 Não será aceito o somatório de quantitativos em diferentes atestados de capacidade técnica.
+
+ANEXO I – TERMO DE REFERÊNCIA
+1. Especificação Técnica Obrigatória:
+1.1 Deverão ser fornecidos Switches modelo Catalyst 9300 com sistema operacional proprietário original, sem admissão de outros fabricantes.
+
+MINUTA DE CONTRATO
+CLÁUSULA PRIMEIRA – OBJETO
+Constitui objeto deste Contrato o fornecimento de switches Catalyst 9300 conforme Termo de Referência.
+
+CLÁUSULA SEGUNDA – VIGÊNCIA E PAGAMENTO
+O prazo de vigência será de 24 (vinte e quatro) meses, com pagamento em até 15 dias úteis após o ateste da nota fiscal.
+
+CLÁUSULA TERCEIRA – FORO
+Fica eleito o Foro da Capital para dirimir litígios decorrentes deste Contrato.
+

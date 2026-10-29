@@ -1,0 +1,30 @@
+PREGÃO ELETRÔNICO Nº 29/2026 (VERSÃO SANEADA PÓS-AUDITORIA) – BNDES
+
+1 - OBJETO
+1.1 O presente Pregão visa à Contratação de empresa especializada para a prestação de serviços de DaaS (Desktop as a Service), compreendendo a disponibilização de estações de trabalho virtuais em nuvem, infraestrutura de rede, implantação, suporte e gerenciamento, conforme as especificações deste Edital e de seus Anexos.
+
+2 - PARTICIPAÇÃO NA LICITAÇÃO
+2.1 Poderão participar deste Pregão os interessados cadastrados no SICAF.
+2.3 Estará impedido de participar deste Pregão o interessado que esteja organizado sob a forma de consórcio.
+2.3.1 Justifica-se a vedação de consórcio, conforme Estudo Técnico Preliminar constante dos autos, em razão de o objeto tratar de serviço integrado único de nuvem (DaaS) amplamente ofertado de forma individual por múltiplos provedores e integradores (Cloud Brokers) no mercado nacional, onde a fragmentação de responsabilidades operacionais em consórcio comprometeria a governança de segurança cibernética.
+
+4 - SESSÃO PÚBLICA E JULGAMENTO
+4.11.4 Verificado o atendimento dos requisitos de habilitação do licitante classificado provisoriamente em primeiro lugar (melhor lance), o Pregoeiro suspenderá a sessão pública para a apresentação de amostra exclusivamente pelo primeiro colocado.
+
+ANEXO I – ESPECIFICAÇÕES TÉCNICAS
+5. As estações de trabalho devem possuir configuração mínima compatível com Sistema Operacional Windows 11 Professional ou similar ou de melhor qualidade, amparado por estudo técnico de padronização aprovado no Processo Administrativo de TIC para interoperabilidade com o parque existente.
+49.f Chave de segurança USB / 2FA resistente a phishing (ex.: yubikey ou similar ou de melhor qualidade).
+114. Serão exigidos, para aceitação da proposta:
+a. Proposta de preços preenchida conforme modelo do Edital;
+b. Declaração da própria Licitante de que atende a todos os requisitos constantes nestas Especificações Técnicas (não será exigida carta de solidariedade ou declaração de revenda autorizada do fabricante).
+116. Atestado de Capacidade Técnica que comprove que a Licitante forneceu estações virtuais em quantidade igual ou superior a 50% (cinquenta por cento) da quantidade total prevista para esta contratação.
+117. Será admitido o somatório de atestados de capacidade técnica executados em períodos concomitantes para comprovação do quantitativo mínimo.
+
+MINUTA DE CONTRATO
+CLÁUSULA NONA – MATRIZ DE RISCOS
+O BNDES e o CONTRATADO estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.
+Parágrafo Segundo: É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.
+
+CLÁUSULA DÉCIMA SÉTIMA – SUBCONTRATAÇÃO
+Parágrafo Terceiro: É vedada a subcontratação para a execução do objeto deste Contrato.
+

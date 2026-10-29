@@ -1,0 +1,54 @@
+# Identificar Direcionamento do objeto:
+
+**Perfil:** Analista de Licitações e Contratos / Integrante da Equipe de Planejamento da Contratação
+**Assunto:** Dificuldades práticas em blindar o Termo de Referência contra alegações de direcionamento e restrição à competitividade (Lei nº 13.303/2016)
+
+## 1. O Contexto e a Minha Dor Diária
+
+Quando recebo as demandas das áreas requisitantes (TI, Engenharia, Operações) para estruturar o Termo de Referência (TR), meu maior receio é publicar um edital que acabe impugnado por fornecedores ou suspenso pelo Tribunal de Contas sob acusação de **"edital sob medida"** ou **"direcionamento"**.
+A área técnica costuma querer a melhor solução do mercado ou aquela com a qual a equipe já está acostumada a trabalhar. Muitas vezes, eles não agem de má-fé, mas redigem especificações que, na prática, afunilam a disputa para um único fabricante ou integrador. Do meu lado, eu preciso garantir que o edital atenda à necessidade operacional sem violar a isonomia e a competitividade exigidas pela Lei 13.303.
+Hoje, essa conferência é feita de forma manual e empírica: eu leio dezenas de páginas de requisitos técnicos tentando "adivinhar" se alguma linha esconde uma armadilha.
+
+## 2. Situações e Exemplos Reais Onde o Direcionamento Costuma Aparecer
+
+Identifico o risco de direcionamento principalmente em quatro grandes frentes:
+
+### A. O Uso de Marcas e Modelos no Objeto
+
+**O que a área técnica traz:** Frequentemente a especificação vem assim: *"Contratação de switches modelo Catalyst 9300 ou similar"*.
+**Onde mora o perigo:**
+Se esquecem de colocar a expressão *"ou equivalente/similar"*, é nulidade clara (art. 47 da Lei das Estatais).
+Mesmo quando colocam *"ou similar"*, a área técnica não descreve **quais parâmetros objetivos definem a similaridade**. Isso abre margem para o pregoeiro desclassificar injustamente uma proposta concorrente alegando que "não é equivalente", o que configura direcionamento indireto.
+Quando a área técnica realmente exige marca exclusiva (ex.: peças originais para não perder garantia de equipamento crítico ou necessidade de padronização com o parque existente), eles quase nunca anexam o estudo formal de padronização ou o laudo de inviabilidade técnica no processo prévio.
+
+### B. Especificações Técnicas "Copiadas de Catálogo" (Direcionamento Disfarçado)
+
+**O que acontece:** A área técnica não cita o nome da marca, mas copia integralmente a ficha técnica do produto que ela quer comprar.
+**Exemplo prático:**
+Em vez de pedir *"Nobreak de 10kVA com autonomia de 30 minutos"*, o TR pede *"Nobreak de 10kVA, dimensões exatas de 438 x 86 x 608 mm, peso máximo de 28,2 kg, com conector de baterias externo em formato proprietário X"*.
+Essa medida de 86 mm (2U de rack) e o conector específico só existem no catálogo de uma fabricante internacional. Todos os concorrentes de 10kVA do mercado atendem à carga e à autonomia, mas medem 88 mm ou usam outro padrão de engate.
+Se o edital não prevê tolerância (ex.: *"dimensões aproximadas com variação de ±5%"*) ou se a medida não é justificada por um espaço físico inflexível, criamos uma restrição indevida.
+
+### C. Exigências de Habilitação e Certificações Exclusivas
+
+**O que acontece:** Criar barreiras de entrada na fase de qualificação técnica para eliminar concorrentes menores ou distribuidores independentes.
+**Exemplos práticos:**
+Exigir que a licitante comprove ser *"Parceiro nível Gold/Platinum/Titanium do fabricante"* ou apresentar *"Carta de Solidariedade/Declaração de Exclusividade do Fabricante"*. A jurisprudência proíbe vincular a habilitação à vontade do fabricante em conceder cartas de credenciamento.
+Exigir atestados com volume excessivo: se vou contratar a manutenção de 1.000 pontos de rede, pedir atestado de quem já gerenciou 900 pontos de uma única vez (ultrapassando os limites razoáveis de 50% consolidados pelo TCU), ou proibir sumariamente o somatório de atestados sem respaldo técnico.
+
+### D. Restrições Operacionais e Barreiras Geográficas
+
+**Exemplo prático:**
+Fixar que a **vistoria técnica é obrigatória**, exigindo que o engenheiro responsável compareça pessoalmente à sede da estatal em data e horário únicos, 48 horas após a publicação do edital, sem permitir a substituição por declaração formal de pleno conhecimento do local. Isso privilegia empresas locais e afasta competidores de outros estados.
+
+## **3. O Que Eu Realmente Preciso de Uma Solução / Ferramenta**
+
+Se eu tivesse uma ferramenta inteligente de apoio à elaboração de editais, eu gostaria que ela fizesse o papel de um **"revisor preventivo de conformidade"**:
+**Varredura de Marcas e Cláusulas de Equivalência:**
+Ler a descrição dos itens e me avisar: *"Você mencionou a marca 'X'. Foi identificada a cláusula 'ou similar'? Não. Ação sugerida: Adicione a cláusula ou anexe a justificativa de padronização."*
+**Alerta de Requisitos Hiperespecíficos (Gatilho de Catálogo):**
+Grifar dimensões, pesos, materiais ou protocolos que pareçam cópias literais de patentes ou manuais técnicos, perguntando: *"Essa dimensão exige tolerância percentual (±X%) ou possui justificativa no ETP?"*
+**Detector de Cláusulas Restritivas de Habilitação:**
+Identificar termos proibidos pela jurisprudência, como *"carta de credenciamento do fabricante"*, *"parceiro exclusivo"*, *"proibição genérica de consórcios"* ou quantitativos de atestados desproporcionais.
+**Classificador de Risco do Edital:**
+Gerar um painel simples antes da publicação me dizendo: *"Este edital tem 3 pontos críticos com alto risco de impugnação por direcionamento"*, indicando exatamente quais parágrafos eu preciso flexibilizar ou fundamentar melhor.

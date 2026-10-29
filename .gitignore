@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Segredos / Variáveis de Ambiente
+.env
+.env.*
+
+# Artefatos temporários de execução
+dados/ultima_sessao_validacao.pl
+.streamlit/secrets.toml
+
+# Sistema Operacional / IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
