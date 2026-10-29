@@ -49,7 +49,7 @@ echo "======================================================================"
 echo "3/6 - Instalando aplicação em ${APP_DIR} e criando ambiente virtual..."
 echo "======================================================================"
 mkdir -p "${APP_DIR}"
-cp -r "${SOURCE_DIR}/app.py" "${SOURCE_DIR}/requirements.txt" "${SOURCE_DIR}/README.md" "${APP_DIR}/"
+cp -r "${SOURCE_DIR}/app.py" "${SOURCE_DIR}/VERSION" "${SOURCE_DIR}/requirements.txt" "${SOURCE_DIR}/README.md" "${APP_DIR}/"
 cp -r "${SOURCE_DIR}/src" "${SOURCE_DIR}/dados" "${APP_DIR}/"
 
 python3 -m venv "${APP_DIR}/.venv"
@@ -181,3 +181,4 @@ echo "  👉 http://${PUBLIC_IP}"
 echo ""
 echo "(Lembre-se de garantir que a Porta 80 TCP está liberada na Security List da VCN no Console da Oracle Cloud)"
 echo "======================================================================"
+

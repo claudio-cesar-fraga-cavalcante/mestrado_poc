@@ -27,3 +27,4 @@ PoC de Mestrado para auditoria automatizada e explicável de editais de licitaç
 pip install -r requirements.txt
 python -m streamlit run app.py
 ```
+

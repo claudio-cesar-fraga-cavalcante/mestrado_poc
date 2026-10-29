@@ -14,6 +14,7 @@ import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
 
+from src import __version__
 from src.explainer import (
     ParecerRegraEdital,
     exportar_relatorio_json_validado,
@@ -136,9 +137,9 @@ def executar_pipeline(
 def main():
     catalogo, _, _ = inicializar_recursos()
 
-    st.title("⚖️ Validador Neuro-Simbólico de Editais (Lei 13.303/2016 + UFO-L)")
+    st.title(f"⚖️ Validador Neuro-Simbólico de Editais (Lei 13.303/2016 + UFO-L) — v{__version__}")
     st.caption(
-        "PoC de Mestrado — Instanciação Semântica via LLM (Google Gemini) + Raciocínio Deôntico/Relacional em Prolog fundamentado na Ontologia Jurídica UFO-L"
+        f"Versão {__version__} | PoC de Mestrado — Instanciação Semântica via LLM (Google Gemini) + Raciocínio Deôntico/Relacional em Prolog fundamentado na Ontologia Jurídica UFO-L"
     )
 
     # ==========================================================================
