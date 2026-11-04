@@ -137,9 +137,9 @@ def executar_pipeline(
 def main():
     catalogo, _, _ = inicializar_recursos()
 
-    st.title(f"⚖️ Validador Neuro-Simbólico de Editais (Lei 13.303/2016 + UFO-L) — v{__version__}")
+    st.title(f"⚖️ Validador Neuro-Simbólico de Editais (Lei 13.303/2016 + UFO-L)")
     st.caption(
-        f"Versão {__version__} | PoC de Mestrado — Instanciação Semântica via LLM (Google Gemini) + Raciocínio Deôntico/Relacional em Prolog fundamentado na Ontologia Jurídica UFO-L"
+        f"Versão {__version__} | Instanciação Semântica via LLM + Raciocínio Deôntico/Relacional em Prolog fundamentado na Ontologia Jurídica UFO-L"
     )
 
     # ==========================================================================
