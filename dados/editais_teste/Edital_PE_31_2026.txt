@@ -1,0 +1,1512 @@
+1 - OBJETO
+
+1.1 O presente Pregão visa à contratação de serviços de gerenciamento de viagens corporativas, incluindo fornecimento, implantação e suporte de ferramenta de auto agendamento em ambiente web e aplicativo móvel (Online Booking Tool -OBT), para atender às necessidades das empresas do SISTEMA BNDES (BNDES, BNDESPAR e FINAME), por menor preço global e modo de disputa aberto e fechado, conforme as especificações deste Edital e de seus Anexos.
+
+1.1.1 Havendo divergência entre as informações constantes do registro da licitação no Compras Governamentais e as constantes deste Edital e de seus Anexos, prevalecerão as últimas.
+
+1.1.2 Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no item 22 do Anexo I (Termo de Referência) deste Edital.
+
+2 - PARTICIPAÇÃO NA LICITAÇÃO
+
+2.1 Poderão participar deste Pregão os interessados cadastrados e habilitados parcialmente no Sistema de Cadastramento Unificado de Fornecedores – SICAF que atenderem às exigências constantes deste Edital e de seus Anexos.
+
+2.1.1 A inclusão dos documentos e/ou informações no Sistema de Cadastramento Unificado de Fornecedores – SICAF é de inteira responsabilidade do Licitante, podendo ocasionar na sua desclassificação a ausência de qualquer documento exigido neste Edital.
+
+2.2 Os interessados poderão participar do procedimento licitatório por intermédio de sua matriz ou filial, desde que cumpram as condições exigidas para o cadastramento e a habilitação parcial no SICAF, bem como as exigências constantes deste Edital e de seus Anexos.
+
+2.3 Estará impedido de participar deste Pregão o interessado que:
+I. tenha sofrido decretação de falência ou dissolução;
+VI. se enquadre em algumas das vedações previstas na Política para Transações com Partes Relacionadas das Empresas do
+Sistema BNDES (disponível no endereço eletrônico
+https://bndes.gov.br/wps/portal/site/home/transparencia/prestacao-
+II. esteja cumprindo penalidade de suspensão temporária de de-contas/regulamentos-politicas-corporativas/politica-para-
+participação em licitação e impedimento de contratar com o BNDES, transacoes-com-partes-relacionadas) e na Política de Equidade de
+nos termos do artigo 83, inciso III, da Lei nº 13.303/2016; Gênero e Valorização da Diversidade do Sistema BNDES
+(disponível no endereço eletrônico
+https://www.bndes.gov.br/wps/portal/site/home/desenvolvimentosustentavel/o-que-nos-orienta/prsac-e-seus-instrumentos/outraspoliticas-e-regulamentos/politica-genero-diversidade);
+III. tenha sido declarado inidôneo para licitar ou contratar com a União Federal, nos termos do artigo 38, inciso III, da Lei nº
+
+13.303/2016, ou esteja cumprindo penalidade de impedimento de VII. possua em seu contrato ou estatuto social finalidade ou
+licitar e contratar com a União Federal, nos termos do artigo 7º da objetivo incompatível com o objeto deste Pregão; e
+Lei nº 10.520/2002 ou do artigo 156, §4º, da Lei n° 14.133/2021;
+IV. esteja proibido de licitar e contratar com a Administração Pública, bem como de receber incentivos, subsídios, subvenções, doações ou
+empréstimos de pessoas jurídicas de direito público ou de pessoas VIII. esteja organizado sob a forma de consórcio.
+jurídicas controladas pelo Poder Público, com fundamento em outros dispositivos legais não mencionados nos incisos II e III deste item;
+V. se enquadre em alguma das demais vedações previstas na Lei nº
+
+13.303/2016, notadamente em seus artigos 38 e 44;
+
+2.3.1 Para fins de cumprimento ao disposto no item 2.3 deste Edital, o Licitante deverá apresentar, juntamente com a proposta ajustada, nos termos do item 4.10 deste Edital, declaração conforme modelo A do Anexo V (Modelos de Declaração).
+
+2.4 Será permitida a participação de sociedades optantes do Sistema Integrado de Pagamento de Impostos e Contribuições das Microempresas e das Empresas de Pequeno Porte – Simples Nacional, observadas as orientações dispostas nos itens a seguir.
+
+2.4.1 O Licitante optante do Simples Nacional que vier a executar atividade vedada pelo artigo 17 da Lei Complementar nº 123/2006 não poderá beneficiar-se da condição de optante.
+
+2.4.1.1 Na hipótese do item 2.4.1 deste Edital, uma vez celebrado o Contrato, o Contratado deverá providenciar, perante a Receita Federal do Brasil – RFB, sua exclusão obrigatória do Simples Nacional, no prazo estipulado pelo artigo 30 da Lei Complementar nº 123/2006.
+
+2.4.2 O Licitante optante do Simples Nacional, que não se enquadre em situação de vedação prevista no artigo
+
+17 da Lei Complementar nº 123/2006, somente poderá beneficiar-se de tal condição se, com o valor ofertado em sua proposta, não vier a exceder o limite de receita bruta anual, previsto no artigo 3º da Lei Complementar nº 123/2006, ao longo da vigência do Contrato.
+
+2.4.2.1 Se o Licitante optante do Simples Nacional extrapolar o limite de receita bruta anual previsto no artigo 3º da Lei Complementar nº 123/2006 ao longo da vigência do Contrato, uma vez sendo contratado deverá providenciar, perante a Receita Federal do Brasil – RFB, sua exclusão obrigatória do Simples Nacional, no prazo estipulado pelo artigo 30 da Lei Complementar nº 123/2006.
+
+2.5 No âmbito do presente procedimento licitatório serão observadas as disposições constantes do artigo 4° da Lei n°
+
+14.133/2021.
+
+3 - APRESENTAÇÃO DAS PROPOSTAS E DA DOCUMENTAÇÃO DE HABILITAÇÃO
+
+3.1 O interessado em participar deste Pregão deverá, até a abertura da sessão pública, cadastrar sua proposta por intermédio do Portal de Compras do Governo Federal.
+
+3.2 No âmbito do cadastramento da proposta, o Licitante deverá preencher os campos relativos:
+I. à descrição do objeto ofertado;
+a. a inclusão, no Portal de Compras do Governo Federal, de qualquer dado que identifique o Licitante , no campo destinado à descrição do objeto ofertado, acarretará sua desclassificação;
+II. ao valor global ofertado, de acordo com as seguintes orientações:
+a. devem estar incluídas no referido valor todas as despesas e custos, diretos e indiretos (tais como tributos, encargos sociais e trabalhistas, contribuições, transporte, viagens, seguro e insumos), necessários ao cumprimento integral do objeto a ser contratado; e
+b. o valor deverá ser expresso em Real (R$) e com 2 (duas) casas decimais;
+III. à UASG – 201014 e UF – Rio de Janeiro – RJ;
+IV. a quaisquer outras informações/declarações que venham a ser requeridas pelo Portal de Compras do Governo Federal.
+
+3.3 A proposta deverá ter validade de 60 (sessenta) dias, a contar da data da abertura da sessão pública.
+
+3.4 Não será considerada qualquer oferta de vantagem não prevista neste Edital e em seus Anexos.
+
+3.5 O Licitante poderá retirar ou substituir a proposta inserida no Portal de Compras do Governo Federal até a abertura da sessão pública.
+
+3.6 O cadastro da proposta no Portal de Compras do Governo Federal implica a aceitação integral e irretratável dos termos do presente Edital, não sendo admitidas alegações de desconhecimento de fatos e de condições que impossibilitem ou dificultem a execução do objeto licitado.
+
+SESSÃO PÚBLICA E FASE RECURSAL
+
+4.1 Na data e no horário definidos no preâmbulo deste Edital, a sessão pública será aberta automaticamente pelo sistema, observando-se que a verificação da conformidade da proposta será feita exclusivamente na fase de julgamento em relação à proposta mais bem classificada.
+
+4.1.1 Sem prejuízo no disposto no item 4.1, será desclassificada a proposta que identifique o Licitante e/ou apresente valor simbólico, irrisório ou de valor zero, incompatível com os praticados no mercado e com os custos estimados para a execução do objeto.
+
+4.2 As comunicações entre o Pregoeiro e os Licitantes serão realizadas por campo próprio do sistema, cabendo aos Licitantes acompanhar todas as operações realizadas no Portal de Compras do Governo Federal durante a sessão pública, sendo responsáveis pelo ônus decorrente da perda de transações, causada pela inobservância das mensagens e prazos registrados pelo sistema e pelo Pregoeiro, ou por sua desconexão.
+
+4.3 Após a abertura da sessão pública, o Pregoeiro poderá suspendê-la, adiá-la ou reabri-la a qualquer momento, informando previamente os Licitantes por meio do Portal de Compras do Governo Federal, com, no mínimo, 24 (vinte e quatro) horas de antecedência.
+
+4.4 Iniciada a etapa de lances, a qual será realizada exclusivamente por meio do Portal de Compras do Governo Federal, deverão ser observadas as seguintes regras:
+I. os lances deverão ser formulados considerando o valor global do objeto ofertado;
+II. o Licitante somente poderá oferecer lance inferior ao último por ele ofertado, ainda que superior ao menor registrado no sistema, observando-se o intervalo mínimo de R$ 0,01% (um centavo de Real) entre os lances, que incidirá tanto em relação aos lances intermediários quanto em relação ao lance que cobrir a melhor oferta;
+III. lances simbólicos, irrisórios ou de valor zero, incompatíveis com os praticados no mercado e com os custos estimados para a execução do objeto, poderão ser excluídos do sistema pelo Pregoeiro;
+IV. não serão aceitos dois ou mais lances iguais, prevalecendo aquele que for recebido e registrado primeiro;
+V. os lances deverão ser formulados considerando-se a necessidade de cumprimento das obrigações previstas neste Edital e em seus Anexos;
+VI. durante a sessão pública os Licitantes serão informados em tempo real do valor do melhor lance registrado, vedada a identificação do Licitante;
+VII. o Licitante poderá, uma única vez, excluir seu último lance ofertado, no intervalo de 15 (quinze) segundos após o registro no sistema, na hipótese de lance inconsistente ou inexequível.
+
+4.5 No caso de desconexão do Pregoeiro no decorrer da etapa de lances, se o Portal de Compras do Governo Federal permanecer acessível aos Licitantes, os lances continuarão sendo recebidos, sem prejuízo dos atos realizados.
+
+4.5.1 Caso a desconexão do sistema eletrônico persistir por tempo superior a 10 (dez) minutos para o Pregoeiro, a sessão pública será suspensa e reiniciada somente decorridas 24 (vinte e quatro) horas após a comunicação do fato aos participantes, no Portal de Compras do Governo Federal.
+
+4.6 Considerando o modo de disputa aberto e fechado, a etapa de envio de lances terá duração de 15 (quinze) minutos, após a qual o sistema encaminhará o aviso de fechamento iminente dos lances e, transcorrido o período de até 10 (dez) minutos, aleatoriamente determinado, a recepção de lances será automaticamente encerrada.
+
+4.6.1 Após a etapa de encerramento aleatório, o sistema abrirá a oportunidade para que o autor da melhor oferta e os autores das ofertas subsequentes com valores ou percentuais até 10% (dez por cento) superiores àquela, possam ofertar um lance final e fechado em até 5 (cinco) minutos, que será sigiloso até o encerramento deste prazo.
+
+4.6.2 Na ausência de, no mínimo, 3 (três) ofertas nas condições de que trata o item 4.6.1, os autores dos melhores lances subsequentes, na ordem de classificação, até o máximo de 3 (três), poderão oferecer um lance final e fechado em até 5 (cinco) minutos, que será sigiloso até o encerramento do prazo.
+
+4.6.3 Nos procedimentos de que tratam os itens 4.6.1 e 4.6.2, o Licitante poderá optar por manter o seu último lance da etapa aberta, ou por ofertar melhor lance, observando-se que, ao final, os lances serão ordenados e divulgados pelo sistema.
+
+4.7 Encerrada a etapa de lances, se o melhor lance não tiver sido ofertado por microempresa ou empresa de pequeno porte e houver lance apresentado por microempresa ou empresa de pequeno porte igual ou até 5% (cinco por cento) superior àquele, proceder-se-á da seguinte forma:
+I. o sistema convocará a microempresa ou a empresa de pequeno porte mais bem classificada dentre aquelas enquadradas na condição prevista no caput deste item 4.7 para, no prazo de até 5 (cinco) minutos, ofertar valor inferior ao melhor lance;
+II. no caso de equivalência dos valores apresentados pelas microempresas e empresas de pequeno porte que se encontrem nos intervalos estabelecidos nos itens anteriores, será realizado sorteio entre elas para que se identifique aquela que primeiro poderá apresentar melhor oferta;
+III. na hipótese de a microempresa ou empresa de pequeno porte mencionada no inciso I deixar de oferecer valor inferior, o sistema convocará as microempresas ou empresas de pequeno porte remanescentes que porventura se enquadrem na condição prevista no caput deste item 4.7, na ordem classificatória, para o exercício do mesmo direito;
+IV. na hipótese de todas as microempresas ou empresas de pequeno porte enquadradas na condição do caput deste item
+
+4.7 deixarem de ofertar valor inferior, o Pregoeiro convocará o Licitante ofertante do melhor lance, dando-se prosseguimento à sessão pública;
+V. na hipótese de a microempresa ou empresa de pequeno porte ofertar valor inferior ao melhor lance, o Pregoeiro a convocará, dando prosseguimento à sessão pública.
+
+4.7.1 O Pregoeiro poderá solicitar documentos que comprovem o enquadramento do Licitante na condição de microempresa ou empresa de pequeno porte.
+
+4.7.2. O Licitante que se declarar microempresa ou empresa de pequeno porte para fins de obtenção dos benefícios da Lei Complementar nº 123/2006 e não possuir tal condição ficará sujeito à sanção administrativa prevista neste Edital, sem prejuízo da responsabilização em outras esferas, devendo-se observar ainda a restrição constante do artigo 4°, §2º, da Lei n° 14.133/2021.
+
+4.7.3 O procedimento listado nos incisos do item 4.7 deste Edital será promovido pelo Pregoeiro, observada a ordem classificatória, sempre que o Licitante ofertante do melhor lance for desclassificado, inabilitado ou excluído deste Pregão.
+
+4.7.4 Na hipótese de o melhor lance ter sido ofertado por microempresa ou empresa de pequeno porte ou na hipótese de o melhor lance não ter sido ofertado por microempresa ou empresa de pequeno porte e não haver oferta apresentada por microempresa ou empresa de pequeno porte igual ou até 5% (cinco por cento) superior ao melhor lance, o Pregoeiro convocará o Licitante ofertante do melhor lance, dando-se prosseguimento à sessão pública.
+
+4.8 Em caso de empate entre propostas serão adotados os critérios de desempate previstos no artigo 55 da Lei n°
+
+13.303/2016.
+
+4.9 Encerrada a etapa de envio de lances da sessão pública, o Pregoeiro verificará a inexistência dos impedimentos previstos no item 2.3, que deverá ser confirmada em cadastros oficiais de empresas punidas ou sancionadas (tais como: CEIS, CNEP, CNIA e à certidão negativa de licitante inidôneo, emitida pelo TCU), bem como no Cadastro Informativo de créditos não quitados do setor público federal (Cadin) e em sistema interno de consulta a impedimentos, e, estando regular a participação do Licitante classificado em primeiro lugar, o Pregoeiro deverá encaminhar, pelo sistema eletrônico, contraproposta ao licitante que tenha apresentado a melhor oferta, ressalvadas as hipóteses em que a redução possa comprometer a exequibilidade da proposta final ofertada.
+
+4.9.1 Para oferta da contraproposta a que se refere o item acima, o Pregoeiro poderá solicitar previamente ao Licitante a apresentação da proposta adequada ao lance final ofertado, nos termos previstos no item 4.10.
+
+4.9.2 O Pregoeiro poderá suspender a sessão para que o Licitante ofertante do melhor lance possa avaliar a possibilidade de redução do último valor ofertado.
+
+4.10 O Licitante ofertante do melhor lance deverá apresentar a proposta adequada ao lance final ofertado, exclusivamente pelo sistema do Portal de Compras do Governo Federal, conforme modelo constante do Anexo II (Modelo de Proposta) deste Edital, no prazo de até 2 (duas) horas, a contar da solicitação do Pregoeiro, prorrogáveis, a critério do BNDES.
+
+4.10.1 A proposta deverá identificar o Licitante e ser redigida em língua portuguesa, salvo quanto às expressões técnicas de uso corrente, com clareza, sem emendas, rasuras ou entrelinhas, datada e assinada por seu Representante Legal ou Procurador.
+
+4.10.2 Os valores ofertados na proposta deverão ser expressos em Real (R$) e com 2 (duas) casas decimais.
+
+4.10.3 Devem estar incluídas no valor global ofertado todas as despesas e custos, diretos e indiretos (tais como tributos, encargos sociais e trabalhistas, contribuições, transporte, viagens, seguro e insumos), necessários ao cumprimento integral do objeto a ser contratado.
+
+4.10.4 O Licitante deverá informar, em sua proposta, no campo “Estabelecimentos vinculados à execução
+contratual (matriz/filial)” do Anexo II (Modelo de Proposta) deste Edital, o(s) estabelecimento(s)
+responsável(is) pela execução contratual.
+
+4.10.5 Deverá ser anexada à Proposta a Declaração de Inexistência de Impedimentos de Participação prevista no Anexo V deste Edital.
+
+4.10.6 Deverá ser anexada à Proposta a documentação prevista no Anexo I (Termo de Referência) deste Edital.
+
+4.11 Após o envio da documentação de proposta, o Pregoeiro, examinará a compatibilidade do preço ofertado em relação ao valor estimado para a contratação.
+
+4.11.1 Nesta ocasião, o Pregoeiro poderá verificar a habilitação do Licitante ofertante do melhor lance.
+
+4.11.2 Caso sejam exigidos documentos de habilitação que não estejam contemplados no SICAF, o Pregoeiro deverá solicitar ao Licitante a apresentação das informações necessárias por intermédio do sistema, no prazo de 2 (horas), a contar da respectiva convocação, permitida a prorrogação, a critério do BNDES.
+
+4.11.3 Caso adotado o procedimento previsto no item anterior, a apresentação da amostra e análise definitiva da proposta, em todos os seus requisitos, somente será concluída se verificado o atendimento dos requisitos de habilitação do Licitante ofertante do melhor lance.
+
+4.11.4 Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra para a FERRAMENTA OBT, observadas as condições e o procedimento descrito no item 12.3 do Anexo I (Termo de Referência) deste Edital.
+
+4.11.5 Caso a amostra do Licitante ofertante do melhor lance seja reprovada, o Pregoeiro retomará a sessão pública, recusando sua proposta, e convocando o próximo colocado, observadas as disposições relativas ao direito de preferência fixadas neste Edital.
+
+4.11.6 Aprovada a amostra, o Pregoeiro decidirá sobre a aceitação final da proposta, observado o disposto no item 4.12.
+
+4.11.7 O Pregoeiro poderá optar por realizar o julgamento da habilitação em momento posterior à apresentação da amostra, ocasião em que dará ciência a todos os licitantes pelo Portal de Compras do Governo Federal.
+
+4.12 Na análise e julgamento da proposta, o Pregoeiro poderá, justificadamente, sanar erros ou falhas que não alterem sua substância da proposta (vícios sanáveis), atribuindo-lhe validade e eficácia, rejeitando aquela:
+I. que possuir vícios insanáveis;
+II. que não atender às exigências deste Edital e de seus Anexos;
+III. cujo(s) valor(es) unitário(s) ou/e global forem superiores ao(s) limite(s) estabelecido(s) no Anexo I deste Edital (Termo de Referência); ou; ou
+IV. cujo(s) valor(es) unitário(s) ou/e global / for(em) inexequível(is), observado o disposto no subitem 4.12.1 deste Edital.
+
+4.12.1 Havendo indícios de inexequibilidade dos valores ofertados, será instaurada diligência para que o Licitante ofertante da melhor proposta possa, no prazo fixado pelo Pregoeiro:
+I. comprovar a exequibilidade, apresentando justificativas e documentos que comprovem a viabilidade e a compatibilidade dos valores ofertados; ou
+II. ajustar os valores ofertados, apresentando proposta readequada [tendo como limite máximo o valor global ofertado na proposta] e, se for o caso, justificativas para os ajustes realizados.
+
+4.12.2 Os documentos apresentados pelo Licitante ofertante da melhor proposta, a título de ajuste dos valores ofertados de comprovação de sua exequibilidade, serão encaminhados para análise da Equipe Técnica do BNDES, a fim de que possa emitir o competente parecer.
+
+4.13 Recusada a proposta, o Pregoeiro convocará o próximo colocado, observadas as disposições relativas ao direito de preferência previstas neste Edital.
+
+4.14 Aceita a proposta ou adotada a opção prevista no subitem 4.11.1, o Pregoeiro passará à análise de habilitação, observado o procedimento disposto no item 4.11.2.
+
+4.14.1 Para que seja habilitado, o Licitante deverá atender a todas as exigências abaixo listadas e as previstas no item 4.15 deste Edital:
+I. Decreto de autorização de funcionamento no Brasil, quando se tratar de sociedade estrangeira em funcionamento no País;
+II. Ato de registro ou autorização para funcionamento expedido por órgão competente, quando a atividade a ser desempenhada pela sociedade assim o exigir;
+III. Instrumento Particular de Mandato (Procuração) com firma reconhecida em cartório ou em conjunto com a cédula de identidade ou documento equivalente do signatário, para fins de conferência da sua assinatura ou digitalmente, ou Instrumento Público de Mandato, outorgando expressamente poderes para a prática de todos os atos pertinentes à licitação, nos casos em que o Licitante for representado por Procurador;
+IV. no caso de:
+SOCIEDADE EMPRESÁRIA Ato Constitutivo em vigor, devidamente registrado no registro competente, com sua(s) respectiva(s) alteração(ções), ou a sua última consolidação, acompanhado do documento comprobatório de seus administradores devidamente registrado; SOCIEDADE SIMPLES Ato Constitutivo em vigor, devidamente registrado no registro competente, com sua(s) respectiva(s) alteração(ões), ou a sua última consolidação, bem como documento que comprove a indicação de seus administradores; EMPRESÁRIO INDIVIDUAL Empresário individual: inscrição no Registro Público de Empresas Mercantis, a cargo da Junta Comercial da respectiva sede; MICROEMPREENDEDOR INDIVIDUAL Certificado da Condição de Microempreendedor Individual - CCMEI, cuja aceitação ficará condicionada à verificação da autenticidade no sítio www.portaldoempreendedor.gov.br; l MICROEMPRESA OU EMPRESA DE PEQUENO PORTE Certidão expedida pela Junta Comercial ou pelo Registro Civil das Pessoas Jurídicas, conforme o caso, ou qualquer outro documento idôneo que comprove a condição de microempresa ou empresa de pequeno porte;
+V. certidão negativa ou positiva com efeitos de negativa de débitos relativos aos tributos federais, à dívida ativa da União, e às contribuições previdenciárias e às de terceiros, expedida pela Secretaria da Receita Federal;
+VI. certidão de Regularidade perante o Fundo de Garantia por Tempo de Serviço, expedida pela Caixa Econômica Federal;
+VII. certidão de Regularidade perante o Cadastro Informativo de Créditos não Quitados do Setor Público Federal (CADIN);
+VIII. certidão negativa ou positiva com efeitos de negativa de débitos trabalhistas emitida pela Justiça do Trabalho.
+IX. certidão negativa de pedido de falência, expedida na sede da pessoa jurídica;
+a) Na hipótese de a sede ser situada em outra localidade que não a Capital do Rio de Janeiro, poderá ser exigido do Licitante que apresente a relação dos Cartórios de Distribuição da Comarca que expede a certidão mencionada neste inciso, emitida pelo órgão competente.
+X. Índices de Liquidez Geral ATIVO CIRCULANTE + REALIZÁVEL A LONGO PRAZO
+(LG), de Solvência Geral (SG) e LG =
+PASSIVO CIRCULANTE + EXIGÍVEL A LONGO PRAZO de Liquidez Corrente (LC) iguais ou maiores que 1 (= ou > 1),
+ATIVO TOTAL ATIVO CIRCULANTE
+observadas as fórmulas a SG = LC =
+PASSIVO CIRCULANTE + PASSIVO CIRCULANTE
+seguir:
+EXIGÍVEL A LONGO PRAZO
+a) O Licitante deverá apresentar as informações contábeis, na forma da lei, para cálculo dos referidos índices.
+b) Caso o resultado de qualquer dos índices seja menor que 1 (um), o Licitante deverá apresentar as informações contábeis, na forma da lei, a fim de comprovar que possui capital social registrado ou patrimônio líquido igual ou superior a 10% (dez por cento) do valor anual estimado para a presente contratação, equivalente a R$ 3.505.047,67 (três milhões, quinhentos e cinco mil, quarenta e sete reais e sessenta e sete centavos).
+XI. qualificação técnica, relativa às parcelas de maior relevância técnica e econômica do objeto, nos termos do
+Anexo I deste Edital (Termo de Referência).
+XII. Os Licitantes deverão comprovar que detêm: a) Capital Circulante Líquido (CCL) ou Capital de Giro (Ativo Circulante – Passivo Circulante) igual ou superior ao valor de R$ 5.841.746,12 (cinco milhões, oitocentos e quarenta e um mil, setecentos e quarenta e seis reais e doze centavos), a ser comprovado pelas informações contábeis apresentadas pelo Licitante na forma da lei; e b) Patrimônio Líquido igual ou superior a 10% (dez por cento) do valor anual estimado da contratação, correspondente a R$ 3.505.047,67 (três milhões, quinhentos e cinco mil, quarenta e sete reais e sessenta e sete centavos, a ser comprovado pelas informações contábeis apresentadas pelo Licitante na forma da lei.
+
+4.14.2 Caso o Licitante indique na proposta outro(s) estabelecimento(s) responsável(is) pela execução contratual, deverá apresentar, além dos documentos que comprovem a sua própria habilitação, aqueles relativos à habilitação do(s) estabelecimento(s) indicado(s), observando-se que alguns documentos, por sua própria natureza, são emitidos somente em nome da matriz.
+
+4.14.2.1 Poderá(ão) ser apresentado(s) em nome de quaisquer de seu(s) estabelecimento(s) o(s) atestado(s) de capacidade técnica exigido(s).
+
+4.15 O Pregoeiro analisará a documentação apresentada, verificando o atendimento às exigências deste Edital e de seus Anexos. Para fins de julgamento da habilitação poderão ser consultados outros sítios da Internet, notadamente sítios oficiais emissores de certidões.
+
+4.15.1 As certidões que não possuírem prazo de validade somente serão aceitas se as respectivas datas de emissão não excederem a 90 (noventa) dias de antecedência da data de sua apresentação.
+
+4.15.2 Em se tratando de microempresa ou empresa de pequeno porte, havendo alguma restrição na comprovação da regularidade fiscal, será assegurado o prazo de 5 (cinco) dias úteis, contado da decisão do Pregoeiro que declarar o Licitante vencedor da licitação, prorrogáveis por igual período, a critério do BNDES, para a regularização da documentação, pagamento ou parcelamento do débito, e emissão de eventuais certidões negativas ou positivas com efeito de certidão negativa, sob pena de inabilitação no sistema.
+
+4.15.3 Caso seja necessária a instauração de diligência para o julgamento da habilitação, os documentos solicitados nesta ocasião deverão ser encaminhados exclusivamente via sistema, dentro do prazo definido pelo Pregoeiro, que não poderá ser inferior a 2 (duas) horas.
+
+4.16 Se o Licitante não atender às exigências habilitatórias, o Pregoeiro convocará o próximo colocado, observadas as disposições relativas ao direito de preferência previstas neste Edital.
+
+4.17 Constatado o atendimento de todos os requisitos de habilitação e verificando-se aceitabilidade da proposta, o Licitante será declarado vencedor do certame, abrindo-se prazo para que os Licitantes possam, em campo próprio do sistema, manifestar sua intenção de recorrer, sob pena de preclusão deste direito.
+
+4.17.1 Admitida pelo Pregoeiro a intenção de recurso, será concedido, ao Licitante que tenha manifestado tal intenção, o prazo de até 3 (três) dias úteis, para apresentar, pelo Portal de Compras do Governo Federal, as razões recursais, ficando os demais Licitantes, desde logo, intimados para, querendo, apresentarem as contrarrazões em igual prazo, que começará a contar do término do prazo para a apresentação das razões recursais.
+
+4.17.2 A vista dos autos do processo desta licitação referente aos documentos que não estão no sistema do Portal de Compras do Governo Federal deverá ser solicitada à Gerência de Licitações e Contratos 2 do BNDES, pelo e-mail licitacoes@bndes.gov.br.
+
+4.17.3 O Pregoeiro poderá reconsiderar sua decisão ou mantê-la. Neste último caso, o Pregoeiro deverá, no prazo de 3 (três) dias úteis, submeter o recurso, devidamente informado, à apreciação da Autoridade Superior, que deverá promover sua decisão no prazo de 10 (dez) dias úteis.
+
+4.17.4 O acolhimento de recurso importará na invalidação apenas dos atos insuscetíveis de aproveitamento.
+
+4.18 A sessão pública será encerrada depois de declarado o vencedor e transcorrido o prazo para manifestação de intenção de recorrer. Não havendo registro de intenção de recurso, o objeto da licitação poderá ser adjudicado ao Licitante vencedor.
+
+ENCERRAMENTO DA LICITAÇÃO
+
+5.1 Definido o Licitante vencedor, o objeto licitado lhe será adjudicado, estando a licitação sujeita à homologação pela Autoridade Competente, que analisará a conveniência e oportunidade da contratação, bem como a legalidade dos atos praticados.
+
+5.2 A qualquer tempo, a licitação poderá ser revogada ou anulada, nos limites fixados pela Lei nº 13.303/2016.
+
+5.2.1 Caso seja verificada, após a abertura da sessão pública, a intenção de se revogar ou anular a licitação, será concedido aos Licitantes prazo para contestar o ato e exercer o direito ao contraditório e à ampla defesa.
+
+5.2.2 O contraditório prévio mencionado no item acima poderá ser dispensado caso o fato gerador da revogação ou anulação não seja imputado aos Licitantes.
+
+6 - SANÇÃO ADMINISTRATIVA
+
+6.1 O Licitante cuja conduta esteja prevista em um dos incisos do artigo 84 da Lei nº 13.303/2016 ficará sujeito à sanção de suspensão temporária de participação em licitação e impedimento de contratar com o BNDES, pelo prazo de até 2 (dois) anos.
+
+6.2 Somente será aplicada sanção mediante procedimento administrativo punitivo licitatório, na forma do Regulamento de Licitações do Sistema BNDES, pelo qual será assegurado prazo de até 10 (dez) dias úteis para o exercício do contraditório e a ampla defesa.
+
+6.3 A decisão será comunicada por escrito ao Licitante, dela cabendo recurso, dirigido à Autoridade que proferiu a decisão, no prazo de até 10 (dez) dias úteis, a contar do recebimento da notificação.
+
+6.4 No caso de atos lesivos à Administração Pública, nacional ou estrangeira, observar-se-ão os termos da Lei nº
+
+12.846/2013.
+
+7 - CONTRATAÇÃO
+
+7.1 Homologada a licitação, o BNDES convocará o vencedor do certame, por e-mail, para apresentar, no prazo definido pelo BNDES no momento da convocação:
+I. o Contrato assinado preferencialmente de forma II. declaração conforme modelo A do
+digital, mediante certificação digital ICP-Brasil por seu Anexo V (Modelos de Declaração*) deste
+Representante Legal, observada minuta constante do Edital.
+Anexo III (Minuta de Contrato) deste Edital; e
+* Agora somente para os Modelos que não o A, cuja apresentação passou a ser exigida no momento de cadastramento da proposta.
+
+7.2 Será solicitado ao Licitante vencedor que atualize as certidões exigidas na fase de habilitação, se o prazo de validade expirar durante o curso da licitação.
+
+7.3 Na hipótese de recusa ou inércia do Licitante na apresentação dos documentos listados nos itens 7.1 e 7.2 deste Edital, a sessão pública poderá ser retomada para que o Pregoeiro providencie a exclusão do Licitante da licitação, convocando, em seguida, os licitantes remanescentes, na ordem de classificação, desde que atendidos os requisitos de proposta e habilitação, nos termos do item 4.17, para assinatura do contrato, no mesmo prazo e nas mesmas condições propostas, inclusive quanto aos preços, pelo Licitante que deixou de atender a convocação.
+
+7.3.1 Na hipótese do item acima, deverão ser observadas as disposições relativas à preferência previstas neste Edital.
+
+8 - INFORMAÇÕES ADICIONAIS
+
+8.1 Qualquer pessoa poderá impugnar os termos do presente Edital até 3 (três) dias úteis anteriores à data de abertura da sessão pública.
+
+8.1.1 A impugnação deverá ser encaminhada à Gerência de Licitações e Contratos 2 do BNDES, pelo e-mail licitacoes@bndes.gov.br, devendo ser informado, no campo “assunto”, a modalidade e o número da licitação (Pregão Eletrônico nº 31/2026 – BNDES).
+
+8.1.2 Caberá ao Pregoeiro julgar a impugnação no prazo de até 3 (três) dias úteis.
+
+8.1.3 A ata de julgamento de impugnação será divulgada no Portal de Compras do Governo Federal (www.gov.br/compras/pt-br), para ciência de todos os interessados.
+
+8.2 O BNDES reserva-se o direito de alterar os termos deste Edital. A alteração que afetar a formulação das propostas implicará a reabertura do prazo para a apresentação das mesmas.
+
+8.3 É facultada ao Pregoeiro, em qualquer fase da licitação, a promoção de diligência a ser registrada em ata, com a finalidade de esclarecer, corrigir ou complementar a instrução do processo, inclusive com a possibilidade de inclusão de documentos necessários para confirmação da compatibilidade da oferta com as exigências do Edital, adotando-se o princípio do formalismo moderado.
+
+8.4 A qualquer tempo o BNDES poderá negociar com o Licitante, com o fim de obter proposta mais vantajosa.
+
+8.5 As normas disciplinadoras desta licitação serão interpretadas visando à ampliação da disputa entre os Licitantes, à obtenção da proposta mais vantajosa, desde que não comprometam os interesses do BNDES, bem como à finalidade e à segurança da contratação.
+
+8.6 Caso exigida tradução de documentos apresentados em língua estrangeira, está se dará na forma livre, facultando-se ao BNDES a exigência de tradução juramentada, apostilamento ou consularização do(s) documento(s) como condição para a assinatura do contrato.
+
+8.7 Na contagem dos prazos estabelecidos neste Edital e em seus Anexos observar-se-á o que segue:
+I. excluir-se-á o dia do início e incluir-se-á o do vencimento;
+II. os prazos somente serão iniciados e vencidos em dias de expediente no BNDES.
+
+8.8 Na ocorrência de qualquer fato superveniente ou na hipótese de caso fortuito ou de força maior será observado o seguinte:
+I. se o fato impedir a realização de sessão pública na data marcada, a referida sessão será adiada;
+II. os prazos que estiverem em curso serão suspensos, voltando a correr assim que a situação estiver normalizada.
+
+8.9 O andamento da licitação poderá ser acompanhado por qualquer interessado no Portal de Compras do Governo Federal (www.gov.br/compras/pt-br).
+
+8.10 Fica eleito o Foro da Cidade do Rio de Janeiro para solucionar eventuais litígios, afastado qualquer outro, por privilegiado que seja. Rio de Janeiro, 28 de outubro de 2026.
+Júlia Bohrer Rodrigues Raphael Domingues de Moraes
+Gerente AJI/JULIC/GLIC2 Zyngier
+Chefe de Departamento AJI/JULIC
+
+ANEXO I – TERMO DE REFERÊNCIA
+
+1. OBJETO
+
+1.1. Contratação de empresa especializada do tipo Travel Management Company (TMC), para prestação de serviços de gestão de viagens corporativas incluindo fornecimento, implantação e suporte de ferramenta de auto agendamento em ambiente web e aplicativo móvel, para atender às necessidades das empresas do SISTEMA BNDES (BNDES, BNDESPAR e FINAME), conforme condições especificadas neste Termo de Referência. Para efeito de padronização, neste documento, a ferramenta de auto agendamento será doravante denominada FERRAMENTA OBT (on-line booking tool).
+
+1.2. O serviço a ser contratado deverá seguir as seguintes especificações:
+• Reserva, emissão e reemissão de bilhetes de passagens aéreas e de superfície no âmbito nacional e internacional;
+• Solicitação e controle de créditos e reembolsos oriundos de cancelamento e remarcações;
+• Reserva de hotéis no Brasil e no exterior; • Emissão de apólices de assistência viagem no âmbito de viagens nacionais e internacionais; • Locação de veículos, barcos e aeronaves no Brasil e no exterior; • Gestão de expense para pagamento de auxílios diversos, reembolsos e prestação de contas;
+• Assistência e assessoria a viajantes VIPs;
+• Providências diversas para realização de eventos e reuniões do BNDES no Brasil e no exterior;
+• Disponibilização, implantação, configuração, suporte técnico e manutenção, treinamento e
+customizações da FERRAMENTA OBT com versão web e aplicativo mobile, que permita a gestão completa e integrada dos serviços contratados.
+
+2. CONDIÇÕES GERAIS DA PRESTAÇÃO DOS SERVIÇOS
+
+2.1. Os serviços serão prestados em conjunto para todas as empresas do SISTEMA BNDES, tendo como público-alvo todos os empregados do quadro permanente, transitórios (cedidos e contratados) e mandatários (Diretoria Executiva e membros de colegiados), além de convidados do BNDES.
+
+2.2. Os serviços a que se refere esse TERMO DE REFERÊNCIA deverão ser prestados por meio de central de atendimento humana (call center) e através da FERRAMENTA OBT, própria ou de terceiros, a ser disponibilizada pela CONTRATADA.
+
+2.2.1. A central de atendimento será responsável pelo apoio aos viajantes, através de e-mail, chat online via aplicativo WhatsApp ou outro que venha a substituí-lo por conveniência do BNDES, atendimento telefônico e mensagens de texto em caixas de diálogo da FERRAMENTA OBT, em todas as fases do processo de solicitação de viagens e prestação de contas, inclusive para esclarecimento de dúvidas e solução de viagens emergenciais.
+
+2.2.2. A central de atendimento poderá ser compartilhada, utilizando número 0800 exclusivo para atendimento ao BNDES, com chamadas franqueadas pela CONTRATADA, habilitado para receber chamadas de telefones móveis e fixos, com cobertura nacional e internacional, que funcionará 24 horas por dia durante todos os dias da semana, incluindo feriados.
+
+2.3. A CONTRATADA deverá disponibilizar preposto(s) exclusivos e dedicados, em quantidade suficiente para o nível de atendimento esperado nos dias úteis, das 8h às 20h, ininterruptamente.
+
+2.3.1. Poderá ser requisitada pelo BNDES a revisão do quantitativo disponibilizado, em situações tais como, alterações significativas no volume de emissões ou em caso de descumprimento dos acordos de nível de serviço,
+
+2.3.2. É de responsabilidade da CONTRATADA prover, operar e manter toda a infraestrutura de TI e telecomunicações necessária à prestação dos serviços, incluindo os equipamentos utilizados, arcando com os custos de instalação, manutenção, suporte e utilização.
+
+2.3.3. A CONTRATADA deverá designar posto(s) de preposto(s) dedicados aos viajantes do BNDES, preferencialmente aos VIPs. São viajantes VIPs: os Membros da Diretoria Executiva, empregados e convidados a eles equiparados, e Membros dos Colegiados do SISTEMA BNDES.
+
+2.3.4. A CONTRATADA deverá designar ao menos um dos prepostos como Supervisor para acompanhar, gerenciar e controlar as atividades dos demais prepostos.
+
+2.4. São atribuições do(s) preposto(s):
+
+2.4.1. Representar a sociedade contratada perante o BNDES;
+
+2.4.2. Acompanhar, gerenciar e controlar as atividades relativas ao serviço contratado;
+
+2.4.3. Zelar para que os funcionários da central de atendimento mantenham a qualidade e eficácia dos serviços prestados;
+
+2.4.4. Zelar pelo comportamento adequado nas dependências do BNDES, pelo uso correto do crachá de identificação e pelo cumprimento das normas internas do BNDES;
+
+2.4.5. Prestar atendimento exclusivo ao BNDES;
+
+2.4.6. Prestar atendimento às viagens internacionais de todo o corpo funcional do BNDES, solucionando todos os assuntos referentes às viagens destes;
+
+2.4.7. Prestar atendimento aos usuários do BNDES, preferencialmente aos VIPs, solucionando todos os assuntos referentes a viagens destes, preferencialmente;
+
+2.4.8. Prestar suporte de cotação, negociação e contratação de serviços e locações diversos para a realização de eventos de interesse do BNDES;
+
+2.4.9. Buscar junto aos fornecedores contratados informações e esclarecimentos solicitados pela Gerência de Viagens; e
+
+2.4.10. Realizar cotações, reservas e emissões nos sistemas próprios, inclusive por telefone.
+
+2.5. O(s) preposto(s) deverão atender ao seguinte perfil profissional, a ser comprovado por ocasião da realização da Reunião Preliminar:
+
+2.5.1. Possuir ensino superior completo, comprovado mediante apresentação de certificado e/ou declaração emitida por instituição de ensino reconhecida pelo Ministério da Educação (MEC);
+
+2.5.2. Possuir experiência mínima, comprovada em carteira de trabalho, contrato de prestação de serviço ou por atestado, de 2 (dois) anos como emissor de viagens nacionais e internacionais;
+
+2.5.3. O preposto designado como Supervisor deverá possuir experiência mínima, comprovada em carteira de trabalho, contrato de prestação de serviço ou por atestado, de 2 (dois) anos em cargo de coordenação ou supervisão em serviços de turismo e/ou correlatos, sendo admitido o somatório de comprovantes de experiência de trabalho;
+
+2.5.4. Do preposto designado como Supervisor exigir-se-á fluência no idioma inglês a ser aferida por meio de certificação amplamente reconhecida, ou mediante entrevista individual junto à gestão do contrato no BNDES, para validação de perfil.
+
+2.6. A CONTRATADA é responsável por assegurar a preservação da confidencialidade, da integridade e da disponibilidade das informações manejadas no âmbito da prestação dos serviços contratados.
+
+2.7. A CONTRATADA deverá assegurar a utilização das melhores técnicas para garantir o respeito à privacidade e à proteção de dados pessoais nele processados, em conformidade com a legislação vigente, devendo:
+
+2.7.1. Zelar pelas garantias, direitos e deveres, notadamente os previstos na Resolução nº 4.658, de 26 de abril de 2018, do Conselho Monetário Nacional (Política de Segurança Cibernética), na Lei Federal nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais - LGPD) e no restante da legislação vigente relativa ao tema;
+
+2.7.2. Promover e cooperar com mecanismos de correção de falhas ocasionadas pelo sistema que possam gerar violação à LGPD, auxiliando, inclusive, na eventual prestação de informações aos órgãos de controle e às autoridades competentes como, por exemplo, a Agência Nacional de Proteção de Dados (ANPD);
+
+2.7.3. Prover mecanismos para preservar o caráter confidencial de informações coletadas, zelando sempre pela proteção dos dados.
+
+2.8. A CONTRATADA deverá disponibilizar, implantar, configurar, customizar, prestar suporte técnico, manutenção e treinamento da FERRAMENTA OBT, própria ou de terceiros, conforme requisitos do
+
+3. SERVIÇOS DE GERENCIAMENTO DE VIAGENS
+
+3.1. A execução dos serviços de gerenciamento de viagens, observados os normativos de viagens do BNDES, os procedimentos orientados pela Gerência de Viagens e os prazos estipulados nesse documento, inclui os seguintes itens:
+
+3.1.1. Reserva, marcação de assentos, aquisição de despacho de bagagem, emissão, cancelamento, e reemissão de bilhetes aéreos nacionais e internacionais que atendam aos trechos e horários solicitados pelos usuários;
+
+3.1.2. Negociação e reserva de acomodações em hotéis, no país e no exterior, utilizando preferencialmente os hotéis que possuam acordo comercial com o Sistema BNDES;
+
+3.1.3. Emissão de assistência viagem e envio das respectivas apólices em caso de viagens nacionais e internacionais;
+
+3.1.4. Reserva e locação de veículos, com ou sem motorista, no país e no exterior, utilizando preferencialmente as locadoras conveniadas com o Sistema BNDES;
+
+3.1.5. Contratação de guias com fluência nos idiomas necessários no país e no exterior;
+
+3.1.6. Fornecimento de bilhetes rodoviários e ferroviários no Brasil e no exterior;
+
+3.1.7. Orientação e suporte aos usuários para criação, na FERRAMENTA OBT, de pedidos de viagens, adição de serviços, alteração, cancelamento, prestação de contas, troca de mensagens, recuperação de informações, aprovação e delegações relacionadas, bem como outras funcionalidades disponíveis pela FERRAMENTA OBT;
+
+3.1.8. Assistência aos viajantes VIPs, proporcionando serviços como atendimento e assessoria em aeroportos, entrega de vouchers em domicílio, desembaraço de documentação e “check-in” antecipado, assistência para embarque e desembarque. O serviço de assistência deverá ser prestado em sala VIP, própria ou não, podendo ser compartilhada, contemplando, pelo menos, os aeroportos das cidades do Rio de Janeiro, São Paulo e Brasília;
+
+3.1.9. Apoio logístico para realização de eventos, no Brasil ou exterior, incluindo locação de espaços em hotéis ou centros de eventos, e contratação de serviços e infraestrutura necessária para a realização do evento, tais como, mas não se limitando a coffee break, refeições, staff, serviços de telecomunicações (telefonia e Internet) áudio e vídeo;
+
+3.1.10. Fretamento de aeronaves e barcos no Brasil e no exterior;
+
+3.1.11. Assessoria especializada para desembaraço de documentos e emissão de vistos, se necessário, nos casos de viagem ao exterior;
+
+3.1.12. Gerenciamento e controle dos serviços emitidos e não utilizados, mantendo o crédito ou encaminhando para reembolso conforme orientação da gerência de viagens;
+
+3.1.13. Cotações de preços de, no mínimo, três empresas para prestação de qualquer um dos serviços a serem contratados;
+
+3.1.14. Indicação da menor tarifa para os serviços solicitados, nos casos de bilhetes aéreos, reservas de hotéis, assistência viagem e locação de veículos;
+
+3.1.15. Contato direto com prestadores de serviços pelos canais disponíveis, para desembaraço de questões referentes a serviços solicitados e medidas de recuperação de valores ao BNDES, incluindo a liberação de cobranças de multa por "no-show", reembolso integral de bilhetes, cancelamento sem ônus;
+
+3.1.16. Cotação de preço, anualmente ou sempre que houver alteração das condições, de três empresas para fornecimento de apólice de assistência viagem para viagens nacionais e internacionais;
+
+3.1.17. Entrega aos usuários e à gerência de viagens corporativas de vouchers, por meio de e-mail ou através da FERRAMENTA OBT, de forma online ou off-line, após a autorização por responsável do BNDES designado para esse fim;
+
+3.1.18. Análise e processamento de auxílios e reembolsos solicitados para os viajantes em consonância com os normativos do BNDES.
+
+4. REQUISITOS DA FERRAMENTA OBT E APLICATIVO MOBILE
+
+4.1. A CONTRATADA deverá cumprir as seguintes disposições gerais:
+
+4.1.1. Após convocação formal do BNDES, a CONTRATADA deverá, em até 5 (cinco) dias úteis, apresentar Plano de Implantação e Integração da FERRAMENTA OBT, composto de cronograma de trabalho até no máximo 80 (oitenta) dias úteis para disponibilização de todos os requisitos deste TERMO DE REFERÊNCIA.
+
+4.1.1.1. A critério de BNDES, o prazo estabelecido poderá ser prorrogado após o envio formal de solicitação e justificativa técnica da CONTRATADA.
+
+4.1.1.2. A equipe designada pela CONTRATADA para realizar a implantação e integração da FERRAMENTA OBT deverá ser composta por profissionais qualificados e com experiência em projetos de alta complexidade, comprovada por exemplo, por tempo de experiência na área de atuação, participação em projetos de complexidade semelhante, dentre outras.
+
+4.1.2. O licenciamento de componentes de ambiente tecnológico que sejam necessários para o funcionamento da FERRAMENTA OBT, e que não façam parte do ambiente tecnológico do BNDES, será de responsabilidade da CONTRATADA, sem qualquer custo adicional, sujeito à aprovação do BNDES;
+
+4.1.3. A CONTRATADA deve prover os mecanismos necessários à Integração com os sistemas do BNDES conforme definido pelo BNDES;
+
+4.1.4. A solução deverá ser adaptável às necessidades do BNDES, permitindo a execução integral das atividades previstas neste Termo de Referência, incluindo armazenamento e organização das informações, controle orçamentário, e disponibilização de módulos de Business Intelligence (BI), Budget ou Financeiro, entre outros que se fizerem necessários;
+
+4.1.5. A CONTRATADA deverá prestar suporte técnico especializado, manutenção preventiva e corretiva, bem como execução de parametrizações e customizações necessárias para garantir o pleno funcionamento da FERRAMENTA OBT disponibilizada, inclusive quando se tratar de solução própria ou outra ferramenta disponível no mercado, sem custo adicional para o BNDES.
+
+4.1.6. A CONTRATADA deverá fornecer ao BNDES informações e relatórios referentes a todos os serviços prestados, nos formatos e periodicidades demandados, de modo a suportar o controle, a gestão de recursos e a conformidade. O BNDES poderá requerer, a qualquer tempo, a inclusão, alteração, complementação ou exclusão de informações nos relatórios, com a finalidade de aprimorar o controle e a gestão contratual, cabendo à CONTRATADA implementar os ajustes no prazo definido pelo BNDES, sem custos adicionais, desde que tais customizações se mantenham no escopo do objeto contratado.
+
+4.1.7. A CONTRATADA deverá dispor de relatórios que possibilitem a auditoria dos serviços solicitados, valores faturados e pagos, valores e bilhetes/viagens a reembolsar, reembolsados, em reemissão e reemitidos.
+
+4.1.8. Possuir como fonte de consulta, no mínimo, o webservice das empresas aéreas nacionais, das principais empresas aéreas internacionais que operam no Brasil, consolidadoras e os principais sistemas GDS (Global Distribution System), tais como Sabre e Amadeus;
+
+4.1.9. Possuir como fonte de consulta os provedores de conteúdo de hospedagem, como, por exemplo:
+CMNET, Sabre, Expedia, Amadeus, entre outros;
+
+4.2. A FERRAMENTA OBT deverá ter, no mínimo, as funcionalidades listadas no Erro! Fonte de referência não encontrada..
+
+4.3. A FERRAMENTA OBT deverá cumprir, no mínimo, os seguintes requisitos técnicos:
+
+4.3.1. A FERRAMENTA OBT deve estar disponível em regime 24x7 (vinte quatro horas por dia, durante os 7 dias da semana), com disponibilidade mensal mínima de 99,5%, medida a partir do ambiente produtivo e excluindo apenas janelas de manutenção previamente acordadas;
+
+4.3.2. A FERRAMENTA OBT deverá dispor de mecanismos de segurança que garantam a autenticidade, inviolabilidade e integridade das informações e o acesso às informações relativas às viagens do BNDES deve estar restrito somente aos usuários autorizados pelo BNDES;
+
+4.3.3. A CONTRATADA deve garantir a disponibilidade das informações do sistema a qualquer tempo, durante a vigência do Contrato e seis meses após sua finalização ou rescisão, garantir a cópia de segurança (backups) de todos os dados e acesso às Consultas de informações operacionais do BNDES;
+
+4.3.4. A Solução deverá garantir que o tempo de retorno à normalidade (Recovery Time Objective – RTO) não exceda a 30 (trinta) minutos e o ponto de recuperação de dados (Recovery Point Objective - RPO) não exceda a 30 (trinta) minutos. Em situações excepcionais, a critério do BNDES, os tempos de retorno (RTO) e de recuperação de dados (RPO) poderão ser estendidos.
+
+4.3.5. A FERRAMENTA OBT deverá apresentar tempo de resposta não superior a 3 (três) segundos por interação de usuário, mesmo em condições de uso concorrente, sem degradação perceptível de desempenho. Para consultas de maior complexidade, será considerado um tempo de resposta de 10 (dez) segundos por interação.
+
+4.4. A FERRAMENTA OBT deverá cumprir, no mínimo, os requisitos do Erro! Fonte de referência não encontrada..
+
+4.5. A FERRAMENTA OBT deverá cumprir, no mínimo, os seguintes requisitos de governança de dados, LGPD, além dos requisitos tecnológicos e de segurança da informação constantes no Erro! Fonte de referência não encontrada..
+
+4.6. A CONTRATADA deverá cumprir, no mínimo, os seguintes requisitos de suporte para a FERRAMENTA OBT:
+
+4.6.1. A CONTRATADA deverá implantar, configurar e disponibilizar a FERRAMENTA OBT para uso do BNDES, com todos os atributos e requisitos elencados neste Termo conforme disposto no item 4.1.1;
+
+4.6.2. A CONTRATADA deverá fornecer neste prazo as chaves de acesso/ativação, senhas ou o que for necessário para uso da Solução;
+
+4.6.3. A CONTRATADA deverá prestar consultoria a ser utilizada no processo de disponibilização e configuração da ferramenta, na integração entre os sistemas legados do BNDES e softwares da CONTRATADA;
+
+4.6.4. A CONTRATADA deverá prestar consultoria de operação assistida, durante o primeiro mês de utilização efetiva da FERRAMENTA OBT, se necessário;
+
+4.6.5. A CONTRATADA deverá prestar atendimento às questões sobre uso da FERRAMENTA OBT e correção de erros após sua disponibilização;
+
+4.6.6. Caso seja imprescindível, a equipe de Suporte Técnico da FERRAMENTA OBT da CONTRATADA deverá se deslocar até as dependências do BNDES (Avenida República do Chile, n° 100, Centro, no Rio de Janeiro-RJ), sem qualquer tipo de ônus;
+
+4.6.7. A CONTRATADA deverá prestar atendimento para resolução de dúvidas dos usuários do BNDES na operação do sistema;
+
+4.6.8. A CONTRATADA deverá fazer acompanhamento na resolução de dúvidas dos usuários da Agência de Viagens na operação do sistema;
+
+4.6.9. Após a implantação e configurações necessárias ao funcionamento da FERRAMENTA OBT, caso haja necessidade ou problemas relacionados à implantação, o BNDES poderá solicitar, sem ônus, a disponibilização de profissional qualificado para acompanhar de forma remota ou presencial a execução da prestação dos serviços, durante o horário comercial (entre 8h e 18h).
+
+4.6.10. Eventuais paradas programadas da FERRAMENTA OBT, para realização de manutenções corretivas, preventivas ou evolutivas, devem ser realizadas em dias não-úteis em todo o território brasileiro ou fora do horário das 8h às 20h (Horário de Brasília GMT3) e previamente comunicadas ao BNDES com antecedência de, no mínimo, 1 (uma) semana. O BNDES poderá autorizar, excepcionalmente, manutenções em dias úteis das 8h às 20h (Horário de Brasília GMT3), a seu critério.
+
+4.6.11. Fornecimento de manuais e guias de implantação e manutenção, documentação de parametrização e/ou customização e scripts de homologação da FERRAMENTA OBT;
+
+4.6.12. Testes para validação do funcionamento dos itens de software que compõem a FERRAMENTA OBT.
+
+4.7. A FERRAMENTA OBT deverá cumprir, no mínimo, os seguintes requisitos de configuração e integração, bem como aqueles constantes no Erro! Fonte de referência não encontrada..
+
+4.7.1. A FERRAMENTA OBT deve ser totalmente compatível com o ambiente tecnológico do BNDES;
+
+4.7.2. A FERRAMENTA OBT deve ter integração com os sistemas corporativos do BNDES no âmbito, por exemplo, contábil, financeiro e de RH e, quando aplicável, com soluções de terceiros previamente autorizadas, utilizando mecanismos seguros de autenticação e interoperabilidade, garantindo conformidade com padrões de segurança da informação, governança e legislação vigente.
+
+5. TREINAMENTO
+
+5.1. Após convocação formal do BNDES, a CONTRATADA terá 5 (cinco) dias úteis para apresentar Plano de Treinamento a ser aprovado pelo BNDES, considerando:
+
+5.1.1. Treinamento síncrono de no mínimo 2 (duas) turmas com vistas a capacitar os profissionais da unidade Gestora de Viagens do BNDES na utilização, gestão e configuração das ferramentas contratadas, com gravação e disponibilização de material em formato EAD;
+
+5.1.2. Treinamento EAD para os usuários da FERRAMENTA OBT considerando todos os perfis de acesso ao sistema, com disponibilização na plataforma de treinamento do BNDES para capacitação permanente.
+
+5.2. A CONTRATADA deverá garantir que os treinamentos se refiram à versão definitiva em uso pelo BNDES.
+
+5.3. A CONTRATADA deverá disponibilizar material didático quando houver atualizações que afetem de forma significativa a interface do sistema.
+
+5.4. O BNDES não se obriga a utilizar qualquer quantidade de turmas de qualquer dos treinamentos, ficando o pagamento limitado aos serviços efetivamente prestados.
+
+5.5. Todos os treinamentos serão executados de forma virtual, sendo responsabilidade do BNDES a disponibilização da infraestrutura necessária. Caberá à CONTRATADA prover o material didático e conteúdo em meios digitais, conforme plano de treinamento aprovado pelo BNDES.
+
+5.6. A CONTRATADA deverá submeter ao BNDES, em até 10 (dez) dias úteis a partir da solicitação de treinamento, os entregáveis detalhados a seguir:
+
+5.6.1. Material didático do treinamento, o qual deverá ser analisado e aprovado pelo BNDES.
+
+5.6.2. Relação dos profissionais que irão ministrar o treinamento, que deverão comprovar treinamento e atuação com a FERRAMENTA OBT por no mínimo 6 (seis) meses.
+
+5.7. O BNDES irá proceder com a avaliação do material didático e das qualificações dos instrutores em até
+
+10 (dez) dias úteis após o seu recebimento. Caso julgue ser necessário algum ajuste, o BNDES solicitará a adequação formalmente à CONTRATADA que deverá promover os ajustes necessários em até 5 (cinco) dias úteis.
+
+5.8. Todo o material de treinamento entregue, disponibilizado e utilizado pela Contratada para a execução dos serviços de treinamento, incluindo o material de apoio, como apresentações, apostilas, manuais, vídeos de demonstração, dentre outros correlatos, serão concedidos com direito de uso e de reprodução ao BNDES, de forma irrestrita, para sua aplicação e uso em treinamentos internos para funcionários do
+
+5.9. Será facultado ao BNDES proceder com a gravação das aulas em vídeo, registrando a imagem do instrutor e o conteúdo projetado aos alunos, de forma a possibilitar o treinamento futuro de seus profissionais que porventura venham a ser alocados às atividades objeto dos treinamentos.
+
+5.10. Ao final do treinamento virtual, a CONTRATADA deverá fornecer certificados de participação no treinamento para cada modalidade, informando, no mínimo, o conteúdo programático ministrado e sua respectiva carga horária.
+
+5.11. Ao final do treinamento de cada modalidade, a CONTRATADA deverá fornecer, formulário digital para avaliação do treinamento aos participantes, que, uma vez preenchidos, deverão ser encaminhados ao Gestor do Contrato, juntamente com um resumo executivo das avaliações recebidas.
+
+5.12. O treinamento para cada Modalidade somente será considerado realizado após o recebimento das avaliações pelo Gestor do Contrato, e seu ateste de que o resultado foi satisfatório.
+
+6. CUSTOMIZAÇÕES
+
+6.1. Deverão ser oferecidos sem custo adicional os serviços de customização para atender requisitos funcionais; de business intelligence (BI) e de extração de dados; tecnológicos e de segurança da informação; de integração; como também estéticos e visuais específicos.
+
+6.1.1. As customizações estéticas, sistêmicas e de relatórios necessárias deverão ocorrer sem prejuízo de desempenho, segurança ou suporte da FERRAMENTA OBT.
+
+6.2. Modificações e alterações entre sistemas na etapa de implantação inicial por quaisquer protocolos, definidos pelo BNDES, também deverão ser oferecidos sem custo adicional.
+
+6.3. Demais customizações durante a vigência contratual serão submetidas pelo BNDES por e-mail, devendo a CONTRATADA analisar em até 5 (cinco) dias úteis.
+
+6.3.1. Após análise, a CONTRATADA encaminhará proposta técnica ao BNDES para aprovação.
+
+6.3.2. Customizações aprovadas deverão ser atendidas em prazo estabelecido em proposta da CONTRATADA conforme complexidade. A Área de Tecnologia de Informação do BNDES avaliará se o prazo proposto é adequado a complexidade da customização e tal prazo precisa ser de, no máximo, 20 (vinte) dias úteis.
+
+6.3.3. Customizações consideradas inexequíveis deverão ser justificadas tecnicamente, com relatório detalhado no prazo designado.
+
+6.3.4. Customizações que consistem meramente em parametrizações da FERRAMENTA OBT ou em aspectos estéticos, tal como alteração de critério oriundo do normativo de viagens corporativas do BNDES, deverão ser executadas em prazo de até 5 (dias) úteis pela CONTRATADA, caso não possam ser executadas manualmente pela Gerência de Viagens do BNDES.
+
+7. ACORDO DE NÍVEL DE SERVIÇO (SLA) E AJUSTES DE PAGAMENTOS
+
+7.1. Mensalmente será avaliado o percentual total de atingimento dos SLAs. Caso o atingimento seja igual ou superior a 99% (noventa e nove por cento) para viajantes VIPs e 95% (noventa e cinco por cento) para os demais viajantes, o BNDES não aplicará nenhum desconto.
+
+7.2. A CONTRATADA deverá apresentar os níveis de serviço alcançados por meio de planilha, relatório ou programa responsabilizando-se pela exatidão das informações, sem prejuízo da fiscalização realizada pelo BNDES, devendo facultar o acesso aos meios de apuração dos níveis de serviço alcançados, inclusive aos sistemas eletrônicos que os registrem.
+
+7.3. O primeiro mês de Contrato será considerado como período de adaptação da CONTRATADA, quando deverão ser apurados os níveis de serviço sem que seja aplicado o índice de redução de preço respectivo no caso de descumprimento, sem prejuízo, contudo, da aplicação das penalidades previstas, quando cabíveis.
+
+7.4. O acordo de nível de serviço está dividido em 4 itens:
+• Atendimento aos prazos para cotação/emissão dos serviços;
+• Índice de satisfação de serviços da CONTRATADA perante os usuários;
+• Índice de Atendimento telefônico;
+• Disponibilidade da FERRAMENTA OBT.
+
+7.4.1. As viagens serão classificadas de acordo com o intervalo de tempo entre a autorização e o início da viagem:
+
+7.4.1.1. Viagens emergenciais: o intervalo de tempo entre a autorização e o início da viagem é menor ou igual a 2 dias úteis;
+
+7.4.1.2. Viagens padrão (o intervalo entre a autorização e o início da viagem é maior que 2 dias úteis).
+
+7.4.2. Os prazos para cotação/emissão dos serviços deverão obedecer às seguintes regras:
+
+7.4.2.1. A entrega para o usuário dos serviços descritos de bilhetes aéreos, rodoviários e ferroviários nacionais e internacionais obedecerá aos seguintes prazos:
+
+7.4.2.1.1. Viagens emergenciais: Cotação/emissão em até 2 (duas) horas úteis ou em até 1 (uma) hora para casos em que o decurso do prazo entre a autorização e a viagem seja menor que 2 (duas) horas úteis;
+
+7.4.2.1.2. Viagens padrão: Cotação/emissão em até 8 (oito) horas úteis ou conforme o prazo definido pela companhia aérea, se menor ou igual àquele.
+
+7.4.2.2. A entrega para o usuário dos serviços descritos de acomodações em hotel, locação de veículos no país e no exterior e apólice de assistência viagem obedecerá aos seguintes prazos:
+
+7.4.2.2.1. Viagens emergenciais: Cotação/emissão em até 4 (quatro) horas úteis ou em até 1 (uma) hora para casos em que o decurso do prazo entre a autorização e a viagem seja menor que 2 (duas) horas úteis;
+
+7.4.2.2.2. Viagens padrão: Cotação/emissão em até 12 (doze) horas úteis.
+
+7.4.2.3. A entrega para o usuário dos serviços descritos de espaço e serviços adicionais para eventos e fretamentos, obedecerá aos seguintes prazos:
+
+7.4.2.3.1. Viagens ou eventos emergenciais (o intervalo entre a autorização e a data da viagem ou do evento é menor ou igual a 4 dias úteis): Cotação/emissão em até
+
+1 (um) dia útil;
+
+7.4.2.3.2. Viagens ou eventos padrão (o intervalo entre a autorização e a data da viagem ou do evento é maior que 4 dias úteis): Cotação/emissão em até 3 (três) dias úteis.
+
+7.4.3. A contagem das horas se dará somente em dias úteis, iniciando às 8h e interrompendo-se às 20h, tanto para as cotações bem como para as emissões, e também para os modos de atendimento on-line e offline;
+
+7.4.4. As solicitações realizadas pela FERRAMENTA OBT após as 20 horas terão o prazo para atendimento computado a partir das 8 horas do dia útil seguinte;
+
+7.4.5. Os prazos do item 7.4.2 deverão ser reduzidos à metade para o atendimento das demandas dos viajantes VIPs.
+
+7.5. O Acordo de Nível de Serviço (SLA) para os prazos de cotação/emissão obedecerão às seguintes regras:
+
+7.5.1. O descumprimento do prazo previsto nos subitens 7.4.2.1 e 7.4.2.2 implicará redução de 0,03% (três centésimos por cento) no valor total do faturamento do mês de ocorrência por cada 1 hora ou fração desse período de atraso, limitada a redução a 0,3% (três décimos por cento) do valor total do faturamento do mês de ocorrência.
+
+7.5.2. O descumprimento do prazo previsto no subitem 7.4.2.3 implicará redução de 0,03% (três centésimos por cento) no valor total do faturamento do mês de ocorrência por cada dia útil ou fração desse período de atraso, limitada a redução a 0,3% (três décimos por cento) do valor total do faturamento do mês de ocorrência.
+
+7.6. Será realizada pesquisa de satisfação na FERRAMENTA OBT, com funcionários do BNDES na Prestação de Contas, para apurar o índice de satisfação de serviços da CONTRATADA perante os usuários. O descumprimento do índice mínimo de satisfação de 60% (sessenta por cento), que será determinado através da quantidade de respostas “excelente” ou “bom” disponíveis na pesquisa, implicará no desconto de 0,1% (um décimo por cento) do valor total do faturamento do mês de ocorrência.
+
+7.7. O BNDES acompanhará mensalmente o atendimento telefônico realizado pelos agentes de viagem, bem como as ligações feitas para a central de atendimento. A CONTRATADA deverá enviar ao Gestor do Contrato, mensalmente até o 5º dia útil do mês subsequente, relatório com detalhamento das ligações efetuadas por usuários do BNDES para sua central de atendimento, segregado por tipo de público (VIP ou não VIP). O descumprimento do percentual de atendimento de ligações efetuadas para a central de atendimento e para os prepostos, conforme apurado pelo BNDES, implicará nas seguintes reduções:
+• Atendimento igual ou acima de 85%: não há implicação de descontos;
+• Intervalo de atendimento de 75% a 84,99% - redução de 0,01% (um centésimo por cento) do valor
+total do faturamento do mês de ocorrência;
+• Intervalo de atendimento de 65% a 74,99% - redução de 0,02% (dois centésimos por cento) do valor
+total do faturamento do mês de ocorrência;
+• Intervalo de atendimento de 55% a 64,99% - redução de 0,04% (quatro centésimos por cento) do
+valor total do faturamento do mês de ocorrência; • Atendimento inferior a 55% - redução de 0,05% (cinco centésimos por cento) do valor total do faturamento do mês de ocorrência.
+
+7.8. A CONTRATADA deverá garantir uma disponibilidade de 99,5% (noventa e nove virgula cinco por cento) da FERRAMENTA OBT a ser calculada mensalmente, sendo mensurada por meio de sistemas de medição confiáveis e de ampla utilização no mercado, bem como e deverá enviar relatório com esse detalhamento ao Gestor do Contrato até o 5º dia útil do mês subsequente. Esta disponibilidade é aplicável, cumulativamente, a todos os serviços, incluindo integrações.
+• Disponibilidade igual ou acima de 99,5%: não há implicação de descontos;
+• Disponibilidade de 99,49% a 99,0% - redução de 0,02% (dois centésimos por cento) do valor total do
+faturamento do mês de ocorrência;
+• Disponibilidade de 98,99% a 98,0% - redução de 0,04% (quatro centésimos por cento) do valor total
+do faturamento do mês de ocorrência;
+• Disponibilidade inferior a 98,0% - redução de 0,05% (cinco centésimos por cento) do valor total do
+faturamento do mês de ocorrência.
+
+7.9. Não serão considerados os tempos das paradas programadas, isto é, paradas previamente acordadas com o BNDES, bem como os períodos abonados pelo BNDES, em razão da ocorrência de interrupções ou degradações no funcionamento dos equipamentos oriundas de manutenções realizadas pelo BNDES em seu ambiente computacional.
+
+7.10. Caso a CONTRATADA não cumpra o prazo de implantação e integração da FERRAMENTA OBT, estabelecido no Plano de Implantação e Integração nos termos do item 4.1.1, será aplicado um redutor de 0,03% (três centésimos por cento) sobre o valor total do faturamento do mês de ocorrência relativo a cada dia excedente do prazo máximo definido, limitado em 1,00% (um por cento) do valor mensal de faturamento.
+
+7.10.1. Caso não haja faturamento no mês de referência do atraso, essa multa deverá ser recolhida assim que houver faturamento efetivo, isto é, sobre o valor total do faturamento dos primeiros meses com faturamento efetivo dos serviços contratados, considerando o número de dias excedentes em descumprimento e o limite de 1,00% sobre o valor da fatura mensal.
+
+7.11. Caso a CONTRATADA declare concluída a implantação da FERRAMENTA OBT sem que todos os requisitos previstos neste Termo de Referência e seus anexos tenham sido integralmente atendidos, o BNDES poderá aplicar redutor incidente sobre a remuneração mensal da CONTRATADA, em percentual entre 0,03% (três centésimos por cento) e 1% (um por cento), observado o grau de impacto do requisito pendente para a gestão de viagens do BNDES. O redutor será aplicado mensalmente até a efetiva correção da inconformidade. Na hipótese de descumprimento de múltiplos requisitos, ou de requisito considerado crítico para a operação, segurança, controle ou conformidade da gestão de viagens, o
+BNDES poderá, adicionalmente, instaurar procedimento administrativo para apuração de
+responsabilidade e aplicação das sanções cabíveis.
+
+8. QUANTITATIVO ESTIMADO PARA OS SERVIÇOS
+
+8.1. A tabela a seguir mostra o quantitativo de transações estimadas para 30 (trinta) meses de contrato:
+Quantidade Tipo de Serviço estimada
+Emissão de bilhetes aéreos nacionais 27.003
+Reserva de hotéis no Brasil 16.583
+Locação de veículos no Brasil 1.485
+Solicitação de reembolso de bilhetes aéreos nacionais 4.208
+Emissão de bilhetes rodoviários nacionais 13
+Emissão de apólice de assistência de viagem nacional (coletiva 3 ou individual)
+TOTAL NACIONAL 49.295
+Emissão de bilhetes aéreos internacionais 558
+Locação de veículos no exterior 13
+Emissão de bilhetes ferroviários internacionais 13
+Reserva de hotéis no exterior 63
+Solicitação de reembolso de bilhetes aéreos internacionais 55
+Emissão de apólice de assistência de viagem 538
+Assistência e assessoria a Viajantes VIP 5
+TOTAL INTERNACIONAL 1.245
+Fretamento 5
+Reserva de hotéis para realização de eventos 73
+TOTAL FRETAMENTO + EVENTOS 78
+TOTAL 50.618
+
+8.2. A Tabela a seguir mostra o quantitativo de transações executadas nos últimos 4 (quatro) anos:
+Tipo de Serviço 2022 2023 2024 2025
+Emissão de bilhetes aéreos nacionais 5.804 8.698 9.111 10.189
+Reserva de hotéis no Brasil 3.229 4.256 4.971 6257
+Locação de veículos no Brasil 500 568 494 560
+Solicitação de reembolso de bilhetes aéreos
+
+96 163 1161 1587 nacionais
+Emissão de bilhetes rodoviários nacionais 0 0 0 0
+Tipo de Serviço 2022 2023 2024 2025
+Emissão de apólice de assistência de viagem
+
+0 0 0 0 nacional (coletiva ou individual)
+TOTAL NACIONAL 9.629 13.685 15.737 18.593
+Emissão de bilhetes aéreos internacionais 226 197 243 210
+Locação de veículos no exterior 0 0 0 0
+Emissão de bilhetes ferroviários internacionais 0 0 0 0
+Reserva de hotéis no exterior 0 0 0 0
+Solicitação de reembolso de bilhetes aéreos
+
+23 7 21 20 internacionais
+Emissão de apólice de assistência de viagem 196 168 191 202
+Assistência e assessoria a viajantes VIP 0 0 0 1
+TOTAL INTERNACIONAL 445 372 455 433
+Fretamento 3 2 2 1
+Reserva de hotéis para realização de eventos 14 14 25 27
+TOTAL FRETAMENTO + EVENTOS 17 16 27 28
+TOTAL 10.091 14.073 16.219 19.054
+Observações:
+a) A quantidade estimada de transações mensais está em 1.800, podendo alcançar 2.340 em momentos de alta demanda e 900 em momentos de baixa demanda;
+b) Atualmente, a Agência de Viagens disponibiliza 3 (três) profissionais para o atendimento dos serviços/emissões de viagens exclusivo ao BNDES, o que atende adequadamente a demanda observada nos últimos anos;
+c) Aproximadamente 10% das viagens são canceladas;
+d) Aproximadamente 60% dos bilhetes nacionais envolvem os trechos entre Rio de Janeiro – São Paulo e Rio de Janeiro – Brasília, e pelo menos outros 10% envolvem os trechos entre Rio de Janeiro e as demais capitais dos Estados; e
+e) Alteração de bilhetes – A quantidade de viagens que sofrem alteração de bilhetes é de aproximadamente 10%.
+
+9. FORMA DE REMUNERAÇÃO DA CONTRATADA
+
+9.1. Os pagamentos a serem efetuados em favor da CONTRATADA estarão sujeitos, no que couber, às retenções de tributos, nos termos da legislação tributária e com base nas informações prestadas pela CONTRATADA.
+
+9.2. A CONTRATADA deverá permitir a retenção das faturas emitidas nos últimos 30 dias do período contratual para acertos de débitos contratuais, tais como reembolsos não efetuados ao BNDES, entre outros, permitindo a glosa a qualquer momento da execução contratual.
+
+9.3. O BNDES poderá optar, a qualquer momento, pelo pagamento através de cartão de crédito corporativo, respeitada a legislação pertinente.
+
+9.3.1. O SERVIÇO DE GERENCIAMENTO DE VIAGENS será remunerado pelo regime de Taxa por Transação (Transaction Fee). A CONTRATADA cobrará uma taxa única por transação realizada, que será a única remuneração devida pela prestação dos serviços, incluindo a disponibilização da FERRAMENTA OBT, conforme valor ofertados na proposta.
+
+9.3.2. A empresa CONTRATADA fica terminantemente proibida de:
+
+9.3.2.1. Aplicar comissão, mark up, ou incluir tarifas não pactuadas sobre bilhetes aéreos e demais produtos/serviços.
+
+9.3.2.2. Receber comissão ou qualquer benefício oriundo de fornecedores pela venda de produtos/serviços ou pelo cumprimento de metas de produtividade, devendo repassar ao BNDES, na forma de nota de crédito, qualquer valor da espécie.
+
+9.3.2.3. Alterar ou inibir, por qualquer meio ou subterfúgio, os valores apresentados pelos fornecedores.
+
+9.3.2.4. Direcionar a compra de serviços/produtos para fornecedores sob o seu interesse, desconsiderando os critérios técnicos de qualidade e menor preço determinados pelo
+
+9.3.2.5. Atuar em desacordo com as políticas do BNDES e orientações do Gestor do Contrato
+
+9.3.3. Para fins de auditoria, o Gestor do Contrato poderá solicitar, a qualquer momento, a comprovação dos valores dos serviços efetivamente emitidos, mediante informação expedida pelos fornecedores.
+
+9.3.4. Na hipótese de comprovação de que a CONTRATADA recebeu comissão ou outro benefício diretamente relacionado ao serviço contratado pelo BNDES, esta poderá incorrer em rescisão contratual, sem prejuízo das demais sanções previstas na legislação.
+
+9.4. Para efeito de remuneração serão considerados, um valor único de taxa de transação para qualquer dos serviços listados abaixo:
+
+9.4.1. Emissão de bilhete por localizador de companhia aérea, rodoviária ou ferroviária. Caso sejam emitidos 2 trechos, ou mais, com a mesma companhia em um localizador, será considerada 1 emissão;
+
+9.4.2. Reemissão de bilhete decorrente de remarcação de bilhete não utilizado. Será considerada 1 transação a remissão dos bilhetes, mesmo nos casos em que são gerados 2 bilhetes em separado, um com o valor do MCO (multa) e um com o valor da diferença de tarifa;
+
+9.4.3. Solicitação de reembolso de bilhete não utilizado (não voado);
+
+9.4.4. Reserva de acomodação em hotéis;
+
+9.4.5. Reserva de locais, equipamentos e demais serviços para realização de eventos e reuniões do BNDES no Brasil e no exterior. Cada item deverá ser considerado uma única transação, não podendo haver para o mesmo evento mais de uma cobrança de taxa de transação por tipo de serviço;
+
+9.4.6. Emissão de apólices de assistência viagem para viagens ao exterior;
+
+9.4.7. Emissão de apólice de assistência viagem nacional (coletiva ou individual);
+
+9.4.8. Locação de veículos;
+
+9.4.9. Fretamento de aeronaves ou embarcações;
+
+9.4.10. Emissão de bilhetes rodoviários e ferroviários; e
+
+9.4.11. Assistência e assessoria a viajantes VIPs.
+
+9.5. O valor a ser pago pelo BNDES por cada serviço será o valor do serviço solicitado, acrescido do valor da Taxa por Transação, que deverá ser discriminada de modo destacado, e será calculado de acordo com a seguinte fórmula:
+VF = VS + TT, ONDE:
+VF = VALOR DA FATURA (VALOR A SER PAGO); VS = VALOR DO SERVIÇO; TT = VALOR DA TAXA POR TRANSAÇÃO (FATURA SEPARADA COM A TAXA DE TRANSAÇÃO)
+
+9.6. As solicitações de pagamento deverão ser encaminhadas ao BNDES 15 (quinze) dias antes do vencimento, e, depois de aprovadas pelo Gestor do Contrato, serão pagas à CONTRATADA até o vencimento de cada período decendial de faturamento, nos dias 01° (primeiro), 11 (onze) e 21 (vinte e um) de cada mês. Em casos excepcionais, devido às exigências do mercado de viagens serão aceitas faturas de cobrança com datas de vencimento divergentes do estipulado acima.
+
+9.7. As faturas deverão obedecer às seguintes especificações:
+
+9.7.1. Deverá ser enviada somente uma fatura para cada tipo de serviço por vencimento, ou seja, uma fatura correspondente aos bilhetes aéreos nacionais, bilhetes aéreos internacionais, hospedagens, locações, apólices de assistência viagem internacional, apólices de assistência viagem nacional, fretamentos, eventos, assistência e assessoria a viajantes VIPs e suas respectivas faturas de taxa de transação;
+
+9.7.2. Além da separação por tipo de serviço, as faturas também deverão ser separadas entre os itens com e sem retenção de impostos;
+
+9.7.3. Para as faturas de bilhete aéreo, deve constar em anexo a relação de bilhetes emitidos, contendo:
+número da viagem, nome e CNPJ da companhia aérea, número da solicitação na FERRAMENTA OBT, número da solicitação original na FERRAMENTA OBT (quando viagem alterada), nome do passageiro, trecho, localizador, data de emissão, tarifa e taxa, com os respectivos impostos, valor bruto e valor líquido;
+
+9.7.4. Para as faturas de assistência viagem, deve constar em anexo a fatura da seguradora, com a relação de todas as apólices emitidas, bem como cópias desses documentos;
+
+9.7.5. Para as faturas de hospedagem, deve constar em anexo a relação de hospedagens, contendo:
+número da viagem, nome e CNPJ do hotel, nome do hóspede, localizador, município, data da hospedagem, valor bruto e valor líquido;
+
+9.7.6. Para as faturas de locação, deve constar em anexo a relação de locações, contendo: número da viagem, nome e CNPJ da loja, nome do viajante, localizador, município, data da viagem, valor bruto e valor líquido. Nas faturas de locação, além do comprovante da locadora, devem ser apresentados os comprovantes de despesas extras, tais como pedágio e combustível, bem como a planilha do motorista assinada pelo viajante, quando houver. Além disso, devem ser incluídos os comprovantes de recolhimentos trabalhistas para as contratações de serviços com motoristas.
+
+9.8. A CONTRATADA encaminhará via integração com o sistema ERP do BNDES a Nota Fiscal/Fatura referente à prestação dos serviços, constando o número da OCS - Ordem de Compra/Serviço, nome e número do banco, nome e número da agência e número da conta corrente, conforme especificações disponíveis no Erro! Fonte de referência não encontrada., dentre os quais:
+• Dados globais da fatura;
+• Bilhetes aéreos;
+• Demais faturas (hospedagem, locação, eventos, assistência viagem etc.); • Taxa de transação:
+- Para bilhetes; - Demais faturas (hospedagem, locação, eventos, assistência viagem etc.).
+
+9.9. As Notas Fiscais e/ou as Faturas divergentes, sem as informações necessárias ou contendo informações incorretas, serão devolvidas pelo BNDES com indicação do(s) motivo(s) da devolução. As Notas Fiscais e/ou as Faturas deverão ser reapresentadas após terem sido efetuadas as devidas correções, com o vencimento para o decêndio seguinte.
+
+9.10. O reembolso dos bilhetes de passagens aéreas pagos e não utilizados, total ou parcialmente, pelas empresas do BNDES deverá ser realizado pela empresa CONTRATADA no prazo máximo de 120 (cento e vinte) dias após a formalização feita pelo BNDES. Findo esse prazo, o BNDES efetuará a glosa automática destes valores. A empresa, após esta glosa, poderá solicitar o ressarcimento ao BNDES, mediante comprovação, de multas e tarifas cobradas pelas companhias aéreas. A comprovação deverá conter obrigatoriamente: o nome do passageiro, o número da requisição de viagem, o número do bilhete, valor do bilhete, trecho, eventuais encargos ou taxas a serem deduzidos e o total líquido por bilhete. Tais informações deverão ser enviadas em duas vias, uma física e outra eletrônica, conforme especificações estabelecidas pela Gerência de Viagens do BNDES .
+
+10. REAJUSTE
+
+10.1. Os valores referentes à remuneração da CONTRATADA (taxa de transação) serão reajustados a cada
+
+12 (doze) meses, mediante solicitação da CONTRATADA, a contar da data limite para apresentação da proposta, ou a contar do fato gerador anterior, no caso dos reajustes seguintes, com base no Índice Nacional de Preços ao Consumidor Amplo (IPCA) ou índice que venha a substituí-lo.
+
+11. VALOR MÁXIMO ESTIMADO DA CONTRATAÇÃO
+
+11.1. O valor máximo estimado para os serviços a serem reembolsados à contratada, incluindo transporte aéreo, despesas de hospedagem, locação de veículos, reserva de locais para eventos e demais serviços de viagem para o período de vigência de 30 (trinta) meses, está discriminado na tabela a seguir:
+Quantidade Estimada Valor Máximo
+Serviços de Viagens do Sistema BNDES
+(30 meses) Estimado
+Emissão de bilhetes aéreos nacionais 27.003 R$ 60.085.542,70
+Reserva de hotéis no Brasil 16.583 R$ 14.922.928,28
+Locação de veículos no Brasil 1.485 R$ 1.840.776,22
+Solicitação de reembolso de bilhetes aéreos
+
+4.208 - nacionais
+Emissão de bilhetes rodoviários nacionais 13 R$ 3.378,83
+Emissão de apólice de assistência de viagem
+
+3 R$ 437.895,50 nacional (coletiva ou individual)
+TOTAL NACIONAL 49.295 R$ 77.290.521,53
+Emissão de bilhetes aéreos internacionais 558 R$ 9.223.755,28
+Locação de veículos no exterior 13 R$ 15.494,75
+Emissão de bilhetes ferroviários internacionais 13 R$ 8.109,18
+Reserva de hotéis no exterior 63 R$ 162.183,52
+Solicitação de reembolso de bilhetes aéreos
+
+55 - internacionais
+Emissão de apólice de assistência de viagem 538 R$ 67.949,02
+Assistência e assessoria a Viajantes VIP 5 R$ -
+TOTAL INTERNACIONAL 1.245 R$ 9.477.491,75
+TOTAL FRETAMENTO + EVENTOS 78 R$ 653.681,80
+TOTAL SISTEMA BNDES 50.618 R$ 87.421.695,08
+
+11.2. O valor máximo estimado para remuneração à contratada, com base na taxa de transação máxima, multiplicado pela quantidade de transações estimadas para o período de vigência de 30 (trinta) meses, é de até:
+Quantidade Estimada de Serviços de Gerenciamento de Viagens, incluindo
+Taxa de Transação Transações em 30 ferramenta OBT
+(A) meses
+(= A * B) (B)
+R$ 4,04 50.618 R$ 204.496,72
+
+11.3. Portanto, o valor máximo estimado para esta licitação, no período de vigência de 30 (trinta) meses, é de até R$ 87.626.191,80 (oitenta e sete milhões, seiscentos e vinte e seis mil, cento e noventa e um reais e oitenta centavos), conforme resumido na tabela a seguir:
+Serviços Valores
+I. TAXA DE TRANSAÇÃO R$ 204.496,72
+II. REEMBOLSO R$ 87.421.695,08
+TOTAL R$ 87.626.191,80
+Neste valor está incluso o pagamento estimado dos serviços solicitados (passagens, diárias de hotel, locação de automóveis etc.), no montante de R$ 87.421.695,08 (oitenta e sete milhões, quatrocentos e vinte e um mil, seiscentos e noventa e cinco reais e oito centavos).
+
+11.4. Para fins de composição do Valor Global da Proposta a ser registrado no Portal de Compras do Governo Federal, os Licitantes devem realizar os lances pelo valor unitário da taxa de transação, conforme Erro! Fonte de referência não encontrada..
+
+12. EXIGÊNCIAS PARA O EDITAL
+
+12.1. Condições de aceitabilidade da proposta:
+
+12.1.1. Não serão aceitas taxas superiores ao valor estimado pelo BNDES e divulgado no edital;
+
+12.1.2. Não serão aceitas taxas de transação negativas.
+
+12.1.3. Os Licitantes deverão preencher as planilhas conforme modelos constantes do Erro! Fonte de referência não encontrada. deste Termo de Referência.
+
+12.2. Documentos de Habilitação:
+
+12.2.1. Qualificação Econômico-Financeira
+
+12.2.1.1. Os Licitantes deverão comprovar que detêm Capital Circulante Líquido (CCL) ou Capital de Giro (Ativo Circulante – Passivo Circulante) igual ou superior ao valor de R$ 5.841.746,12 (cinco milhões, oitocentos e quarenta e um mil, setecentos e quarenta e seis reais e doze centavos), a ser comprovado pelas informações contábeis apresentadas pelo Licitante na forma da lei; e
+
+12.2.1.2. Patrimônio Líquido igual ou superior a 10% (dez por cento) do valor anual estimado da contratação, correspondente a R$ 3.505.047,67 (três milhões, quinhentos e cinco mil, quarenta e sete reais e sessenta e sete centavos, a ser comprovado pelas informações contábeis apresentadas pelo Licitante na forma da lei.
+
+12.2.2. Qualificação Técnica
+
+12.2.2.1. Comprovante de registro no CADASTUR (MINISTÉRIO DO TURISMO).
+
+12.2.2.2. Atestado(s) de capacidade técnica, expedido por pessoa jurídica de direito público ou privado, que comprove que o Licitante desempenha ou já desempenhou, de forma satisfatória, atividade compatível em características, quantidades e prazos com o objeto da licitação, devendo o documento conter o nome, o endereço, e-mail e o telefone de contato do atestador, ou qualquer outra forma de que o BNDES possa valer-se para manter contato com a empresa declarante.
+
+12.2.2.2.1. Será necessário para ser considerada atestada a capacidade do Licitante a comprovação da realização satisfatória de, no mínimo, 10.000 (dez mil) transações anuais referentes aos serviços de gestão de viagens corporativas, incluindo fornecimento de OBT, em um período de 12 (doze) meses.
+
+12.2.2.2.1.1. Não será(ão) considerado(s) atestado(s) cujo objeto de gerenciamento de viagens tenha sido executado por sociedade(s) subcontratada(s).
+
+12.2.2.2.2. A totalidade das transações deve ter sido executada de forma contínua ao longo de 12 (doze) meses. Não serão aceitos para a composição desse quantitativo de serviços prestados de forma pontual, em períodos específicos ou inferiores a esse intervalo.
+
+12.2.2.2.3. Para fins de comprovação da quantidade exigida, não será admitido o
+somatório de
+atestados/certidões/declarações em conformidade com os prazos descritos acima.
+
+12.2.2.2.4. O(s) atestado(s) / certidão(ões) / declaração(ões) devem ser passíveis de comprovação por documentos fiscais válidos e/ou outros documentos, os quais poderão ser solicitados em fase de habilitação ou qualquer fase posterior do processo licitatório.
+
+12.3. 22 Teste de Amostra
+
+12.3.1. Após aprovação da documentação de habilitação, o Licitante ofertante do melhor lance deverá apresentar amostra da FERRAMENTA OBT ofertada em sessão pública de amostra, a ser realizada no prazo de até 5 (cinco) dias úteis, a partir da convocação do BNDES. Tal prazo poderá ser estendido, a critério do BNDES.
+
+12.3.1.1. Caso haja empate na oferta do melhor lance, o Licitante convocado será aquele selecionado de acordo com os critérios estabelecidos no item 18.
+
+12.3.2. Os Testes de Amostra deverão observar os itens discriminados no Erro! Fonte de referência não encontrada. a este Termo de Referência, sendo possível a solicitação, pela Equipe Técnica, da demonstração na sessão de amostra de outros requisitos previstos no Erro! Fonte de referência não encontrada., bem como Erro! Fonte de referência não encontrada.; Erro! Fonte de referência não encontrada.; e Erro! Fonte de referência não encontrada. a este Termo de Referência.
+
+12.3.3. Para fins de aprovação da amostra, deverá ser demonstrado o atendimento de 100% dos itens indicados.
+
+12.3.4. Preparação para Fase de Testes de Amostra: Após a convocação do BNDES, o Licitante deverá preparar todos os componentes da FERRAMENTA OBT ofertada.
+
+12.3.4.1. Durante a preparação, o Licitante poderá ter suas dúvidas dirimidas pelo e-mail gvig@bndes.gov.br.
+
+12.3.5. Para fins de realização dos testes, o Licitante deverá utilizar a mesma versão da FERRAMENTA OBT a ser fornecida como objeto do contrato, incluindo quaisquer customizações que já tenham sido desenvolvidas, no mesmo ambiente (web/mobile/PWA) de operação da ferramenta.
+
+12.3.6. Em virtude do caráter público da licitação, notadamente da sessão pública de amostra, a participação no certame implicará concordância na divulgação a qualquer interessado dos testes e dos registros/comprovações dos testes realizados.
+
+12.3.7. Os testes de amostra acontecerão em dias de expediente no BNDES, em data e hora a serem oportunamente divulgadas, sendo concedido o livre acompanhamento pelos interessados.
+
+12.3.8. Os testes de amostra poderão ser realizados presencialmente, nas instalações do BNDES no Rio de Janeiro, ou remotamente, por meio de plataforma de videoconferência a ser disponibilizada pelo BNDES.
+
+12.3.8.1. No caso de os testes de amostra serem executados de maneira remota, o BNDES enviará as instruções de acesso à referida plataforma de videoconferência que terá recurso de compartilhamento de tela, a ser utilizado pelo Licitante a fim de permitir o acompanhamento da demonstração pelos demais participantes da reunião.
+
+12.3.8.2. Todas as despesas de participação/acompanhamento são de responsabilidade dos licitantes.
+
+12.3.9. Os Testes de Amostra serão executados ao longo de um período de até 2 (dois) dias úteis, após a sua fase de Preparação, podendo ser estendido, a critério do BNDES.
+
+12.3.10. A ausência de representante do Licitante no Teste de Amostra será motivo de desclassificação da proposta.
+
+12.3.11. Avaliada a amostra, a Equipe Técnica emitirá, em até 5 (cinco) dias úteis a contar da data de encerramento da respectiva sessão, parecer de avaliação de amostra, o qual concluirá, justificadamente, pela necessidade de correções e/ou ajustes, reprovação ou aprovação da amostra.
+
+12.3.12. Havendo necessidade de correções e/ou ajustes, o Licitante ofertante do melhor lance será convocado para, em até 3 (três) dias úteis, a contar da convocação, prorrogáveis a critério do BNDES, apresentar nova amostra devidamente ajustada, a qual será avaliada, observado o disposto acima.
+
+12.3.13. A reprovação da amostra acarretará a rejeição da proposta, sendo convocado o próximo licitante, segundo a ordem de classificação no certame.
+
+12.3.14. A aprovação da amostra não isenta a CONTRATADA do atendimento integral de todos os requisitos previstos no Termo de Referência.
+
+12.3.14.1. Após a assinatura do contrato, e até o final do período de implantação previsto no item
+
+4.1.1, a CONTRATADA deverá efetivamente implantar todos os requisitos, sem exceção, sob pena de sofrer os ajustes de pagamento previstos no item 7.11, bem como as penalidades previstas no item 20.
+
+13. OBRIGAÇÕES DA CONTRATADA
+
+13.1. Caso seja identificada alguma inconformidade na documentação ou nas funcionalidades do sistema, a CONTRATADA terá até 15 (quinze) dias úteis para proceder com os ajustes solicitados e encaminhar para nova validação do BNDES;
+
+13.2. Manter, durante a vigência do Contrato, todas as condições exigidas na ocasião da contratação (habilitação e proposta), enviando, mensalmente e sempre que solicitado, as certidões que comprovem a regularidade perante todos os tributos, inclusive fiscais e parafiscais, previdenciários e encargos trabalhistas e demais exigências do Contrato;
+
+13.3. Observar todas as especificações técnicas exigidas neste TERMO DE REFERÊNCIA e descritas na Proposta apresentada;
+
+13.4. Manter sigilo relativamente ao objeto contratado, bem como sobre dados, documentos, especificações técnicas ou comerciais e demais informações, não tornadas públicas pelo Sistema BNDES, de que venha a ter conhecimento em virtude desta contratação, bem como a respeito da execução e resultados obtidos nesta prestação de serviços, inclusive após o término do prazo de vigência deste Contrato, sendo vedada a divulgação dos referidos resultados a terceiros em geral, e em especial a quaisquer meios de comunicação públicos e privados, salvo quando expressamente autorizado pelo Sistema BNDES;
+
+13.5. Obedecer, na execução dos serviços, as normas legais e regulamentares que disciplinam a requisição, compra e utilização de passagens aéreas, por parte das entidades integrantes da Administração Federal;
+
+13.6. Efetuar o fornecimento de qualquer passagem requisitada, dentro das condições e prazos estipulados pelo Sistema BNDES, ou comunicar, imediatamente, a eventual impossibilidade do pronto atendimento da requisição;
+
+13.7. Proceder à indicação formal em até 24 horas após a assinatura do Contrato de telefone para atendimento dos usuários dos serviços de viagem do Sistema BNDES, bem como o telefone de uso exclusivo para o público considerado VIP do Sistema BNDES. Em ambos os casos, os telefones deverão estar disponíveis 24 horas por dia, em todos os dias da semana, incluindo feriados;
+
+13.8. Fazer constar dos bilhetes de passagens, fornecidos ao Sistema BNDES, declaração do seguinte teor:
+TRANSPORTE A CUSTA DE RECURSOS PÚBLICOS, REEMBOLSÁVEL EXCLUSIVAMENTE AO REQUISITANTE COMPRADOR;
+
+13.9. Fazer constar nos bilhetes de passagens, emitidos para viagens do Presidente, Vice-Presidente e Diretores do Sistema BNDES a identificação de passageiro VIP “Very Important Passenger” e/ou PIP “Public Important Passenger”;
+
+13.10. Reembolsar os trechos requisitados e pagos à CONTRATADA e não utilizados pelo Sistema BNDES mediante solicitação por escrito, em estrita conformidade com os regulamentos da empresa transportadora. É expressamente vedada à CONTRATADA a concessão de reembolso ao usuário da passagem. Deverá ser enviado ao Sistema BNDES comprovante de cobrança do reembolso que a CONTRATADA requisitar às empresas transportadoras;
+
+13.11. Apresentar, juntamente com faturas de hotéis, as notas fiscais de serviços relativas às diárias e, quando for o caso, com as taxas de serviço, devidamente aceitas pelos empregados em viagem;
+
+13.12. Fazer constar, nas faturas apresentadas ao Sistema BNDES, o número da OCS e a indicação da conta bancária da CONTRATADA, sempre na cidade do Rio de Janeiro, na qual deverão ser efetuados os respectivos pagamentos;
+
+13.13. Utilizar, sempre que houver disponibilidade, a menor tarifa, independente da empresa fornecedora do serviço, para os serviços prestados ao Sistema BNDES, de acordo com os normativos de viagens do Sistema BNDES, disponibilizando a consulta de preços por meio eletrônico na própria ferramenta de autoagendamento (self-booking) ou, se necessário, em formato a ser definido pelo Sistema BNDES;
+
+13.14. Intermediar junto às companhias transportadoras, companhias locadoras e companhias de assistência viagem, os acordos comerciais de interesse do Sistema BNDES;
+
+13.15. Arcar com todo o custo operacional que se fizer necessário à perfeita execução dos serviços contratados;
+
+13.16. Aceitar, em todos os aspectos, a fiscalização por parte do Sistema BNDES dos serviços executados;
+
+13.17. Disponibilizar pessoal qualificado e em número suficiente para a execução dos serviços contratados;
+
+13.18. Apresentar, sempre que solicitado pelo BNDES, planilha de composição de custos, bem como quaisquer documentos exigidos a ela relacionados;
+
+13.19. Apresentar em até 30 dias corridos da assinatura do Contrato o registro no IATA, que deverá ser o único utilizado na emissão de bilhetes para as empresas do Sistema BNDES;
+
+13.19.1. Mediante justificativa, o Sistema BNDES poderá prorrogar o prazo mencionado no subitem 13.19;
+
+13.20. Apresentar, quando solicitado, documentos que comprovem, em montante financeiro e quantidade, o efetivo pagamento realizado pelas transações em nome do Sistema BNDES a companhias aéreas, hotéis, locadoras e quaisquer outras espécies de prestadores de serviços;
+
+13.21. A CONTRATADA deverá facultar ao Banco Central do Brasil o acesso aos contratos e aos acordos firmados para a prestação de serviços, à documentação e às informações referentes aos serviços prestados, aos dados armazenados e às informações sobre seus processamentos, às cópias de segurança dos dados e das informações, bem como aos códigos de acesso aos dados e às informações;
+
+13.22. A CONTRATADA deverá informar imediatamente o BNDES sobre eventuais limitações que possam afetar a prestação dos serviços ou o cumprimento da legislação e da regulamentação em vigor;
+
+13.23. A CONTRATADA deve possuir plano de continuidade, recuperação de desastres e contingência de negócio, que possa ser testado regularmente, objetivando a disponibilidade dos dados e serviços em caso de interrupção, bem como desenvolver e colocar em prática procedimentos de respostas a incidentes relacionados com os serviços, a ser apresentado ao BNDES em até 5 (cinco) dias úteis da contratação;
+
+13.24. A CONTRATADA deverá adotar medidas para adequação dos serviços em decorrência de determinação do Banco Central do Brasil;
+
+13.25. A CONTRATADA deverá no caso da decretação de regime de resolução do BNDES pelo Banco Central do Brasil:
+
+13.25.1. Conceder pleno e irrestrito acesso do responsável pelo regime de resolução aos contratos, aos acordos, à documentação e às informações referentes aos serviços prestados, aos dados armazenados e às informações sobre seus processamentos, às cópias de segurança dos dados e das informações, bem como aos códigos de acesso que estejam em seu poder.
+
+13.25.2. Notificar o responsável pelo regime de resolução sobre a intenção de interromper a prestação de serviços, com pelo menos trinta dias de antecedência da data prevista para a interrupção.
+
+13.26. Sob a ótica de Responsabilidade Socioambiental, a CONTRATADA deverá:
+
+13.26.1. Fornecer relatórios mensais detalhando a pegada de carbono gerada por viagem, para todas as viagens solicitadas pelo BNDES. O cálculo deverá seguir metodologias reconhecidas, como, por exemplo, a ISO 14064.
+
+14. OBRIGAÇÕES ESPECIAIS DO BNDES
+
+14.1. Além de outras obrigações estabelecidas neste Anexo, no Contrato ou nas leis vigentes, particularmente na Lei nº 13.303/2016, ou que entrarem em vigor, constituem obrigações do BNDES:
+
+14.1.1. comunicar à CONTRATADA a incidência de eventuais faltas disciplinares cometidas por seus profissionais e as medidas disciplinares a serem adotadas;
+
+14.1.2. comunicar imediatamente à CONTRATADA todo acidente que ocorrer com os profissionais (agentes de viagem e supervisores que permanecerão nas dependências do BNDES), no horário regulamentar, para que sejam tomadas as providências cabíveis no tocante a Lei de Acidentes do Trabalho; e
+
+14.1.3. disponibilizar, em suas dependências, local específico e infraestrutura básica necessária para os prepostos desempenharem suas funções.
+
+15. REUNIÃO PRELIMINAR
+
+15.1. O BNDES convocará a CONTRATADA, em até 15 (quinze) dias corridos antes da data marcada para o efetivo início dos trabalhos, a comparecer à reunião preliminar. Nesta reunião:
+
+15.1.1. o BNDES esclarecerá à CONTRATADA todas as dúvidas relativas à execução do objeto, disponibilizando eventuais documentos necessários ao início dos trabalhos;
+
+15.1.1.1. a CONTRATADA apresentará a comprovação da qualificação profissional dos profissionais designados como condição para a prestação dos serviços objeto do Contrato, o que se dará mediante a apresentação de cópia da carteira de trabalho e previdência social (CTPS) ou contrato de prestação de serviços;
+
+15.1.2. a CONTRATADA apresentará, no caso de substituição dos profissionais designados como condição à contratação, os documentos comprobatórios do perfil profissional exigidos no item 2.5, observando-se que o perfil do substituto deve ser do mesmo nível ou de nível superior ao do substituído;
+
+15.1.3. a CONTRATADA apresentará os termos de confidencialidade assinados pelos profissionais designados para a prestação de serviços, bem como por eventual(is) subcontratado(s) e seus respectivos profissionais;
+
+15.1.4. a CONTRATADA apresentará sua Política de Segurança da Informação vigente e um processo regular de levantamento de vulnerabilidades na infraestrutura de Tecnologia das Informação (TI) utilizada para a prestação dos serviços ao BNDES;
+
+15.1.5. a CONTRATADA apresentará declaração de que possui crédito perante no mínimo 3 companhias aéreas com rotas regulares (tais como: Azul, Gol e LATAM) e 5 (cinco) grandes redes de hotéis, tais como: Blue Tree, Atlântica, BHG, Transamérica e Accor;
+
+15.1.6. o BNDES informará a data de início efetivo da prestação dos serviços.
+
+16. RECEBIMENTO DO OBJETO
+
+16.1. O BNDES efetuará o recebimento do objeto, através do Gestor indicado no Contrato, observadas as condições e os procedimentos a seguir.
+
+16.2. Após a finalização da implantação da FERRAMENTA OBT com as funcionalidades exigidas por parte do BNDES, será emitido até 10 (dez) dias a o Termo de Recebimento Definitivo da Implantação pelo BNDES.
+
+16.3. O objeto da prestação de serviço mensal será recebido, quando da respectiva execução, após verificação de sua conformidade com as especificações, condições e obrigações previstas no Contrato e em seus Anexos, sendo observado que o recebimento do objeto:
+
+16.3.1. constitui condição indispensável para o pagamento;
+
+16.3.2. não exclui a responsabilidade da CONTRATADA por vícios revelados posteriormente, nem pela garantia dos serviços realizados; e
+
+16.3.3. não exclui a responsabilidade ético-profissional pela perfeita execução contratual, dentro dos limites estabelecidos pela lei ou pelo Contrato.
+
+17. PRAZO DE VIGÊNCIA DO CONTRATO
+
+17.1. A vigência do Contrato será de 30 (trinta) meses, a contar do início da prestação de serviços de viagem, podendo ser prorrogado, a critério do BNDES e com a concordância da CONTRATADA, por períodos sucessivos, até o limite máximo de 120 (cento e vinte) meses, nos termos do art. 71, inciso II, da lei
+
+13.303/2016 e do art. 104, inciso I, da Resolução CA nº 02/2025 – BNDES.
+
+18. CRITÉRIO DE JULGAMENTO E MODO DE DISPUTA
+
+18.1. O critério de julgamento adotado será a verificação do menor valor unitário proposto para a Taxa de Transação, conforme modelo de proposta (Erro! Fonte de referência não encontrada.).
+
+18.1.1. Não serão aceitos valores negativos para taxa de transação.
+
+18.1.2. No caso de propostas de taxa de transação com valores iguais serão observados os critérios de desempate estabelecidos no artigo 42-A do Regulamento de Licitações e Contratos do BNDES.
+
+18.2. O modo de disputa de lances será aberto e fechado.
+
+19. TRANSIÇÃO DE SERVIÇO ENTRE AS AGÊNCIAS CONTRATADAS
+
+19.1. Com o intuito de realizar a transição de prestação de serviço entre a agência contratada anteriormente e a atual CONTRATADA, objeto deste Termo de Referência, de forma gradual, poderá ser realizado a critério do BNDES migração escalonada para a produção (piloto) restrito a uma parcela de empregados com duração a ser definida, com vistas a validação paulatina da funcionalidade do sistema e atendimento. Após este período, a nova CONTRATADA deverá assumir integralmente a prestação do serviço.
+
+20. PENALIDADES
+
+20.1. Na hipótese de descumprimento parcial ou total, pela CONTRATADA, das obrigações contratuais assumidas, caberá, de acordo com o tipo e gravidade da infração, a aplicação das seguintes penalidades:
+
+20.1.1. Advertência;
+
+20.1.2. Multa de até 10% (dez por cento), apurada de acordo com a gravidade da infração, incidente sobre:
+
+20.1.2.1. o valor da respectiva fatura, na hipótese em que o descumprimento dos níveis de serviços previstos no item 7 ultrapassar os limites de ajuste de pagamento nele estabelecido;
+
+20.1.2.2. o valor global do Contrato, nas demais hipóteses de descumprimento de quaisquer obrigações contratuais não abrangidas pela alínea anterior;
+
+20.1.3. Suspensão temporária de participação em licitação e impedimento de contratar com o BNDES, por prazo não superior a 2 (dois) anos, apurado em razão da natureza e gravidade da infração cometida.
+
+21. GARANTIA CONTRATUAL
+
+21.1. A CONTRATADA deverá apresentar, no prazo de até 10 (dez) dias úteis, contados de sua convocação pelo Gestor, garantia contratual, em valor correspondente a 5% (cinco por cento) do valor do Contrato, com prazo de validade de até 90 (noventa) dias, contados da data de encerramento do Contrato.
+
+22. SUBCONTRATAÇÃO
+
+22.1. É admitida a subcontratação da(s) parcela(s) do objeto contratual referente(s):
+
+22.1.1. aos serviços de implantação, configuração, customização, suporte técnico, manutenção e treinamento da FERRAMENTA OBT; e
+
+22.1.2. aos serviços diversos para realização de eventos e reuniões do BNDES no Brasil e exterior.
+
+22.2. Na hipótese de subcontratação, devem ser observados os seguintes requisitos:
+
+22.2.1. notificação prévia e anuência do BNDES; e
+
+22.2.2. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência, cabendo à CONTRATADA apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios relativos ao(s) subcontratado(s) e seus profissionais.
+
+22.3. Caso a CONTRATADA opte por subcontratar quaisquer das parcelas mencionadas acima, permanecerá como responsável perante o BNDES pela adequada execução do objeto contratual como um todo, sujeitando-se, inclusive, às penalidades previstas neste Contrato, na hipótese de não cumprir as obrigações ora pactuadas, ainda que por culpa da sociedade subcontratada.
+
+22.4. O BNDES não efetuará pagamento diretamente em favor do(s) subcontratado(s).
+
+ANEXO III – MINUTA DE CONTRATO
+CONTRATO OCS Nº ___/___
+CONTRATO SAP Nº _____
+CONTRATO DE PRESTAÇÃO DE SERVIÇOS QUE ENTRE SI
+CELEBRAM O BANCO NACIONAL DE DESENVOLVIMENTO ECONÔMICO E SOCIAL – BNDES E _____, NA FORMA ABAIXO:
+O BANCO NACIONAL DE DESENVOLVIMENTO ECONÔMICO E SOCIAL – BNDES, empresa pública federal, com sede em Brasília - DF e serviços no Rio de Janeiro – RJ, na Av. República do Chile, n° 100, CEP nº 20.031-917, inscrito no Cadastro Nacional de Pessoas Jurídicas sob o n° 33.657.248/0001-89, doravante denominado simplesmente BNDES, neste ato representado na forma do seu Estatuto Social; e _____, [com sede em ____], [inscrito(a) no Cadastro Nacional de Pessoas Jurídicas sob o nº ___], doravante denominado(a) simplesmente CONTRATADO, neste ato representado na forma de seus atos constitutivos, em conformidade com o procedimento do Pregão Eletrônico nº 31/2026 - BNDES, autorizado em 22/10/2026, por intermédio da IP ASN/DEPAD nº 026/2026, de 16/09/2026, conforme previsão orçamentária sob as rubricas nº 3101.00.03.06 (Treinamento Centralizado – Hospedagem), 3101.00.03.08 (Treinamento Centralizado – Taxa de Transação Hospedagem), 3101.00.03.05 (Treinamento Centralizado – Passagens), 3101.00.03.07 (Treinamento Centralizado - Taxa de Transação Passagens), 3101.00.03.02 (Treinamento Centralizado – Locação), 3101.00.03.14 (Treinamento Centralizado – Taxa de Transação Locação), 3102.50.00.50 (Viagens no País – Hospedagem), 3102.50.00.62 (Taxa de Transação – Hospedagem), 3102.50.00.30 (Viagens no País – Locação de Veículo), 3102.50.00.60 (Taxa de Transação – Locação de Veículo), 3102.50.00.01 (Desp. Viagens no País - Passagens), 3102.50.00.61 (Taxa de Transação – Passagens), 3102.50.00.71 (Viagens no País – Taxa de Remarcação de Bilhete), 3101.00.03.61 (Treinamento no Exterior – Passagens), 3101.00.03.13 (Treinamento no Exterior –Taxa de Transação Passagem), 3101.00.03.65 (Treinamento no Exterior – Seguros), 3101.00.03.66 (Treinamento no Exterior – Taxa de Transação Seguro), 3101.80.00.20 (Congressos e Seminários), 3102.50.0.72 (Despesas Viagens - Nacionais), 3102.50.0.63 (Despesas Viagens Nacionais - Taxa de Transação), 3102.50.01.01 (Desp. Viagens no Exterior – Passagens), 3102.50.01.60 (Desp. Viagens no Exterior – Taxa de Transação Passagem), 3102.50.01.20 (Desp. Viagens no Exterior – Seguro de Viagem Internacional), 3102.50.01.12 (Desp. Viagens no Exterior – Taxa de Transação Seguro Viagem), 3101.80.00.30 (Concursos e Prêmios) e 3102.50.01.11 (Desp. Viagem Exterior – Diárias Dependent. Expatriados), observado o disposto na Lei nº 13.303/2016 e no Regulamento Licitações e Contratos do Sistema BNDES, têm, entre si, justo e contratado o que se contém nas Cláusulas seguintes:
+
+CLÁUSULA PRIMEIRA – OBJETO
+O presente Contrato tem por objeto a prestação de serviços de gerenciamento de viagens corporativas, incluindo fornecimento, implantação e suporte de ferramenta de auto agendamento em ambiente web e aplicativo móvel (Online Booking Tool - OBT), para atender às necessidades das empresas do SISTEMA BNDES (BNDES, BNDESPAR e FINAME), conforme especificações constantes do Termo de Referência (Anexo I do Edital do Pregão Eletrônico nº 31/2026 - BNDES) e da proposta apresentada pelo CONTRATADO, respectivamente, Anexos I e II deste Contrato.
+
+CLÁUSULA SEGUNDA – VIGÊNCIA
+O presente Contrato terá duração de 30 (trinta) meses, a contar da data de sua assinatura, podendo ser prorrogado, mediante aditivo, por períodos sucessivos, até o limite total de 60 (sessenta) meses
+
+Parágrafo Primeiro
+O CONTRATADO deverá, no prazo de até 5 (cinco) dias úteis, contados da notificação do Gestor do Contrato, apresentar, por intermédio do seu Representante Legal, sua manifestação sobre a prorrogação do Contrato.
+
+Parágrafo Segundo
+Independente da notificação do parágrafo anterior, o CONTRATADO deverá comunicar ao Gestor seu interesse quanto à prorrogação do contrato até 90 (noventa) dias antes do término de cada período de vigência contratual.
+
+Parágrafo Terceiro
+A formalização da prorrogação será efetuada por meio de aditivo epistolar, dispensando-se a assinatura do CONTRATADO
+
+Parágrafo Quarto
+Caso o CONTRATADO se recuse a celebrar aditivo contratual de prorrogação, tendo antes manifestado sua intenção de prorrogar o Contrato ou deixado de manifestar seu propósito de não prorrogar, nos termos do Parágrafo Primeiro desta Cláusula, ficará sujeito às penalidades previstas na Cláusula de Penalidades deste Contrato.
+
+Parágrafo Quinto
+Após 60 (sessenta) meses de vigência do Contrato, caso seja configurada a hipótese prevista no inciso II do art. 71 da Lei nº 13.303/2016 ou no inciso I do art. 104 da RES CA nº 02/2025 – BNDES (Regulamento de Licitações e Contratos do Sistema BNDES), o BNDES poderá, de forma devidamente justificada, prorrogar a vigência do Contrato por até mais
+
+60 (sessenta) meses, mediante a concordância do Contratado.
+
+CLÁUSULA TERCEIRA – LOCAL, PRAZO E CONDIÇÕES DE EXECUÇÃO DO OBJETO
+A execução do objeto contratado respeitará as especificações constantes do Termo de Referência (Anexo I deste Contrato) e da proposta apresentada pelo CONTRATADO, respectivamente, Anexos I e II deste Contrato.
+
+CLÁUSULA QUARTA – NÍVEIS DE SERVIÇO
+Os serviços contratados deverão ser executados de acordo com os padrões de qualidade, disponibilidade e desempenho estipulados pelo BNDES, observados os níveis de serviço descritos no Anexo I (Termo de Referência) deste Contrato.
+
+Parágrafo Único
+O descumprimento dos níveis de serviço acarretará a aplicação dos índices de redução do preço previstos no Anexo I (Termo de Referência) deste Contrato, sem prejuízo da aplicação das penalidades previstas neste Contrato, quando cabíveis.
+
+CLÁUSULA QUINTA – RECEBIMENTO DO OBJETO
+O BNDES efetuará o recebimento do objeto, através do Gestor, mencionado na Cláusula de Obrigações do BNDES deste Contrato, observado o disposto no Anexo I (Termo de Referência) deste Contrato.
+
+CLÁUSULA SEXTA – PREÇO
+O BNDES pagará ao CONTRATADO, pela execução do objeto contratado, o valor de até R$ ___ (___), conforme proposta apresentada (Anexo II deste Contrato), observado o disposto na Cláusula de Pagamento deste Instrumento.
+
+Parágrafo Primeiro
+No valor ajustado no caput desta Cláusula estão incluídos todos os insumos, encargos trabalhistas e tributos, inclusive contribuições fiscais e parafiscais, bem como quaisquer outras despesas necessárias à execução deste Contrato.
+
+Parágrafo Segundo
+Na hipótese de o objeto ser, a critério do BNDES, parcialmente executado e recebido, os valores previstos nesta
+
+Cláusula serão proporcionalmente reduzidos, sem prejuízo da aplicação das penalidades cabíveis.
+
+Parágrafo Terceiro
+Caso o BNDES não demande o total do objeto previsto neste Contrato, não será devida indenização ao CONTRATADO.
+
+Parágrafo Quarto
+O CONTRATADO deverá arcar com os ônus decorrentes de eventual equívoco no dimensionamento dos quantitativos de sua proposta, devendo complementá-los, caso os quantitativos previstos inicialmente em sua proposta não sejam satisfatórios para o atendimento ao objeto deste Contrato.
+
+CLÁUSULA SÉTIMA – PAGAMENTO
+O BNDES efetuará o pagamento referente ao objeto deste Contrato por meio de crédito em conta bancária, em até 10 (dez) dias úteis a contar da data de apresentação do documento fiscal ou equivalente legal (prioritariamente nota fiscal, e nos casos de dispensa desta: fatura, recibo de pagamento a autônomo), desde que tenha sido efetuado ateste pelo Gestor do Contrato das obrigações contratuais assumidas pelo CONTRATADO, observado o disposto no Anexo I (Termo de Referência) deste Instrumento.
+
+Parágrafo Primeiro
+O documento fiscal ou equivalente legal deverá ser apresentado ao BNDES no mês de sua emissão e até o dia 25 (vinte e cinco) do mesmo – ou data anterior que viabilize o tempestivo recolhimento dos tributos, se a legislação tributária assim exigir – possibilitando o cumprimento, pelo BNDES, das obrigações fiscais principais e acessórias decorrentes deste Contrato. Havendo impedimento legal para o cumprimento desse prazo, o documento fiscal ou equivalente legal deverá ser apresentado até o primeiro dia útil do mês seguinte da prestação do serviço/fornecimento do bem.
+
+Parágrafo Segundo
+A apresentação do documento de cobrança fora do prazo previsto nesta cláusula poderá implicar em sua rejeição e no direito do BNDES se ressarcir, preferencialmente, mediante desconto do valor a ser pago ao CONTRATADO, por qualquer penalidade tributária incidente pelo atraso.
+
+Parágrafo Terceiro
+O primeiro documento fiscal ou equivalente legal terá como objeto de cobrança o período compreendido entre o dia de início da prestação dos serviços e o último dia desse mês, e os documentos fiscais ou equivalentes legais subsequentes terão como referência o período compreendido entre o primeiro e o último dia de cada mês. O último documento fiscal ou equivalente legal, por seu turno, referir-se-á ao período compreendido entre o primeiro dia do último mês da prestação dos serviços e o último dia de serviço prestado. Em todos os casos, o documento fiscal ou equivalente legal só poderá ser emitido e apresentado ao BNDES após a efetiva prestação do serviço, respeitado o disposto no Parágrafo anterior.
+
+Parágrafo Quarto
+Para toda efetivação de pagamento, o Contratado deverá protocolar o documento fiscal ou equivalente em meio digital em sistema eletrônico próprio do BNDES, observadas as orientações vigentes do Contratante. Documentos em meio físico não serão aceitos, salvo previsão expressa no instrumento convocatório ou no Contrato.
+
+Parágrafo Quinto
+O BNDES não efetuará pagamento diretamente em favor do(s) Subcontratado(s), salvo nas hipóteses legalmente previstas.
+
+Parágrafo Sexto
+O documento fiscal ou equivalente legal deverá respeitar a legislação tributária e conter, minimamente, as seguintes informações:
+I. número da Ordem de Compra/Serviço – OCS ou número SAP do Contrato;
+II. número do pedido SAP, a ser informado pelo Gestor do Contrato;
+III. número da Folha de Registro de Serviços (FRS), a ser informado pelo Gestor do Contrato;
+IV. descrição detalhada do objeto executado e dos respectivos valores;
+V. período de referência da execução do objeto;
+VI. nome e número do CNPJ do CONTRATADO, cuja regularidade fiscal tenha sido avaliada na fase de habilitação, bem como o número de inscrição na Fazenda Municipal e/ou Estadual, conforme o caso;
+VII. nome e número do banco e da agência, bem como o número da conta corrente do CONTRATADO, vinculada ao CNPJ constante do documento fiscal ou equivalente legal, com respectivos dígitos verificadores;
+VIII. tomador do serviço: Banco Nacional de Desenvolvimento Econômico e Social – BNDES;
+IX. CNPJ do tomador do serviço: 33.657.248/0001-89;
+X. local de execução do objeto, emitindo-se um documento fiscal ou equivalente legal para cada Município em que o serviço seja prestado, se for o caso;
+XI. código do serviço, nos termos da legislação vigente, em concordância com as informações inseridas na Declaração de Informações para Fornecimento - DIF;
+XII. número de inscrição do contribuinte individual válido junto ao INSS (NIT ou PIS/PASEP); e
+XIII. destaque das retenções tributárias aplicáveis, conforme estabelecido na DIF.
+
+Parágrafo Sétimo
+Os pagamentos a serem efetuados em favor do CONTRATADO estarão sujeitos, no que couber, às retenções de tributos, nos termos da legislação tributária e com base nas informações prestadas pelo CONTRATADO. Em casos de dispensa ou benefício fiscal que implique em redução ou eliminação da retenção de tributos, o CONTRATADO fornecerá todos os documentos comprobatórios.
+
+Parágrafo Oitavo
+O documento fiscal ou equivalente legal emitido pelo CONTRATADO deverá estar em conformidade com a legislação tributária onde o CONTRATADO esteja estabelecido, cuja regularidade fiscal foi avaliada na etapa de habilitação, e com as normas regulamentares aprovadas pela Secretaria da Receita Federal do Brasil, especialmente no que tange à retenção de tributos, sob pena de devolução do documento e interrupção do prazo para pagamento.
+
+Parágrafo Nono
+Ao documento fiscal ou equivalente legal deverão ser anexados:
+I. declaração assinada por um representante legal de que o CONTRATADO é optante do Simples Nacional, se for o caso;
+II. em caso de isenção/imunidade tributária, documentos comprobatórios com a indicação do dispositivo legal que ampara a isenção/imunidade; e
+III. demais documentos solicitados pelo Gestor do Contrato, necessários ao pagamento do objeto contratado;
+
+Parágrafo Décimo
+Caso sejam verificadas divergências, o BNDES devolverá o documento fiscal ou equivalente legal ao CONTRATADO ou solicitará a emissão de carta de correção, quando cabível, interrompendo-se o prazo de pagamento até que este providencie as medidas saneadoras ou comprove a correção dos dados contestados pelo BNDES.
+
+Parágrafo Décimo Primeiro
+Além de outras hipóteses previstas em lei ou no Contrato, o BNDES poderá descontar, do montante expresso no documento fiscal ou equivalente legal, os valores referentes a multas, indenizações apuradas em processo administrativo, bem como qualquer obrigação que decorra do descumprimento da legislação pelo CONTRATADO.
+
+Parágrafo Décimo Segundo
+Caso o BNDES não efetue o pagamento na forma prevista nesta Cláusula, em decorrência de fato não atribuível ao CONTRATADO, aos valores devidos serão acrescidos juros de mora de 0,5% (meio por cento) ao mês, pro rata tempore, calculados desde o dia do vencimento até a data da efetiva liquidação.
+
+Parágrafo Décimo Terceiro
+Fica assegurado ao BNDES o direito de deduzir do pagamento devido ao CONTRATADO, por força deste Contrato ou de outro contrato mantido com o BNDES, o valor correspondente aos pagamentos efetuados a maior ou em duplicidade.
+
+CLÁUSULA OITAVA – EQUILÍBRIO ECONÔMICO-FINANCEIRO DO CONTRATO
+O BNDES e o CONTRATADO têm direito ao equilíbrio econômico-financeiro do Contrato, em consonância com o inciso XXI, do artigo 37, da Constituição Federal, a ser realizado mediante reajuste ou revisão de preços.
+
+Parágrafo Primeiro
+O reajuste de preços, na forma prevista na legislação, poderá ser requerido pelo CONTRATADO a cada período de 12 (doze) meses, sendo o primeiro contado do dia ___/___/___, data de apresentação da proposta (Anexo II deste Contrato), e os seguintes, do fato gerador anterior, adotando-se para tanto a aplicação do Índice Nacional de Preços ao Consumidor Amplo (IPCA) ou índice que venha a substituí-lo, sobre o preço referido na Cláusula de Preço deste Instrumento.
+
+Parágrafo Segundo
+A revisão de preços poderá ser realizada por iniciativa do BNDES ou mediante solicitação do CONTRATADO, quando ocorrer fato imprevisível ou previsível, porém, de consequências incalculáveis, retardador ou impeditivo da execução do Contrato, ou ainda em caso de força maior, caso fortuito ou fato do príncipe, configurando álea econômica extraordinária e extracontratual, que onere ou desonere as obrigações pactuadas no presente Instrumento, sendo, porém, vedada nas hipóteses em que o risco seja alocado ao CONTRATADO nos termos da Cláusula de Matriz de Riscos, respeitando-se o seguinte:
+I. o CONTRATADO deverá formular ao BNDES requerimento para a revisão do Contrato, comprovando a ocorrência do fato gerador;
+II. a comprovação será realizada por meio de documentos, tais como, atos normativos que criem ou alterem tributos, lista de preço de fabricantes, notas fiscais de aquisição de matérias-primas, de transporte de mercadorias, alusivas à época da elaboração da proposta ou do último reajuste e do momento do pedido de revisão; e
+III. com o requerimento, o CONTRATADO deverá apresentar planilhas de custos unitários, comparativas entre a data da formulação da proposta ou do último reajuste e o momento do pedido de revisão, contemplando os custos unitários envolvidos e evidenciando o quanto o aumento de preços ocorrido repercute no valor pactuado.
+
+Parágrafo Terceiro
+Independentemente de solicitação, o BNDES poderá convocar o CONTRATADO para negociar a redução dos preços, mantendo o mesmo objeto contratado, na quantidade e nas especificações indicadas na proposta, em virtude da redução dos preços de mercado, ou de itens que compõem o custo, cabendo ao CONTRATADO apresentar as informações solicitadas pelo BNDES.
+
+Parágrafo Quarto
+O CONTRATADO deverá solicitar o reajuste e/ou a revisão de preços até a prorrogação ou o encerramento do Contrato, hipótese em que os efeitos financeiros serão concedidos de modo retroativo a partir do fato gerador, observando-se, ainda, que:
+I. caso o fato gerador do reajuste e/ou da revisão de preços ou a divulgação do índice de reajuste ocorra com antecedência inferior a 60 (sessenta) dias da prorrogação ou do encerramento do Contrato, o CONTRATADO terá o prazo de 60 (sessenta) dias, a contar do fato gerador ou da data de divulgação do índice, para solicitar o reajuste e/ou a revisão de preços;
+II. caso a assinatura do aditivo de prorrogação torne superveniente a ocorrência do fato gerador do reajuste, ou a divulgação do índice de reajuste ocorra após a prorrogação ou o encerramento do Contrato, o CONTRATADO terá o prazo de 60 (sessenta) dias, a contar do fato gerador ou da data de divulgação do índice, para solicitar o reajuste de preços;
+III. o BNDES deverá analisar o pedido de reajuste e/ou revisão de preços em até 60 (sessenta) dias, contados da solicitação e da entrega pelo CONTRATADO dos comprovantes de variação dos custos, ficando este prazo suspenso, a critério do BNDES, enquanto o CONTRATADO não apresentar a documentação solicitada para a comprovação da variação de custos; e
+IV. caso o CONTRATADO não solicite o reajuste e/ou revisão de preços nos prazos fixados acima, não fará jus aos efeitos retroativos ou, caso o Contrato esteja encerrado, operar-se-á a renúncia a eventual direito ao reajuste e/ou à revisão.
+
+Parágrafo Quinto
+Se o processo de reajuste e/ou revisão de preços não for concluído até o vencimento do Contrato, e este for prorrogado, sua continuidade após o reequilíbrio econômico-financeiro ficará condicionada à manutenção da proposta do CONTRATADO como a condição mais vantajosa para o BNDES, podendo este:
+I. realizar negociação de preços junto ao CONTRATADO, de forma a viabilizar a continuidade do ajuste, quando os novos valores fixados após o reajuste e/ou a revisão de preços estiverem acima do patamar apurado no mercado; ou
+II. rescindir o Contrato, mediante aviso prévio ao CONTRATADO, com antecedência de 30 (trinta) dias, quando resultar infrutífera a negociação indicada no inciso anterior.
+
+Parágrafo Sexto
+Na ocorrência da hipótese prevista no inciso II do Parágrafo anterior, o CONTRATADO fará jus à integralidade dos valores apurados no processo de reajuste e/ou revisão de preços até o término do Contrato, não podendo, todavia, reclamar qualquer indenização em razão da rescisão do mesmo.
+
+CLÁUSULA NONA – MATRIZ DE RISCOS
+O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.
+
+Parágrafo Primeiro
+O reajuste de preço aludido na Matriz de Riscos deve respeitar o disposto na Cláusula de Equilíbrio EconômicoFinanceiro deste Contrato.
+
+Parágrafo Segundo
+É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.
+
+CLÁUSULA DÉCIMA – GARANTIA CONTRATUAL
+O CONTRATADO prestará, no prazo de até 10 (dez) dias úteis, contados da convocação, garantia contratual, sob pena de aplicação de penalidade nos termos deste Contrato, observadas as condições para sua aceitação estipuladas nos incisos abaixo, no valor de R$ ___ (___), que lhe será devolvida após a verificação do cumprimento fiel, correto e integral dos termos contratuais.
+I. Caução em dinheiro: deverá ser depositada em favor do BNDES, de acordo com as orientações que serão fornecidas quando da referida convocação;
+II. Seguro Garantia: a Apólice de Seguro deverá ser emitida por Instituição autorizada pela SUSEP a operar no mercado securitário, que não se encontre sob regime de Direção Fiscal, Intervenção, Liquidação Extrajudicial ou Fiscalização Especial, e que não esteja cumprindo penalidade de suspensão imposta pela SUSEP;
+a) O Instrumento de Apólice de Seguro deve prever expressamente:
+a.1) responsabilidade da seguradora por todas e quaisquer multas de caráter sancionatório aplicadas ao CONTRATADO; a.2) vigência pelo prazo contratual; a.3) prazo de 90 (noventa) dias, contados a partir do término da vigência contratual, para apuração de eventual inadimplemento do CONTRATADO - ocorrido durante a vigência contratual -, e para a comunicação da expectativa de sinistro ou do efetivo aviso de sinistro, observados os prazos prescricionais pertinentes.
+III. Fiança Bancária: a Carta de Fiança deverá ser emitida por Instituição Financeira autorizada pelo Banco Central do Brasil - BACEN para funcionar no Brasil e que não se encontre em processo de liquidação extrajudicial ou de intervenção do BACEN.
+a) O Instrumento de Fiança deve prever expressamente:
+a.1) renúncia expressa, pelo fiador, ao benefício de ordem disposto no artigo 827 do Código Civil; a.2) vigência pelo prazo contratual; a.3) prazo de 90 (noventa) dias, contados a partir do término da vigência contratual, para apuração de eventual inadimplemento do CONTRATADO - ocorrido durante a vigência contratual -, e para a comunicação do inadimplemento à Instituição Financeira, observados os prazos prescricionais pertinentes.
+
+Parágrafo Primeiro
+O prazo previsto para a apresentação da garantia poderá ser prorrogado, por igual período, quando solicitado pelo CONTRATADO durante o respectivo transcurso, e desde que ocorra motivo justificado e aceito pelo BNDES.
+
+Parágrafo Segundo
+Havendo majoração do preço contratado, decorrente de reajuste, repactuação ou revisão de preços causada por alterações na legislação tributária, fica dispensada a atualização da garantia, salvo se o valor da atualização for igual ou superior ao patamar referenciado no inciso II do artigo 91 do Regulamento de Licitações e Contratos do SISTEMA BNDES.
+
+Parágrafo Terceiro
+Nos demais casos que demandem a complementação ou renovação da garantia, tais como alteração do objeto (aditivo quantitativo ou qualitativo), prorrogação contratual, dentre outros, o CONTRATADO deverá providenciá-la no prazo estipulado pelo BNDES.
+
+Parágrafo Quarto
+Sempre que o contrato for garantido por fiança bancária ou seguro garantia, o CONTRATADO deve obter do garantidor anuência em relação à manutenção da garantia, no prazo de 10 (dez) dias úteis, a contar da assinatura do aditivo ou recebimento de carta de apostilamento ou aditivo epistolar, conforme o caso. Recusando-se o garantidor a manter a garantia, cabe ao CONTRATADO obter nova garantia no mesmo prazo, prorrogável por igual período a critério do
+
+Parágrafo Quinto
+A garantia contratual deverá cobrir:
+I. todas as obrigações decorrentes do objeto contratual, assim como eventuais danos decorrentes de seu descumprimento;
+II. todas as obrigações relacionadas ao objeto principal, ainda que decorrentes de sua manutenção e/ou refazimento, bem como das medidas necessárias à prevenção ordinária de sinistros, prejuízos e danos em geral;
+III. prejuízos decorrentes de atos de corrupção praticados sem participação dolosa do BNDES ou de seus representantes;
+IV. prejuízos diretos causados ao BNDES decorrentes de culpa ou dolo durante a execução do Contrato;
+V. multas moratórias e/ou punitivas aplicadas pelo BNDES ao CONTRATADO;
+VI. obrigações trabalhistas e previdenciárias de qualquer natureza, não adimplidas pelo CONTRATADO, quando o objeto contratual demandar cessão de mão de obra com dedicação exclusiva.
+
+Parágrafo Sexto
+Em caso de prorrogação da vigência ou alteração do objeto contratual, o CONTRATADO deverá notificar a entidade fiadora/seguradora, conforme o caso, no prazo de até 10 (dez) dias úteis, contados da formalização do respectivo Instrumento Contratual.
+
+Parágrafo Sétimo
+Por se tratar de garantia contratual prestada em benefício de uma Estatal, caso os documentos de caução, fiança ou seguro façam referência à Lei nº 8.666/1993 e/ou à Lei nº 14.133/2021, aplicam-se as disposições respectivas da Lei nº 13.303/2016, no que couber.
+
+CLÁUSULA DÉCIMA PRIMEIRA – OBRIGAÇÕES DO CONTRATADO
+Além de outras obrigações estabelecidas neste Instrumento, em seus anexos ou nas leis vigentes, particularmente na Lei nº 13.303/2016, ou que entrarem em vigor, constituem obrigações do CONTRATADO:
+I. manter durante a vigência deste Contrato todas as condições de habilitação e a ausência de impedimentos exigidas quando da contratação, comprovando-as sempre que solicitado pelo BNDES;
+II. comunicar a imposição de penalidade que acarrete o impedimento de contratar com o BNDES, bem como a eventual perda dos pressupostos para a licitação;
+III. reparar, corrigir, remover, reconstruir ou substituir, às suas expensas, no total ou em parte, o objeto do Contrato em que se verificarem vícios, defeitos ou incorreções decorrentes da execução ou de materiais empregados;
+IV. reparar todos os danos e prejuízos causados ao BNDES ou a terceiros, não restando excluída ou reduzida esta responsabilidade pela presença de fiscalização ou pelo acompanhamento da execução por parte do Gestor do Contrato;
+V. pagar todos os encargos e tributos, que incidam ou venham a incidir, direta ou indiretamente, sobre o objeto deste Contrato, podendo o BNDES, a qualquer momento, exigir do CONTRATADO a comprovação de sua regularidade;
+VI. assumir a responsabilidade integral por quaisquer ônus que venham a ser impostos ao BNDES em virtude de documento fiscal que seja emitido em desacordo com a legislação aplicável;
+VII. providenciar, perante a Receita Federal do Brasil - RFB, comprovando ao BNDES, sua exclusão obrigatória do Simples Nacional, no prazo estipulado pelo artigo 30 da Lei Complementar nº 123/2006, se o CONTRATADO, quando optante:
+a) extrapolar o limite de receita bruta anual previsto no artigo 3º da Lei Complementar nº 123/2006, ao longo da vigência deste Contrato; ou
+b) enquadrar-se em alguma das situações previstas no artigo 17 da Lei Complementar nº 123/2006;
+VIII. permitir vistorias e acompanhamento da execução do objeto pelo Gestor do Contrato;
+IX. obedecer às instruções e aos procedimentos, estabelecidos pelo BNDES, para a adequada execução do Contrato;
+X. designar 01 (um) preposto como responsável pelo Contrato firmado com o BNDES, para participar de eventuais reuniões e ser o interlocutor do CONTRATADO, zelando pelo fiel cumprimento das obrigações previstas neste Instrumento;
+XI. fornecer informações para o gerenciamento, por parte do BNDES, de riscos social, ambiental ou climático, relacionados ao objeto do contrato.
+XII. apresentar, em até 10 (dez) dias úteis após a convocação, a Declaração de Informações para Fornecimento - DIF, adequadamente preenchida, sob pena de instauração de procedimento punitivo para aplicação de penalidade, e de retenção tributária, pelo BNDES, nos casos previstos em lei, da alíquota que entender adequada;
+a) as informações inseridas na Declaração de Informações para Fornecimento – DIF não deverão divergir das constantes do documento fiscal ou equivalente legal;
+XIV. garantir que o objeto do Contrato não infringe quaisquer direitos autorais, patentes ou registros, inclusive marcas, know-how ou trade-secrets, sendo responsável pelos prejuízos, inclusive honorários de advogado, custas e despesas decorrentes de qualquer medida ou processo judicial ou administrativo iniciado em face do BNDES, por acusação da espécie, podendo o CONTRATADO ser instado a intervir no processo.
+
+CLÁUSULA DÉCIMA SEGUNDA – OBRIGAÇÕES TRABALHISTAS E PREVIDENCIÁRIAS DO CONTRATADO
+O CONTRATADO, sempre que for legalmente responsável, deverá cumprir todas as obrigações previdenciárias relativas aos profissionais designados para a prestação de serviço, bem como as obrigações trabalhistas, inclusive as decorrentes de normas coletivas de trabalho, quando mantiver vínculo de emprego com os mesmos, observando-se, neste caso, que o pagamento de salários e demais verbas passadas diretamente ao trabalhador seja realizado por depósito na conta bancária do empregado aberta pelo CONTRATADO para esse fim, em estabelecimento de crédito próximo ao local de trabalho, no prazo estabelecido pelo Gestor do Contrato.
+
+Parágrafo Primeiro
+Devem ser mantidos e atualizados pelo CONTRATADO, bem como exibidos por meio de cópias eletrônicas, sempre que solicitadas pelo BNDES, os registros, anotações e documentos que comprovem o cumprimento de suas obrigações trabalhistas e previdenciárias.
+
+Parágrafo Segundo
+Fica estabelecido que somente o CONTRATADO pode ser considerado, para todos os fins e efeitos jurídicos, como empregador dos profissionais alocados à prestação de serviço, sendo o responsável pelo cumprimento das obrigações trabalhistas e previdenciárias aplicáveis, cabendo-lhe reembolsar o BNDES ou suas subsidiárias de todas as despesas que estes tiverem, inclusive custas, emolumentos e honorários advocatícios, resultantes de sua condenação judicial a honrar obrigações trabalhistas ou previdenciárias, ou ainda a pagar indenizações decorrentes das relações de trabalho.
+
+CLÁUSULA DÉCIMA TERCEIRA – CONDUTA ÉTICA DO CONTRATADO E DO BNDES
+O CONTRATADO e o BNDES comprometem-se a manter a integridade nas relações público-privadas, agindo de boafé e de acordo com os princípios da moralidade administrativa e da impessoalidade, além de pautar sua conduta por preceitos éticos e, em especial, por sua responsabilidade socioambiental.
+
+Parágrafo Primeiro
+Em atendimento ao disposto no caput desta Cláusula, o CONTRATADO obriga-se, inclusive, a:
+I. não oferecer, prometer, dar, autorizar, solicitar ou aceitar, direta ou indiretamente, qualquer vantagem indevida, seja pecuniária ou de outra natureza, consistente em fraude, ato de corrupção ou qualquer outra violação de dever legal, relacionada com este Contrato, bem como a tomar todas as medidas ao seu alcance para impedir administradores, empregados, agentes, representantes, fornecedores, contratados ou subcontratados, seus ou de suas controladas, de fazê-lo;
+II. impedir o favorecimento ou a participação de empregado ou dirigente do Sistema BNDES (BNDES e suas subsidiárias) na execução do objeto do presente Contrato;
+III. providenciar para que não sejam alocados, na execução dos serviços, familiares de dirigente ou empregado do Sistema BNDES, considerando-se familiar o cônjuge, o companheiro ou o parente em linha reta ou colateral, por consanguinidade ou afinidade, até o terceiro grau;
+IV. observar a Política para Transações com Partes Relacionadas e o Código de Ética do Sistema BNDES vigentes ao tempo da contratação, bem como a Política Corporativa de Integridade do Sistema BNDES, assegurando-se de que seus representantes, administradores, todos os profissionais envolvidos na execução do objeto e eventuais subcontratados pautem seu comportamento e sua atuação pelos princípios neles constantes;
+V. adotar, na execução dos serviços, boas práticas de sustentabilidade ambiental, de otimização de recursos, de redução de desperdícios e de redução da poluição;
+VI. informar imediatamente ao BNDES a ocorrência de potencial situação de conflito de interesses, comunicando na mesma oportunidade as medidas que serão adotadas para o tratamento da questão; e
+VII. notificar imediatamente o BNDES sobre qualquer investigação ou procedimento iniciado por autoridade governamental relacionado à violação de Leis Anticorrupção (nacional ou estrangeira) e/ou de obrigações da empresa, de seus administradores, diretores, prepostos, empregados, representantes ou terceiros a seu serviço, incluindo subcontratados, referentes a este Contrato.
+
+Parágrafo Segundo
+O BNDES recomenda, ao CONTRATADO, considerar em suas práticas de gestão a implantação de programa de integridade estruturado, voltado à prevenção, detecção e remediação da ocorrência de fraudes e atos de corrupção.
+
+Parágrafo Terceiro
+Verificada uma das situações mencionadas nos incisos II e III do Parágrafo Primeiro desta Cláusula, compete ao CONTRATADO afastar imediatamente da execução do Contrato os agentes que impliquem a ocorrência dos impedimentos e favorecimentos aludidos, além de comunicar tal fato ao BNDES, sem prejuízo de apuração de sua responsabilidade, caso tenha agido de má-fé.
+
+Parágrafo Quarto
+O CONTRATADO declara ter conhecimento do Código de Ética do Sistema BNDES, bem como da Política Corporativa de Integridade do Sistema BNDES, que poderão ser consultados por intermédio do sítio eletrônico www.bndes.gov.br ou requisitados ao Gestor do Contrato.
+
+Parágrafo Quinto
+Eventuais irregularidades ou descumprimentos das normas internas do BNDES ou da legislação vigente podem ser
+denunciados à Ouvidoria por qualquer cidadão através dos seguintes canais: página na internet
+(www.bndes.gov.br/ouvidoria); correio (Caixa Postal 15054, CEP 20031-120, Rio de Janeiro – RJ); e telefone (0800 702 6307).
+
+CLÁUSULA DÉCIMA QUARTA – SIGILO DAS INFORMAÇÕES
+Cabe ao CONTRATADO cumprir as seguintes regras de sigilo e assegurar a aceitação e adesão às mesmas por profissionais que integrem ou venham a integrar a sua equipe na prestação do objeto deste Contrato, as quais perdurarão, inclusive, após a cessação do vínculo contratual e da prestação dos serviços:
+I. cumprir as diretrizes e normas da Política Corporativa de Segurança da Informação do BNDES, necessárias para assegurar a integridade e o sigilo das informações;
+II. não acessar informações sigilosas do BNDES, salvo quando previamente autorizado por escrito;
+III. sempre que tiver acesso às informações mencionadas no inciso anterior:
+a) manter sigilo dessas informações, não podendo copiá-las, reproduzi-las, retê-las ou praticar qualquer outra forma de uso que não seja imprescindível para a adequada prestação do objeto deste Contrato;
+b) limitar o acesso às informações aos profissionais envolvidos na prestação dos serviços objeto deste Contrato, os quais deverão estar cientes da natureza sigilosa das informações e das obrigações e responsabilidades decorrentes do uso dessas informações; e
+c) informar imediatamente ao BNDES qualquer violação das regras de sigilo ora estabelecidas que tenha ocorrido por sua ação ou omissão, independentemente da existência de dolo, bem como dos profissionais envolvidos, adotando todas as orientações do BNDES para remediar a violação;
+IV. entregar ao BNDES, ao término da vigência deste Contrato, todo e qualquer material de propriedade deste, inclusive notas pessoais envolvendo matéria sigilosa e registro de documentos de qualquer natureza que tenham sido criados, usados ou mantidos sob seu controle ou posse, assumindo o compromisso de não utilizar qualquer informação sigilosa a que teve acesso no âmbito deste Contrato;
+V. apresentar, antes do início da prestação dos serviços, Termos de Confidencialidade, conforme minuta constante do
+Anexo V (Minuta de Termo de Confidencialidade para Profissionais) deste Contrato, assinados pelos profissionais que
+acessarão informações sigilosas, devendo referida obrigação ser também cumprida por ocasião de substituição desses profissionais; e
+VI. observar o disposto no Termo de Confidencialidade assinado por seu Representante Legal, constante do Anexo IV (Termo de Confidencialidade para Representante Legal) deste Contrato.
+
+CLÁUSULA DÉCIMA QUINTA – ACESSO E PROTEÇÃO DE DADOS PESSOAIS
+As partes assumem o compromisso de proteger os direitos fundamentais de liberdade e de privacidade, relativos ao tratamento de dados pessoais, nos meios físicos e digitais, devendo, para tanto, adotar medidas de boa governança sob o aspecto técnico, jurídico e administrativo, inclusive de segurança, e observar que:
+I. Eventual tratamento de dados pessoais em razão do presente Contrato deverá ser realizado conforme os parâmetros previstos na legislação, especialmente na Lei n° 13.709/2018 – Lei Geral de Proteção de Dados Pessoais – LGPD, dentro de propósitos legítimos, específicos, explícitos e informados ao titular;
+II. O tratamento será limitado às atividades necessárias ao atingimento das finalidades contratuais e, caso seja necessário, ao cumprimento de suas obrigações legais ou regulatórias, sejam de ordem principal ou acessória, observando-se que, em caso de necessidade de coleta de dados pessoais diretamente pelo CONTRATADO, esta será realizada mediante prévia aprovação do BNDES, responsabilizando-se o CONTRATADO por obter o consentimento dos titulares, salvo nos casos em que a legislação dispense tal medida;
+III. O CONTRATADO deverá seguir as instruções recebidas do BNDES em relação ao tratamento de dados pessoais;
+IV. No caso de tratamento de dados pessoais realizado pelo CONTRATADO para cumprimento de suas obrigações legais ou para atendimento de suas próprias finalidades, o BNDES não será considerado “Controlador de Dados Pessoais” e, sim, o CONTRATADO;
+V. Os dados coletados somente poderão ser utilizados pelas partes, seus representantes, empregados e prestadores de serviços diretamente alocados na execução contratual, sendo que, em hipótese alguma, poderão ser compartilhados ou utilizados para outros fins, sem a prévia autorização do BNDES, ou caso haja alguma ordem judicial, observando-se as medidas legalmente previstas para tanto;
+VI. O CONTRATADO deve manter a confidencialidade dos dados pessoais obtidos em razão do presente contrato, devendo adotar as medidas técnicas e administrativas adequadas e necessárias, visando assegurar a proteção dos dados, nos termos do artigo 46 da LGPD, de modo a garantir um nível apropriado de segurança e a prevenção e mitigação de eventuais riscos;
+VII. Os dados deverão ser armazenados de maneira segura pelo CONTRATADO, que utilizará recursos de segurança da informação e tecnologia adequados, inclusive quanto a mecanismos de detecção e prevenção de ataques cibernéticos e incidentes de segurança da informação;
+VIII. O CONTRATADO dará conhecimento formal para seus empregados e/ou prestadores de serviço acerca das disposições previstas nesta Cláusula e na Cláusula de Sigilo das Informações, responsabilizando-se por eventual uso indevido dos dados pessoais, bem como por quaisquer falhas nos sistemas por ela empregados para o tratamento dos dados;
+IX. O BNDES possui direito de regresso em face do CONTRATADO em razão de eventuais danos causados por este em decorrência do descumprimento das responsabilidades e obrigações previstas no âmbito deste contrato e da Lei Geral de Proteção de Dados Pessoais;
+X. O CONTRATADO deverá disponibilizar ao titular do dado um canal ou sistema em que seja garantida consulta facilitada e gratuita sobre a forma, a duração do tratamento e a integralidade de seus dados pessoais;
+XI. O CONTRATADO deverá informar imediatamente ao BNDES todas as solicitações recebidas em razão do exercício dos direitos pelo titular dos dados relacionados a este Contrato, seguindo as orientações fixadas pelo BNDES e pela legislação em vigor para o adequado endereçamento das demandas;
+XII. O CONTRATADO deverá manter registro de todas as operações de tratamento de dados pessoais que realizar no âmbito do Contrato disponibilizando, sempre que solicitado pelo BNDES, as informações necessárias à produção do Relatório de Impacto de Dados Pessoais, disposto no artigo 5º, XVII, da Lei Geral de Proteção de Dados Pessoais;
+XIII. Qualquer incidente ao qual o CONTRATADO tiver dado causa e que implique em violação ou risco de violação ou vazamento de dados pessoais deverá ser prontamente comunicado ao BNDES, informando-se também todas as providências adotadas e os dados pessoais eventualmente afetados, cabendo ao CONTRATADO disponibilizar as informações e documentos solicitados e colaborar com qualquer investigação ou auditoria que venha a ser realizada;
+XIV. Ao final da vigência do Contrato, o CONTRATADO deverá eliminar de sua base de informações todo e qualquer dado pessoal que tenha tido acesso em razão da execução do objeto contratado, salvo quando tenha que manter a informação para o cumprimento de obrigação legal.
+
+Parágrafo Primeiro
+As Partes reconhecem que, se durante a execução do Contrato armazenarem, coletarem, tratarem ou de qualquer outra forma processarem dados pessoais, no sentido dado pela legislação vigente aplicável, o BNDES será considerado “Controlador de Dados”, e o CONTRATADO “Operador” ou “Processador de Dados”, salvo nas situações expressas em contrário nesse Contrato. Contudo, caso o CONTRATADO descumpra as obrigações prevista na legislação de proteção de dados ou as instruções do BNDES, será equiparado a “Controlador de Dados”, inclusive para fins de sua responsabilização por eventuais danos causados.
+
+Parágrafo Segundo
+Cada uma das Partes será controladora independente, para os fins desse CONTRATO, cabendo definir individualmente as bases legais apropriadas e diretrizes para as operações de tratamento, em relação aos seguintes dados pessoais:
+(i) que vierem a coletar diretamente junto aos respectivos titulares, desde que essa operação de tratamento se dê com base em suas próprias decisões; (ii) oriundos de suas próprias bases de dados; e (iii) relativos ao seu corpo de colaboradores, funcionários e/ou prepostos envolvidos para a regular execução deste Contrato.
+
+Parágrafo Terceiro
+Caso o CONTRATADO disponibilize dados de terceiros, além das obrigações no caput desta Cláusula, deve se responsabilizar por eventuais danos que o BNDES venha a sofrer em decorrência de uso indevido de dados pessoais por parte do CONTRATADO, sempre que ficar comprovado que houve falha de segurança técnica e administrativa, descumprimento de regras previstas na legislação de proteção à privacidade e dados pessoais, e das orientações do BNDES, sem prejuízo das penalidades deste Contrato.
+
+Parágrafo Quarto
+A assinatura deste Contrato importa na manifestação de inequívoco consentimento do titular, seja ele pessoa física direta ou indiretamente relacionada ao CONTRATADO, inclusive sócios, representantes legais, empregados, contratados e/ou terceirizados, quando for o caso, dos dados pessoais que tenham se tornados públicos como condição para participação na licitação e para contratação, para tratamento pelo BNDES, na forma da Lei nº 13.709/2018. Poderão ser solicitados pelo BNDES dados pessoais adicionais a fim de viabilizar o cumprimento de obrigação legal.
+
+Parágrafo Quinto
+Os representantes legais signatários do presente autorizam a divulgação dos dados pessoais expressamente contidos nos documentos decorrentes do procedimento de licitação, tais como nome, CPF, e-mail, telefone e cargo, para fins de publicidade das contratações administrativas no site institucional do BNDES e em cumprimento à Lei nº 12.527/ 2011 (Lei de Acesso à Informação).
+
+Parágrafo Sexto
+As partes comprometem-se a coletar o consentimento, quando necessário, conforme previsto na Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD), bem como informar aos titulares dos dados pessoais mencionados no presente instrumento, para as finalidades descritas no parágrafo acima.
+
+Parágrafo Sétimo
+A transferência internacional de dados deve se dar em caráter excepcional e na estrita observância da legislação, especialmente, dos artigos 33 a 36 da Lei n° 13.709/2018 e nos normativos do Banco Central do Brasil relativos ao processamento e armazenamento de dados das instituições financeiras, e dependerá de autorização prévia do BNDES ao CONTRATADO.
+
+CLÁUSULA DÉCIMA SEXTA – OBRIGAÇÕES DO BNDES
+Além de outras obrigações estipuladas neste Instrumento, em seus anexos ou nas leis vigentes, particularmente na Lei nº 13.303/2016, ou que entrarem em vigor, constituem obrigações do BNDES:
+I. realizar os pagamentos devidos ao CONTRATADO, nas condições estabelecidas neste Contrato;
+II. designar, como Gestor do Contrato, _____, que atualmente exerce a função de _____, a quem caberá o acompanhamento, a fiscalização e a avaliação da execução dos serviços, bem como a liquidação da despesa e o atestado de cumprimento das obrigações assumidas;
+III. designar, como substituto do Gestor do Contrato, para atuar em sua eventual ausência, _____, que atualmente exerce a função de _____;
+IV. alterar, quando conveniente, o Gestor do Contrato e/ou o seu substituto, por outro profissional, mediante comunicação escrita ao CONTRATADO;
+V. fornecer ao CONTRATADO, quando solicitado ao Gestor do Contrato, acesso ao Código de Ética do Sistema BNDES, da Política Corporativa de Integridade do Sistema BNDES e da Política Corporativa de Segurança da Informação do BNDES;
+VI. colocar à disposição do CONTRATADO todas as informações necessárias à perfeita execução dos serviços objeto deste Contrato; e
+VII. comunicar ao CONTRATADO, por escrito:
+a) quaisquer instruções ou procedimentos sobre assuntos relacionados ao Contrato;
+b) a abertura de procedimento administrativo para a apuração de condutas irregulares do CONTRATADO, concedendo-lhe prazo para defesa; e
+c) a aplicação de eventual penalidade, nos termos deste Contrato.
+
+CLÁUSULA DÉCIMA SÉTIMA – EQUIDADE DE GÊNERO E VALORIZAÇÃO DA DIVERSIDADE
+O CONTRATADO deverá comprovar, sempre que solicitado pelo BNDES, a inexistência de decisão administrativa final sancionadora, exarada por autoridade ou órgão competente, em razão da prática de atos, pelo próprio CONTRATADO ou dirigentes, administradores ou sócios majoritários, que importem em discriminação de raça, etnia ou gênero, exploração irregular, ilegal ou criminosa do trabalho infantil ou prática relacionada ao trabalho em condições análogas à escravidão, e/ou de sentença condenatória transitada em julgado, proferida em decorrência dos referidos atos, ou, ainda, de outros que caracterizem assédio moral ou sexual, violência contra a mulher, idoso ou pessoa com deficiência ou importem em crime contra o meio ambiente ou proveito criminoso da prostituição.
+
+Parágrafo Primeiro
+Na hipótese de ter havido decisão administrativa e/ou sentença condenatória, nos termos referidos no caput desta
+
+Cláusula, a execução do objeto contratual poderá ser suspensa pelo BNDES até a comprovação do cumprimento da
+reparação imposta ou da reabilitação do CONTRATADO ou de seus dirigentes, conforme o caso.
+
+Parágrafo Segundo
+A comprovação a que se refere o caput desta Cláusula será realizada por meio de declaração, sem prejuízo da verificação do sistema informativo interno do BNDES – Sistema de Gerenciamento do Cadastro de Entidades (N02), acerca da inexistência de sanção em face do CONTRATADO e/ou de seus dirigentes, administradores ou sócios majoritários que impeça a contratação.
+
+CLÁUSULA DÉCIMA OITAVA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO
+É vedada a cessão deste Contrato, total ou parcialmente, ou de qualquer crédito dele decorrente, bem como a emissão, por parte do CONTRATADO, de qualquer título de crédito em razão do mesmo.
+
+Parágrafo Primeiro
+É admitida a sucessão contratual nas hipóteses em que o CONTRATADO realizar as operações societárias de fusão, cisão ou incorporação, condicionada aos seguintes requisitos:
+I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal alteração contratual; e
+II. manutenção de todas as condições contratuais e requisitos de habilitação originais.
+
+Parágrafo Segundo
+Caso ocorra a sucessão contratual admitida no Parágrafo anterior, o sucessor assumirá integralmente a posição do sucedido, passando a ser responsável pela execução do presente Contrato, fazendo, por conseguinte, jus ao recebimento dos créditos dele decorrentes.
+
+Parágrafo Terceiro
+É admitida a subcontratação da parcela do objeto deste Contrato, conforme item 22 do Termo de Referência, Anexo I ao Edital, condicionada aos seguintes requisitos:
+I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e
+II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.
+
+Parágrafo Quarto
+A subcontratação pode ser realizada com sociedades distintas e de forma simultânea, devendo, em todos os casos, ser relacionada à parcela do objeto autorizada pelo BNDES. Parágrafo Qinto Caso o CONTRATADO opte por subcontratar o objeto deste Contrato, permanecerá como responsável perante o BNDES pela adequada execução do ajuste, sujeitando-se, inclusive, às penalidades previstas neste Contrato, na hipótese de não cumprir as obrigações ora pactuadas, ainda que por culpa da sociedade subcontratada.
+
+Parágrafo Sexto
+Aceita, pelo BNDES, a subcontratação, o CONTRATADO deverá apresentar os Termos de Confidencialidade, conforme minuta constante do Anexo VI (Minuta de Termo de Confidencialidade para Subcontratação) deste Contrato, assinados pelo representante legal e pelos profissionais da sociedade subcontratada envolvidos na execução dos serviços subcontratados.
+
+CLÁUSULA DÉCIMA NONA – PENALIDADES
+Em caso de inexecução total ou parcial do Contrato, inclusive de descumprimento de exigência expressamente formulada pelo BNDES ou de inobservância de qualquer obrigação legal, bem como em caso de mora, sem motivo justificado, o CONTRATADO ficará sujeito às seguintes penalidades:
+I. advertência;
+II. multa, de acordo com o Anexo I (Termo de Referência); e
+III. suspensão temporária de participação em licitação e impedimento de contratar com o BNDES, por prazo não superior a 2 (dois) anos, apurado de acordo com a gravidade da infração.
+
+Parágrafo Primeiro
+As penalidades serão aplicadas observadas as normas do Regulamento de Licitações e Contratos do SISTEMA BNDES.
+
+Parágrafo Segundo
+Contra a decisão de aplicação de penalidade, o CONTRATADO poderá requerer a reconsideração para a decisão de advertência, ou interpor o recurso cabível para as demais penalidades, na forma e no prazo previstos no Regulamento de Licitações e Contratos do SISTEMA BNDES.
+
+Parágrafo Terceiro
+A imposição de penalidade prevista nesta Cláusula não impede a extinção do Contrato pelo BNDES, nos termos da legislação aplicável e da Cláusula de Extinção do Contrato.
+
+Parágrafo Quarto
+A multa poderá ser aplicada juntamente com as demais penalidades.
+
+Parágrafo Quinto
+A multa aplicada ao CONTRATADO e os prejuízos causados ao BNDES serão deduzidos de quaisquer créditos a ele devidos, assim como da garantia prestada, ressalvada a possibilidade de cobrança judicial da diferença eventualmente não coberta pelos mencionados créditos.
+
+Parágrafo Sexto
+No caso de atos lesivos à Administração Pública, nacional ou estrangeira, observar-se-ão os termos da Lei nº 12.846/2013.
+
+Parágrafo Sétimo
+A celebração de Termo de Ajustamento de Conduta prevista no Regulamento de Licitações e Contratos do Sistema BNDES não importa em renúncia às penalidades prevista neste Contrato e no Anexo I (Termo de Referência).
+
+Parágrafo Oitavo
+A sanção prevista no inciso III desta Cláusula também poderá ser aplicada às sociedades ou profissionais que:
+I. tenham sofrido condenação definitiva por praticarem, por meios dolosos, fraude fiscal no recolhimento de quaisquer tributos;
+II. tenham praticado atos ilícitos visando frustrar os objetivos da licitação;
+III. demonstrem não possuir idoneidade para contratar com o BNDES em virtude de atos ilícitos praticados.
+
+CLÁUSULA VIGÉSIMA – ALTERAÇÕES CONTRATUAIS
+O presente Contrato poderá ser alterado, por acordo entre as partes, nas hipóteses disciplinadas no art. 81 da Lei nº
+
+13.303/2016, entre outras legal ou contratualmente previstas, observando-se que:
+I. as alterações devem preservar o equilíbrio econômico-financeiro do Contrato; e
+II. é vedada a modificação contratual que desnature o objeto da contratação ou afete as condições essenciais previstas no Termo de Referência (Anexo I deste Contrato).
+
+Parágrafo Primeiro
+Em atenção aos princípios que regem as relações contratuais, nas hipóteses em que for imprescindível a alteração deste Contrato para viabilizar sua plena execução, conforme demonstrado em processo administrativo, não caberá a recusa das partes à respectiva formalização, salvo em caso de justo motivo, devidamente comprovado pela parte que o alegar.
+
+Parágrafo Segundo
+A parte que, injustificadamente, se recusar a promover a alteração contratual indicada no Parágrafo anterior, deverá responder pelos danos eventualmente causados, sem prejuízo das demais consequências previstas neste Instrumento e na legislação vigente.
+
+Parágrafo Terceiro
+As alterações contratuais serão formalizadas mediante instrumento aditivo, ressalvadas as hipóteses legais que admitem a alteração por apostilamento, os ajustes necessários à eventual correção de erros materiais ou à alteração de dados acessórios do Contrato e alterações de preços decorrentes decorrente de reajuste, repactuação ou revisão de preços causada por alterações na legislação tributária, que poderão ser celebrados por meio epistolar.
+
+CLÁUSULA VIGÉSIMA PRIMEIRA – EXTINÇÃO DO CONTRATO
+O presente Contrato poderá ser extinto de acordo com as hipóteses previstas na legislação, e ainda:
+I. consensualmente, formalizada em autorização escrita e fundamentada do BNDES, mediante aviso prévio por escrito, com antecedência mínima de 90 (noventa) dias ou de prazo menor a ser negociado pelas partes à época da rescisão;
+II. em razão do inadimplemento total ou parcial de qualquer de suas obrigações, cabendo à parte inocente notificar a outra por escrito, assinalando-lhe prazo razoável para o cumprimento das obrigações, quando o mesmo não for previamente fixado neste instrumento ou em seus anexos;
+III. na ausência de liberação, por parte do BNDES, de área, local ou objeto necessário para a sua execução, nos prazos contratuais;
+IV. em virtude da suspensão da execução do Contrato, por ordem escrita do BNDES, por prazo superior a 120 (cento e vinte) dias ou ainda por repetidas suspensões que totalizem o mesmo prazo;
+V. quando for decretada a falência do CONTRATADO;
+VI. caso o CONTRATADO perca uma das condições de habilitação exigidas quando da contratação;
+VII. na hipótese de descumprimento do previsto na Cláusula de Cessão de Contrato ou de Crédito, Sucessão Contratual e Subcontratação;
+VIII. caso o CONTRATADO seja declarada inidônea pela União, por Estado ou pelo Distrito Federal;
+IX. em função da suspensão do direito de o CONTRATADO licitar ou contratar com o BNDES;
+X. na hipótese de caracterização de ato lesivo à Administração Pública, nos termos da Lei nº 12.846/2013, cometido pelo CONTRATADO no processo de contratação ou por ocasião da execução contratual;
+XI. em razão da dissolução do CONTRATADO;
+XII. quando da ocorrência de caso fortuito ou de força maior, regularmente comprovado, impeditivo da execução do Contrato; e
+XIII. em decorrência de atraso, lentidão ou paralisação injustificáveis da execução do objeto do Contrato, que caracterize a impossibilidade de sua conclusão no prazo pactuado.
+
+Parágrafo Primeiro
+Caracteriza inadimplemento das obrigações de pagamento pecuniário do presente Contrato, a mora superior a 90 (noventa) dias.
+
+Parágrafo Segundo
+Os casos de extinção contratual convencionados no caput desta Cláusula deverão ser precedidos de notificação escrita à outra parte do Contrato, e de oportunidade de defesa, dispensada a necessidade de interpelação judicial.
+
+Parágrafo Terceiro
+O presente Contrato poderá ser extinto, a critério do BNDES, em função da alienação do(s) bem(ns) objeto deste Contrato, mediante comunicação prévia e por escrito ao CONTRATADO, hipótese em que não será devida qualquer indenização ao CONTRATADO.
+
+CLÁUSULA VIGÉSIMA SEGUNDA – DISPOSIÇÕES FINAIS
+Este Contrato representa todo o acordo entre as partes com relação ao objeto nele previsto.
+
+Parágrafo Primeiro
+Integram o presente Contrato:
+Anexo I - Termo de Referência do Pregão Eletrônico nº 31/2026 - BNDES
+Anexo II - Proposta
+Anexo III - Matriz de Risco
+Anexo IV - Termo de Confidencialidade para Representante Legal
+Anexo V - Minuta de Termo de Confidencialidade para Profissionais
+Anexo VI - Minuta de Termo de Confidencialidade para Subcontratação
+
+Parágrafo Segundo
+A omissão ou tolerância quanto à exigência do estrito cumprimento das obrigações contratuais ou ao exercício de prerrogativa decorrente deste Contrato não constituirá renúncia ou novação nem impedirá as partes de exercerem os seus direitos a qualquer tempo.
+
+CLÁUSULA VIGÉSIMA TERCEIRA – FORO
+É competente o foro da cidade do Rio de Janeiro para solucionar eventuais litígios decorrentes deste Contrato, afastado qualquer outro, por mais privilegiado que seja. As partes consideram, para todos os efeitos, a data da última assinatura digital como a data de formalização jurídica deste instrumento. As folhas deste contrato foram conferidas por ___________________, advogado do BNDES, por autorização do representante legal que o assina. Rio de Janeiro, _____ de __________ de _____. BANCO NACIONAL DE DESENVOLVIMENTO ECONÔMICO E SOCIAL – BNDES CONTRATADO
