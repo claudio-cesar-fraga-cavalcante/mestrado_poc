@@ -332,6 +332,7 @@ desconformidade nos provedores que ele representa.
 17. A Contratada deverá assegurar a alta disponibilidade, a segurança das soluções, o pleno funcionamento dos mecanismos de backup e de recuperação de desastres.
 
 18. Os usuários das estações virtuais terão uma licença Microsoft 365 E5 fornecida pela Contratante. A Contratada deve fornecer todas as demais licenças necessárias para o funcionamento regular da solução, como:
+
 a. Licença do sistema operacional das estações virtuais, qualificada a receber o direito de upgrade para Windows 11 Enterprise contido na licença Microsoft 365 E5 da Contratante;
 b. Licenças Windows VDA, caso as estações virtuais sejam hospedadas em datacenters de provedores considerados Listed Providers1.
 

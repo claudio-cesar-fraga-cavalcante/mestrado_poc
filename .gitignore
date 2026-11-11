@@ -21,6 +21,12 @@ dados/ultima_sessao_validacao.pl
 Thumbs.db
 .vscode/
 .idea/
- GUIA_ESTUDO_E_APRESENTACAO.md
- SLIDES_APRESENTACAO.md
+
+# Dissertação e Materiais de Apoio (mantidos fora do repositório público do código)
+dissertacao/
+material_para_mestrado/
+
+
+GUIA_ESTUDO_E_APRESENTACAO.md
+SLIDES_APRESENTACAO.md
 
