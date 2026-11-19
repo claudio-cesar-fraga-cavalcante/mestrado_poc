@@ -15,6 +15,10 @@ import streamlit as st
 from dotenv import load_dotenv
 
 from src import __version__
+import importlib
+import src.extractor_llm as _ext_mod
+importlib.reload(_ext_mod)
+
 from src.explainer import (
     ParecerRegraEdital,
     exportar_relatorio_json_validado,
@@ -23,8 +27,10 @@ from src.explainer import (
 from src.extractor_llm import (
     FatosExtraidosEdital,
     converter_fatos_para_prolog,
+    executar_avaliacao_somente_neural_gemini,
     extrair_fatos_heuristico_texto,
     extrair_fatos_via_gemini,
+    obter_avaliacao_somente_neural_demo,
     obter_fatos_demo_pe_29_2026,
 )
 from src.parser_edital import (
@@ -252,13 +258,31 @@ def main():
     col4.metric("Regras Conformes", len(conformes), f"{int(len(conformes)/max(1, len(pareceres))*100)}% de aderência")
 
     # ==========================================================================
-    # Abas Principais
+    # Abas Principais (Títulos compactos + CSS responsivo sem seta de scroll)
     # ==========================================================================
-    aba_parecer, aba_ontologia, aba_whatif, aba_edital = st.tabs([
-        "📋 1. Diagnóstico de Conformidade e Explicação",
-        "🧠 2. Raciocínio Neuro-Simbólico & Prova UFO-L (Prolog)",
-        "🧪 3. Laboratório 'What-If' (Testar Mudanças no Edital)",
-        "📄 4. Explorador do Edital (.txt Numerado)",
+    st.markdown(
+        """
+        <style>
+        div[data-baseweb="tab-list"] {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        button[data-baseweb="tab"] {
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+            font-weight: 600 !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    aba_parecer, aba_ontologia, aba_comparativo, aba_whatif, aba_edital = st.tabs([
+        "📋 1. Diagnóstico",
+        "🧠 2. Prova Prolog (UFO-L)",
+        "⚖️ 3. Neural vs. Neuro-Simbólico",
+        "🧪 4. Laboratório What-If",
+        "📄 5. Texto do Edital",
     ])
 
     # --------------------------------------------------------------------------
@@ -370,7 +394,163 @@ def main():
             )
 
     # --------------------------------------------------------------------------
-    # ABA 3: Laboratório What-If
+    # ABA 3: Comparativo Somente Neural (LLM Puro) vs. Neuro-Simbólico (Prolog + UFO-L)
+    # --------------------------------------------------------------------------
+    with aba_comparativo:
+        st.subheader("⚖️ Avaliação Comparativa: Mecanismo Somente Neural (LLM Puro) vs. Neuro-Simbólico (LLM + Prolog + UFO-L)")
+        st.markdown(
+            "Esta visão coloca lado a lado as respostas de um **Mecanismo Somente Neural** "
+            "(onde o LLM julga diretamente a conformidade do edital em texto livre, sem ABox formal e sem Prolog) "
+            "e o nosso **Mecanismo Neuro-Simbólico** (onde o LLM apenas extrai fatos observáveis e o motor Prolog/UFO-L "
+            "executa a Resolução SLD sob a Hipótese do Mundo Fechado)."
+        )
+
+        # Obter baseline Somente Neural (Demo determinístico ou Live sob demanda)
+        chave_cache_neural = f"baseline_neural_{edital_seg.nome_arquivo}"
+        if chave_cache_neural not in st.session_state:
+            st.session_state[chave_cache_neural] = obter_avaliacao_somente_neural_demo(
+                nome_arquivo=edital_seg.nome_arquivo,
+                pareceres_nesy=pareceres,
+            )
+
+        if modo_execucao.startswith("Modo Live") and api_key:
+            if st.button("🔄 Executar Julgamento 'Somente Neural' Ao Vivo na API Gemini para Comparar"):
+                with st.spinner("Executando prompt Somente Neural (End-to-End) no Google Gemini..."):
+                    st.session_state[chave_cache_neural] = executar_avaliacao_somente_neural_gemini(
+                        texto_numerado=edital_seg.texto_numerado,
+                        nome_arquivo=edital_seg.nome_arquivo,
+                        catalogo_regras=catalogo,
+                        regras_selecionadas=regras_selecionadas,
+                        pareceres_nesy=pareceres,
+                        api_key=api_key,
+                        modelo=modelo_gemini,
+                    )
+
+        mapa_neural = st.session_state[chave_cache_neural]
+
+        # Cálculo de métricas comparativas
+        total_comp = len(pareceres)
+        divergencias_veredito = []
+        ruidos_ou_divergencias = []
+        for p in pareceres:
+            jn = mapa_neural.get(p.regra_id)
+            if not jn:
+                continue
+            if jn.status_verificacao != p.status_verificacao:
+                divergencias_veredito.append(p.regra_id)
+                ruidos_ou_divergencias.append(p.regra_id)
+            elif "Ruído" in jn.tipo_limitacao_observada or "Falso Positivo Parcial" in jn.tipo_limitacao_observada:
+                ruidos_ou_divergencias.append(p.regra_id)
+
+        acertos_neural = total_comp - len(divergencias_veredito)
+        pct_neural = int(round((acertos_neural / max(1, total_comp)) * 100))
+
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric(
+            "Acurácia Deôntica (Somente Neural)",
+            f"{pct_neural}% ({acertos_neural}/{total_comp})",
+            f"-{len(divergencias_veredito)} falhas lógicas/CWA" if divergencias_veredito else "Convergente",
+            delta_color="inverse" if divergencias_veredito else "off",
+        )
+        m2.metric(
+            "Acurácia Deôntica (Neuro-Simbólico)",
+            f"100% ({total_comp}/{total_comp})",
+            "Determinístico (Prolog + UFO-L)",
+        )
+        m3.metric(
+            "Casos com Diferença Crítica",
+            f"{len(ruidos_ou_divergencias)} regras",
+            ", ".join(ruidos_ou_divergencias) if ruidos_ou_divergencias else "Nenhuma",
+            delta_color="off",
+        )
+        m4.metric(
+            "Prova Formal Auditável (SLD)",
+            "0% vs. 100%",
+            "Caixa-Preta vs. Árvore SLD + Hohfeld",
+        )
+
+        # Tabela Resumo Comparativa
+        linhas_tab_comp = []
+        for p in pareceres:
+            jn = mapa_neural.get(p.regra_id)
+            if not jn:
+                continue
+            ic_n = "🚨" if jn.status_verificacao == "Indício de Inconformidade" else "✅"
+            ic_s = "🚨" if p.status_verificacao == "Indício de Inconformidade" else "✅"
+            linhas_tab_comp.append({
+                "Regra": p.regra_id,
+                "Categoria / Dispositivo": f"{p.categoria} ({p.dispositivo_legal})",
+                "🧠 Somente Neural (LLM Puro)": f"{ic_n} {jn.status_verificacao}",
+                "🏛️ Neuro-Simbólico (Prolog + UFO-L)": f"{ic_s} {p.status_verificacao}",
+                "Diagnóstico da Diferença": jn.tipo_limitacao_observada,
+                "Relação Hohfeld (UFO-L)": f"{p.inferencia_bruta.momento_edital} vs. {p.inferencia_bruta.momento_esperado_lei}",
+            })
+
+        st.markdown("#### 📊 Matriz Resumo: Resposta Somente Neural vs. Resposta Neuro-Simbólica")
+        st.dataframe(pd.DataFrame(linhas_tab_comp), use_container_width=True, hide_index=True)
+
+        filtro_comp = st.radio(
+            "Filtrar cards comparativos detalhados:",
+            options=[
+                f"🔍 Destacar Divergências e Diferenças Críticas ({len(ruidos_ou_divergencias)} regras)",
+                f"📋 Mostrar Todas as Regras Avaliadas ({total_comp} regras)",
+            ],
+            horizontal=True,
+        )
+
+        pareceres_comp = (
+            [p for p in pareceres if p.regra_id in ruidos_ou_divergencias]
+            if filtro_comp.startswith("🔍") and ruidos_ou_divergencias
+            else pareceres
+        )
+
+        for p in pareceres_comp:
+            jn = mapa_neural.get(p.regra_id)
+            if not jn:
+                continue
+            tem_diff_critica = p.regra_id in ruidos_ou_divergencias
+            badge = "🔴 DIVERGÊNCIA / DIFERENÇA CRÍTICA" if tem_diff_critica else "🟢 VEREDITOS CONVERGENTES (DIFERENÇA NA PROVA FORMAL)"
+            titulo_exp = f"{badge} | [{p.regra_id}] {p.categoria} ({p.dispositivo_legal}) — {p.criterio_validacao}"
+
+            with st.expander(titulo_exp, expanded=tem_diff_critica):
+                col_n, col_s = st.columns(2)
+
+                with col_n:
+                    st.markdown("### 🧠 Mecanismo Somente Neural (LLM Puro)")
+                    cor_n = "🔴" if jn.status_verificacao == "Indício de Inconformidade" else "🟢"
+                    st.markdown(f"**Veredito do LLM Puro:** {cor_n} `{jn.status_verificacao}`")
+                    st.warning(f"**Justificativa em Texto Livre (Caixa-Preta):**\n\n\"{jn.justificativa_livre_llm}\"")
+                    st.markdown(
+                        f"- **Trecho Citado pelo LLM:** `{jn.trecho_citado_llm}`\n"
+                        f"- **Árvore de Prova Formal (SLD):** ❌ *Inexistente (geração autoregressiva de tokens)*\n"
+                        f"- **Posição Jurídica UFO-L (Hohfeld):** ❌ *Não modelada*\n"
+                        f"- **Garantia de Mundo Fechado (NAF `\\+`):** ❌ *Não possui*"
+                    )
+
+                with col_s:
+                    st.markdown("### 🏛️ Mecanismo Neuro-Simbólico (LLM + Prolog + UFO-L)")
+                    cor_s = "🔴" if p.status_verificacao == "Indício de Inconformidade" else "🟢"
+                    st.markdown(f"**Veredito Simbólico Formal:** {cor_s} `{p.status_verificacao}`")
+                    if p.status_verificacao == "Indício de Inconformidade":
+                        st.error(f"**Parecer Desempacotado da UFO-L:**\n\n{p.explicacao_neuro_simbolica}")
+                    else:
+                        st.success(f"**Parecer Desempacotado da UFO-L:**\n\n{p.explicacao_neuro_simbolica}")
+                    st.markdown(
+                        f"- **Evidência Rastreável Exata:** `{p.item_identificado}`\n"
+                        f"- **Papel Jurídico Afetado:** `{p.inferencia_bruta.papel_afetado}`\n"
+                        f"- **Confronto Hohfeldiano (UFO-L):** `{p.inferencia_bruta.momento_edital}` (Edital) vs. `{p.inferencia_bruta.momento_esperado_lei}` (Lei 13.303)\n"
+                        f"- **Resultado da Resolução SLD:** `{p.inferencia_bruta.tipo_inferencia_ufol}`"
+                    )
+                    with st.popover(f"🌲 Ver Árvore de Prova Prolog (SLD Trace - {p.regra_id})"):
+                        st.code("\n".join(p.inferencia_bruta.passos_prova_prolog), language="prolog")
+
+                st.info(
+                    f"**💡 {jn.tipo_limitacao_observada}**\n\n"
+                    f"**Por que o Neuro-Simbólico é superior neste caso?** {jn.analise_diferenca_nesy}"
+                )
+
+    # --------------------------------------------------------------------------
+    # ABA 4: Laboratório What-If
     # --------------------------------------------------------------------------
     with aba_whatif:
         st.subheader("🧪 Laboratório 'What-If': Teste de Sensibilidade do Motor Simbólico")

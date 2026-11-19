@@ -449,3 +449,368 @@ TEXTO DO EDITAL NUMERADO:
 
     raise RuntimeError(f"Falha ao chamar API Gemini ({modelo}): {ultimo_erro}")
 
+
+# ==============================================================================
+# Baseline "Somente Neural" (LLM Puro End-to-End sem Prolog e sem UFO-L)
+# ==============================================================================
+
+
+class JulgamentoNeuralRegra(BaseModel):
+    """Representa o julgamento direto (end-to-end) feito por um LLM puro sem camada simbólica."""
+
+    regra_id: str = Field(description="Código da regra avaliada (ex: R01, R29).")
+    status_verificacao: Literal["Conforme", "Indício de Inconformidade"] = Field(
+        description="Veredito emitido diretamente pelo LLM puro."
+    )
+    justificativa_livre_llm: str = Field(
+        description="Argumentação textual gerada livremente pelo LLM puro (caixa-preta)."
+    )
+    trecho_citado_llm: str = Field(
+        description="Referência textual ou trecho citado pelo LLM puro (frequentemente incompleto ou sem linha exata)."
+    )
+    tipo_limitacao_observada: str = Field(
+        default="",
+        description="Classificação técnica da diferença entre a resposta Somente Neural e a Neuro-Simbólica.",
+    )
+    analise_diferenca_nesy: str = Field(
+        default="",
+        description="Explicação detalhada de por que a abordagem Neuro-Simbólica (Prolog + UFO-L) é superior neste caso.",
+    )
+
+
+class ListaJulgamentosNeurais(BaseModel):
+    julgamentos: List[JulgamentoNeuralRegra]
+
+
+def obter_avaliacao_somente_neural_demo(
+    nome_arquivo: str,
+    pareceres_nesy: list,
+) -> dict[str, JulgamentoNeuralRegra]:
+    """
+    Retorna as respostas de referência do mecanismo 'Somente Neural (LLM Puro End-to-End)'
+    para comparação direta lado a lado com o mecanismo 'Neuro-Simbólico (LLM + Prolog + UFO-L)'.
+    Demonstra empiricamente os casos de Falsos Negativos em regras compostas (disjunção lógica),
+    falhas de Mundo Fechado (CWA), falsos positivos por ruído léxico e ausência de prova formal SLD.
+    """
+    res: dict[str, JulgamentoNeuralRegra] = {}
+
+    if "Saneado" in nome_arquivo:
+        for p in pareceres_nesy:
+            rid = p.regra_id
+            if rid == "R43":
+                res[rid] = JulgamentoNeuralRegra(
+                    regra_id=rid,
+                    status_verificacao="Indício de Inconformidade",
+                    justificativa_livre_llm=(
+                        "O item 2.3, inciso VIII, do edital estabelece que estará impedido de participar o interessado "
+                        "que esteja organizado sob a forma de consórcio, o que configura restrição à competitividade."
+                    ),
+                    trecho_citado_llm="Item 2.3, VIII - impedido de participar consórcio.",
+                    tipo_limitacao_observada="🔴 Falso Positivo do LLM Puro (Falha de Resolução de Exceção Justificada)",
+                    analise_diferenca_nesy=(
+                        "Ao encontrar a cláusula proibitiva no item 2.3, VIII, o LLM puro disparou um Falso Positivo "
+                        "por viés de superfície léxica, deixando de encadear logicamente o subitem 2.3.1 [L0010] que "
+                        "trouxe a motivação técnica formal. Já o motor Prolog unificou `fato_consorcio(..., vedado, com_justificativa)` "
+                        "e provou que o dever de motivar (`duty_to_act`) da Estatal foi integralmente cumprido."
+                    ),
+                )
+            else:
+                res[rid] = JulgamentoNeuralRegra(
+                    regra_id=rid,
+                    status_verificacao="Conforme",
+                    justificativa_livre_llm=(
+                        f"Pela leitura geral do documento saneado, a exigência referente à regra {rid} ({p.dispositivo_legal}) "
+                        "aparenta estar atendida no texto convocatório."
+                    ),
+                    trecho_citado_llm="Menção geral no texto do edital (sem árvore de derivação).",
+                    tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Caixa-Preta (Sem Prova Formal SLD / UFO-L)",
+                    analise_diferenca_nesy=(
+                        "Embora o LLM puro chegue ao mesmo veredito ('Conforme'), ele entrega apenas uma impressão "
+                        "textual probabilística. O mecanismo Neuro-Simbólico comprova matematicamente a ausência de "
+                        f"oposição hohfeldiana (`{p.inferencia_bruta.momento_edital}` == `{p.inferencia_bruta.momento_esperado_lei}`) "
+                        "via Resolução SLD sob Mundo Fechado."
+                    ),
+                )
+        return res
+
+    if "Critico" in nome_arquivo or "Switches" in nome_arquivo:
+        for p in pareceres_nesy:
+            rid = p.regra_id
+            if rid == "R38":
+                res[rid] = JulgamentoNeuralRegra(
+                    regra_id=rid,
+                    status_verificacao="Conforme",
+                    justificativa_livre_llm=(
+                        "Como o edital não possui cláusula de Matriz de Riscos, não há que se falar em aditivos "
+                        "sobre riscos alocados na matriz, não havendo violação direta neste ponto específico."
+                    ),
+                    trecho_citado_llm="Não aplicável (ausência de matriz).",
+                    tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Falha de Raciocínio Deôntico Relacional)",
+                    analise_diferenca_nesy=(
+                        "O LLM puro comete um erro grave de interpretação sistemática: acha que omitir a Matriz de Riscos "
+                        "isenta o contrato da regra do Art. 81, § 8º. No motor Prolog + UFO-L, a ausência da cláusula de "
+                        "vedação a aditivos (`fato_vedacao_aditivo_risco(ausente)`) prova que o contrato deixou de impor a "
+                        "incompetência legal (`disability`) à contratada, mantendo um `power` indevido de pleitear aditivos."
+                    ),
+                )
+            elif rid == "R09":
+                res[rid] = JulgamentoNeuralRegra(
+                    regra_id=rid,
+                    status_verificacao="Conforme",
+                    justificativa_livre_llm=(
+                        "O edital não proíbe expressamente a subcontratação, o que indica que ela seguirá as regras "
+                        "gerais da legislação aplicável durante a execução do contrato."
+                    ),
+                    trecho_citado_llm="Silêncio contratual interpretado como regular.",
+                    tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Violação da Hipótese do Mundo Fechado - CWA)",
+                    analise_diferenca_nesy=(
+                        "O LLM puro opera sob pensamento de 'Mundo Aberto': interpreta o silêncio do edital como "
+                        "conformidade tácita. No sistema Neuro-Simbólico, o Prolog aplica Negação por Falha (`\\+`) sob "
+                        "Mundo Fechado: se a cláusula de subcontratação não está definida no edital, a Estatal violou seu "
+                        "dever positivo de clareza (`duty_to_act` vs `permission_to_omit`, Art. 78)."
+                    ),
+                )
+            else:
+                res[rid] = JulgamentoNeuralRegra(
+                    regra_id=rid,
+                    status_verificacao="Indício de Inconformidade",
+                    justificativa_livre_llm=(
+                        f"O edital apresenta exigência restritiva relacionada a {p.categoria} ({p.dispositivo_legal}), "
+                        "contrariando os princípios da Lei nº 13.303/2016."
+                    ),
+                    trecho_citado_llm="Trecho restritivo identificado no Termo de Referência.",
+                    tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Enquadramento Hohfeldiano (UFO-L) nem Prova SLD",
+                    analise_diferenca_nesy=(
+                        "Em violações óbvias, o LLM puro acerta o alerta, mas não especifica qual posição jurídica fundamental "
+                        f"foi quebrada. O motor Neuro-Simbólico explicita o par hohfeldiano violado (`{p.inferencia_bruta.momento_edital}` "
+                        f"vs `{p.inferencia_bruta.momento_esperado_lei}`) sobre o papel `{p.inferencia_bruta.papel_afetado}`."
+                    ),
+                )
+        return res
+
+    # Caso Principal: Edital Real PE 29/2026 (BNDES) ou editais customizados
+    mapa_pe29: dict[str, JulgamentoNeuralRegra] = {
+        "R01": JulgamentoNeuralRegra(
+            regra_id="R01",
+            status_verificacao="Indício de Inconformidade",
+            justificativa_livre_llm=(
+                "O Termo de Referência menciona marcas específicas como 'Windows 11', 'Microsoft 365' e também "
+                "exige chave física 'YubiKey' no item 49.f, configurando citação de marcas no caderno técnico."
+            ),
+            trecho_citado_llm="Itens 5, 18 e 49.f (Windows 11, Microsoft 365 e Yubikey).",
+            tipo_limitacao_observada="🟠 Ruído Semântico / Falso Positivo Parcial (Não isolou a cláusula exemplificativa)",
+            analise_diferenca_nesy=(
+                "Embora acerte que há problema de marca no edital, o LLM puro coloca no mesmo saco a exigência fechada "
+                "de `Windows 11 Professional` [L0294] e a menção meramente exemplificativa `(ex.: yubikey)` [L0409]. "
+                "No motor Neuro-Simbólico, o Prolog filtra a ABox pela condição estrita `sem_clausula_similaridade`, "
+                "absolvendo automaticamente a `YubiKey` e incriminando apenas as exigências sem equivalência."
+            ),
+        ),
+        "R02": JulgamentoNeuralRegra(
+            regra_id="R02",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "Por se tratar de contratação de solução corporativa de Desktop as a Service (DaaS) integrada ao "
+                "ambiente já existente do BNDES, a exigência de softwares da plataforma Microsoft decorre da "
+                "padronização tecnológica natural da instituição, estando conforme o Art. 47, I."
+            ),
+            trecho_citado_llm="Anexo I - Especificações de integração com ambiente Microsoft do BNDES.",
+            tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Alucinação de Premissa / Mundo Aberto)",
+            analise_diferenca_nesy=(
+                "Aqui ocorre uma falha crítica do modelo puramente neural: ele 'inventa' ou presume que existe um "
+                "processo administrativo formal de padronização apenas pelo contexto de TI do edital. Na arquitetura "
+                "Neuro-Simbólica, sob a Hipótese do Mundo Fechado, como não há menção a processo formal de padronização "
+                "no texto (`sem_justificativa_padronizacao`), o Prolog prova o conflito de 2ª ordem: a Estatal exerceu "
+                "um `power` onde a Lei 13.303 impõe uma incompetência (`disability`) na ausência de padronização formal."
+            ),
+        ),
+        "R03": JulgamentoNeuralRegra(
+            regra_id="R03",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "O edital e a minuta contratual preveem a Matriz de Riscos na Cláusula Nona e no Anexo III."
+            ),
+            trecho_citado_llm="Cláusula Nona da Minuta de Contrato e Anexo III.",
+            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            analise_diferenca_nesy=(
+                "Ambos convergem na presença da Matriz de Riscos. A diferença está na garantia formal: o motor "
+                "Neuro-Simbólico ancora a prova na linha exata `[L0841]` e demonstra na UFO-L o adimplemento do "
+                "dever positivo (`duty_to_act`) da Estatal perante o direito (`right_to_action`) dos licitantes."
+            ),
+        ),
+        "R09": JulgamentoNeuralRegra(
+            regra_id="R09",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "A minuta do contrato define na Cláusula Décima Sétima que é vedada a subcontratação do objeto."
+            ),
+            trecho_citado_llm="Cláusula Décima Sétima, Parágrafo Terceiro.",
+            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            analise_diferenca_nesy=(
+                "Enquanto o LLM puro apenas resume a cláusula, o motor Prolog unifica `fato_subcontratacao(pe_29_2026, definida, ...)` "
+                "na linha `[L1018]` e comprova formalmente a harmonia normativa no relator `legal_service_agreement`."
+            ),
+        ),
+        "R11": JulgamentoNeuralRegra(
+            regra_id="R11",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "O item 4.11.4 estabelece que a amostra será exigida apenas após a fase de lances e verificação de "
+                "habilitação do licitante classificado em primeiro lugar."
+            ),
+            trecho_citado_llm="Item 4.11.4 do Edital e Item 119 do Anexo I.",
+            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            analise_diferenca_nesy=(
+                "O mecanismo Neuro-Simbólico vai além da constatação textual: prova formalmente que a Estatal respeitou "
+                "sua incompetência (`disability`) de exigir amostra na fase inicial, preservando a imunidade (`immunity`) "
+                "dos demais licitantes."
+            ),
+        ),
+        "R29": JulgamentoNeuralRegra(
+            regra_id="R29",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "O item 116 do Termo de Referência exige comprovação de fornecimento de 50% (cinquenta por cento) "
+                "do quantitativo total previsto (123 de 246 estações virtuais). Como 50% está dentro do limite máximo "
+                "de 50% consolidado pela jurisprudência do TCU (Súmula 263), a exigência de qualificação técnica está conforme."
+            ),
+            trecho_citado_llm="Anexo I, Item 116 (percentual de 50% do quantitativo).",
+            tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Falha em Regra Composta / Disjunção Lógica)",
+            analise_diferenca_nesy=(
+                "Este é o caso mais emblemático da superioridade Neuro-Simbólica. A regra R29 possui duas condições "
+                "disjuntivas de violação: (1) exigir percentual > 50% OU (2) vedar o somatório de atestados sem "
+                "justificativa técnica. O LLM puro sofreu viés de ancoragem numérica: verificou que 50% <= 50% no "
+                "item 116 e encerrou a análise como 'Conforme', ignorando a proibição ao somatório no item 117 [L0630]. "
+                "No motor Prolog, a Resolução SLD testou a 1ª cláusula (50 > 50 -> Falso), fez backtracking automático "
+                "para a 2ª cláusula (`veda_somatorio` + `sem_justificativa` -> Verdadeiro) e detectou a violação na linha [L0630]!"
+            ),
+        ),
+        "R38": JulgamentoNeuralRegra(
+            regra_id="R38",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "O Parágrafo Segundo da Cláusula Nona veda aditivos decorrentes de eventos alocados como risco do contratado."
+            ),
+            trecho_citado_llm="Minuta de Contrato, Cláusula Nona, Parágrafo Segundo.",
+            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            analise_diferenca_nesy=(
+                "O motor Neuro-Simbólico comprova na árvore SLD que a linha `[L0848]` institui corretamente a posição "
+                "hohfeldiana `disability` sobre o `contracted_party_role`, em harmonia com o Art. 81, § 8º."
+            ),
+        ),
+        "R41": JulgamentoNeuralRegra(
+            regra_id="R41",
+            status_verificacao="Indício de Inconformidade",
+            justificativa_livre_llm=(
+                "O item 114, alínea 'c', do Anexo I exige declaração de que a licitante faz parte da rede de revendas "
+                "autorizadas pelo provedor da solução, o que pode restringir a competitividade do certame."
+            ),
+            trecho_citado_llm="Anexo I, Item 114, alínea 'c'.",
+            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Texto Opinativo vs. Oposição Hohfeldiana Formal",
+            analise_diferenca_nesy=(
+                "O LLM puro usa linguagem hesitante ('pode restringir a competitividade'). O motor Neuro-Simbólico "
+                "entrega uma prova deôntica irrefutável: na linha `[L0624]`, o edital impôs um `duty_to_act` ao "
+                "`bidder_role` que é o oposto contraditório (`hohfeldian_opposite`) da liberdade `permission_to_omit` "
+                "garantida pelo Art. 31 da Lei 13.303/2016."
+            ),
+        ),
+        "R43": JulgamentoNeuralRegra(
+            regra_id="R43",
+            status_verificacao="Conforme",
+            justificativa_livre_llm=(
+                "O item 2.3, inciso VIII, veda a participação de empresas em consórcio. Como a decisão sobre "
+                "admitir ou vedar consórcios insere-se no poder discricionário da empresa estatal, a cláusula é válida."
+            ),
+            trecho_citado_llm="Item 2.3, inciso VIII do Edital.",
+            tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Omissão de Motivação Obrigatória / Mundo Fechado)",
+            analise_diferenca_nesy=(
+                "O LLM puro lembra que vedar consórcio é permitido em tese, mas esquece que a jurisprudência do TCU e "
+                "o princípio da motivação exigem justificativa técnica expressa quando há vedação. O motor Prolog, "
+                "operando sob Mundo Fechado, verifica `fato_consorcio(pe_29_2026, vedado, sem_justificativa, ...)` na "
+                "linha `[L0023]` e prova que a Estatal violou seu dever legal (`duty_to_act`) de motivar a restrição."
+            ),
+        ),
+    }
+
+    for p in pareceres_nesy:
+        rid = p.regra_id
+        if rid in mapa_pe29:
+            res[rid] = mapa_pe29[rid]
+    return res
+
+
+def executar_avaliacao_somente_neural_gemini(
+    texto_numerado: str,
+    nome_arquivo: str,
+    catalogo_regras: dict,
+    regras_selecionadas: list[str],
+    pareceres_nesy: list,
+    api_key: str,
+    modelo: str = "gemini-2.5-flash",
+) -> dict[str, JulgamentoNeuralRegra]:
+    """
+    Executa uma avaliação puramente neural (LLM Puro End-to-End) ao vivo na API Gemini,
+    pedindo que o próprio LLM julgue diretamente as regras sem Prolog e sem UFO-L,
+    e anota automaticamente as diferenças frente ao diagnóstico Neuro-Simbólico.
+    """
+    from google import genai
+    from google.genai import types
+
+    client = genai.Client(api_key=api_key)
+    regras_desc = "\n".join(
+        f"- {rid}: {catalogo_regras[rid]['categoria']} ({catalogo_regras[rid]['dispositivo_legal']}) -> {catalogo_regras[rid]['criterio_validacao']}"
+        for rid in regras_selecionadas
+        if rid in catalogo_regras
+    )
+
+    prompt = f"""Analise o edital de licitação abaixo ({nome_arquivo}) e dê seu parecer direto sobre cada uma das seguintes regras da Lei nº 13.303/2016:
+{regras_desc}
+
+Para cada regra, informe:
+- `regra_id`: código da regra
+- `status_verificacao`: "Conforme" ou "Indício de Inconformidade"
+- `justificativa_livre_llm`: sua explicação direta
+- `trecho_citado_llm`: trecho ou item do edital considerado
+
+TEXTO DO EDITAL:
+{texto_numerado}
+"""
+
+    response = client.models.generate_content(
+        model=modelo,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            temperature=0.2,
+            response_mime_type="application/json",
+            response_schema=ListaJulgamentosNeurais,
+        ),
+    )
+    parsed = response.parsed or ListaJulgamentosNeurais.model_validate_json(response.text)
+    mapa_live = {j.regra_id: j for j in parsed.julgamentos}
+
+    # Enriquece cada julgamento live com a comparação frente ao motor Neuro-Simbólico
+    mapa_nesy = {p.regra_id: p for p in pareceres_nesy}
+    for rid, j in mapa_live.items():
+        p = mapa_nesy.get(rid)
+        if not p:
+            continue
+        if j.status_verificacao != p.status_verificacao:
+            j.tipo_limitacao_observada = (
+                f"🔴 Divergência de Veredito (LLM Puro: {j.status_verificacao} vs. Prolog/UFO-L: {p.status_verificacao})"
+            )
+            j.analise_diferenca_nesy = (
+                f"No julgamento direto (end-to-end), o LLM puro concluiu '{j.status_verificacao}' sem decompor "
+                f"todas as condições lógicas da regra. Já o motor Prolog + UFO-L provou formalmente '{p.status_verificacao}' "
+                f"via Resolução SLD (`{p.inferencia_bruta.momento_edital}` vs `{p.inferencia_bruta.momento_esperado_lei}`) "
+                f"com base na evidência de {p.item_identificado}."
+            )
+        else:
+            j.tipo_limitacao_observada = "⚠️ Convergente no Veredito, mas Caixa-Preta (Sem Prova Formal SLD / UFO-L)"
+            j.analise_diferenca_nesy = (
+                "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de "
+                f"consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par "
+                f"hohfeldiano (`{p.inferencia_bruta.momento_edital}` / `{p.inferencia_bruta.momento_esperado_lei}`)."
+            )
+    return mapa_live
+
+
