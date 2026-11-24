@@ -1,0 +1,359 @@
+{
+  "timestamp_execucao": "2026-11-23T20:46:49",
+  "nome_arquivo": "Edital_PE_23-2026.pdf",
+  "identificador_edital": "pe_23_2026",
+  "total_paginas": 78,
+  "total_linhas": 3155,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 660,
+      "total_linhas": 660,
+      "pagina_inicio": 1,
+      "pagina_fim": 19
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 661,
+      "fim": 1756,
+      "total_linhas": 1096,
+      "pagina_inicio": 19,
+      "pagina_fim": 42
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 1757,
+      "fim": 2818,
+      "total_linhas": 1062,
+      "pagina_inicio": 43,
+      "pagina_fim": 66
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 31.82,
+  "tempo_prolog_ms": 765.636,
+  "tempo_somente_neural_s": 35.3,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 71394,
+    "thoughts_token_count": 4094,
+    "candidates_token_count": 3301,
+    "total_token_count": 78789
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 71075,
+    "thoughts_token_count": 4092,
+    "candidates_token_count": 2931,
+    "total_token_count": 78098
+  },
+  "fatos": {
+    "identificador_edital": "pe_23_2026",
+    "resumo_objeto": "Contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "IBM QRadar (SIEM)",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "OBJETO [P02|L0018]",
+        "trecho_literal": "Contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui"
+      },
+      {
+        "marca_ou_produto": "IBM QRadar (SIEM)",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 1.1 [P05|L0175]",
+        "trecho_literal": "Contratação de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui"
+      },
+      {
+        "marca_ou_produto": "IBM QRadar SIEM",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 1.1 [P19|L0633]",
+        "trecho_literal": "solução de software IBM QRadar SIEM, instalado de forma on-premises"
+      },
+      {
+        "marca_ou_produto": "VMware ESXi 7.0",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 3.2.1 [P20|L0668]",
+        "trecho_literal": "A infraestrutura de virtualização do BNDES é composta de servidores VMware ESXi 7.0 e versões superiores."
+      },
+      {
+        "marca_ou_produto": "Intel® Xeon® Gold 6530",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 3.2.2 [P20|L0671]",
+        "trecho_literal": "As CPUs físicas de todos os hosts nos quais as máquinas virtuais executam são do modelo Intel® Xeon® Gold 6530 (2.1GHz/32-Core/160MB/270W) Emerald Rapids XCC CPU."
+      },
+      {
+        "marca_ou_produto": "IBM Security QRadar XDR Package Software",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Tabela 3 [P21|L0748]",
+        "trecho_literal": "IBM Security QRadar XDR Package Software 100 Resource Unit License + SW Subscription & Support 12 Months"
+      },
+      {
+        "marca_ou_produto": "IBM Security QRadar Suite Software",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Tabela 3 [P21|L0752]",
+        "trecho_literal": "IBM Security QRadar Suite Software 100 Resource Unit License + Subscription & Support 12 Months"
+      },
+      {
+        "marca_ou_produto": "D0AE4ZX da IBM",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 3.2.5 [P21|L0756]",
+        "trecho_literal": "O part number D0AE4ZX da IBM, provê as licenças de uso perpétuo e os serviços de assistência técnica e de suporte técnico, oficiais do fabricante e associados às tais licenças, por um período inicial de 12 (doze) meses."
+      },
+      {
+        "marca_ou_produto": "E0AE3ZX da IBM",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 3.2.6 [P21|L0759]",
+        "trecho_literal": "O part number E0AE3ZX da IBM, provê os serviços de assistência técnica e de suporte técnico oficiais do fabricante, por período adicional."
+      },
+      {
+        "marca_ou_produto": "IBM QRadar 7.5.0",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Tabela 4 [P21|L0775]",
+        "trecho_literal": "IBM QRadar 7.5.0"
+      },
+      {
+        "marca_ou_produto": "E0AE3ZX da IBM",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 4.4.1 [P22|L0804]",
+        "trecho_literal": "A CONTRATADA deverá entregar a evidência da contratação, em nome do BNDES, dos part numbers específicos que provejam os serviços de assistência técnica e de suporte técnico oficiais do fabricante da SOLUÇÃO de SIEM (part number E0AE3ZX da IBM)"
+      },
+      {
+        "marca_ou_produto": "IBM QRadar SIEM",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 12.8.1 [P38|L1583]",
+        "trecho_literal": "É revenda oficial do IBM QRadar SIEM."
+      },
+      {
+        "marca_ou_produto": "IBM QRadar SIEM",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "ANEXO I, Item 12.8.2 [P38|L1585]",
+        "trecho_literal": "Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil."
+      },
+      {
+        "marca_ou_produto": "IBM QRadar (SIEM)",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "CLÁUSULA PRIMEIRA [P43|L1793]",
+        "trecho_literal": "O presente Contrato tem por objeto a contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui"
+      },
+      {
+        "marca_ou_produto": "IBM QRadar",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "CLÁUSULA SEGUNDA [P43|L1801]",
+        "trecho_literal": "licenças de uso perpétuo do IBM QRadar possuídas pelo BNDES"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "CLÁUSULA NONA [P49|L2039] e ANEXO IV [P64|L2761]",
+    "matriz_riscos_trecho": "CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo ___ deste Contrato.",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "CLÁUSULA NONA, Parágrafo Segundo [P49|L2049]",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro [P59|L2490]",
+    "subcontratacao_trecho": "É vedada a subcontratação para a execução do objeto deste Contrato.",
+    "escopo_exigencia_amostra": "nao_exigida",
+    "amostra_item": "Não exigida",
+    "amostra_trecho": "Não há menção à exigência de amostra ou Prova de Conceito (PoC) no edital.",
+    "percentual_minimo_atestado": 14,
+    "veda_somatorio_atestados": true,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "ANEXO I, Item 14.1.1 [P40|L1662] e Item 14.3 [P40|L1670]",
+    "atestado_trecho": "Para fins de aferição de pertinência e compatibilidade, o documento de atestação apresentado deverá comprovar a execução de serviços de suporte técnico referentes à mesma SOLUÇÃO de SIEM indicada no item 1.1, na mesma versão em uso no BNDES, sem considerar os update packages e os interim fixes do produto, conforme listado no item 3.3.2, em entidades com, no mínimo, 1.000 (mil) usuários, o que corresponde a aproximadamente 14,5% (quatorze e meio por cento) da quantidade existente no ambiente do BNDES. (...) Para fins de comprovação da experiência requerida no item 14.1.1, não será aceito o somatório de atestados.",
+    "exige_credenciamento_ou_carta_fabricante": true,
+    "credenciamento_item": "ANEXO I, Item 12.8 [P38|L1580]",
+    "credenciamento_trecho": "Para fins de aceitação da PROPOSTA DE PREÇO, caso a LICITANTE não seja o próprio fabricante da SOLUÇÃO de SIEM, a LICITANTE também deverá apresentar uma DECLARAÇÃO, indicando que: 12.8.1. É revenda oficial do IBM QRadar SIEM. 12.8.2. Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "Item 2.3.VIII [P06|L0251]",
+    "consorcio_trecho": "Estará impedido de participar deste Pregão o interessado que: (...) VIII. esteja organizado sob a forma de consórcio."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_23_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_23_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar (SIEM)', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'OBJETO [P02|L0018]', 'Contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar (SIEM)', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Item 1.1 [P05|L0175]', 'Contratação de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar SIEM', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 1.1 [P19|L0633]', 'solução de software IBM QRadar SIEM, instalado de forma on-premises').\nmencao_marca_exigida(pe_23_2026, 'VMware ESXi 7.0', interoperabilidade_ambiente_legado, com_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 3.2.1 [P20|L0668]', 'A infraestrutura de virtualização do BNDES é composta de servidores VMware ESXi 7.0 e versões superiores.').\nmencao_marca_exigida(pe_23_2026, 'Intel® Xeon® Gold 6530', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 3.2.2 [P20|L0671]', 'As CPUs físicas de todos os hosts nos quais as máquinas virtuais executam são do modelo Intel® Xeon® Gold 6530 (2.1GHz/32-Core/160MB/270W) Emerald Rapids XCC CPU.').\nmencao_marca_exigida(pe_23_2026, 'IBM Security QRadar XDR Package Software', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Tabela 3 [P21|L0748]', 'IBM Security QRadar XDR Package Software 100 Resource Unit License + SW Subscription & Support 12 Months').\nmencao_marca_exigida(pe_23_2026, 'IBM Security QRadar Suite Software', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Tabela 3 [P21|L0752]', 'IBM Security QRadar Suite Software 100 Resource Unit License + Subscription & Support 12 Months').\nmencao_marca_exigida(pe_23_2026, 'D0AE4ZX da IBM', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 3.2.5 [P21|L0756]', 'O part number D0AE4ZX da IBM, provê as licenças de uso perpétuo e os serviços de assistência técnica e de suporte técnico, oficiais do fabricante e associados às tais licenças, por um período inicial de 12 (doze) meses.').\nmencao_marca_exigida(pe_23_2026, 'E0AE3ZX da IBM', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 3.2.6 [P21|L0759]', 'O part number E0AE3ZX da IBM, provê os serviços de assistência técnica e de suporte técnico oficiais do fabricante, por período adicional.').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar 7.5.0', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Tabela 4 [P21|L0775]', 'IBM QRadar 7.5.0').\nmencao_marca_exigida(pe_23_2026, 'E0AE3ZX da IBM', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 4.4.1 [P22|L0804]', 'A CONTRATADA deverá entregar a evidência da contratação, em nome do BNDES, dos part numbers específicos que provejam os serviços de assistência técnica e de suporte técnico oficiais do fabricante da SOLUÇÃO de SIEM (part number E0AE3ZX da IBM)').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar SIEM', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 12.8.1 [P38|L1583]', 'É revenda oficial do IBM QRadar SIEM.').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar SIEM', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'ANEXO I, Item 12.8.2 [P38|L1585]', 'Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar (SIEM)', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'CLÁUSULA PRIMEIRA [P43|L1793]', 'O presente Contrato tem por objeto a contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui').\nmencao_marca_exigida(pe_23_2026, 'IBM QRadar', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'CLÁUSULA SEGUNDA [P43|L1801]', 'licenças de uso perpétuo do IBM QRadar possuídas pelo BNDES').\nevidencia_regra(pe_23_2026, 'R01', 'ANEXO I, Item 4.4.1 [P22|L0804] | ANEXO I, Item 12.8.1 [P38|L1583] | ANEXO I, Item 12.8.2 [P38|L1585]', '[E0AE3ZX da IBM] A CONTRATADA deverá entregar a evidência da contratação, em nome do BNDES, dos part numbers específicos que provejam os serviços de assistência técnica e de suporte técnico oficiais do fabricante da SOLUÇÃO de SIEM (part number E0AE3ZX da IBM) [IBM QRadar SIEM] É revenda oficial do IBM QRadar SIEM. [IBM QRadar SIEM] Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.').\nevidencia_regra(pe_23_2026, 'R02', 'ANEXO I, Item 4.4.1 [P22|L0804] | ANEXO I, Item 12.8.1 [P38|L1583] | ANEXO I, Item 12.8.2 [P38|L1585]', '[E0AE3ZX da IBM] A CONTRATADA deverá entregar a evidência da contratação, em nome do BNDES, dos part numbers específicos que provejam os serviços de assistência técnica e de suporte técnico oficiais do fabricante da SOLUÇÃO de SIEM (part number E0AE3ZX da IBM) [IBM QRadar SIEM] É revenda oficial do IBM QRadar SIEM. [IBM QRadar SIEM] Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_23_2026, 'CLÁUSULA NONA [P49|L2039] e ANEXO IV [P64|L2761]', 'CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo ___ deste Contrato.').\nevidencia_regra(pe_23_2026, 'R03', 'CLÁUSULA NONA [P49|L2039] e ANEXO IV [P64|L2761]', 'CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo ___ deste Contrato.').\nfato_vedacao_aditivo_risco(pe_23_2026, 'CLÁUSULA NONA, Parágrafo Segundo [P49|L2049]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_23_2026, 'R38', 'CLÁUSULA NONA, Parágrafo Segundo [P49|L2049]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_23_2026, 'CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro [P59|L2490]', 'É vedada a subcontratação para a execução do objeto deste Contrato.').\nevidencia_regra(pe_23_2026, 'R09', 'CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro [P59|L2490]', 'É vedada a subcontratação para a execução do objeto deste Contrato.').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_23_2026, nao_exigida, 'Não exigida', 'Não há menção à exigência de amostra ou Prova de Conceito (PoC) no edital.').\nevidencia_regra(pe_23_2026, 'R11', 'Não exigida', 'Não há menção à exigência de amostra ou Prova de Conceito (PoC) no edital.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_23_2026, 14, 'ANEXO I, Item 14.1.1 [P40|L1662] e Item 14.3 [P40|L1670]', 'Para fins de aferição de pertinência e compatibilidade, o documento de atestação apresentado deverá comprovar a execução de serviços de suporte técnico referentes à mesma SOLUÇÃO de SIEM indicada no item 1.1, na mesma versão em uso no BNDES, sem considerar os update packages e os interim fixes do produto, conforme listado no item 3.3.2, em entidades com, no mínimo, 1.000 (mil) usuários, o que corresponde a aproximadamente 14,5% (quatorze e meio por cento) da quantidade existente no ambiente do BNDES. (...) Para fins de comprovação da experiência requerida no item 14.1.1, não será aceito o somatório de atestados.').\nfato_veda_somatorio(pe_23_2026, 'ANEXO I, Item 14.1.1 [P40|L1662] e Item 14.3 [P40|L1670]', 'Para fins de aferição de pertinência e compatibilidade, o documento de atestação apresentado deverá comprovar a execução de serviços de suporte técnico referentes à mesma SOLUÇÃO de SIEM indicada no item 1.1, na mesma versão em uso no BNDES, sem considerar os update packages e os interim fixes do produto, conforme listado no item 3.3.2, em entidades com, no mínimo, 1.000 (mil) usuários, o que corresponde a aproximadamente 14,5% (quatorze e meio por cento) da quantidade existente no ambiente do BNDES. (...) Para fins de comprovação da experiência requerida no item 14.1.1, não será aceito o somatório de atestados.').\nevidencia_regra(pe_23_2026, 'R29', 'ANEXO I, Item 14.1.1 [P40|L1662] e Item 14.3 [P40|L1670]', 'Para fins de aferição de pertinência e compatibilidade, o documento de atestação apresentado deverá comprovar a execução de serviços de suporte técnico referentes à mesma SOLUÇÃO de SIEM indicada no item 1.1, na mesma versão em uso no BNDES, sem considerar os update packages e os interim fixes do produto, conforme listado no item 3.3.2, em entidades com, no mínimo, 1.000 (mil) usuários, o que corresponde a aproximadamente 14,5% (quatorze e meio por cento) da quantidade existente no ambiente do BNDES. (...) Para fins de comprovação da experiência requerida no item 14.1.1, não será aceito o somatório de atestados.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\nfato_credenciamento_exigido(pe_23_2026, 'ANEXO I, Item 12.8 [P38|L1580]', 'Para fins de aceitação da PROPOSTA DE PREÇO, caso a LICITANTE não seja o próprio fabricante da SOLUÇÃO de SIEM, a LICITANTE também deverá apresentar uma DECLARAÇÃO, indicando que: 12.8.1. É revenda oficial do IBM QRadar SIEM. 12.8.2. Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.').\nevidencia_regra(pe_23_2026, 'R41', 'ANEXO I, Item 12.8 [P38|L1580]', 'Para fins de aceitação da PROPOSTA DE PREÇO, caso a LICITANTE não seja o próprio fabricante da SOLUÇÃO de SIEM, a LICITANTE também deverá apresentar uma DECLARAÇÃO, indicando que: 12.8.1. É revenda oficial do IBM QRadar SIEM. 12.8.2. Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_23_2026, 'Item 2.3.VIII [P06|L0251]', 'Estará impedido de participar deste Pregão o interessado que: (...) VIII. esteja organizado sob a forma de consórcio.').\nevidencia_regra(pe_23_2026, 'R43', 'Item 2.3.VIII [P06|L0251]', 'Estará impedido de participar deste Pregão o interessado que: (...) VIII. esteja organizado sob a forma de consórcio.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "ANEXO I, Item 4.4.1 [P22|L0804] | ANEXO I, Item 12.8.1 [P38|L1583] | ANEXO I, Item 12.8.2 [P38|L1585]",
+      "trecho_identificado": "[E0AE3ZX da IBM] A CONTRATADA deverá entregar a evidência da contratação, em nome do BNDES, dos part numbers específicos que provejam os serviços de assistência técnica e de suporte técnico oficiais do fabricante da SOLUÇÃO de SIEM (part number E0AE3ZX da IBM) [IBM QRadar SIEM] É revenda oficial do IBM QRadar SIEM. [IBM QRadar SIEM] Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_similaridade,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "ANEXO I, Item 4.4.1 [P22|L0804] | ANEXO I, Item 12.8.1 [P38|L1583] | ANEXO I, Item 12.8.2 [P38|L1585]",
+      "trecho_identificado": "[E0AE3ZX da IBM] A CONTRATADA deverá entregar a evidência da contratação, em nome do BNDES, dos part numbers específicos que provejam os serviços de assistência técnica e de suporte técnico oficiais do fabricante da SOLUÇÃO de SIEM (part number E0AE3ZX da IBM) [IBM QRadar SIEM] É revenda oficial do IBM QRadar SIEM. [IBM QRadar SIEM] Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.",
+      "momento_edital": "power",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_padronizacao,power,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "CLÁUSULA NONA [P49|L2039] e ANEXO IV [P64|L2761]",
+      "trecho_identificado": "CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo ___ deste Contrato.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro [P59|L2490]",
+      "trecho_identificado": "É vedada a subcontratação para a execução do objeto deste Contrato.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não exigida",
+      "trecho_identificado": "Não há menção à exigência de amostra ou Prova de Conceito (PoC) no edital.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_nao_exigida,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "ANEXO I, Item 14.1.1 [P40|L1662] e Item 14.3 [P40|L1670]",
+      "trecho_identificado": "Para fins de aferição de pertinência e compatibilidade, o documento de atestação apresentado deverá comprovar a execução de serviços de suporte técnico referentes à mesma SOLUÇÃO de SIEM indicada no item 1.1, na mesma versão em uso no BNDES, sem considerar os update packages e os interim fixes do produto, conforme listado no item 3.3.2, em entidades com, no mínimo, 1.000 (mil) usuários, o que corresponde a aproximadamente 14,5% (quatorze e meio por cento) da quantidade existente no ambiente do BNDES. (...) Para fins de comprovação da experiência requerida no item 14.1.1, não será aceito o somatório de atestados.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_somatorio_sem_justificativa,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "CLÁUSULA NONA, Parágrafo Segundo [P49|L2049]",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "ANEXO I, Item 12.8 [P38|L1580]",
+      "trecho_identificado": "Para fins de aceitação da PROPOSTA DE PREÇO, caso a LICITANTE não seja o próprio fabricante da SOLUÇÃO de SIEM, a LICITANTE também deverá apresentar uma DECLARAÇÃO, indicando que: 12.8.1. É revenda oficial do IBM QRadar SIEM. 12.8.2. Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(credenciamento_fabricante_exigido,duty_to_act,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "Item 2.3.VIII [P06|L0251]",
+      "trecho_identificado": "Estará impedido de participar deste Pregão o interessado que: (...) VIII. esteja organizado sob a forma de consórcio.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital menciona a marca nominal 'IBM QRadar (SIEM)' e 'VMware ESXi' e 'Intel® Xeon® Gold' em diversas passagens. No entanto, o objeto da licitação é a contratação de serviços de suporte técnico e assistência técnica (atualização) para licenças já existentes do IBM QRadar que o BNDES possui. Para serviços de manutenção e suporte de sistemas proprietários já instalados, a menção da marca é inerente à natureza do objeto e não configura direcionamento indevido, pois visa garantir a compatibilidade e a continuidade dos serviços com a infraestrutura existente. A cláusula 'ou similar ou de melhor qualidade' seria inaplicável e sem sentido neste contexto.",
+      "trecho_citado_llm": "[P02|L0017-L0019] 'Contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui'; [P19|L0631-L0634] 'Contratação, na modalidade de menor preço, dos seguintes itens relacionados à solução de software IBM QRadar SIEM, instalado de forma on-premises, doravante chamada de SOLUÇÃO de SIEM';",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`duty_to_omit` vs `permission_to_act`) com base em ANEXO I, Item 4.4.1 [P22|L0804] | ANEXO I, Item 12.8.1 [P38|L1583] | ANEXO I, Item 12.8.2 [P38|L1585]."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A indicação da marca 'IBM QRadar SIEM' é específica, mas está justificada pela natureza do objeto, que é a prestação de serviços de suporte e assistência técnica para licenças já existentes e instaladas do produto no ambiente do BNDES. A necessidade de compatibilidade com bens e serviços já existentes (as licenças e a solução SIEM do BNDES) é a justificativa implícita para a especificação da marca, conforme previsto no Art. 47, I, 'a' e 'b' da Lei nº 13.303/2016. Não se trata de uma nova aquisição que exigiria uma justificativa formal de padronização prévia para um novo sistema, mas sim a manutenção de um sistema já em uso.",
+      "trecho_citado_llm": "[P02|L0017-L0019] 'Contratação de serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM) que o BNDES possui'; [P38|L1580-L1587] '12.8. Para fins de aceitação da PROPOSTA DE PREÇO, caso a LICITANTE não seja o próprio fabricante da SOLUÇÃO de SIEM, a LICITANTE também deverá apresentar uma DECLARAÇÃO, indicando que: 12.8.1. É revenda oficial do IBM QRadar SIEM. 12.8.2. Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.'",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`power` vs `disability`) com base em ANEXO I, Item 4.4.1 [P22|L0804] | ANEXO I, Item 12.8.1 [P38|L1583] | ANEXO I, Item 12.8.2 [P38|L1585]."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital inclui uma Matriz de Riscos detalhada no Anexo IV, que identifica os riscos decorrentes da relação contratual, suas consequências, medidas mitigadoras e a alocação de responsabilidade entre o BNDES e o Contratado. Isso atende à exigência de elemento obrigatório para serviços complexos.",
+      "trecho_citado_llm": "[P49|L2039-L2044] 'CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo ___ deste Contrato.'; [P64|L2760-L2761] 'ANEXO IV – MATRIZ DE RISCO' (seguido da tabela de riscos).",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital veda expressamente a subcontratação para a execução do objeto do contrato. Ao proibir a subcontratação, não há necessidade de estabelecer limites percentuais, pois a prática é totalmente vedada.",
+      "trecho_citado_llm": "[P59|L2490] 'Parágrafo Terceiro É vedada a subcontratação para a execução do objeto deste Contrato.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "Não há qualquer exigência de apresentação de amostra ou prova de conceito em nenhuma fase da licitação, seja na fase de propostas iniciais ou para o primeiro colocado provisório. A qualificação técnica é comprovada por atestados de capacidade técnica.",
+      "trecho_citado_llm": "Não há trecho no edital que exija amostra ou prova de conceito.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A exigência de qualificação técnica, por meio de atestado de capacidade técnica, é para comprovar a execução de serviços de suporte técnico em entidades com, no mínimo, 1.000 usuários, o que corresponde a aproximadamente 14,5% da quantidade existente no ambiente do BNDES. Este percentual está bem abaixo do limite de 50% estabelecido pela Súmula 263 do TCU.",
+      "trecho_citado_llm": "[P40|L1659-L1664] '14.1.1. Para fins de aferição de pertinência e compatibilidade, o documento de atestação apresentado deverá comprovar a execução de serviços de suporte técnico referentes à mesma SOLUÇÃO de SIEM indicada no item 1.1, na mesma versão em uso no BNDES, sem considerar os update packages e os interim fixes do produto, conforme listado no item 3.3.2, em entidades com, no mínimo, 1.000 (mil) usuários, o que corresponde a aproximadamente 14,5% (quatorze e meio por cento) da quantidade existente no ambiente do BNDES.'",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`duty_to_omit` vs `permission_to_act`) com base em ANEXO I, Item 14.1.1 [P40|L1662] e Item 14.3 [P40|L1670]."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A Cláusula Nona da minuta de contrato, que trata da Matriz de Riscos, contém uma vedação expressa à celebração de aditivos decorrentes de eventos supervenientes alocados como responsabilidade do Contratado, conforme exigido pelo Art. 81, § 8º da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "[P49|L2049-L2050] 'Parágrafo Segundo É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital exige que a licitante, caso não seja o fabricante, apresente uma declaração de que é revenda oficial do IBM QRadar SIEM e que está autorizada pelo fabricante (IBM) a comercializar e prestar os serviços de assistência técnica e suporte técnico oficiais. Esta exigência, embora comum para serviços de suporte de software proprietário, pode ser interpretada como uma restrição à competitividade, pois limita a participação a revendas autorizadas, sem uma justificativa explícita no edital sobre a imprescindibilidade de tal autorização para a execução dos serviços, além da mera menção de que são 'serviços oficiais do fabricante'.",
+      "trecho_citado_llm": "[P38|L1580-L1587] '12.8. Para fins de aceitação da PROPOSTA DE PREÇO, caso a LICITANTE não seja o próprio fabricante da SOLUÇÃO de SIEM, a LICITANTE também deverá apresentar uma DECLARAÇÃO, indicando que: 12.8.1. É revenda oficial do IBM QRadar SIEM. 12.8.2. Está autorizada pelo fabricante (IBM) a (i) comercializar os serviços de assistência técnica (atualização) e de suporte técnico oficiais do IBM QRadar SIEM no Brasil, conforme prestados pela IBM, e (ii) a prestar serviços de suporte para o produto IBM QRadar SIEM no Brasil.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital veda expressamente a participação de empresas organizadas sob a forma de consórcio. Embora o objeto seja 'serviços de suporte técnico e de assistência técnica (atualização) para todas as licenças do IBM QRadar (SIEM)', que pode ser considerado complexo devido à sua natureza especializada e aos SLAs envolvidos, não há uma justificativa formal apresentada no edital para essa vedação. A Lei nº 13.303/2016 permite a vedação à participação em consórcio, mas exige justificativa formal, especialmente para objetos que poderiam se beneficiar da união de capacidades de diferentes empresas.",
+      "trecho_citado_llm": "[P06|L0251] 'VIII. esteja organizado sob a forma de consórcio.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

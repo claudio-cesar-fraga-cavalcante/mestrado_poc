@@ -1,0 +1,327 @@
+{
+  "timestamp_execucao": "2026-11-23T20:45:39",
+  "nome_arquivo": "Edital_PE_16-2026.pdf",
+  "identificador_edital": "pe_016_2026_bndes",
+  "total_paginas": 81,
+  "total_linhas": 3454,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 642,
+      "total_linhas": 642,
+      "pagina_inicio": 1,
+      "pagina_fim": 18
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 643,
+      "fim": 1525,
+      "total_linhas": 883,
+      "pagina_inicio": 18,
+      "pagina_fim": 34
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 1526,
+      "fim": 2610,
+      "total_linhas": 1085,
+      "pagina_inicio": 35,
+      "pagina_fim": 60
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 30.55,
+  "tempo_prolog_ms": 673.641,
+  "tempo_somente_neural_s": 26.25,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 73266,
+    "thoughts_token_count": 4093,
+    "candidates_token_count": 2749,
+    "total_token_count": 80108
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 72947,
+    "thoughts_token_count": 3711,
+    "candidates_token_count": 2154,
+    "total_token_count": 78812
+  },
+  "fatos": {
+    "identificador_edital": "pe_016_2026_bndes",
+    "resumo_objeto": "Contratação de solução Microsoft Teams Room, abrangendo fornecimento de kits de videoconferência certificados, licenças de subscrição MTR Pro e serviços correlatos de instalação, configuração e garantia estendida, na modalidade Pregão Eletrônico, por menor preço global, e modo de disputa aberto e fechado, conforme as especificações deste Edital e de seus Anexos.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "Microsoft Teams Room (MTR)",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 1.1 [P18|L0645-L0646]",
+        "trecho_literal": "A presente licitação tem por objeto a aquisição de solução de videoconferência para salas médias com sistema Microsoft Teams Room (MTR)"
+      },
+      {
+        "marca_ou_produto": "Microsoft Teams Rooms Pro",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 1.2, alínea b) [P18|L0659]",
+        "trecho_literal": "b) Licença Microsoft Teams Rooms Pro (12 meses)"
+      },
+      {
+        "marca_ou_produto": "Microsoft",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 2.5 [P19|L0704-L0705]",
+        "trecho_literal": "Todos os dispositivos fornecidos deverão ser oficialmente certificados pela Microsoft para uso com sistema Microsoft Teams Room (MTR)."
+      },
+      {
+        "marca_ou_produto": "Windows IoT Enterprise",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 7.3.1.3 [P23|L0938-L0939]",
+        "trecho_literal": "Deverá ser fornecido com sistema operacional Windows IoT Enterprise, ou outra edição do Microsoft Windows oficialmente suportada para Microsoft Teams Rooms"
+      },
+      {
+        "marca_ou_produto": "Microsoft Windows",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 7.3.1.3 [P23|L0939]",
+        "trecho_literal": "Deverá ser fornecido com sistema operacional Windows IoT Enterprise, ou outra edição do Microsoft Windows oficialmente suportada para Microsoft Teams Rooms"
+      },
+      {
+        "marca_ou_produto": "Microsoft 365",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 3.3.2 [P19|L0724]",
+        "trecho_literal": "seguros, gerenciáveis e operacionais dentro do ecossistema Microsoft 365."
+      },
+      {
+        "marca_ou_produto": "Zoom",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 7.2.5 [P22|L0904-L0906]",
+        "trecho_literal": "A solução como um todo deverá permitir que a sala de reunião ingresse em videoconferências de outras plataformas de mercado, como Zoom, Google Meet e Webex, garantindo a comunicação com entidades que utilizam soluções de colaboração diversas."
+      },
+      {
+        "marca_ou_produto": "Google Meet",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 7.2.5 [P22|L0904-L0906]",
+        "trecho_literal": "A solução como um todo deverá permitir que a sala de reunião ingresse em videoconferências de outras plataformas de mercado, como Zoom, Google Meet e Webex, garantindo a comunicação com entidades que utilizam soluções de colaboração diversas."
+      },
+      {
+        "marca_ou_produto": "Webex",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 7.2.5 [P22|L0904-L0906]",
+        "trecho_literal": "A solução como um todo deverá permitir que a sala de reunião ingresse em videoconferências de outras plataformas de mercado, como Zoom, Google Meet e Webex, garantindo a comunicação com entidades que utilizam soluções de colaboração diversas."
+      },
+      {
+        "marca_ou_produto": "Kensington",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 7.3.1.4 [P23|L0944-L0945]",
+        "trecho_literal": "Deverá possuir 1 (um) slot para trava de segurança (padrão Kensington ou similar)."
+      },
+      {
+        "marca_ou_produto": "Outlook",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Item 10.3.3.2 [P26|L1115]",
+        "trecho_literal": "Como agendar reuniões em salas (via Outlook);"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "CLÁUSULA DÉCIMA – MATRIZ DE RISCOS [P42|L1833-L1838] e Anexo III [P58|L2452]",
+    "matriz_riscos_trecho": "O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "CLÁUSULA DÉCIMA – MATRIZ DE RISCOS, Parágrafo Segundo [P43|L1846-L1847]",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "Item 1.1.2 [P05|L0183-L0184] e Item 9 [P25|L1051-L1063]",
+    "subcontratacao_trecho": "Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no item 9 do Anexo I (Termo de Referência) deste Edital. (...) 9.3. Será permitida, exclusivamente, a subcontratação da seguinte parcela acessória: 9.3.1. O fornecimento, gestão e renovação das licenças de software Microsoft Teams Rooms Pro, referentes ao componente de software (subitem ‘b’).",
+    "escopo_exigencia_amostra": "apenas_primeiro_colocado",
+    "amostra_item": "Item 4.11.4 [P11|L0418-L0420] e Item 5.3.2 [P21|L0817-L0819]",
+    "amostra_trecho": "Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra para o Item, observadas as condições e o procedimento descrito no item 5.3 do Anexo I (Termo de Referência) deste Edital. (...) O BNDES poderá realizar análise e avaliação da conformidade da proposta, mediante homologação de amostras ou prova de conceito, entre outros testes de interesse do BNDES, de modo a comprovar sua aderência às especificações definidas.",
+    "percentual_minimo_atestado": 50,
+    "veda_somatorio_atestados": false,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "Item 5.1.2.1 [P20|L0783-L0785] e Item 5.1.2.2 [P20|L0786-L0787]",
+    "atestado_trecho": "Pelo menos, 50% (cinquenta por cento) do total dos kits MTR a serem fornecidos no respectivo item, independentemente do porte, incluindo as respectivas consoles de controles de operações por Touch Screen, serviço de instalação e garantia. (...) Será permitido o somatório das quantidades realizadas em diferentes atestados para comprovar o quantitativo mínimo exigido.",
+    "exige_credenciamento_ou_carta_fabricante": false,
+    "credenciamento_item": "Item 5.1.3 [P20|L0788-L0791]",
+    "credenciamento_trecho": "A Licitante deverá apresentar declaração própria de que contratará, junto ao(s) fabricante(s) dos equipamentos a serem fornecidos, a garantia, nas condições definidas nestas Especificações Técnicas, conforme modelo disponível no Anexo V do Edital (Modelos de Declaração).",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "Item 2.3, inciso VIII [P06|L0252]",
+    "consorcio_trecho": "VIII. esteja organizado sob a forma de consórcio."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_016_2026_bndes\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_016_2026_bndes).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_016_2026_bndes, 'Microsoft Teams Room (MTR)', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 1.1 [P18|L0645-L0646]', 'A presente licitação tem por objeto a aquisição de solução de videoconferência para salas médias com sistema Microsoft Teams Room (MTR)').\nmencao_marca_exigida(pe_016_2026_bndes, 'Microsoft Teams Rooms Pro', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Item 1.2, alínea b) [P18|L0659]', 'b) Licença Microsoft Teams Rooms Pro (12 meses)').\nmencao_marca_exigida(pe_016_2026_bndes, 'Microsoft', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 2.5 [P19|L0704-L0705]', 'Todos os dispositivos fornecidos deverão ser oficialmente certificados pela Microsoft para uso com sistema Microsoft Teams Room (MTR).').\nmencao_marca_exigida(pe_016_2026_bndes, 'Windows IoT Enterprise', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 7.3.1.3 [P23|L0938-L0939]', 'Deverá ser fornecido com sistema operacional Windows IoT Enterprise, ou outra edição do Microsoft Windows oficialmente suportada para Microsoft Teams Rooms').\nmencao_marca_exigida(pe_016_2026_bndes, 'Microsoft Windows', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 7.3.1.3 [P23|L0939]', 'Deverá ser fornecido com sistema operacional Windows IoT Enterprise, ou outra edição do Microsoft Windows oficialmente suportada para Microsoft Teams Rooms').\nmencao_marca_exigida(pe_016_2026_bndes, 'Microsoft 365', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Item 3.3.2 [P19|L0724]', 'seguros, gerenciáveis e operacionais dentro do ecossistema Microsoft 365.').\nmencao_marca_exigida(pe_016_2026_bndes, 'Zoom', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 7.2.5 [P22|L0904-L0906]', 'A solução como um todo deverá permitir que a sala de reunião ingresse em videoconferências de outras plataformas de mercado, como Zoom, Google Meet e Webex, garantindo a comunicação com entidades que utilizam soluções de colaboração diversas.').\nmencao_marca_exigida(pe_016_2026_bndes, 'Google Meet', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 7.2.5 [P22|L0904-L0906]', 'A solução como um todo deverá permitir que a sala de reunião ingresse em videoconferências de outras plataformas de mercado, como Zoom, Google Meet e Webex, garantindo a comunicação com entidades que utilizam soluções de colaboração diversas.').\nmencao_marca_exigida(pe_016_2026_bndes, 'Webex', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 7.2.5 [P22|L0904-L0906]', 'A solução como um todo deverá permitir que a sala de reunião ingresse em videoconferências de outras plataformas de mercado, como Zoom, Google Meet e Webex, garantindo a comunicação com entidades que utilizam soluções de colaboração diversas.').\nmencao_marca_exigida(pe_016_2026_bndes, 'Kensington', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'Item 7.3.1.4 [P23|L0944-L0945]', 'Deverá possuir 1 (um) slot para trava de segurança (padrão Kensington ou similar).').\nmencao_marca_exigida(pe_016_2026_bndes, 'Outlook', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Item 10.3.3.2 [P26|L1115]', 'Como agendar reuniões em salas (via Outlook);').\nevidencia_regra(pe_016_2026_bndes, 'R01', 'Item 1.2, alínea b) [P18|L0659]', '[Microsoft Teams Rooms Pro] b) Licença Microsoft Teams Rooms Pro (12 meses)').\nevidencia_regra(pe_016_2026_bndes, 'R02', 'Item 1.2, alínea b) [P18|L0659]', '[Microsoft Teams Rooms Pro] b) Licença Microsoft Teams Rooms Pro (12 meses)').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_016_2026_bndes, 'CLÁUSULA DÉCIMA – MATRIZ DE RISCOS [P42|L1833-L1838] e Anexo III [P58|L2452]', 'O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.').\nevidencia_regra(pe_016_2026_bndes, 'R03', 'CLÁUSULA DÉCIMA – MATRIZ DE RISCOS [P42|L1833-L1838] e Anexo III [P58|L2452]', 'O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.').\nfato_vedacao_aditivo_risco(pe_016_2026_bndes, 'CLÁUSULA DÉCIMA – MATRIZ DE RISCOS, Parágrafo Segundo [P43|L1846-L1847]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_016_2026_bndes, 'R38', 'CLÁUSULA DÉCIMA – MATRIZ DE RISCOS, Parágrafo Segundo [P43|L1846-L1847]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_016_2026_bndes, 'Item 1.1.2 [P05|L0183-L0184] e Item 9 [P25|L1051-L1063]', 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no item 9 do Anexo I (Termo de Referência) deste Edital. (...) 9.3. Será permitida, exclusivamente, a subcontratação da seguinte parcela acessória: 9.3.1. O fornecimento, gestão e renovação das licenças de software Microsoft Teams Rooms Pro, referentes ao componente de software (subitem ‘b’).').\nevidencia_regra(pe_016_2026_bndes, 'R09', 'Item 1.1.2 [P05|L0183-L0184] e Item 9 [P25|L1051-L1063]', 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no item 9 do Anexo I (Termo de Referência) deste Edital. (...) 9.3. Será permitida, exclusivamente, a subcontratação da seguinte parcela acessória: 9.3.1. O fornecimento, gestão e renovação das licenças de software Microsoft Teams Rooms Pro, referentes ao componente de software (subitem ‘b’).').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_016_2026_bndes, apenas_primeiro_colocado, 'Item 4.11.4 [P11|L0418-L0420] e Item 5.3.2 [P21|L0817-L0819]', 'Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra para o Item, observadas as condições e o procedimento descrito no item 5.3 do Anexo I (Termo de Referência) deste Edital. (...) O BNDES poderá realizar análise e avaliação da conformidade da proposta, mediante homologação de amostras ou prova de conceito, entre outros testes de interesse do BNDES, de modo a comprovar sua aderência às especificações definidas.').\nevidencia_regra(pe_016_2026_bndes, 'R11', 'Item 4.11.4 [P11|L0418-L0420] e Item 5.3.2 [P21|L0817-L0819]', 'Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra para o Item, observadas as condições e o procedimento descrito no item 5.3 do Anexo I (Termo de Referência) deste Edital. (...) O BNDES poderá realizar análise e avaliação da conformidade da proposta, mediante homologação de amostras ou prova de conceito, entre outros testes de interesse do BNDES, de modo a comprovar sua aderência às especificações definidas.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_016_2026_bndes, 50, 'Item 5.1.2.1 [P20|L0783-L0785] e Item 5.1.2.2 [P20|L0786-L0787]', 'Pelo menos, 50% (cinquenta por cento) do total dos kits MTR a serem fornecidos no respectivo item, independentemente do porte, incluindo as respectivas consoles de controles de operações por Touch Screen, serviço de instalação e garantia. (...) Será permitido o somatório das quantidades realizadas em diferentes atestados para comprovar o quantitativo mínimo exigido.').\nevidencia_regra(pe_016_2026_bndes, 'R29', 'Item 5.1.2.1 [P20|L0783-L0785] e Item 5.1.2.2 [P20|L0786-L0787]', 'Pelo menos, 50% (cinquenta por cento) do total dos kits MTR a serem fornecidos no respectivo item, independentemente do porte, incluindo as respectivas consoles de controles de operações por Touch Screen, serviço de instalação e garantia. (...) Será permitido o somatório das quantidades realizadas em diferentes atestados para comprovar o quantitativo mínimo exigido.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\n% fato_credenciamento_exigido ausente -> NAF (\\+) confirmará conformidade em R41\nevidencia_regra(pe_016_2026_bndes, 'R41', 'Item 5.1.3 [P20|L0788-L0791]', 'A Licitante deverá apresentar declaração própria de que contratará, junto ao(s) fabricante(s) dos equipamentos a serem fornecidos, a garantia, nas condições definidas nestas Especificações Técnicas, conforme modelo disponível no Anexo V do Edital (Modelos de Declaração).').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_016_2026_bndes, 'Item 2.3, inciso VIII [P06|L0252]', 'VIII. esteja organizado sob a forma de consórcio.').\nevidencia_regra(pe_016_2026_bndes, 'R43', 'Item 2.3, inciso VIII [P06|L0252]', 'VIII. esteja organizado sob a forma de consórcio.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "Item 1.2, alínea b) [P18|L0659]",
+      "trecho_identificado": "[Microsoft Teams Rooms Pro] b) Licença Microsoft Teams Rooms Pro (12 meses)",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_similaridade,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Item 1.2, alínea b) [P18|L0659]",
+      "trecho_identificado": "[Microsoft Teams Rooms Pro] b) Licença Microsoft Teams Rooms Pro (12 meses)",
+      "momento_edital": "power",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_padronizacao,power,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "CLÁUSULA DÉCIMA – MATRIZ DE RISCOS [P42|L1833-L1838] e Anexo III [P58|L2452]",
+      "trecho_identificado": "O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "Item 1.1.2 [P05|L0183-L0184] e Item 9 [P25|L1051-L1063]",
+      "trecho_identificado": "Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no item 9 do Anexo I (Termo de Referência) deste Edital. (...) 9.3. Será permitida, exclusivamente, a subcontratação da seguinte parcela acessória: 9.3.1. O fornecimento, gestão e renovação das licenças de software Microsoft Teams Rooms Pro, referentes ao componente de software (subitem ‘b’).",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Item 4.11.4 [P11|L0418-L0420] e Item 5.3.2 [P21|L0817-L0819]",
+      "trecho_identificado": "Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra para o Item, observadas as condições e o procedimento descrito no item 5.3 do Anexo I (Termo de Referência) deste Edital. (...) O BNDES poderá realizar análise e avaliação da conformidade da proposta, mediante homologação de amostras ou prova de conceito, entre outros testes de interesse do BNDES, de modo a comprovar sua aderência às especificações definidas.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_restrita_primeiro_colocado,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Item 5.1.2.1 [P20|L0783-L0785] e Item 5.1.2.2 [P20|L0786-L0787]",
+      "trecho_identificado": "Pelo menos, 50% (cinquenta por cento) do total dos kits MTR a serem fornecidos no respectivo item, independentemente do porte, incluindo as respectivas consoles de controles de operações por Touch Screen, serviço de instalação e garantia. (...) Será permitido o somatório das quantidades realizadas em diferentes atestados para comprovar o quantitativo mínimo exigido.",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(atestado_conforme,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "CLÁUSULA DÉCIMA – MATRIZ DE RISCOS, Parágrafo Segundo [P43|L1846-L1847]",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "Item 5.1.3 [P20|L0788-L0791]",
+      "trecho_identificado": "A Licitante deverá apresentar declaração própria de que contratará, junto ao(s) fabricante(s) dos equipamentos a serem fornecidos, a garantia, nas condições definidas nestas Especificações Técnicas, conforme modelo disponível no Anexo V do Edital (Modelos de Declaração).",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "harmonia_normativa(sem_exigencia_credenciamento,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "Item 2.3, inciso VIII [P06|L0252]",
+      "trecho_identificado": "VIII. esteja organizado sob a forma de consórcio.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital especifica a contratação de uma 'solução Microsoft Teams Room' e 'licenças de subscrição MTR Pro' como objeto principal, que são marcas nominais. Embora haja uma cláusula geral permitindo equipamentos equivalentes ou superiores, esta não se aplica diretamente à definição da plataforma central da solução, que é explicitamente de uma marca. A ausência da cláusula 'ou similar ou de melhor qualidade' diretamente associada à marca da solução no objeto pode configurar direcionamento.",
+      "trecho_citado_llm": "P02|L0020: 'Contratação de solução Microsoft Teams Room, abrangendo fornecimento de kits de videoconferência certificados, licenças de subscrição MTR Pro e serviços correlatos de instalação, configuração e garantia estendida'. P05|L0177: '1.1 O presente Pregão visa à contratação de solução Microsoft Teams Room, abrangendo fornecimento de kits de videoconferência certificados, licenças de subscrição MTR Pro e serviços correlatos de instalação, configuração e garantia estendida'. P19|L0704: 'Todos os dispositivos fornecidos deverão ser oficialmente certificados pela Microsoft para uso com sistema Microsoft Teams Room (MTR).'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_omit` / `permission_to_act`)."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital indica a marca e modelo específico ('Microsoft Teams Room' e 'MTR Pro') para a solução a ser contratada e exige certificação Microsoft para os dispositivos, sem apresentar uma justificativa formal de padronização prévia. A especificação da solução por uma marca específica sem a devida justificativa de padronização pode restringir a competitividade.",
+      "trecho_citado_llm": "P02|L0020: 'Contratação de solução Microsoft Teams Room, abrangendo fornecimento de kits de videoconferência certificados, licenças de subscrição MTR Pro e serviços correlatos de instalação, configuração e garantia estendida'. P19|L0704: 'Todos os dispositivos fornecidos deverão ser oficialmente certificados pela Microsoft para uso com sistema Microsoft Teams Room (MTR).'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`power` / `disability`)."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital inclui expressamente a Matriz de Riscos como Anexo III do contrato, conforme exigido para contratações complexas. A matriz detalha a alocação de riscos entre o BNDES e o Contratado.",
+      "trecho_citado_llm": "P42|L1833: 'CLÁUSULA DÉCIMA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.' P58|L2452: 'Anexo III - Matriz de Risco'.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital autoriza a subcontratação da parcela de licenciamento de software e veda a subcontratação de outras parcelas (hardware, instalação e garantia). No entanto, não estabelece limites percentuais para a parcela subcontratada em relação ao valor total do contrato, o que é uma exigência do Art. 78, III, da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P25|L1051: '9. DA SUBCONTRATAÇÃO'. P25|L1057: '9.2. É vedada a subcontratação das parcelas principais do objeto, quais sejam: 9.2.1. O fornecimento dos Kits MTR (Hardware); 9.2.2. Os Serviços de Instalação e Configuração; e 9.2.3. O Serviço de Garantia.'. P25|L1061: '9.3. Será permitida, exclusivamente, a subcontratação da seguinte parcela acessória: 9.3.1. O fornecimento, gestão e renovação das licenças de software Microsoft Teams Rooms Pro, referentes ao componente de software (subitem ‘b’).'",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Indício de Inconformidade vs. Prolog/UFO-L: Conforme — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Indício de Inconformidade', enquanto o motor Prolog + UFO-L derivou 'Conforme' via Resolução SLD (`duty_to_act` vs `duty_to_act`) com base em Item 1.1.2 [P05|L0183-L0184] e Item 9 [P25|L1051-L1063]."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A exigência de amostra ou prova de conceito está vinculada à fase de habilitação do licitante ofertante do melhor lance, ou seja, após a fase de propostas iniciais e identificação do provável vencedor. Isso está em conformidade com a legislação, que busca evitar ônus desnecessários a todos os participantes.",
+      "trecho_citado_llm": "P11|L0415: 'a apresentação da amostra e análise definitiva da proposta, em todos os seus requisitos, somente será concluída se verificado o atendimento dos requisitos de habilitação do Licitante ofertante do melhor lance.' P11|L0418: 'Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra para o Item, observadas as condições e o procedimento descrito no item 5.3 do Anexo I (Termo de Referência) deste Edital.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A exigência de comprovação de experiência pretérita em atestados de capacidade técnica é de 'pelo menos, 50% do total dos kits MTR a serem fornecidos'. Este percentual está em conformidade com o limite máximo de 50% estabelecido pela Súmula 263 do TCU para quantitativos de experiência pretérita.",
+      "trecho_citado_llm": "P20|L0783: '5.1.2.1. Pelo menos, 50% (cinquenta por cento) do total dos kits MTR a serem fornecidos no respectivo item, independentemente do porte, incluindo as respectivas consoles de controles de operações por Touch Screen, serviço de instalação e garantia.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_act` / `permission_to_act`)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A minuta de contrato contém vedação expressa à celebração de aditivos decorrentes de riscos alocados ao Contratado na Matriz de Riscos, atendendo ao disposto no Art. 81, § 8º, da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P42|L1846: 'Parágrafo Segundo É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital exige uma declaração própria do licitante de que contratará a garantia junto ao fabricante, e não uma declaração de credenciamento, anuência ou carta de solidariedade emitida pelo fabricante. Esta exigência não restringe a competitividade de forma indevida, pois foca na responsabilidade do licitante em assegurar a garantia.",
+      "trecho_citado_llm": "P20|L0788: '5.1.3. A Licitante deverá apresentar declaração própria de que contratará, junto ao(s) fabricante(s) dos equipamentos a serem fornecidos, a garantia, nas condições definidas nestas Especificações Técnicas, conforme modelo disponível no Anexo V do Edital (Modelos de Declaração).'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital veda expressamente a participação de empresas organizadas sob a forma de consórcio, sem apresentar qualquer justificativa formal para tal restrição. Considerando que o objeto é uma solução complexa de TI (kits de videoconferência, licenças, instalação e garantia), a vedação à participação em consórcio sem justificativa pode limitar a competitividade, impedindo que empresas complementares unam forças para atender ao objeto.",
+      "trecho_citado_llm": "P06|L0252: 'VIII. esteja organizado sob a forma de consórcio.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

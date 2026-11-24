@@ -1,0 +1,495 @@
+{
+  "timestamp_execucao": "2026-11-23T20:41:41",
+  "nome_arquivo": "Edital_PE_8-2026.pdf",
+  "identificador_edital": "pe_08_2026",
+  "total_paginas": 98,
+  "total_linhas": 4515,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 647,
+      "total_linhas": 647,
+      "pagina_inicio": 1,
+      "pagina_fim": 18
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 648,
+      "fim": 2612,
+      "total_linhas": 1965,
+      "pagina_inicio": 18,
+      "pagina_fim": 55
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 2613,
+      "fim": 3846,
+      "total_linhas": 1234,
+      "pagina_inicio": 55,
+      "pagina_fim": 82
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 43.07,
+  "tempo_prolog_ms": 923.818,
+  "tempo_somente_neural_s": 30.9,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 97607,
+    "thoughts_token_count": 4093,
+    "candidates_token_count": 6085,
+    "total_token_count": 107785
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 97288,
+    "thoughts_token_count": 4092,
+    "candidates_token_count": 2802,
+    "total_token_count": 104182
+  },
+  "fatos": {
+    "identificador_edital": "pe_08_2026",
+    "resumo_objeto": "Aquisição de solução de virtualização de mídias magnéticas (Virtual Tape System - VTS), modelo IBM TS7780 (3948-VEF), para o Data Center alternativo do BNDES, incluindo instalação, configuração, treinamento, atualização do VTS do Data Center principal, serviço de armazenamento em nuvem e assistência técnica.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "IBM TS7780 (3948-VEF)",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "OBJETO [P02|L0020]",
+        "trecho_literal": "modelo IBM TS7780 (3948-VEF)"
+      },
+      {
+        "marca_ou_produto": "IBM TS7780 (3948-VEF)",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "1.1 [P05|L0178]",
+        "trecho_literal": "modelo IBM TS7780 (3948-VEF)"
+      },
+      {
+        "marca_ou_produto": "IBM TS7780 (3948-VEF)",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "1.1 [P18|L0650]",
+        "trecho_literal": "modelo IBM TS7780 (3948-VEF)"
+      },
+      {
+        "marca_ou_produto": "IBM TS7700/VTS",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "3.10 [P19|L0761]",
+        "trecho_literal": "Hydra é um termo usado como sinônimo de VTS. Não representa uma sigla, mas sim o codinome para arquitetura TS7700/VTS da IBM."
+      },
+      {
+        "marca_ou_produto": "IBM Cloud Object Storage (COS)",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "3.11 [P19|L0762]",
+        "trecho_literal": "COS (Cloud Object Storage) é a solução de armazenamento de objetos da IBM projetada para armazenar grandes volumes de dados não estruturados (como backups, imagens, vídeos, logs, dados analíticos etc.) de forma escalável, segura e compatível com o protocolo S3 da AWS. Pode ser implantado on-premises ou em nuvem IBM Cloud."
+      },
+      {
+        "marca_ou_produto": "IBM Cloud",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "3.11 [P19|L0765]",
+        "trecho_literal": "Pode ser implantado on-premises ou em nuvem IBM Cloud."
+      },
+      {
+        "marca_ou_produto": "Amazon S3 (AWS)",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "3.12 [P19|L0769]",
+        "trecho_literal": "Protocolo S3 refere-se à interface de programação de aplicações (API) utilizada para se comunicar com sistemas de armazenamento em nuvem compatíveis com o Amazon S3 (Simple Storage Service), da AWS."
+      },
+      {
+        "marca_ou_produto": "IBM zSeries z16-A02 (3932-N03)",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.1 [P20|L0775]",
+        "trecho_literal": "Um mainframe IBM zSeries z16-A02 (3932-N03), localizado no DC principal, rodando z/OS versão 2.5 e superiores."
+      },
+      {
+        "marca_ou_produto": "z/OS",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.1 [P20|L0776]",
+        "trecho_literal": "rodando z/OS versão 2.5 e superiores."
+      },
+      {
+        "marca_ou_produto": "ADRDSSU",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.1.3 [P20|L0783]",
+        "trecho_literal": "O software utilizado para backup do mainframe é o ADRDSSU;"
+      },
+      {
+        "marca_ou_produto": "ADABAS",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.1.4 [P21|L0804]",
+        "trecho_literal": "O backup dos bancos de dados do mainframe é feito por utilitário próprio do ADABAS;"
+      },
+      {
+        "marca_ou_produto": "IBM DFHSM",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.1.5 [P21|L0805]",
+        "trecho_literal": "O software de armazenamento hierárquico no mainframe é o IBM DFHSM;"
+      },
+      {
+        "marca_ou_produto": "IBM zSeries z16-A02 (3932-A01)",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.2 [P21|L0806]",
+        "trecho_literal": "Um mainframe IBM zSeries z16-A02 (3932-A01) operando em modo CBU (Capacity Backup), localizado no DC alternativo, rodando z/OS versão 2.5 e superiores."
+      },
+      {
+        "marca_ou_produto": "z/OS",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.2 [P21|L0807]",
+        "trecho_literal": "rodando z/OS versão 2.5 e superiores."
+      },
+      {
+        "marca_ou_produto": "ADRDSSU",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.2.2 [P21|L0813]",
+        "trecho_literal": "O software utilizado para backup do mainframe é o ADRDSSU;"
+      },
+      {
+        "marca_ou_produto": "ADABAS",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.2.3 [P21|L0814]",
+        "trecho_literal": "O backup dos bancos de dados do mainframe é feito por utilitário próprio do ADABAS;"
+      },
+      {
+        "marca_ou_produto": "IBM DFHSM",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.2.4 [P21|L0816]",
+        "trecho_literal": "O software de armazenamento hierárquico no mainframe é o IBM DFHSM;"
+      },
+      {
+        "marca_ou_produto": "IBM TS7770 (3948-VED)",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.3 [P21|L0817]",
+        "trecho_literal": "Um VTS modelo IBM TS7770 (3948-VED), instalado no DC principal, conectado ao mainframe deste Data Center via 4 conexões FICON, e conectado ao VTS do DC alternativo via 2 conexões FICON;"
+      },
+      {
+        "marca_ou_produto": "IBM TS7770T (3597-VED)",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.4 [P21|L0820]",
+        "trecho_literal": "Um VTS modelo IBM TS7770T (3597-VED), o qual será substituído pelo objeto ora especificado, instalado do DC alternativo utilizado para replicação de todas as fitas virtuais gravadas no VTS do DC principal (operação no modo grid) e servindo como backup em caso de falha deste. Este equipamento está conectado ao mainframe do DC alternativo via 2 conexões FICON e ao mainframe do DC principal via outras 2 conexões FICON. Este equipamento está conectado à fitoteca do DC alternativo. Este equipamento pertence à Takoda sendo utilizado pelo BNDES sob contrato de hosting."
+      },
+      {
+        "marca_ou_produto": "Hitachi VSP-5200",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.5 [P21|L0828]",
+        "trecho_literal": "Duas unidades idênticas de armazenamento de dados Hitachi modelo VSP-5200, sendo uma instalada no DC principal e outra instalada no DC alternativo, cada uma delas conectadas nos mainframes em seus respectivos Data Centers."
+      },
+      {
+        "marca_ou_produto": "IBM TS4500",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.6 [P21|L0831]",
+        "trecho_literal": "Uma fitoteca IBM modelo TS4500, com 5 de seus drives TS1150 (3592-EH8), conectados ao VTS do DC alternativo. Este equipamento pertence à Takoda sendo utilizado pelo BNDES sob contrato de hosting."
+      },
+      {
+        "marca_ou_produto": "TS1150 (3592-EH8)",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "4.6 [P21|L0831]",
+        "trecho_literal": "Uma fitoteca IBM modelo TS4500, com 5 de seus drives TS1150 (3592-EH8), conectados ao VTS do DC alternativo. Este equipamento pertence à Takoda sendo utilizado pelo BNDES sob contrato de hosting."
+      },
+      {
+        "marca_ou_produto": "TS7780C",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "6.2.1 [P23|L0916]",
+        "trecho_literal": "A solução de armazenamento virtual em fita a ser fornecida deverá operar no modo com armazenamento em nuvem (TS7780C), permitindo a extensão nativa do armazenamento em disco (fitas virtuais) para serviços de armazenamento de objeto em nuvem compatíveis com o equipamento, sem necessidade de gateways, softwares intermediários ou conversores de protocolo."
+      },
+      {
+        "marca_ou_produto": "z/OS 2.5",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "6.8.2 [P24|L0962]",
+        "trecho_literal": "Ser compatível com o sistema operacional z/OS 2.5 e superiores, com DFSMS (Data Facility Storage Management Subsystem) e com futuras versões de software que forem adquiridas pelo BNDES e que executem sobre o z/OS;"
+      },
+      {
+        "marca_ou_produto": "DFSMS (Data Facility Storage Management Subsystem)",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "6.8.2 [P24|L0962]",
+        "trecho_literal": "Ser compatível com o sistema operacional z/OS 2.5 e superiores, com DFSMS (Data Facility Storage Management Subsystem) e com futuras versões de software que forem adquiridas pelo BNDES e que executem sobre o z/OS;"
+      },
+      {
+        "marca_ou_produto": "TS7770",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "7.2 [P25|L1046]",
+        "trecho_literal": "O VTS instalado no DC principal, modelo TS7770, deverá ser atualizado de modo a manter a compatibilidade com o VTS do DC alternativo. Faz parte dessa atualização:"
+      },
+      {
+        "marca_ou_produto": "TS7780",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "9.4 [P27|L1155]",
+        "trecho_literal": "Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados."
+      },
+      {
+        "marca_ou_produto": "TS7770",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "9.4 [P27|L1155]",
+        "trecho_literal": "Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados."
+      },
+      {
+        "marca_ou_produto": "TS7770T",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "9.16 [P28|L1236]",
+        "trecho_literal": "Após a conclusão da instalação e da configuração, a CONTRATADA deverá, após anuência do BNDES, realizar a desativação do VTS atualmente instalado no DC alternativo (TS7770T) de propriedade da Takoda, conforme descrito no item 4.4, o que inclui:"
+      },
+      {
+        "marca_ou_produto": "IBM Hydra Bulk Volume Information Retrieval (BVIR)",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "13.6.8 [P37|L1711]",
+        "trecho_literal": "Uso dos utilitários IBM Hydra Bulk Volume Information Retrieval (BVIR), Copy Export, Cloud Export e Cloud DR (Disaster Recovery);"
+      },
+      {
+        "marca_ou_produto": "IBM",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "12.5 [P34|L1547]",
+        "trecho_literal": "compatibilidade operacional comprovada com dispositivo de armazenamento VTS TS7780 da IBM."
+      },
+      {
+        "marca_ou_produto": "COS IBM",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "26.1.6 [P50|L2490]",
+        "trecho_literal": "Até R$ 77.012,67 (setenta e sete mil, doze reais e sessenta e sete centavos) para o item Alteração do modo de exportação de dados para equipamento COS IBM (opcional e sob demanda);"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "ANEXO IV – MATRIZ DE RISCOS [P78|L3614]",
+    "matriz_riscos_trecho": "ANEXO IV – MATRIZ DE RISCOS",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "CLÁUSULA NONA – MATRIZ DE RISCOS, Parágrafo Segundo [P62|L2961]",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "1.1.2 [P05|L0185]; 13.8 [P37|L1722]; CLÁUSULA DÉCIMA SÉTIMA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO, Parágrafo Terceiro [P73|L3424]",
+    "subcontratacao_trecho": "Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Termo de Referência deste Edital. (...) É permitida a subcontratação do serviço de treinamento e do serviço de armazenamento em nuvem. (...) É admitida a subcontratação da parcela do objeto deste Contrato, conforme previsto no Anexo I - Termo de Referência, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.",
+    "escopo_exigencia_amostra": "nao_exigida",
+    "amostra_item": "Não exigida explicitamente como 'amostra' ou 'PoC' para avaliação de propostas.",
+    "amostra_trecho": "Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para avaliação das propostas dos licitantes. Há apenas a possibilidade de vistoria técnica do local.",
+    "percentual_minimo_atestado": 0,
+    "veda_somatorio_atestados": false,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "23.1 [P47|L2342]; 23.4 [P48|L2373]",
+    "atestado_trecho": "A Licitante deverá apresentar atestado de capacidade técnica, expedido por pessoa jurídica de direito público ou privado, que comprove que a LICITANTE executou ou executa, objeto da mesma natureza ou similar ao respectivo item da presente licitação. (...) o Licitante deverá comprovar que possui patrimônio líquido ou capital social de, no mínimo, 10% (dez por cento) do valor global da contratação.",
+    "exige_credenciamento_ou_carta_fabricante": true,
+    "credenciamento_item": "24.16 [P49|L2443]; CLÁUSULA SÉTIMA – PAGAMENTO, 14.5 [P38|L1755]",
+    "credenciamento_trecho": "Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar os equipamentos e assistência técnica descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). (...) O BNDES realizará o pagamento pela assistência técnica será efetuado em 3 (três) parcelas anuais conforme descrito a seguir: 14.5.1. Primeiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação nos 12 primeiros meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.2. Segundo ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 13º ao 24º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.3. Terceiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 25º ao 36º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES;",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "2.3. VIII [P06|L0253]",
+    "consorcio_trecho": "VIII. esteja organizado sob a forma de consórcio."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_08_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_08_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_08_2026, 'IBM TS7780 (3948-VEF)', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'OBJETO [P02|L0020]', 'modelo IBM TS7780 (3948-VEF)').\nmencao_marca_exigida(pe_08_2026, 'IBM TS7780 (3948-VEF)', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, '1.1 [P05|L0178]', 'modelo IBM TS7780 (3948-VEF)').\nmencao_marca_exigida(pe_08_2026, 'IBM TS7780 (3948-VEF)', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, '1.1 [P18|L0650]', 'modelo IBM TS7780 (3948-VEF)').\nmencao_marca_exigida(pe_08_2026, 'IBM TS7700/VTS', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, '3.10 [P19|L0761]', 'Hydra é um termo usado como sinônimo de VTS. Não representa uma sigla, mas sim o codinome para arquitetura TS7700/VTS da IBM.').\nmencao_marca_exigida(pe_08_2026, 'IBM Cloud Object Storage (COS)', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, '3.11 [P19|L0762]', 'COS (Cloud Object Storage) é a solução de armazenamento de objetos da IBM projetada para armazenar grandes volumes de dados não estruturados (como backups, imagens, vídeos, logs, dados analíticos etc.) de forma escalável, segura e compatível com o protocolo S3 da AWS. Pode ser implantado on-premises ou em nuvem IBM Cloud.').\nmencao_marca_exigida(pe_08_2026, 'IBM Cloud', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, '3.11 [P19|L0765]', 'Pode ser implantado on-premises ou em nuvem IBM Cloud.').\nmencao_marca_exigida(pe_08_2026, 'Amazon S3 (AWS)', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, '3.12 [P19|L0769]', 'Protocolo S3 refere-se à interface de programação de aplicações (API) utilizada para se comunicar com sistemas de armazenamento em nuvem compatíveis com o Amazon S3 (Simple Storage Service), da AWS.').\nmencao_marca_exigida(pe_08_2026, 'IBM zSeries z16-A02 (3932-N03)', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.1 [P20|L0775]', 'Um mainframe IBM zSeries z16-A02 (3932-N03), localizado no DC principal, rodando z/OS versão 2.5 e superiores.').\nmencao_marca_exigida(pe_08_2026, 'z/OS', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.1 [P20|L0776]', 'rodando z/OS versão 2.5 e superiores.').\nmencao_marca_exigida(pe_08_2026, 'ADRDSSU', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.1.3 [P20|L0783]', 'O software utilizado para backup do mainframe é o ADRDSSU;').\nmencao_marca_exigida(pe_08_2026, 'ADABAS', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.1.4 [P21|L0804]', 'O backup dos bancos de dados do mainframe é feito por utilitário próprio do ADABAS;').\nmencao_marca_exigida(pe_08_2026, 'IBM DFHSM', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.1.5 [P21|L0805]', 'O software de armazenamento hierárquico no mainframe é o IBM DFHSM;').\nmencao_marca_exigida(pe_08_2026, 'IBM zSeries z16-A02 (3932-A01)', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.2 [P21|L0806]', 'Um mainframe IBM zSeries z16-A02 (3932-A01) operando em modo CBU (Capacity Backup), localizado no DC alternativo, rodando z/OS versão 2.5 e superiores.').\nmencao_marca_exigida(pe_08_2026, 'z/OS', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.2 [P21|L0807]', 'rodando z/OS versão 2.5 e superiores.').\nmencao_marca_exigida(pe_08_2026, 'ADRDSSU', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.2.2 [P21|L0813]', 'O software utilizado para backup do mainframe é o ADRDSSU;').\nmencao_marca_exigida(pe_08_2026, 'ADABAS', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.2.3 [P21|L0814]', 'O backup dos bancos de dados do mainframe é feito por utilitário próprio do ADABAS;').\nmencao_marca_exigida(pe_08_2026, 'IBM DFHSM', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.2.4 [P21|L0816]', 'O software de armazenamento hierárquico no mainframe é o IBM DFHSM;').\nmencao_marca_exigida(pe_08_2026, 'IBM TS7770 (3948-VED)', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.3 [P21|L0817]', 'Um VTS modelo IBM TS7770 (3948-VED), instalado no DC principal, conectado ao mainframe deste Data Center via 4 conexões FICON, e conectado ao VTS do DC alternativo via 2 conexões FICON;').\nmencao_marca_exigida(pe_08_2026, 'IBM TS7770T (3597-VED)', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.4 [P21|L0820]', 'Um VTS modelo IBM TS7770T (3597-VED), o qual será substituído pelo objeto ora especificado, instalado do DC alternativo utilizado para replicação de todas as fitas virtuais gravadas no VTS do DC principal (operação no modo grid) e servindo como backup em caso de falha deste. Este equipamento está conectado ao mainframe do DC alternativo via 2 conexões FICON e ao mainframe do DC principal via outras 2 conexões FICON. Este equipamento está conectado à fitoteca do DC alternativo. Este equipamento pertence à Takoda sendo utilizado pelo BNDES sob contrato de hosting.').\nmencao_marca_exigida(pe_08_2026, 'Hitachi VSP-5200', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.5 [P21|L0828]', 'Duas unidades idênticas de armazenamento de dados Hitachi modelo VSP-5200, sendo uma instalada no DC principal e outra instalada no DC alternativo, cada uma delas conectadas nos mainframes em seus respectivos Data Centers.').\nmencao_marca_exigida(pe_08_2026, 'IBM TS4500', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.6 [P21|L0831]', 'Uma fitoteca IBM modelo TS4500, com 5 de seus drives TS1150 (3592-EH8), conectados ao VTS do DC alternativo. Este equipamento pertence à Takoda sendo utilizado pelo BNDES sob contrato de hosting.').\nmencao_marca_exigida(pe_08_2026, 'TS1150 (3592-EH8)', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '4.6 [P21|L0831]', 'Uma fitoteca IBM modelo TS4500, com 5 de seus drives TS1150 (3592-EH8), conectados ao VTS do DC alternativo. Este equipamento pertence à Takoda sendo utilizado pelo BNDES sob contrato de hosting.').\nmencao_marca_exigida(pe_08_2026, 'TS7780C', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, '6.2.1 [P23|L0916]', 'A solução de armazenamento virtual em fita a ser fornecida deverá operar no modo com armazenamento em nuvem (TS7780C), permitindo a extensão nativa do armazenamento em disco (fitas virtuais) para serviços de armazenamento de objeto em nuvem compatíveis com o equipamento, sem necessidade de gateways, softwares intermediários ou conversores de protocolo.').\nmencao_marca_exigida(pe_08_2026, 'z/OS 2.5', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '6.8.2 [P24|L0962]', 'Ser compatível com o sistema operacional z/OS 2.5 e superiores, com DFSMS (Data Facility Storage Management Subsystem) e com futuras versões de software que forem adquiridas pelo BNDES e que executem sobre o z/OS;').\nmencao_marca_exigida(pe_08_2026, 'DFSMS (Data Facility Storage Management Subsystem)', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '6.8.2 [P24|L0962]', 'Ser compatível com o sistema operacional z/OS 2.5 e superiores, com DFSMS (Data Facility Storage Management Subsystem) e com futuras versões de software que forem adquiridas pelo BNDES e que executem sobre o z/OS;').\nmencao_marca_exigida(pe_08_2026, 'TS7770', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, '7.2 [P25|L1046]', 'O VTS instalado no DC principal, modelo TS7770, deverá ser atualizado de modo a manter a compatibilidade com o VTS do DC alternativo. Faz parte dessa atualização:').\nmencao_marca_exigida(pe_08_2026, 'TS7780', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, '9.4 [P27|L1155]', 'Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados.').\nmencao_marca_exigida(pe_08_2026, 'TS7770', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '9.4 [P27|L1155]', 'Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados.').\nmencao_marca_exigida(pe_08_2026, 'TS7770T', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, '9.16 [P28|L1236]', 'Após a conclusão da instalação e da configuração, a CONTRATADA deverá, após anuência do BNDES, realizar a desativação do VTS atualmente instalado no DC alternativo (TS7770T) de propriedade da Takoda, conforme descrito no item 4.4, o que inclui:').\nmencao_marca_exigida(pe_08_2026, 'IBM Hydra Bulk Volume Information Retrieval (BVIR)', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, '13.6.8 [P37|L1711]', 'Uso dos utilitários IBM Hydra Bulk Volume Information Retrieval (BVIR), Copy Export, Cloud Export e Cloud DR (Disaster Recovery);').\nmencao_marca_exigida(pe_08_2026, 'IBM', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, '12.5 [P34|L1547]', 'compatibilidade operacional comprovada com dispositivo de armazenamento VTS TS7780 da IBM.').\nmencao_marca_exigida(pe_08_2026, 'COS IBM', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, '26.1.6 [P50|L2490]', 'Até R$ 77.012,67 (setenta e sete mil, doze reais e sessenta e sete centavos) para o item Alteração do modo de exportação de dados para equipamento COS IBM (opcional e sob demanda);').\nevidencia_regra(pe_08_2026, 'R01', 'OBJETO [P02|L0020] | 1.1 [P05|L0178] | 1.1 [P18|L0650] | 6.2.1 [P23|L0916] | 7.2 [P25|L1046] | 9.4 [P27|L1155]', '[IBM TS7780 (3948-VEF)] modelo IBM TS7780 (3948-VEF) [TS7780C] A solução de armazenamento virtual em fita a ser fornecida deverá operar no modo com armazenamento em nuvem (TS7780C), permitindo a extensão nativa do armazenamento em disco (fitas virtuais) para serviços de armazenamento de objeto em nuvem compatíveis com o equipamento, sem necessidade de gateways, softwares intermediários ou conversores de protocolo. [TS7770] O VTS instalado no DC principal, modelo TS7770, deverá ser atualizado de modo a manter a compatibilidade com o VTS do DC alternativo. Faz parte dessa atualização: [TS7780] Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados.').\nevidencia_regra(pe_08_2026, 'R02', 'OBJETO [P02|L0020] | 1.1 [P05|L0178] | 1.1 [P18|L0650] | 6.2.1 [P23|L0916] | 7.2 [P25|L1046] | 9.4 [P27|L1155]', '[IBM TS7780 (3948-VEF)] modelo IBM TS7780 (3948-VEF) [TS7780C] A solução de armazenamento virtual em fita a ser fornecida deverá operar no modo com armazenamento em nuvem (TS7780C), permitindo a extensão nativa do armazenamento em disco (fitas virtuais) para serviços de armazenamento de objeto em nuvem compatíveis com o equipamento, sem necessidade de gateways, softwares intermediários ou conversores de protocolo. [TS7770] O VTS instalado no DC principal, modelo TS7770, deverá ser atualizado de modo a manter a compatibilidade com o VTS do DC alternativo. Faz parte dessa atualização: [TS7780] Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados.').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_08_2026, 'ANEXO IV – MATRIZ DE RISCOS [P78|L3614]', 'ANEXO IV – MATRIZ DE RISCOS').\nevidencia_regra(pe_08_2026, 'R03', 'ANEXO IV – MATRIZ DE RISCOS [P78|L3614]', 'ANEXO IV – MATRIZ DE RISCOS').\nfato_vedacao_aditivo_risco(pe_08_2026, 'CLÁUSULA NONA – MATRIZ DE RISCOS, Parágrafo Segundo [P62|L2961]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_08_2026, 'R38', 'CLÁUSULA NONA – MATRIZ DE RISCOS, Parágrafo Segundo [P62|L2961]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_08_2026, '1.1.2 [P05|L0185]; 13.8 [P37|L1722]; CLÁUSULA DÉCIMA SÉTIMA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO, Parágrafo Terceiro [P73|L3424]', 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Termo de Referência deste Edital. (...) É permitida a subcontratação do serviço de treinamento e do serviço de armazenamento em nuvem. (...) É admitida a subcontratação da parcela do objeto deste Contrato, conforme previsto no Anexo I - Termo de Referência, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.').\nevidencia_regra(pe_08_2026, 'R09', '1.1.2 [P05|L0185]; 13.8 [P37|L1722]; CLÁUSULA DÉCIMA SÉTIMA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO, Parágrafo Terceiro [P73|L3424]', 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Termo de Referência deste Edital. (...) É permitida a subcontratação do serviço de treinamento e do serviço de armazenamento em nuvem. (...) É admitida a subcontratação da parcela do objeto deste Contrato, conforme previsto no Anexo I - Termo de Referência, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_08_2026, nao_exigida, 'Não exigida explicitamente como \\'amostra\\' ou \\'PoC\\' para avaliação de propostas.', 'Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para avaliação das propostas dos licitantes. Há apenas a possibilidade de vistoria técnica do local.').\nevidencia_regra(pe_08_2026, 'R11', 'Não exigida explicitamente como \\'amostra\\' ou \\'PoC\\' para avaliação de propostas.', 'Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para avaliação das propostas dos licitantes. Há apenas a possibilidade de vistoria técnica do local.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_08_2026, 0, '23.1 [P47|L2342]; 23.4 [P48|L2373]', 'A Licitante deverá apresentar atestado de capacidade técnica, expedido por pessoa jurídica de direito público ou privado, que comprove que a LICITANTE executou ou executa, objeto da mesma natureza ou similar ao respectivo item da presente licitação. (...) o Licitante deverá comprovar que possui patrimônio líquido ou capital social de, no mínimo, 10% (dez por cento) do valor global da contratação.').\nevidencia_regra(pe_08_2026, 'R29', '23.1 [P47|L2342]; 23.4 [P48|L2373]', 'A Licitante deverá apresentar atestado de capacidade técnica, expedido por pessoa jurídica de direito público ou privado, que comprove que a LICITANTE executou ou executa, objeto da mesma natureza ou similar ao respectivo item da presente licitação. (...) o Licitante deverá comprovar que possui patrimônio líquido ou capital social de, no mínimo, 10% (dez por cento) do valor global da contratação.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\nfato_credenciamento_exigido(pe_08_2026, '24.16 [P49|L2443]; CLÁUSULA SÉTIMA – PAGAMENTO, 14.5 [P38|L1755]', 'Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar os equipamentos e assistência técnica descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). (...) O BNDES realizará o pagamento pela assistência técnica será efetuado em 3 (três) parcelas anuais conforme descrito a seguir: 14.5.1. Primeiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação nos 12 primeiros meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.2. Segundo ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 13º ao 24º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.3. Terceiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 25º ao 36º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES;').\nevidencia_regra(pe_08_2026, 'R41', '24.16 [P49|L2443]; CLÁUSULA SÉTIMA – PAGAMENTO, 14.5 [P38|L1755]', 'Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar os equipamentos e assistência técnica descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). (...) O BNDES realizará o pagamento pela assistência técnica será efetuado em 3 (três) parcelas anuais conforme descrito a seguir: 14.5.1. Primeiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação nos 12 primeiros meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.2. Segundo ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 13º ao 24º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.3. Terceiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 25º ao 36º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES;').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_08_2026, '2.3. VIII [P06|L0253]', 'VIII. esteja organizado sob a forma de consórcio.').\nevidencia_regra(pe_08_2026, 'R43', '2.3. VIII [P06|L0253]', 'VIII. esteja organizado sob a forma de consórcio.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "OBJETO [P02|L0020] | 1.1 [P05|L0178] | 1.1 [P18|L0650] | 6.2.1 [P23|L0916] | 7.2 [P25|L1046] | 9.4 [P27|L1155]",
+      "trecho_identificado": "[IBM TS7780 (3948-VEF)] modelo IBM TS7780 (3948-VEF) [TS7780C] A solução de armazenamento virtual em fita a ser fornecida deverá operar no modo com armazenamento em nuvem (TS7780C), permitindo a extensão nativa do armazenamento em disco (fitas virtuais) para serviços de armazenamento de objeto em nuvem compatíveis com o equipamento, sem necessidade de gateways, softwares intermediários ou conversores de protocolo. [TS7770] O VTS instalado no DC principal, modelo TS7770, deverá ser atualizado de modo a manter a compatibilidade com o VTS do DC alternativo. Faz parte dessa atualização: [TS7780] Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_similaridade,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "OBJETO [P02|L0020] | 1.1 [P05|L0178] | 1.1 [P18|L0650] | 6.2.1 [P23|L0916] | 7.2 [P25|L1046] | 9.4 [P27|L1155]",
+      "trecho_identificado": "[IBM TS7780 (3948-VEF)] modelo IBM TS7780 (3948-VEF) [TS7780C] A solução de armazenamento virtual em fita a ser fornecida deverá operar no modo com armazenamento em nuvem (TS7780C), permitindo a extensão nativa do armazenamento em disco (fitas virtuais) para serviços de armazenamento de objeto em nuvem compatíveis com o equipamento, sem necessidade de gateways, softwares intermediários ou conversores de protocolo. [TS7770] O VTS instalado no DC principal, modelo TS7770, deverá ser atualizado de modo a manter a compatibilidade com o VTS do DC alternativo. Faz parte dessa atualização: [TS7780] Nesse método, o equipamento TS7770 atual e o novo TS7780 não operarão simultaneamente no mesmo grid durante a migração dos dados.",
+      "momento_edital": "power",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_padronizacao,power,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "ANEXO IV – MATRIZ DE RISCOS [P78|L3614]",
+      "trecho_identificado": "ANEXO IV – MATRIZ DE RISCOS",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "1.1.2 [P05|L0185]; 13.8 [P37|L1722]; CLÁUSULA DÉCIMA SÉTIMA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO, Parágrafo Terceiro [P73|L3424]",
+      "trecho_identificado": "Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Termo de Referência deste Edital. (...) É permitida a subcontratação do serviço de treinamento e do serviço de armazenamento em nuvem. (...) É admitida a subcontratação da parcela do objeto deste Contrato, conforme previsto no Anexo I - Termo de Referência, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não exigida explicitamente como 'amostra' ou 'PoC' para avaliação de propostas.",
+      "trecho_identificado": "Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para avaliação das propostas dos licitantes. Há apenas a possibilidade de vistoria técnica do local.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_nao_exigida,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "23.1 [P47|L2342]; 23.4 [P48|L2373]",
+      "trecho_identificado": "A Licitante deverá apresentar atestado de capacidade técnica, expedido por pessoa jurídica de direito público ou privado, que comprove que a LICITANTE executou ou executa, objeto da mesma natureza ou similar ao respectivo item da presente licitação. (...) o Licitante deverá comprovar que possui patrimônio líquido ou capital social de, no mínimo, 10% (dez por cento) do valor global da contratação.",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(atestado_conforme,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "CLÁUSULA NONA – MATRIZ DE RISCOS, Parágrafo Segundo [P62|L2961]",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "24.16 [P49|L2443]; CLÁUSULA SÉTIMA – PAGAMENTO, 14.5 [P38|L1755]",
+      "trecho_identificado": "Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar os equipamentos e assistência técnica descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). (...) O BNDES realizará o pagamento pela assistência técnica será efetuado em 3 (três) parcelas anuais conforme descrito a seguir: 14.5.1. Primeiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação nos 12 primeiros meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.2. Segundo ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 13º ao 24º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES; 14.5.3. Terceiro ano: Mediante comprovação de que a Contratada firmou o serviço junto à fabricante em favor do BNDES para prestação do 25º ao 36º meses de contrato, após emissão de Termo de recebimento emitido pelo BNDES;",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(credenciamento_fabricante_exigido,duty_to_act,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "2.3. VIII [P06|L0253]",
+      "trecho_identificado": "VIII. esteja organizado sob a forma de consórcio.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital menciona nominalmente a marca e modelo 'IBM TS7780 (3948-VEF)' em diversas passagens, e no item 6.1 do Anexo I, afirma que este é 'o único subsequente ao que está instalado no DC alternativo, constituindo a única opção de aquisição para substituição do equipamento atual'. Não há a inclusão da cláusula 'ou similar ou de melhor qualidade', o que restringe a competitividade ao indicar um produto específico sem a devida abertura para equivalentes.",
+      "trecho_citado_llm": "P02|L0020: Aquisição de solução de virtualização de mídias magnéticas, Virtual Tape System (VTS), modelo IBM TS7780 (3948-VEF); P23|L0910: O modelo do VTS, TS7780 (3948-VEF), é o único subsequente ao que está instalado no DC alternativo, constituindo a única opção de aquisição para substituição do equipamento atual.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_omit` / `permission_to_act`)."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital indica uma marca e modelo específico ('IBM TS7780 (3948-VEF)') e chega a afirmar que é a 'única opção de aquisição' (item 6.1 do Anexo I). Embora haja uma justificativa operacional para essa escolha (ser o modelo subsequente), não há uma justificativa formal de padronização prévia, conforme exigido pela Lei nº 13.303/2016, que deveria ser um ato administrativo formal que antecede a licitação e justifica a restrição de marca.",
+      "trecho_citado_llm": "P02|L0020: Aquisição de solução de virtualização de mídias magnéticas, Virtual Tape System (VTS), modelo IBM TS7780 (3948-VEF); P23|L0910: O modelo do VTS, TS7780 (3948-VEF), é o único subsequente ao que está instalado no DC alternativo, constituindo a única opção de aquisição para substituição do equipamento atual.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`power` / `disability`)."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O objeto da licitação, que envolve a aquisição de uma solução de virtualização de mídias magnéticas, serviços de instalação, configuração, treinamento, atualização de VTS existente, serviço de armazenamento em nuvem e assistência técnica por 36 meses, é claramente complexo. O edital inclui o 'ANEXO IV – MATRIZ DE RISCOS', que detalha os riscos atinentes ao tempo de execução, da atividade empresarial, técnicos e operacionais, e tributários e fiscais, alocando-os entre Contratada e BNDES, com suas consequências e medidas mitigadoras. A Cláusula Nona da Minuta de Contrato também faz referência a esta matriz.",
+      "trecho_citado_llm": "P18|L0648: ANEXO I – ESPECIFICAÇÕES TÉCNICAS; P18|L0650-L0655: Aquisição de solução de virtualização de mídias magnéticas, Virtual Tape System (VTS), modelo IBM TS7780 (3948-VEF), para o Data Center alternativo do BNDES, contemplando a contratação dos serviços de instalação e configuração da solução, treinamento, atualização do VTS do Data Center principal, serviço de armazenamento em nuvem e assistência técnica, pelo prazo de 36 (trinta e seis) meses.; P62|L2951: CLÁUSULA NONA – MATRIZ DE RISCOS; P78|L3614: ANEXO IV – MATRIZ DE RISCOS.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital autoriza a subcontratação de 'parcela dos serviços' (item 1.1.2 do Edital e Cláusula Décima Sétima, Parágrafo Terceiro da Minuta de Contrato), e especifica que 'É permitida a subcontratação do serviço de treinamento e do serviço de armazenamento em nuvem' (item 13.8 do Anexo I). No entanto, não são estabelecidos os limites percentuais para a subcontratação, apenas a menção genérica 'observados os limites previstos no Termo de Referência deste Edital' (P05|L0185), sem que tais limites sejam de fato quantificados no Termo de Referência ou em outro local do edital.",
+      "trecho_citado_llm": "P05|L0185: 1.1.2 Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Termo de Referência deste Edital.; P37|L1723: 13.8. É permitida a subcontratação do serviço de treinamento e do serviço de armazenamento em nuvem.; P73|L3424: Parágrafo Terceiro: É admitida a subcontratação da parcela do objeto deste Contrato, conforme previsto no Anexo I - Termo de Referência, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES; II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Indício de Inconformidade vs. Prolog/UFO-L: Conforme — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Indício de Inconformidade', enquanto o motor Prolog + UFO-L derivou 'Conforme' via Resolução SLD (`duty_to_act` vs `duty_to_act`) com base em 1.1.2 [P05|L0185]; 13.8 [P37|L1722]; CLÁUSULA DÉCIMA SÉTIMA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO, Parágrafo Terceiro [P73|L3424]."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não exige amostras ou prova de conceito em fase de propostas iniciais. A vistoria é facultativa e tem como objetivo permitir que as empresas interessadas avaliem as condições de execução dos serviços para a formulação da proposta, não sendo uma exigência de amostra ou prova de conceito vinculada à fase de propostas iniciais. O item 24.15 do Anexo I permite diligência para comprovação das características técnicas, mas isso ocorre após a fase de propostas e julgamento, e não como condição para a apresentação da proposta inicial.",
+      "trecho_citado_llm": "P21|L0834: 5. VISTORIA; P21|L0835-L0836: É facultado às empresas interessadas vistoriar a instalação do DC principal ou do DC alternativo com o objetivo de avaliar as condições da execução dos serviços no local; e esclarecer as dúvidas inerentes ao objeto deste certame, visando uma adequada formulação da proposta.; P49|L2440: 24.15. Como condição para aceitação da proposta, a equipe técnica que dará suporte à licitação poderá, sempre que julgar necessário, realizar diligência com vistas à comprovação das características técnicas exigidas.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital exige atestado de capacidade técnica que comprove que a licitante executou ou executa 'objeto da mesma natureza ou similar ao respectivo item da presente licitação' (item 23.1 do Anexo I). O item 23.2 especifica que 'Consideram-se objetos da mesma natureza ou similares ao da presente Licitação a venda de um equipamento virtualizador de fitas com a prestação de Serviço de Suporte Técnico por, pelo menos, 12 (doze) meses consecutivos'. Não há exigência de quantitativos mínimos de experiência pretérita em atestados que superem 50% dos quantitativos da contratação, apenas a similaridade e a duração mínima do serviço de suporte técnico.",
+      "trecho_citado_llm": "P47|L2342: 23.1. A Licitante deverá apresentar atestado de capacidade técnica, expedido por pessoa jurídica de direito público ou privado, que comprove que a LICITANTE executou ou executa, objeto da mesma natureza ou similar ao respectivo item da presente licitação.; P47|L2346: 23.2. Consideram-se objetos da mesma natureza ou similares ao da presente Licitação a venda de um equipamento virtualizador de fitas com a prestação de Serviço de Suporte Técnico por, pelo menos, 12 (doze) meses consecutivos.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_act` / `permission_to_act`)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A Minuta de Contrato, na Cláusula Nona, Parágrafo Segundo, estabelece expressamente a vedação à celebração de aditivos decorrentes de riscos alocados ao particular. Esta disposição está em conformidade com o Art. 81, § 8º da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P62|L2961: Parágrafo Segundo: É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O item 24.16 do Anexo I exige que, caso a licitante vencedora não seja o fabricante, ela deverá apresentar 'declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar os equipamentos e assistência técnica descritos nestas Especificações Técnicas'. Embora não seja uma 'carta de solidariedade' ou 'anuência' no sentido mais restritivo, a exigência de uma 'declaração de autorização' do fabricante para comercializar e prestar assistência técnica pode configurar uma restrição à competitividade, favorecendo distribuidores autorizados e limitando a participação de empresas que possam oferecer o produto por outros canais, sem que haja justificativa técnica robusta para tal restrição, especialmente em um pregão eletrônico.",
+      "trecho_citado_llm": "P49|L2443: 24.16. Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar os equipamentos e assistência técnica descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade).",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O item 2.3, inciso VIII, do edital veda expressamente a participação de empresas organizadas sob a forma de consórcio. O objeto da licitação, que inclui aquisição de hardware, instalação, configuração, treinamento, atualização de VTS, serviço de armazenamento em nuvem e assistência técnica por 36 meses, é complexo e de vulto considerável. A vedação à participação em consórcio, sem uma justificativa formal que demonstre que a participação em consórcio seria prejudicial à execução do objeto ou à competitividade, pode restringir indevidamente a participação de licitantes e a obtenção da proposta mais vantajosa.",
+      "trecho_citado_llm": "P06|L0253: VIII. esteja organizado sob a forma de consórcio.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

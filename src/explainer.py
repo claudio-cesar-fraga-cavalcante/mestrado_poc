@@ -73,7 +73,7 @@ def gerar_pareceres_edital(
         dispositivo = meta.get("dispositivo_legal", inf.dispositivo_legal_ufol)
         criterio = meta.get("criterio_validacao", "")
         risco = meta.get("classificacao_risco", "Médio")
-        recomendacao = meta.get("acao_recomendacao", "") or meta.get("trecho_identificado", "")
+        recomendacao = meta.get("acao_recomendacao", "")
 
         papel_pt = TRADUCAO_PAPEIS_UFOL.get(inf.papel_afetado, inf.papel_afetado)
         relacao_pt = TRADUCAO_RELACOES_UFOL.get(inf.relacao_juridica_ufol, inf.relacao_juridica_ufol)
@@ -137,57 +137,67 @@ def _construir_explicacao_inconformidade(
     recomendacao: str,
 ) -> str:
     """Gera explicação detalhada em linguagem natural conectando o trecho, a lei e a prova UFO-L."""
-    detalhes_especificos = {
-        "R01": (
-            "O edital faz menção nominal a marca/software específico como requisito obrigatório "
-            "sem acrescentar a cláusula permissiva **'ou similar ou de melhor qualidade'**. "
-            "Pelo Art. 47, I, 'c' da Lei 13.303/2016, quando uma marca ou produto é utilizado como referência técnica, "
-            "o licitante (`bidder_role`) detém a liberdade jurídica (`permission_to_act`) de ofertar solução equivalente."
-        ),
-        "R02": (
-            "O edital exige tecnologia/marca nominal específica sem demonstrar ou referenciar processo formal "
-            "de padronização prévia ou comprovação de exclusividade técnica (Art. 47, I, 'a' e 'b' da Lei 13.303/2016). "
-            "Na ontologia UFO-L, a Estatal encontra-se em posição de incompetência (`disability`) para restringir "
-            "a marca sem o ato formal de padronização que lhe conferiria tal poder (`power`)."
-        ),
-        "R03": (
-            "Foi constatada a omissão da cláusula ou anexo de **Matriz de Riscos** no instrumento convocatório/minuta contratual, "
-            "descumprindo o dever legal (`duty_to_act`) imposto pelos Arts. 42, X e 69, X da Lei 13.303/2016."
-        ),
-        "R38": (
-            "A minuta contratual omite a vedação expressa à celebração de termos aditivos decorrentes de eventos supervenientes "
-            "alocados na Matriz de Riscos como de responsabilidade da contratada, violando o Art. 81, § 8º da Lei 13.303/2016."
-        ),
-        "R09": (
-            "O instrumento convocatório/contrato é omisso quanto à autorização ou vedação de subcontratação e seus limites, "
-            "descumprindo o dever de definição clara imposto pelo Art. 78 da Lei 13.303/2016."
-        ),
-        "R11": (
-            "O edital exige apresentação de amostra ou prova de conceito de todos os licitantes já na fase de propostas iniciais, "
-            "e não apenas do licitante provisoriamente classificado em primeiro lugar (Art. 47, II da Lei 13.303/2016)."
-        ),
-        "R29": (
-            "Embora o quantitativo exigido possa respeitar o teto de 50%, o edital **proíbe sumariamente o somatório de atestados** "
-            "de capacidade técnica sem apresentar justificativa técnica formal que demonstre a indivisibilidade operacional do objeto "
-            "(Art. 58, II da Lei 13.303/2016 e jurisprudência consolidada do TCU). Isso restringe indevidamente a permissão jurídica (`permission_to_act`) de competição."
-        ),
-        "R41": (
-            "O edital exige como condição de aceitação da proposta/habilitação que a licitante apresente **declaração de que faz parte da "
-            "rede de revendas autorizadas pelo fabricante/provedor da solução** (ou carta de solidariedade). "
-            "Essa exigência subordina a participação do licitante à vontade de um terceiro privado (o fabricante), violando o princípio da "
-            "competitividade (Art. 31 da Lei 13.303/2016) e impondo um dever de agir (`duty_to_act`) diametralmente oposto à permissão de abstenção (`permission_to_omit`) assegurada pela norma."
-        ),
-        "R43": (
-            "O edital veda expressamente a participação de empresas reunidas em **consórcio**, impondo uma incapacidade (`disability`) "
-            "aos licitantes sem apresentar, no texto convocatório ou termo de referência, a justificativa técnica/econômica formal exigida "
-            "pelo princípio da competitividade (Art. 31 da Lei 13.303/2016)."
-        ),
-    }
+    # Explicação dinâmica de R29 conforme o motivo exato derivado pelo Prolog
+    if r_id == "R29":
+        if "percentual_acima_50" in inf.tipo_inferencia_ufol:
+            corpo = (
+                "O edital exige comprovação de experiência técnica em **percentual superior ao limite máximo de 50%** "
+                "dos quantitativos previstos para a contratação (Art. 58, II da Lei 13.303/2016 e Súmula nº 263 do TCU). "
+                "Isso restringe indevidamente a permissão jurídica (`permission_to_act`) de participação dos licitantes."
+            )
+        else:
+            corpo = (
+                "Embora o percentual quantitativo não ultrapasse 50%, o edital **proíbe o somatório de atestados** "
+                "de capacidade técnica sem apresentar justificativa técnica formal que demonstre a indivisibilidade operacional do objeto "
+                "(Art. 58, II da Lei 13.303/2016 e Súmula nº 263 do TCU). Isso restringe indevidamente a permissão jurídica (`permission_to_act`) de competição."
+            )
+    else:
+        detalhes_especificos = {
+            "R01": (
+                "O edital faz menção nominal a marca/software específico como requisito obrigatório "
+                "sem acrescentar a cláusula permissiva **'ou similar ou de melhor qualidade'**. "
+                "Pelo Art. 47, I, 'c' da Lei 13.303/2016, quando uma marca ou produto é utilizado como referência técnica, "
+                "o licitante (`bidder_role`) detém a liberdade jurídica (`permission_to_act`) de ofertar solução equivalente."
+            ),
+            "R02": (
+                "O edital exige tecnologia/marca nominal específica sem demonstrar ou referenciar processo formal "
+                "de padronização prévia ou comprovação de exclusividade técnica (Art. 47, I, 'a' e 'b' da Lei 13.303/2016). "
+                "Na ontologia UFO-L, a Estatal encontra-se em posição de incompetência (`disability`) para restringir "
+                "a marca sem o ato formal de padronização que lhe conferiria tal poder (`power`)."
+            ),
+            "R03": (
+                "Foi constatada a omissão da cláusula ou anexo de **Matriz de Riscos** no instrumento convocatório/minuta contratual, "
+                "descumprindo o dever legal (`duty_to_act`) imposto pelos Arts. 42, X e 69, X da Lei 13.303/2016."
+            ),
+            "R38": (
+                "A minuta contratual omite a vedação expressa à celebração de termos aditivos decorrentes de eventos supervenientes "
+                "alocados na Matriz de Riscos como de responsabilidade da contratada, violando o Art. 81, § 8º da Lei 13.303/2016."
+            ),
+            "R09": (
+                "O instrumento convocatório/contrato é omisso quanto à autorização ou vedação de subcontratação e seus limites, "
+                "descumprindo o dever de definição clara imposto à contratante (`contracting_party_role`) pelo Art. 78 da Lei 13.303/2016."
+            ),
+            "R11": (
+                "O edital exige apresentação de amostra ou prova de conceito de todos os licitantes já na fase de propostas iniciais, "
+                "e não apenas do licitante provisoriamente classificado em primeiro lugar (Art. 47, II da Lei 13.303/2016)."
+            ),
+            "R41": (
+                "O edital exige como condição de aceitação da proposta/habilitação que a licitante apresente **declaração de que faz parte da "
+                "rede de revendas autorizadas pelo fabricante/provedor da solução** (ou carta de solidariedade). "
+                "Essa exigência subordina a participação do licitante à vontade de um terceiro privado (o fabricante), violando o princípio da "
+                "competitividade (Art. 31 da Lei 13.303/2016) e impondo um dever de agir (`duty_to_act`) diametralmente oposto à permissão de abstenção (`permission_to_omit`) assegurada pela norma."
+            ),
+            "R43": (
+                "O edital veda a participação de empresas reunidas em **consórcio** sem apresentar, no texto convocatório ou termo de referência, "
+                "a justificativa técnica ou econômica formal exigida pelo princípio da competitividade (Art. 31 da Lei 13.303/2016), "
+                "configurando violação do dever de motivar (`duty_to_act`) da Estatal Licitante (`bidding_authority_role`)."
+            ),
+        }
 
-    corpo = detalhes_especificos.get(
-        r_id,
-        f"Foi detectado indício de inconformidade em relação ao critério '{criterio}' ({dispositivo}).",
-    )
+        corpo = detalhes_especificos.get(
+            r_id,
+            f"Foi detectado indício de inconformidade em relação ao critério '{criterio}' ({dispositivo}).",
+        )
     return (
         f"**Por que não está conforme ({dispositivo}):** {corpo}\n\n"
         f"**Localização no Edital:** `{inf.item_evidencia}`\n\n"

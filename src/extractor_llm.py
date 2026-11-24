@@ -6,15 +6,35 @@ ou Modo Demonstração / Analisador Local, e converte para fatos Prolog (ABox da
 
 from __future__ import annotations
 
+import json
 import os
 import re
-from typing import List, Literal, Optional
+import threading
+import time
+from datetime import datetime
+from pathlib import Path
+from typing import Any, List, Literal, Optional
 from pydantic import BaseModel, Field
 
 
 class MencaoMarcaFato(BaseModel):
     marca_ou_produto: str = Field(
         description="Nome da marca, fabricante ou produto específico mencionado como requisito técnico."
+    )
+    contexto_mencao: Literal[
+        "objeto_licitado",
+        "interoperabilidade_ambiente_legado",
+        "manutencao_parque_existente",
+        "referencia_exemplificativa",
+    ] = Field(
+        default="objeto_licitado",
+        description=(
+            "Papel da menção à marca/produto no edital: "
+            "'objeto_licitado' quando define o próprio bem/software/serviço a ser fornecido/contratado; "
+            "'interoperabilidade_ambiente_legado' quando se refere apenas a sistemas/infraestrutura já existentes no órgão com os quais o objeto novo deve se integrar; "
+            "'manutencao_parque_existente' quando o objeto da licitação é suporte técnico, manutenção, garantia ou atualização de ativo proprietário já pertencente ao órgão; "
+            "'referencia_exemplificativa' quando aparece apenas como exemplo ilustrativo ('ex.: ...') ou descrição informativa do ambiente atual."
+        ),
     )
     possui_clausula_similaridade: bool = Field(
         description="True se acompanhado de 'ou similar', 'ou equivalente', 'ou de melhor qualidade' ou usado apenas como exemplo ('ex.:')."
@@ -82,7 +102,12 @@ class FatosExtraidosEdital(BaseModel):
 
     # R41 - Credenciamento / Revenda Autorizada / Carta de Solidariedade do Fabricante
     exige_credenciamento_ou_carta_fabricante: bool = Field(
-        description="True se exigir declaração de que faz parte de rede de revendas autorizadas, parceiro credenciado ou carta de solidariedade do fabricante/provedor."
+        description=(
+            "True SOMENTE se exigir que a licitante declare fazer parte de rede de revendas autorizadas/parceiro "
+            "credenciado pelo fabricante ou apresente carta de solidariedade/anuência emitida pelo fabricante. "
+            "Marque False se for apenas compromisso próprio da licitante de prestar ou contratar a garantia do produto "
+            "sem exigir credenciamento prévio ou carta do fabricante."
+        )
     )
     credenciamento_item: str = Field(description="Item e linha onde consta a exigência de credenciamento/carta do fabricante.")
     credenciamento_trecho: str = Field(description="Trecho literal sobre exigência de revenda autorizada/carta do fabricante.")
@@ -102,48 +127,56 @@ def sanitizar_atom_prolog(texto: str) -> str:
     """Escapa aspas simples para uso seguro em átomos/strings do SWI-Prolog."""
     if not texto:
         return "''"
-    limpo = texto.replace("\\", "/").replace("'", "\\'").replace("\n", " ").strip()
+    limpo = texto.replace("\\", "/").replace("'", "\\'").replace("\r", " ").replace("\n", " ").strip()
     return f"'{limpo}'"
 
 
 def converter_fatos_para_prolog(fatos: FatosExtraidosEdital) -> str:
-    """Converte o objeto FatosExtraidosEdital (saída da Camada Neural) em cláusulas Prolog (ABox UFO-L)."""
+    """
+    Converte o objeto FatosExtraidosEdital (saída da Camada Neural) em cláusulas Prolog (ABox UFO-L).
+    Emite apenas fatos positivos observados no documento para que o motor Prolog infira omissões
+    genuinamente sob a Hipótese do Mundo Fechado via Negação por Falha (\\+).
+    """
     edital_id = re.sub(r"[^a-z0-9_]", "_", fatos.identificador_edital.lower()).strip("_") or "edital_analisado"
     linhas_pl = [
         "% ==============================================================================",
-        f"% Fatos Extraídos do Edital (ABox UFO-L) - Instância: {edital_id}",
+        f"% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: {edital_id}",
+        "% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')",
         "% ==============================================================================",
         f"edital_instancia({edital_id}).",
         "",
         "% --- R01 & R02: Menções de Marca / Produto Específico ---",
     ]
 
-    marcas_sem_similaridade = []
+    marcas_restritivas = []
     for m in fatos.mencoes_marca:
         sim_atom = "com_clausula_similaridade" if m.possui_clausula_similaridade else "sem_clausula_similaridade"
         pad_atom = "com_justificativa_padronizacao" if m.possui_justificativa_padronizacao else "sem_justificativa_padronizacao"
+        ctx_atom = m.contexto_mencao
         linhas_pl.append(
             f"mencao_marca_exigida({edital_id}, {sanitizar_atom_prolog(m.marca_ou_produto)}, "
-            f"{sim_atom}, {pad_atom}, {sanitizar_atom_prolog(m.item_edital)}, {sanitizar_atom_prolog(m.trecho_literal)})."
+            f"{ctx_atom}, {sim_atom}, {pad_atom}, {sanitizar_atom_prolog(m.item_edital)}, {sanitizar_atom_prolog(m.trecho_literal)})."
         )
-        if not m.possui_clausula_similaridade and not m.possui_justificativa_padronizacao:
-            marcas_sem_similaridade.append(m)
+        if m.contexto_mencao == "objeto_licitado" and not m.possui_clausula_similaridade and not m.possui_justificativa_padronizacao:
+            marcas_restritivas.append(m)
 
-    if marcas_sem_similaridade:
-        m0 = marcas_sem_similaridade[0]
+    if marcas_restritivas:
+        itens_agg = " | ".join(dict.fromkeys(m.item_edital for m in marcas_restritivas))
+        trechos_agg = "\n".join(dict.fromkeys(f"[{m.marca_ou_produto}] {m.trecho_literal}" for m in marcas_restritivas))
         linhas_pl.append(
-            f"evidencia_regra({edital_id}, 'R01', {sanitizar_atom_prolog(m0.item_edital)}, {sanitizar_atom_prolog(m0.trecho_literal)})."
+            f"evidencia_regra({edital_id}, 'R01', {sanitizar_atom_prolog(itens_agg)}, {sanitizar_atom_prolog(trechos_agg)})."
         )
         linhas_pl.append(
-            f"evidencia_regra({edital_id}, 'R02', {sanitizar_atom_prolog(m0.item_edital)}, {sanitizar_atom_prolog(m0.trecho_literal)})."
+            f"evidencia_regra({edital_id}, 'R02', {sanitizar_atom_prolog(itens_agg)}, {sanitizar_atom_prolog(trechos_agg)})."
         )
     elif fatos.mencoes_marca:
-        m0 = fatos.mencoes_marca[0]
+        itens_agg = " | ".join(dict.fromkeys(m.item_edital for m in fatos.mencoes_marca))
+        trechos_agg = "\n".join(dict.fromkeys(f"[{m.marca_ou_produto} | {m.contexto_mencao}] {m.trecho_literal}" for m in fatos.mencoes_marca))
         linhas_pl.append(
-            f"evidencia_regra({edital_id}, 'R01', {sanitizar_atom_prolog(m0.item_edital)}, {sanitizar_atom_prolog(m0.trecho_literal)})."
+            f"evidencia_regra({edital_id}, 'R01', {sanitizar_atom_prolog(itens_agg)}, {sanitizar_atom_prolog(trechos_agg)})."
         )
         linhas_pl.append(
-            f"evidencia_regra({edital_id}, 'R02', {sanitizar_atom_prolog(m0.item_edital)}, {sanitizar_atom_prolog(m0.trecho_literal)})."
+            f"evidencia_regra({edital_id}, 'R02', {sanitizar_atom_prolog(itens_agg)}, {sanitizar_atom_prolog(trechos_agg)})."
         )
     else:
         linhas_pl.append(
@@ -153,29 +186,40 @@ def converter_fatos_para_prolog(fatos: FatosExtraidosEdital) -> str:
             f"evidencia_regra({edital_id}, 'R02', 'Especificações Técnicas', 'Nenhuma indicação exclusiva de marca sem padronização identificada.')."
         )
 
-    # R03 e R38
-    status_mr = "presente" if fatos.matriz_riscos_presente else "ausente"
-    linhas_pl.extend([
-        "",
-        "% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---",
-        f"fato_matriz_riscos({edital_id}, {status_mr}, {sanitizar_atom_prolog(fatos.matriz_riscos_item)}, {sanitizar_atom_prolog(fatos.matriz_riscos_trecho)}).",
-        f"evidencia_regra({edital_id}, 'R03', {sanitizar_atom_prolog(fatos.matriz_riscos_item)}, {sanitizar_atom_prolog(fatos.matriz_riscos_trecho)}).",
-    ])
+    # R03 - Matriz de Riscos (fato emitido SOMENTE se presente)
+    linhas_pl.extend(["", "% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---"])
+    if fatos.matriz_riscos_presente:
+        linhas_pl.append(
+            f"fato_matriz_riscos({edital_id}, {sanitizar_atom_prolog(fatos.matriz_riscos_item)}, {sanitizar_atom_prolog(fatos.matriz_riscos_trecho)})."
+        )
+    else:
+        linhas_pl.append("% fato_matriz_riscos omitido -> NAF (\\+) detectará violação em R03")
+    linhas_pl.append(
+        f"evidencia_regra({edital_id}, 'R03', {sanitizar_atom_prolog(fatos.matriz_riscos_item)}, {sanitizar_atom_prolog(fatos.matriz_riscos_trecho)})."
+    )
 
-    status_vad = "presente" if fatos.vedacao_aditivo_risco_presente else "ausente"
-    linhas_pl.extend([
-        f"fato_vedacao_aditivo_risco({edital_id}, {status_vad}, {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_item)}, {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_trecho)}).",
-        f"evidencia_regra({edital_id}, 'R38', {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_item)}, {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_trecho)}).",
-    ])
+    # R38 - Vedação de Aditivo por Risco Alocado (fato emitido SOMENTE se presente)
+    if fatos.vedacao_aditivo_risco_presente:
+        linhas_pl.append(
+            f"fato_vedacao_aditivo_risco({edital_id}, {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_item)}, {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_trecho)})."
+        )
+    else:
+        linhas_pl.append("% fato_vedacao_aditivo_risco omitido -> NAF (\\+) detectará violação em R38")
+    linhas_pl.append(
+        f"evidencia_regra({edital_id}, 'R38', {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_item)}, {sanitizar_atom_prolog(fatos.vedacao_aditivo_risco_trecho)})."
+    )
 
-    # R09 - Subcontratação
-    status_sub = "definida" if fatos.subcontratacao_definida else "omissa"
-    linhas_pl.extend([
-        "",
-        "% --- R09: Regra de Subcontratação ---",
-        f"fato_subcontratacao({edital_id}, {status_sub}, {sanitizar_atom_prolog(fatos.subcontratacao_item)}, {sanitizar_atom_prolog(fatos.subcontratacao_trecho)}).",
-        f"evidencia_regra({edital_id}, 'R09', {sanitizar_atom_prolog(fatos.subcontratacao_item)}, {sanitizar_atom_prolog(fatos.subcontratacao_trecho)}).",
-    ])
+    # R09 - Subcontratação (fato emitido SOMENTE se definida expressamente)
+    linhas_pl.extend(["", "% --- R09: Regra de Subcontratação ---"])
+    if fatos.subcontratacao_definida:
+        linhas_pl.append(
+            f"fato_subcontratacao_definida({edital_id}, {sanitizar_atom_prolog(fatos.subcontratacao_item)}, {sanitizar_atom_prolog(fatos.subcontratacao_trecho)})."
+        )
+    else:
+        linhas_pl.append("% fato_subcontratacao_definida omitido -> NAF (\\+) detectará omissão em R09")
+    linhas_pl.append(
+        f"evidencia_regra({edital_id}, 'R09', {sanitizar_atom_prolog(fatos.subcontratacao_item)}, {sanitizar_atom_prolog(fatos.subcontratacao_trecho)})."
+    )
 
     # R11 - Amostra
     linhas_pl.extend([
@@ -186,33 +230,48 @@ def converter_fatos_para_prolog(fatos: FatosExtraidosEdital) -> str:
     ])
 
     # R29 - Atestado de Capacidade Técnica e Somatório
-    som_atom = "veda_somatorio" if fatos.veda_somatorio_atestados else "permite_somatorio"
-    just_som_atom = "com_justificativa" if fatos.possui_justificativa_vedacao_somatorio else "sem_justificativa"
     linhas_pl.extend([
         "",
         "% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---",
-        f"fato_atestado_capacidade({edital_id}, {fatos.percentual_minimo_atestado}, {som_atom}, {just_som_atom}, {sanitizar_atom_prolog(fatos.atestado_item)}, {sanitizar_atom_prolog(fatos.atestado_trecho)}).",
-        f"evidencia_regra({edital_id}, 'R29', {sanitizar_atom_prolog(fatos.atestado_item)}, {sanitizar_atom_prolog(fatos.atestado_trecho)}).",
+        f"fato_atestado_percentual({edital_id}, {fatos.percentual_minimo_atestado}, {sanitizar_atom_prolog(fatos.atestado_item)}, {sanitizar_atom_prolog(fatos.atestado_trecho)}).",
     ])
+    if fatos.veda_somatorio_atestados:
+        linhas_pl.append(
+            f"fato_veda_somatorio({edital_id}, {sanitizar_atom_prolog(fatos.atestado_item)}, {sanitizar_atom_prolog(fatos.atestado_trecho)})."
+        )
+    if fatos.possui_justificativa_vedacao_somatorio:
+        linhas_pl.append(
+            f"fato_justificativa_vedacao_somatorio({edital_id}, {sanitizar_atom_prolog(fatos.atestado_item)}, {sanitizar_atom_prolog(fatos.atestado_trecho)})."
+        )
+    linhas_pl.append(
+        f"evidencia_regra({edital_id}, 'R29', {sanitizar_atom_prolog(fatos.atestado_item)}, {sanitizar_atom_prolog(fatos.atestado_trecho)})."
+    )
 
-    # R41 - Credenciamento / Carta do Fabricante
-    cred_atom = "exigido" if fatos.exige_credenciamento_ou_carta_fabricante else "nao_exigido"
-    linhas_pl.extend([
-        "",
-        "% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---",
-        f"fato_credenciamento_fabricante({edital_id}, {cred_atom}, {sanitizar_atom_prolog(fatos.credenciamento_item)}, {sanitizar_atom_prolog(fatos.credenciamento_trecho)}).",
-        f"evidencia_regra({edital_id}, 'R41', {sanitizar_atom_prolog(fatos.credenciamento_item)}, {sanitizar_atom_prolog(fatos.credenciamento_trecho)}).",
-    ])
+    # R41 - Credenciamento / Carta do Fabricante (emitido SOMENTE se exigido)
+    linhas_pl.extend(["", "% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---"])
+    if fatos.exige_credenciamento_ou_carta_fabricante:
+        linhas_pl.append(
+            f"fato_credenciamento_exigido({edital_id}, {sanitizar_atom_prolog(fatos.credenciamento_item)}, {sanitizar_atom_prolog(fatos.credenciamento_trecho)})."
+        )
+    else:
+        linhas_pl.append("% fato_credenciamento_exigido ausente -> NAF (\\+) confirmará conformidade em R41")
+    linhas_pl.append(
+        f"evidencia_regra({edital_id}, 'R41', {sanitizar_atom_prolog(fatos.credenciamento_item)}, {sanitizar_atom_prolog(fatos.credenciamento_trecho)})."
+    )
 
-    # R43 - Consórcio
-    cons_atom = "vedado" if fatos.veda_participacao_consorcio else "permitido"
-    just_cons_atom = "com_justificativa" if fatos.possui_justificativa_vedacao_consorcio else "sem_justificativa"
-    linhas_pl.extend([
-        "",
-        "% --- R43: Participação em Consórcio ---",
-        f"fato_consorcio({edital_id}, {cons_atom}, {just_cons_atom}, {sanitizar_atom_prolog(fatos.consorcio_item)}, {sanitizar_atom_prolog(fatos.consorcio_trecho)}).",
-        f"evidencia_regra({edital_id}, 'R43', {sanitizar_atom_prolog(fatos.consorcio_item)}, {sanitizar_atom_prolog(fatos.consorcio_trecho)}).",
-    ])
+    # R43 - Consórcio (vedação e justificativa emitidas apenas se presentes)
+    linhas_pl.extend(["", "% --- R43: Participação em Consórcio ---"])
+    if fatos.veda_participacao_consorcio:
+        linhas_pl.append(
+            f"fato_veda_consorcio({edital_id}, {sanitizar_atom_prolog(fatos.consorcio_item)}, {sanitizar_atom_prolog(fatos.consorcio_trecho)})."
+        )
+    if fatos.possui_justificativa_vedacao_consorcio:
+        linhas_pl.append(
+            f"fato_justificativa_vedacao_consorcio({edital_id}, {sanitizar_atom_prolog(fatos.consorcio_item)}, {sanitizar_atom_prolog(fatos.consorcio_trecho)})."
+        )
+    linhas_pl.append(
+        f"evidencia_regra({edital_id}, 'R43', {sanitizar_atom_prolog(fatos.consorcio_item)}, {sanitizar_atom_prolog(fatos.consorcio_trecho)})."
+    )
 
     return "\n".join(linhas_pl)
 
@@ -228,6 +287,7 @@ def obter_fatos_demo_pe_29_2026() -> FatosExtraidosEdital:
         mencoes_marca=[
             MencaoMarcaFato(
                 marca_ou_produto="Windows 11 Professional / Microsoft 365 E5 / Active Directory / Microsoft Entra ID",
+                contexto_mencao="objeto_licitado",
                 possui_clausula_similaridade=False,
                 possui_justificativa_padronizacao=False,
                 item_edital="Anexo I, Itens 5, 18, 20 e 78 (Linhas 294, 334, 340 e 488)",
@@ -239,6 +299,7 @@ def obter_fatos_demo_pe_29_2026() -> FatosExtraidosEdital:
             ),
             MencaoMarcaFato(
                 marca_ou_produto="Yubikey (Chave USB 2FA)",
+                contexto_mencao="referencia_exemplificativa",
                 possui_clausula_similaridade=True,
                 possui_justificativa_padronizacao=False,
                 item_edital="Anexo I, Item 49.f (Linha 409)",
@@ -315,6 +376,7 @@ def extrair_fatos_heuristico_texto(texto_numerado: str, nome_arquivo: str = "edi
         base.mencoes_marca = [
             MencaoMarcaFato(
                 marca_ou_produto="Marca/Produto Nominal Identificado nas Especificações",
+                contexto_mencao="objeto_licitado",
                 possui_clausula_similaridade=tem_similar,
                 possui_justificativa_padronizacao=tem_padronizacao,
                 item_edital="Especificações Técnicas",
@@ -362,20 +424,24 @@ def extrair_fatos_heuristico_texto(texto_numerado: str, nome_arquivo: str = "edi
     base.veda_somatorio_atestados = bool(linha_veda_som)
     base.possui_justificativa_vedacao_somatorio = bool(linha_just_som)
     if linha_atestado_pct or linha_veda_som:
+        base.atestado_item = "Habilitação Técnica / Atestados"
         base.atestado_trecho = " ".join(x for x in [linha_atestado_pct, linha_veda_som, linha_just_som] if x)
 
     # 5. Verificar R03 e R38 (Matriz de Riscos e Vedação de Aditivos)
     linha_mr = buscar_linha(r"MATRIZ\s+DE\s+RISCOS")
     base.matriz_riscos_presente = bool(linha_mr)
+    base.matriz_riscos_item = "Minuta de Contrato / Anexo IV" if linha_mr else "Minuta de Contrato (Omissão)"
     base.matriz_riscos_trecho = linha_mr or "Omissão: Não foi localizada cláusula ou seção de Matriz de Riscos no edital/contrato."
 
     linha_vad = buscar_linha(r"vedada\s+a\s+celebra[çc][ãa]o\s+de\s+aditivos\s+decorrentes\s+de\s+eventos\s+supervenientes\s+alocados")
     base.vedacao_aditivo_risco_presente = bool(linha_vad)
+    base.vedacao_aditivo_risco_item = "Minuta de Contrato (Cláusula de Riscos)" if linha_vad else "Minuta de Contrato (Omissão)"
     base.vedacao_aditivo_risco_trecho = linha_vad or "Omissão: Não consta cláusula vedando aditivos decorrentes de riscos alocados à contratada."
 
     # 6. Verificar R09 (Subcontratação)
     linha_sub = buscar_linha(r"subcontrata[çc][ãa]o")
     base.subcontratacao_definida = bool(linha_sub)
+    base.subcontratacao_item = "Minuta de Contrato (Subcontratação)" if linha_sub else "Minuta de Contrato (Omissão)"
     base.subcontratacao_trecho = linha_sub or "Omissão: O edital e a minuta de contrato são silentes quanto à permissão ou vedação de subcontratação."
 
     # 7. Verificar R11 (Amostra)
@@ -383,15 +449,179 @@ def extrair_fatos_heuristico_texto(texto_numerado: str, nome_arquivo: str = "edi
     linha_amostra_1 = buscar_linha(r"suspender[áa]\s+a\s+sess[ãa]o\s+p[úu]blica\s+para\s+a\s+apresenta[çc][ãa]o\s+de\s+amostra|amostra.*primeiro\s+colocado|amostra.*melhor\s+lance")
     if linha_amostra_todos:
         base.escopo_exigencia_amostra = "todos_licitantes_fase_proposta"
+        base.amostra_item = "Requisitos de Proposta / Amostra"
         base.amostra_trecho = linha_amostra_todos
     elif linha_amostra_1:
         base.escopo_exigencia_amostra = "apenas_primeiro_colocado"
+        base.amostra_item = "Fase de Aceitação / Amostra"
         base.amostra_trecho = linha_amostra_1
     else:
         base.escopo_exigencia_amostra = "nao_exigida"
+        base.amostra_item = "Procedimento Licitatório"
         base.amostra_trecho = "Não há exigência de amostra no certame."
 
     return base
+
+
+_ERROS_TRANSITORIOS_GEMINI = (
+    "429",
+    "503",
+    "500",
+    "502",
+    "504",
+    "resource_exhausted",
+    "unavailable",
+    "timeout",
+    "timed out",
+    "readtimeout",
+    "10053",
+    "10054",
+    "connection",
+    "reset",
+    "eof",
+    "broken pipe",
+    "remoteprotocolerror",
+)
+
+
+def _ts() -> str:
+    return datetime.now().strftime("%H:%M:%S")
+
+
+def _log_api(verbose: bool, msg: str) -> None:
+    if verbose:
+        print(f"[{_ts()}] {msg}", flush=True)
+
+
+class _HeartbeatGemini:
+    """Emite logs periódicos enquanto a requisição síncrona à API Gemini aguarda resposta."""
+
+    def __init__(self, verbose: bool, label: str, timeout_s: int, intervalo_s: int = 15):
+        self.verbose = verbose
+        self.label = label
+        self.timeout_s = timeout_s
+        self.intervalo_s = intervalo_s
+        self._stop = threading.Event()
+        self._t0 = 0.0
+        self._thread: Optional[threading.Thread] = None
+
+    def _run(self) -> None:
+        while not self._stop.wait(self.intervalo_s):
+            decorrido = int(time.perf_counter() - self._t0)
+            print(
+                f"[{_ts()}]   ... [{self.label}] aguardando resposta da API Gemini "
+                f"({decorrido}s decorridos | timeout={self.timeout_s}s)...",
+                flush=True,
+            )
+
+    def __enter__(self) -> "_HeartbeatGemini":
+        self._t0 = time.perf_counter()
+        if self.verbose:
+            self._thread = threading.Thread(target=self._run, daemon=True)
+            self._thread.start()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+        self._stop.set()
+        if self._thread is not None:
+            self._thread.join(timeout=1.0)
+
+
+def _extrair_usage_dict(response: Any) -> dict[str, Any]:
+    usage = getattr(response, "usage_metadata", None)
+    if usage is None:
+        return {}
+    return {
+        "prompt_token_count": getattr(usage, "prompt_token_count", None),
+        "thoughts_token_count": getattr(usage, "thoughts_token_count", None),
+        "candidates_token_count": getattr(usage, "candidates_token_count", None),
+        "total_token_count": getattr(usage, "total_token_count", None),
+    }
+
+
+def _formatar_usage_gemini(response: Any) -> str:
+    d = _extrair_usage_dict(response)
+    if not d:
+        return "tokens=indisponível"
+    prompt_tk = d["prompt_token_count"]
+    thoughts_tk = d["thoughts_token_count"]
+    output_tk = d["candidates_token_count"]
+    total_tk = d["total_token_count"]
+    return (
+        f"prompt={prompt_tk if prompt_tk is not None else '?'} | "
+        f"thoughts={thoughts_tk if thoughts_tk is not None else 0} | "
+        f"output={output_tk if output_tk is not None else '?'} | "
+        f"total={total_tk if total_tk is not None else '?'}"
+    )
+
+
+def _executar_generate_content_gemini(
+    api_key: str,
+    modelos_tentativa: list[str],
+    prompt: str,
+    response_schema: Any,
+    label: str,
+    timeout_s: int,
+    verbose: bool,
+    erro_prefixo: str,
+    thinking_budget: int = 4096,
+    usage_out: Optional[dict[str, Any]] = None,
+) -> tuple[Any, str]:
+    """Executa chamada Structured Output à API Gemini com timeout HTTP explícito, heartbeat e retry."""
+    from google import genai
+    from google.genai import types
+
+    client = genai.Client(
+        api_key=api_key,
+        http_options=types.HttpOptions(timeout=timeout_s * 1000),
+    )
+
+    ultimo_erro = None
+    for mod in modelos_tentativa:
+        for tentativa in range(3):
+            t_req = time.perf_counter()
+            _log_api(
+                verbose,
+                f"  -> [{label}] Tentativa {tentativa + 1}/3 | modelo={mod} | "
+                f"prompt={len(prompt)} chars | T=0.0 | thinking_budget={thinking_budget} | timeout={timeout_s}s",
+            )
+            try:
+                with _HeartbeatGemini(verbose, label, timeout_s):
+                    response = client.models.generate_content(
+                        model=mod,
+                        contents=prompt,
+                        config=types.GenerateContentConfig(
+                            temperature=0.0,
+                            response_mime_type="application/json",
+                            response_schema=response_schema,
+                            thinking_config=types.ThinkingConfig(thinking_budget=thinking_budget),
+                        ),
+                    )
+                decorrido = time.perf_counter() - t_req
+                if usage_out is not None:
+                    usage_out.clear()
+                    usage_out.update(_extrair_usage_dict(response))
+                _log_api(
+                    verbose,
+                    f"  <- [{label}] Resposta recebida em {decorrido:.1f}s | {_formatar_usage_gemini(response)}",
+                )
+                return response, mod
+            except Exception as exc:
+                decorrido = time.perf_counter() - t_req
+                ultimo_erro = exc
+                msg = str(exc).lower()
+                _log_api(
+                    verbose,
+                    f"  !! [{label}] Erro após {decorrido:.1f}s ({type(exc).__name__}): {exc}",
+                )
+                if tentativa < 2 and any(k in msg for k in _ERROS_TRANSITORIOS_GEMINI):
+                    espera = 2 ** (tentativa + 1)
+                    _log_api(verbose, f"  .. [{label}] Aguardando {espera}s para retry...")
+                    time.sleep(espera)
+                    continue
+                break
+
+    raise RuntimeError(f"{erro_prefixo}: {ultimo_erro}")
 
 
 def extrair_fatos_via_gemini(
@@ -399,27 +629,37 @@ def extrair_fatos_via_gemini(
     nome_arquivo: str,
     api_key: str,
     modelo: str = "gemini-2.5-flash",
+    timeout_s: int = 240,
+    verbose: bool = False,
+    thinking_budget: int = 4096,
+    usage_out: Optional[dict[str, Any]] = None,
 ) -> tuple[FatosExtraidosEdital, str]:
     """
     Chama a API Google Gemini usando o SDK oficial `google-genai` com Structured Outputs
     para instanciar os fatos ontológicos (FatosExtraidosEdital) a partir do texto do Edital.
+    Inclui timeout HTTP explícito, heartbeat opcional e retry com backoff para tolerância a falhas transitórias.
     Retorna (fatos, modelo_efetivamente_utilizado).
     """
-    from google import genai
-    from google.genai import types
-
-    client = genai.Client(api_key=api_key)
-
     prompt = f"""Você é um extrator semântico jurídico-ontológico especializado na Lei das Estatais (Lei nº 13.303/2016) e na ontologia jurídica UFO-L.
-Sua tarefa é ler o Edital numerado linha a linha abaixo (arquivo: {nome_arquivo}) e extrair EXCLUSIVAMENTE os fatos observáveis no documento para alimentar um motor simbólico em SWI-Prolog.
+Sua tarefa é ler as seções estruturadas do Edital abaixo (arquivo: {nome_arquivo}) e extrair EXCLUSIVAMENTE os fatos observáveis no documento para alimentar um motor simbólico em SWI-Prolog. NÃO emita opiniões jurídicas sobre ilegalidade; apenas registre o que está escrito ou omitido.
+
+Orientações de busca por seção (confira sempre o documento inteiro antes de afirmar omissão):
+- SEÇÃO 1 (Corpo do Edital): verifique consórcios (`R43`), exigência/momento de amostras (`R11`), regras gerais de aceitação/habilitação (`R29`, `R41`).
+- SEÇÃO 2 (Anexo I / Termo de Referência): verifique menções nominais a marcas/produtos/softwares proprietários (`R01`/`R02`, incluindo se há cláusula "ou similar / ou equivalente / ou de melhor qualidade", se é apenas exemplo "ex.:", ou se cita processo formal de padronização), exigência de credenciamento/revenda autorizada/carta de solidariedade (`R41`), atestados de capacidade técnica (`R29`: percentual exigido e se veda somatório de atestados com ou sem justificativa técnica), e amostra/PoC (`R11`).
+- SEÇÃO 3 (Minuta de Contrato e Matriz de Riscos): verifique presença de Matriz de Riscos (`R03`), cláusula vedando celebração de aditivos decorrentes de eventos alocados como risco da contratada (`R38`), e definição expressa de permissão ou vedação à subcontratação (`R09`).
 
 Instruções de rigor:
-1. Cite sempre o item/cláusula e o número exato da linha (ex: [L0624]) nos campos `*_item` e `*_trecho`.
-2. Em `mencoes_marca`, identifique se há exigência de marcas/produtos específicos (ex: Windows 11, Catalyst, etc.) e verifique se estão acompanhadas da expressão "ou similar / ou equivalente / ou de melhor qualidade" ou de justificativa expressa de padronização.
-3. Em `veda_somatorio_atestados`, verifique se há cláusula proibindo somar atestados de capacidade técnica e se há justificativa técnica expressa para tal proibição.
-4. Em `exige_credenciamento_ou_carta_fabricante`, verifique se o edital exige declaração de que a licitante faz parte da rede de revendas autorizadas, parceiro credenciado ou carta de solidariedade do fabricante/provedor.
+1. Cite sempre a seção/item/cláusula e a tag exata de página/linha (ex: `[P18|L0650]` ou `[L0624]`) nos campos `*_item` e `*_trecho`.
+2. Para cada item em `mencoes_marca`, classifique `contexto_mencao` com rigor:
+   - `'objeto_licitado'`: quando a marca/produto/software define o próprio bem, hardware, licença ou serviço principal que a contratada deve fornecer (ex.: sistema operacional exigido para o DaaS, modelo de equipamento ou software objeto da compra).
+   - `'interoperabilidade_ambiente_legado'`: quando a marca se refere apenas a um sistema, SGBD, diretório ou infraestrutura já existente no BNDES com o qual a solução contratada precisa integrar ou se comunicar.
+   - `'manutencao_parque_existente'`: quando o objeto da licitação em si é suporte técnico, garantia ou atualização de equipamentos/licenças proprietárias já pertencentes ao órgão.
+   - `'referencia_exemplificativa'`: quando a marca aparece apenas como exemplo ilustrativo ('ex.: ...') ou descrição informativa do ambiente atual sem impor fornecimento daquela marca.
+3. Se uma marca/produto aparecer apenas como exemplo ('ex.: ...') ou acompanhada de 'ou similar / equivalente / de melhor qualidade', marque `possui_clausula_similaridade = True`. Só marque `False` quando a marca/produto for exigido de forma fechada/obrigatória sem cláusula de equivalência.
+4. Em `R41` (`exige_credenciamento_ou_carta_fabricante`), marque `True` SOMENTE quando o edital exigir declaração de revenda autorizada, credenciamento pelo fabricante ou carta de solidariedade/anuência emitida pelo fabricante (não marque `True` para mero compromisso próprio da licitante de prestar ou contratar garantia).
+5. Em `percentual_minimo_atestado`, informe o percentual inteiro exigido (0 se não exigir percentual mínimo).
 
-TEXTO DO EDITAL NUMERADO:
+TEXTO DO EDITAL ESTRUTURADO E NUMERADO:
 {texto_numerado}
 """
 
@@ -427,27 +667,22 @@ TEXTO DO EDITAL NUMERADO:
     if modelo != "gemini-2.5-flash":
         modelos_tentativa.append("gemini-2.5-flash")
 
-    ultimo_erro = None
-    for mod in modelos_tentativa:
-        try:
-            response = client.models.generate_content(
-                model=mod,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.0,
-                    response_mime_type="application/json",
-                    response_schema=FatosExtraidosEdital,
-                ),
-            )
-            if response.parsed is not None:
-                return response.parsed, mod
-            fatos = FatosExtraidosEdital.model_validate_json(response.text)
-            return fatos, mod
-        except Exception as exc:
-            ultimo_erro = exc
-            continue
-
-    raise RuntimeError(f"Falha ao chamar API Gemini ({modelo}): {ultimo_erro}")
+    response, mod = _executar_generate_content_gemini(
+        api_key=api_key,
+        modelos_tentativa=modelos_tentativa,
+        prompt=prompt,
+        response_schema=FatosExtraidosEdital,
+        label=f"Extração {nome_arquivo}",
+        timeout_s=timeout_s,
+        verbose=verbose,
+        erro_prefixo=f"Falha ao chamar API Gemini ({modelo})",
+        thinking_budget=thinking_budget,
+        usage_out=usage_out,
+    )
+    if response.parsed is not None:
+        return response.parsed, mod
+    fatos = FatosExtraidosEdital.model_validate_json(response.text)
+    return fatos, mod
 
 
 # ==============================================================================
@@ -488,9 +723,8 @@ def obter_avaliacao_somente_neural_demo(
 ) -> dict[str, JulgamentoNeuralRegra]:
     """
     Retorna as respostas de referência do mecanismo 'Somente Neural (LLM Puro End-to-End)'
-    para comparação direta lado a lado com o mecanismo 'Neuro-Simbólico (LLM + Prolog + UFO-L)'.
-    Demonstra empiricamente os casos de Falsos Negativos em regras compostas (disjunção lógica),
-    falhas de Mundo Fechado (CWA), falsos positivos por ruído léxico e ausência de prova formal SLD.
+    no modo demonstração para comparação lado a lado com 'Neuro-Simbólico (LLM + Prolog + UFO-L)'.
+    Ilustra cenários didáticos em disjunção lógica, Mundo Fechado (CWA), ruído léxico e ausência de prova SLD.
     """
     res: dict[str, JulgamentoNeuralRegra] = {}
 
@@ -506,12 +740,12 @@ def obter_avaliacao_somente_neural_demo(
                         "que esteja organizado sob a forma de consórcio, o que configura restrição à competitividade."
                     ),
                     trecho_citado_llm="Item 2.3, VIII - impedido de participar consórcio.",
-                    tipo_limitacao_observada="🔴 Falso Positivo do LLM Puro (Falha de Resolução de Exceção Justificada)",
+                    tipo_limitacao_observada="🔀 Divergência (Modo Demo — Resolução de Exceção Justificada)",
                     analise_diferenca_nesy=(
-                        "Ao encontrar a cláusula proibitiva no item 2.3, VIII, o LLM puro disparou um Falso Positivo "
+                        "Ao encontrar a cláusula proibitiva no item 2.3, VIII, o baseline demo disparou inconformidade "
                         "por viés de superfície léxica, deixando de encadear logicamente o subitem 2.3.1 [L0010] que "
-                        "trouxe a motivação técnica formal. Já o motor Prolog unificou `fato_consorcio(..., vedado, com_justificativa)` "
-                        "e provou que o dever de motivar (`duty_to_act`) da Estatal foi integralmente cumprido."
+                        "trouxe a motivação técnica formal. Já o motor Prolog unificou `fato_veda_consorcio/3` + "
+                        "`fato_justificativa_vedacao_consorcio/3` e provou que o dever de motivar (`duty_to_act`) da Estatal foi cumprido."
                     ),
                 )
             else:
@@ -523,7 +757,7 @@ def obter_avaliacao_somente_neural_demo(
                         "aparenta estar atendida no texto convocatório."
                     ),
                     trecho_citado_llm="Menção geral no texto do edital (sem árvore de derivação).",
-                    tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Caixa-Preta (Sem Prova Formal SLD / UFO-L)",
+                    tipo_limitacao_observada="⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
                     analise_diferenca_nesy=(
                         "Embora o LLM puro chegue ao mesmo veredito ('Conforme'), ele entrega apenas uma impressão "
                         "textual probabilística. O mecanismo Neuro-Simbólico comprova matematicamente a ausência de "
@@ -545,12 +779,11 @@ def obter_avaliacao_somente_neural_demo(
                         "sobre riscos alocados na matriz, não havendo violação direta neste ponto específico."
                     ),
                     trecho_citado_llm="Não aplicável (ausência de matriz).",
-                    tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Falha de Raciocínio Deôntico Relacional)",
+                    tipo_limitacao_observada="🔀 Divergência (Modo Demo — Raciocínio Deôntico Relacional)",
                     analise_diferenca_nesy=(
-                        "O LLM puro comete um erro grave de interpretação sistemática: acha que omitir a Matriz de Riscos "
-                        "isenta o contrato da regra do Art. 81, § 8º. No motor Prolog + UFO-L, a ausência da cláusula de "
-                        "vedação a aditivos (`fato_vedacao_aditivo_risco(ausente)`) prova que o contrato deixou de impor a "
-                        "incompetência legal (`disability`) à contratada, mantendo um `power` indevido de pleitear aditivos."
+                        "O baseline demo presume que omitir a Matriz de Riscos isenta o contrato da regra do Art. 81, § 8º. "
+                        "No motor Prolog + UFO-L, a ausência do fato positivo (`\\+ fato_vedacao_aditivo_risco/3`) via Negação por Falha "
+                        "prova que o contrato deixou de impor a incompetência legal (`disability`) à contratada, mantendo um `power` indevido de pleitear aditivos."
                     ),
                 )
             elif rid == "R09":
@@ -562,7 +795,7 @@ def obter_avaliacao_somente_neural_demo(
                         "gerais da legislação aplicável durante a execução do contrato."
                     ),
                     trecho_citado_llm="Silêncio contratual interpretado como regular.",
-                    tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Violação da Hipótese do Mundo Fechado - CWA)",
+                    tipo_limitacao_observada="🔀 Divergência (Modo Demo — Hipótese do Mundo Fechado / CWA)",
                     analise_diferenca_nesy=(
                         "O LLM puro opera sob pensamento de 'Mundo Aberto': interpreta o silêncio do edital como "
                         "conformidade tácita. No sistema Neuro-Simbólico, o Prolog aplica Negação por Falha (`\\+`) sob "
@@ -579,7 +812,7 @@ def obter_avaliacao_somente_neural_demo(
                         "contrariando os princípios da Lei nº 13.303/2016."
                     ),
                     trecho_citado_llm="Trecho restritivo identificado no Termo de Referência.",
-                    tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Enquadramento Hohfeldiano (UFO-L) nem Prova SLD",
+                    tipo_limitacao_observada="⚖️ Convergente no Veredito (Sem Enquadramento Hohfeldiano nem Prova SLD)",
                     analise_diferenca_nesy=(
                         "Em violações óbvias, o LLM puro acerta o alerta, mas não especifica qual posição jurídica fundamental "
                         f"foi quebrada. O motor Neuro-Simbólico explicita o par hohfeldiano violado (`{p.inferencia_bruta.momento_edital}` "
@@ -588,7 +821,7 @@ def obter_avaliacao_somente_neural_demo(
                 )
         return res
 
-    # Caso Principal: Edital Real PE 29/2026 (BNDES) ou editais customizados
+    # Caso Principal: Edital Real PE 29/2026 (BNDES) ou editais customizados (Modo Demo offline)
     mapa_pe29: dict[str, JulgamentoNeuralRegra] = {
         "R01": JulgamentoNeuralRegra(
             regra_id="R01",
@@ -598,10 +831,10 @@ def obter_avaliacao_somente_neural_demo(
                 "exige chave física 'YubiKey' no item 49.f, configurando citação de marcas no caderno técnico."
             ),
             trecho_citado_llm="Itens 5, 18 e 49.f (Windows 11, Microsoft 365 e Yubikey).",
-            tipo_limitacao_observada="🟠 Ruído Semântico / Falso Positivo Parcial (Não isolou a cláusula exemplificativa)",
+            tipo_limitacao_observada="🟠 Ruído Semântico (Modo Demo — Não isolou a cláusula exemplificativa)",
             analise_diferenca_nesy=(
-                "Embora acerte que há problema de marca no edital, o LLM puro coloca no mesmo saco a exigência fechada "
-                "de `Windows 11 Professional` [L0294] e a menção meramente exemplificativa `(ex.: yubikey)` [L0409]. "
+                "Embora aponte problema de marca no edital, o texto demo mistura a exigência fechada "
+                "de `Windows 11 Professional` e a menção meramente exemplificativa `(ex.: yubikey)`. "
                 "No motor Neuro-Simbólico, o Prolog filtra a ABox pela condição estrita `sem_clausula_similaridade`, "
                 "absolvendo automaticamente a `YubiKey` e incriminando apenas as exigências sem equivalência."
             ),
@@ -615,10 +848,9 @@ def obter_avaliacao_somente_neural_demo(
                 "padronização tecnológica natural da instituição, estando conforme o Art. 47, I."
             ),
             trecho_citado_llm="Anexo I - Especificações de integração com ambiente Microsoft do BNDES.",
-            tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Alucinação de Premissa / Mundo Aberto)",
+            tipo_limitacao_observada="🔀 Divergência (Modo Demo — Presunção de Premissa / Mundo Aberto)",
             analise_diferenca_nesy=(
-                "Aqui ocorre uma falha crítica do modelo puramente neural: ele 'inventa' ou presume que existe um "
-                "processo administrativo formal de padronização apenas pelo contexto de TI do edital. Na arquitetura "
+                "O baseline demo presume que existe um processo administrativo formal de padronização apenas pelo contexto de TI do edital. Na arquitetura "
                 "Neuro-Simbólica, sob a Hipótese do Mundo Fechado, como não há menção a processo formal de padronização "
                 "no texto (`sem_justificativa_padronizacao`), o Prolog prova o conflito de 2ª ordem: a Estatal exerceu "
                 "um `power` onde a Lei 13.303 impõe uma incompetência (`disability`) na ausência de padronização formal."
@@ -631,10 +863,10 @@ def obter_avaliacao_somente_neural_demo(
                 "O edital e a minuta contratual preveem a Matriz de Riscos na Cláusula Nona e no Anexo III."
             ),
             trecho_citado_llm="Cláusula Nona da Minuta de Contrato e Anexo III.",
-            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            tipo_limitacao_observada="⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
             analise_diferenca_nesy=(
                 "Ambos convergem na presença da Matriz de Riscos. A diferença está na garantia formal: o motor "
-                "Neuro-Simbólico ancora a prova na linha exata `[L0841]` e demonstra na UFO-L o adimplemento do "
+                "Neuro-Simbólico ancora a prova no fato `fato_matriz_riscos/3` e demonstra na UFO-L o adimplemento do "
                 "dever positivo (`duty_to_act`) da Estatal perante o direito (`right_to_action`) dos licitantes."
             ),
         ),
@@ -645,10 +877,10 @@ def obter_avaliacao_somente_neural_demo(
                 "A minuta do contrato define na Cláusula Décima Sétima que é vedada a subcontratação do objeto."
             ),
             trecho_citado_llm="Cláusula Décima Sétima, Parágrafo Terceiro.",
-            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            tipo_limitacao_observada="⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
             analise_diferenca_nesy=(
-                "Enquanto o LLM puro apenas resume a cláusula, o motor Prolog unifica `fato_subcontratacao(pe_29_2026, definida, ...)` "
-                "na linha `[L1018]` e comprova formalmente a harmonia normativa no relator `legal_service_agreement`."
+                "Enquanto o LLM puro apenas resume a cláusula, o motor Prolog unifica `fato_subcontratacao_definida(pe_29_2026, ...)` "
+                "e comprova formalmente a harmonia normativa no relator `legal_service_agreement`."
             ),
         ),
         "R11": JulgamentoNeuralRegra(
@@ -659,7 +891,7 @@ def obter_avaliacao_somente_neural_demo(
                 "habilitação do licitante classificado em primeiro lugar."
             ),
             trecho_citado_llm="Item 4.11.4 do Edital e Item 119 do Anexo I.",
-            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            tipo_limitacao_observada="⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
             analise_diferenca_nesy=(
                 "O mecanismo Neuro-Simbólico vai além da constatação textual: prova formalmente que a Estatal respeitou "
                 "sua incompetência (`disability`) de exigir amostra na fase inicial, preservando a imunidade (`immunity`) "
@@ -675,14 +907,14 @@ def obter_avaliacao_somente_neural_demo(
                 "de 50% consolidado pela jurisprudência do TCU (Súmula 263), a exigência de qualificação técnica está conforme."
             ),
             trecho_citado_llm="Anexo I, Item 116 (percentual de 50% do quantitativo).",
-            tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Falha em Regra Composta / Disjunção Lógica)",
+            tipo_limitacao_observada="🔀 Divergência (Modo Demo — Regra Composta / Disjunção Lógica)",
             analise_diferenca_nesy=(
-                "Este é o caso mais emblemático da superioridade Neuro-Simbólica. A regra R29 possui duas condições "
+                "A regra R29 possui duas condições "
                 "disjuntivas de violação: (1) exigir percentual > 50% OU (2) vedar o somatório de atestados sem "
-                "justificativa técnica. O LLM puro sofreu viés de ancoragem numérica: verificou que 50% <= 50% no "
-                "item 116 e encerrou a análise como 'Conforme', ignorando a proibição ao somatório no item 117 [L0630]. "
+                "justificativa técnica. O baseline demo sofreu viés de ancoragem numérica: verificou que 50% <= 50% no "
+                "item 116 e encerrou a análise como 'Conforme', ignorando a proibição ao somatório no item 117. "
                 "No motor Prolog, a Resolução SLD testou a 1ª cláusula (50 > 50 -> Falso), fez backtracking automático "
-                "para a 2ª cláusula (`veda_somatorio` + `sem_justificativa` -> Verdadeiro) e detectou a violação na linha [L0630]!"
+                "para a 2ª cláusula (`fato_veda_somatorio/3` + `\\+ fato_justificativa_vedacao_somatorio/3` -> Verdadeiro) e detectou a divergência!"
             ),
         ),
         "R38": JulgamentoNeuralRegra(
@@ -692,9 +924,9 @@ def obter_avaliacao_somente_neural_demo(
                 "O Parágrafo Segundo da Cláusula Nona veda aditivos decorrentes de eventos alocados como risco do contratado."
             ),
             trecho_citado_llm="Minuta de Contrato, Cláusula Nona, Parágrafo Segundo.",
-            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Sem Prova Formal SLD / UFO-L",
+            tipo_limitacao_observada="⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
             analise_diferenca_nesy=(
-                "O motor Neuro-Simbólico comprova na árvore SLD que a linha `[L0848]` institui corretamente a posição "
+                "O motor Neuro-Simbólico comprova na árvore SLD via `fato_vedacao_aditivo_risco/3` que o contrato institui corretamente a posição "
                 "hohfeldiana `disability` sobre o `contracted_party_role`, em harmonia com o Art. 81, § 8º."
             ),
         ),
@@ -706,10 +938,10 @@ def obter_avaliacao_somente_neural_demo(
                 "autorizadas pelo provedor da solução, o que pode restringir a competitividade do certame."
             ),
             trecho_citado_llm="Anexo I, Item 114, alínea 'c'.",
-            tipo_limitacao_observada="⚠️ Convergente no Veredito, mas Texto Opinativo vs. Oposição Hohfeldiana Formal",
+            tipo_limitacao_observada="⚖️ Convergente no Veredito (Texto Opinativo vs. Oposição Hohfeldiana Formal)",
             analise_diferenca_nesy=(
                 "O LLM puro usa linguagem hesitante ('pode restringir a competitividade'). O motor Neuro-Simbólico "
-                "entrega uma prova deôntica irrefutável: na linha `[L0624]`, o edital impôs um `duty_to_act` ao "
+                "entrega uma prova deôntica baseada em `fato_credenciamento_exigido/3`: o edital impôs um `duty_to_act` ao "
                 "`bidder_role` que é o oposto contraditório (`hohfeldian_opposite`) da liberdade `permission_to_omit` "
                 "garantida pelo Art. 31 da Lei 13.303/2016."
             ),
@@ -722,12 +954,11 @@ def obter_avaliacao_somente_neural_demo(
                 "admitir ou vedar consórcios insere-se no poder discricionário da empresa estatal, a cláusula é válida."
             ),
             trecho_citado_llm="Item 2.3, inciso VIII do Edital.",
-            tipo_limitacao_observada="🔴 Falso Negativo do LLM Puro (Omissão de Motivação Obrigatória / Mundo Fechado)",
+            tipo_limitacao_observada="🔀 Divergência (Modo Demo — Omissão de Motivação Obrigatória / Mundo Fechado)",
             analise_diferenca_nesy=(
-                "O LLM puro lembra que vedar consórcio é permitido em tese, mas esquece que a jurisprudência do TCU e "
-                "o princípio da motivação exigem justificativa técnica expressa quando há vedação. O motor Prolog, "
-                "operando sob Mundo Fechado, verifica `fato_consorcio(pe_29_2026, vedado, sem_justificativa, ...)` na "
-                "linha `[L0023]` e prova que a Estatal violou seu dever legal (`duty_to_act`) de motivar a restrição."
+                "O baseline demo lembra que vedar consórcio é permitido em tese, mas ignora a exigência de justificativa técnica expressa. O motor Prolog, "
+                "operando sob Mundo Fechado, verifica `fato_veda_consorcio/3` combinada a `\\+ fato_justificativa_vedacao_consorcio/3` (NAF) "
+                "e prova que a Estatal violou seu dever legal (`duty_to_act`) de motivar a restrição."
             ),
         ),
     }
@@ -747,27 +978,28 @@ def executar_avaliacao_somente_neural_gemini(
     pareceres_nesy: list,
     api_key: str,
     modelo: str = "gemini-2.5-flash",
+    timeout_s: int = 240,
+    verbose: bool = False,
+    thinking_budget: int = 4096,
+    usage_out: Optional[dict[str, Any]] = None,
 ) -> dict[str, JulgamentoNeuralRegra]:
     """
     Executa uma avaliação puramente neural (LLM Puro End-to-End) ao vivo na API Gemini,
     pedindo que o próprio LLM julgue diretamente as regras sem Prolog e sem UFO-L,
     e anota automaticamente as diferenças frente ao diagnóstico Neuro-Simbólico.
     """
-    from google import genai
-    from google.genai import types
-
-    client = genai.Client(api_key=api_key)
     regras_desc = "\n".join(
         f"- {rid}: {catalogo_regras[rid]['categoria']} ({catalogo_regras[rid]['dispositivo_legal']}) -> {catalogo_regras[rid]['criterio_validacao']}"
         for rid in regras_selecionadas
         if rid in catalogo_regras
     )
 
-    prompt = f"""Analise o edital de licitação abaixo ({nome_arquivo}) e dê seu parecer direto sobre cada uma das seguintes regras da Lei nº 13.303/2016:
+    prompt = f"""Você é um auditor jurídico avaliando diretamente a conformidade de um edital de licitação.
+Analise o edital abaixo ({nome_arquivo}) e dê seu parecer direto sobre cada uma das seguintes regras da Lei nº 13.303/2016:
 {regras_desc}
 
 Para cada regra, informe:
-- `regra_id`: código da regra
+- `regra_id`: código da regra (ex: R01, R02, ..., R43)
 - `status_verificacao`: "Conforme" ou "Indício de Inconformidade"
 - `justificativa_livre_llm`: sua explicação direta
 - `trecho_citado_llm`: trecho ou item do edital considerado
@@ -776,15 +1008,23 @@ TEXTO DO EDITAL:
 {texto_numerado}
 """
 
-    response = client.models.generate_content(
-        model=modelo,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            temperature=0.2,
-            response_mime_type="application/json",
-            response_schema=ListaJulgamentosNeurais,
-        ),
+    modelos_tentativa = [modelo]
+    if modelo != "gemini-2.5-flash":
+        modelos_tentativa.append("gemini-2.5-flash")
+
+    response, _ = _executar_generate_content_gemini(
+        api_key=api_key,
+        modelos_tentativa=modelos_tentativa,
+        prompt=prompt,
+        response_schema=ListaJulgamentosNeurais,
+        label=f"Somente Neural {nome_arquivo}",
+        timeout_s=timeout_s,
+        verbose=verbose,
+        erro_prefixo=f"Falha ao chamar API Gemini Somente Neural ({modelo})",
+        thinking_budget=thinking_budget,
+        usage_out=usage_out,
     )
+
     parsed = response.parsed or ListaJulgamentosNeurais.model_validate_json(response.text)
     mapa_live = {j.regra_id: j for j in parsed.julgamentos}
 
@@ -796,21 +1036,47 @@ TEXTO DO EDITAL:
             continue
         if j.status_verificacao != p.status_verificacao:
             j.tipo_limitacao_observada = (
-                f"🔴 Divergência de Veredito (LLM Puro: {j.status_verificacao} vs. Prolog/UFO-L: {p.status_verificacao})"
+                f"🔀 Divergência (LLM Puro: {j.status_verificacao} vs. Prolog/UFO-L: {p.status_verificacao} — requer auditoria)"
             )
             j.analise_diferenca_nesy = (
-                f"No julgamento direto (end-to-end), o LLM puro concluiu '{j.status_verificacao}' sem decompor "
-                f"todas as condições lógicas da regra. Já o motor Prolog + UFO-L provou formalmente '{p.status_verificacao}' "
-                f"via Resolução SLD (`{p.inferencia_bruta.momento_edital}` vs `{p.inferencia_bruta.momento_esperado_lei}`) "
-                f"com base na evidência de {p.item_identificado}."
+                f"Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), "
+                f"o LLM puro concluiu '{j.status_verificacao}', enquanto o motor Prolog + UFO-L derivou "
+                f"'{p.status_verificacao}' via Resolução SLD (`{p.inferencia_bruta.momento_edital}` "
+                f"vs `{p.inferencia_bruta.momento_esperado_lei}`) com base em {p.item_identificado}."
             )
         else:
-            j.tipo_limitacao_observada = "⚠️ Convergente no Veredito, mas Caixa-Preta (Sem Prova Formal SLD / UFO-L)"
+            j.tipo_limitacao_observada = "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)"
             j.analise_diferenca_nesy = (
                 "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de "
                 f"consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par "
                 f"hohfeldiano (`{p.inferencia_bruta.momento_edital}` / `{p.inferencia_bruta.momento_esperado_lei}`)."
             )
     return mapa_live
+
+
+def carregar_cache_benchmark_edital(
+    nome_arquivo: str,
+    cache_dir: str | Path | None = None,
+) -> Optional[dict[str, Any]]:
+    """Carrega o cache auditado (fatos + baseline neural) de um edital do benchmark, se existir."""
+    base_dir = Path(cache_dir) if cache_dir else Path(__file__).resolve().parent.parent / "dados" / "benchmark_10_editais"
+    if not base_dir.exists():
+        return None
+    stem = Path(nome_arquivo).stem
+    arq = base_dir / f"{stem}.json"
+    if not arq.exists():
+        return None
+    return json.loads(arq.read_text(encoding="utf-8"))
+
+
+def carregar_resumo_benchmark(
+    cache_dir: str | Path | None = None,
+) -> Optional[dict[str, Any]]:
+    """Carrega o resumo consolidado dos 10 editais reais em dados/benchmark_10_editais/resumo_consolidado.json."""
+    base_dir = Path(cache_dir) if cache_dir else Path(__file__).resolve().parent.parent / "dados" / "benchmark_10_editais"
+    arq = base_dir / "resumo_consolidado.json"
+    if not arq.exists():
+        return None
+    return json.loads(arq.read_text(encoding="utf-8"))
 
 

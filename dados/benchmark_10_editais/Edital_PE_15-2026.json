@@ -1,0 +1,287 @@
+{
+  "timestamp_execucao": "2026-11-23T20:44:39",
+  "nome_arquivo": "Edital_PE_15-2026.pdf",
+  "identificador_edital": "pe_15_2026",
+  "total_paginas": 106,
+  "total_linhas": 5601,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 640,
+      "total_linhas": 640,
+      "pagina_inicio": 1,
+      "pagina_fim": 18
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 641,
+      "fim": 3736,
+      "total_linhas": 3096,
+      "pagina_inicio": 18,
+      "pagina_fim": 64
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 3737,
+      "fim": 4897,
+      "total_linhas": 1161,
+      "pagina_inicio": 64,
+      "pagina_fim": 88
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 27.48,
+  "tempo_prolog_ms": 682.364,
+  "tempo_somente_neural_s": 31.75,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 114905,
+    "thoughts_token_count": 4093,
+    "candidates_token_count": 1746,
+    "total_token_count": 120744
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 114586,
+    "thoughts_token_count": 4046,
+    "candidates_token_count": 2638,
+    "total_token_count": 121270
+  },
+  "fatos": {
+    "identificador_edital": "pe_15_2026",
+    "resumo_objeto": "Contratação de serviços de gerenciamento total do ambiente de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão) do Banco Nacional de Desenvolvimento Econômico e Social (BNDES).",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "Microsoft Active Directory",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 5.1.6.1.3 (Linha 1127)",
+        "trecho_literal": "Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES."
+      },
+      {
+        "marca_ou_produto": "VMware vSphere ESXi 8.0.3",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 6.1.3.1 (Linha 1216)",
+        "trecho_literal": "Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3 para a instalação do ambiente de produção e de homologação"
+      },
+      {
+        "marca_ou_produto": "Microsoft SQL Server Enterprise Edition, versão 2022",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 6.1.3.2.1 (Linha 1241)",
+        "trecho_literal": "Microsoft SQL Server Enterprise Edition, versão 2022, com collation SQL_Latin1_General_CP1_CI_AI, em instância compartilhada, e;"
+      },
+      {
+        "marca_ou_produto": "Oracle Database Enterprise Edition, versão 19c",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 6.1.3.2.2 (Linha 1248)",
+        "trecho_literal": "Oracle Database Enterprise Edition, versão 19c, com Oracle Real Application Cluster 19c, partitioning option, utilizando codepage \"AL32UTF8\" em ambiente Linux, em instância compartilhada."
+      },
+      {
+        "marca_ou_produto": "PaperCut MF 22.1.4",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 6.8.8 (Linha 1637)",
+        "trecho_literal": "Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14)."
+      },
+      {
+        "marca_ou_produto": "BMC Remedy IT Service Management - ITSM",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 7.1.5.3.2 (Linha 1759)",
+        "trecho_literal": "sistema de gerenciamento de chamados (atualmente o sistema BMC Remedy IT Service Management - ITSM)"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "Anexo IV (Linha 4608)",
+    "matriz_riscos_trecho": "ANEXO IV – MATRIZ DE RISCOS",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "Cláusula Nona, Parágrafo Segundo (Linha 4060)",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "Item 1.1.2 (Linha 183)",
+    "subcontratacao_trecho": "Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Anexo I (Termo de Referência) deste Edital.",
+    "escopo_exigencia_amostra": "nao_exigida",
+    "amostra_item": "Não exigida",
+    "amostra_trecho": "Não há exigência de amostra ou Prova de Conceito (PoC) no edital.",
+    "percentual_minimo_atestado": 49,
+    "veda_somatorio_atestados": true,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "Anexo I, Item 15.2.1 (Linha 3083) e Item 15.3 (Linha 3085)",
+    "atestado_trecho": "Prestação de serviços de gerenciamento total de ambientes de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão), com a disponibilização de equipamentos, reposição de suprimentos, solução de gerenciamento, monitoramento e bilhetagem, pelo período mínimo de 1 (um) ano, contemplando a quantidade mínima de 25 (vinte e cinco) equipamentos, dentre impressoras ou equipamentos multifuncionais, emitido por pessoa jurídica de direito público ou privado. Não serão aceitos somatórios de atestados para a comprovação da capacidade técnica.",
+    "exige_credenciamento_ou_carta_fabricante": false,
+    "credenciamento_item": "Não exigido",
+    "credenciamento_trecho": "Não há exigência de credenciamento ou carta do fabricante. O item 11.3 (Linha 2935) menciona 'termos de garantia do fabricante', mas não exige credenciamento prévio ou carta de solidariedade.",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "Item 2.3.1, VIII (Linha 251)",
+    "consorcio_trecho": "VIII. esteja organizado sob a forma de consórcio."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_15_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_15_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_15_2026, 'Microsoft Active Directory', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 5.1.6.1.3 (Linha 1127)', 'Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES.').\nmencao_marca_exigida(pe_15_2026, 'VMware vSphere ESXi 8.0.3', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 6.1.3.1 (Linha 1216)', 'Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3 para a instalação do ambiente de produção e de homologação').\nmencao_marca_exigida(pe_15_2026, 'Microsoft SQL Server Enterprise Edition, versão 2022', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 6.1.3.2.1 (Linha 1241)', 'Microsoft SQL Server Enterprise Edition, versão 2022, com collation SQL_Latin1_General_CP1_CI_AI, em instância compartilhada, e;').\nmencao_marca_exigida(pe_15_2026, 'Oracle Database Enterprise Edition, versão 19c', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 6.1.3.2.2 (Linha 1248)', 'Oracle Database Enterprise Edition, versão 19c, com Oracle Real Application Cluster 19c, partitioning option, utilizando codepage \"AL32UTF8\" em ambiente Linux, em instância compartilhada.').\nmencao_marca_exigida(pe_15_2026, 'PaperCut MF 22.1.4', referencia_exemplificativa, com_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 6.8.8 (Linha 1637)', 'Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14).').\nmencao_marca_exigida(pe_15_2026, 'BMC Remedy IT Service Management - ITSM', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 7.1.5.3.2 (Linha 1759)', 'sistema de gerenciamento de chamados (atualmente o sistema BMC Remedy IT Service Management - ITSM)').\nevidencia_regra(pe_15_2026, 'R01', 'Anexo I, Item 5.1.6.1.3 (Linha 1127) | Anexo I, Item 6.1.3.1 (Linha 1216) | Anexo I, Item 6.1.3.2.1 (Linha 1241) | Anexo I, Item 6.1.3.2.2 (Linha 1248) | Anexo I, Item 6.8.8 (Linha 1637) | Anexo I, Item 7.1.5.3.2 (Linha 1759)', '[Microsoft Active Directory | interoperabilidade_ambiente_legado] Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES. [VMware vSphere ESXi 8.0.3 | interoperabilidade_ambiente_legado] Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3 para a instalação do ambiente de produção e de homologação [Microsoft SQL Server Enterprise Edition, versão 2022 | interoperabilidade_ambiente_legado] Microsoft SQL Server Enterprise Edition, versão 2022, com collation SQL_Latin1_General_CP1_CI_AI, em instância compartilhada, e; [Oracle Database Enterprise Edition, versão 19c | interoperabilidade_ambiente_legado] Oracle Database Enterprise Edition, versão 19c, com Oracle Real Application Cluster 19c, partitioning option, utilizando codepage \"AL32UTF8\" em ambiente Linux, em instância compartilhada. [PaperCut MF 22.1.4 | referencia_exemplificativa] Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14). [BMC Remedy IT Service Management - ITSM | interoperabilidade_ambiente_legado] sistema de gerenciamento de chamados (atualmente o sistema BMC Remedy IT Service Management - ITSM)').\nevidencia_regra(pe_15_2026, 'R02', 'Anexo I, Item 5.1.6.1.3 (Linha 1127) | Anexo I, Item 6.1.3.1 (Linha 1216) | Anexo I, Item 6.1.3.2.1 (Linha 1241) | Anexo I, Item 6.1.3.2.2 (Linha 1248) | Anexo I, Item 6.8.8 (Linha 1637) | Anexo I, Item 7.1.5.3.2 (Linha 1759)', '[Microsoft Active Directory | interoperabilidade_ambiente_legado] Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES. [VMware vSphere ESXi 8.0.3 | interoperabilidade_ambiente_legado] Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3 para a instalação do ambiente de produção e de homologação [Microsoft SQL Server Enterprise Edition, versão 2022 | interoperabilidade_ambiente_legado] Microsoft SQL Server Enterprise Edition, versão 2022, com collation SQL_Latin1_General_CP1_CI_AI, em instância compartilhada, e; [Oracle Database Enterprise Edition, versão 19c | interoperabilidade_ambiente_legado] Oracle Database Enterprise Edition, versão 19c, com Oracle Real Application Cluster 19c, partitioning option, utilizando codepage \"AL32UTF8\" em ambiente Linux, em instância compartilhada. [PaperCut MF 22.1.4 | referencia_exemplificativa] Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14). [BMC Remedy IT Service Management - ITSM | interoperabilidade_ambiente_legado] sistema de gerenciamento de chamados (atualmente o sistema BMC Remedy IT Service Management - ITSM)').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_15_2026, 'Anexo IV (Linha 4608)', 'ANEXO IV – MATRIZ DE RISCOS').\nevidencia_regra(pe_15_2026, 'R03', 'Anexo IV (Linha 4608)', 'ANEXO IV – MATRIZ DE RISCOS').\nfato_vedacao_aditivo_risco(pe_15_2026, 'Cláusula Nona, Parágrafo Segundo (Linha 4060)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_15_2026, 'R38', 'Cláusula Nona, Parágrafo Segundo (Linha 4060)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_15_2026, 'Item 1.1.2 (Linha 183)', 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Anexo I (Termo de Referência) deste Edital.').\nevidencia_regra(pe_15_2026, 'R09', 'Item 1.1.2 (Linha 183)', 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Anexo I (Termo de Referência) deste Edital.').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_15_2026, nao_exigida, 'Não exigida', 'Não há exigência de amostra ou Prova de Conceito (PoC) no edital.').\nevidencia_regra(pe_15_2026, 'R11', 'Não exigida', 'Não há exigência de amostra ou Prova de Conceito (PoC) no edital.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_15_2026, 49, 'Anexo I, Item 15.2.1 (Linha 3083) e Item 15.3 (Linha 3085)', 'Prestação de serviços de gerenciamento total de ambientes de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão), com a disponibilização de equipamentos, reposição de suprimentos, solução de gerenciamento, monitoramento e bilhetagem, pelo período mínimo de 1 (um) ano, contemplando a quantidade mínima de 25 (vinte e cinco) equipamentos, dentre impressoras ou equipamentos multifuncionais, emitido por pessoa jurídica de direito público ou privado. Não serão aceitos somatórios de atestados para a comprovação da capacidade técnica.').\nfato_veda_somatorio(pe_15_2026, 'Anexo I, Item 15.2.1 (Linha 3083) e Item 15.3 (Linha 3085)', 'Prestação de serviços de gerenciamento total de ambientes de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão), com a disponibilização de equipamentos, reposição de suprimentos, solução de gerenciamento, monitoramento e bilhetagem, pelo período mínimo de 1 (um) ano, contemplando a quantidade mínima de 25 (vinte e cinco) equipamentos, dentre impressoras ou equipamentos multifuncionais, emitido por pessoa jurídica de direito público ou privado. Não serão aceitos somatórios de atestados para a comprovação da capacidade técnica.').\nevidencia_regra(pe_15_2026, 'R29', 'Anexo I, Item 15.2.1 (Linha 3083) e Item 15.3 (Linha 3085)', 'Prestação de serviços de gerenciamento total de ambientes de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão), com a disponibilização de equipamentos, reposição de suprimentos, solução de gerenciamento, monitoramento e bilhetagem, pelo período mínimo de 1 (um) ano, contemplando a quantidade mínima de 25 (vinte e cinco) equipamentos, dentre impressoras ou equipamentos multifuncionais, emitido por pessoa jurídica de direito público ou privado. Não serão aceitos somatórios de atestados para a comprovação da capacidade técnica.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\n% fato_credenciamento_exigido ausente -> NAF (\\+) confirmará conformidade em R41\nevidencia_regra(pe_15_2026, 'R41', 'Não exigido', 'Não há exigência de credenciamento ou carta do fabricante. O item 11.3 (Linha 2935) menciona \\'termos de garantia do fabricante\\', mas não exige credenciamento prévio ou carta de solidariedade.').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_15_2026, 'Item 2.3.1, VIII (Linha 251)', 'VIII. esteja organizado sob a forma de consórcio.').\nevidencia_regra(pe_15_2026, 'R43', 'Item 2.3.1, VIII (Linha 251)', 'VIII. esteja organizado sob a forma de consórcio.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "Anexo I, Item 5.1.6.1.3 (Linha 1127) | Anexo I, Item 6.1.3.1 (Linha 1216) | Anexo I, Item 6.1.3.2.1 (Linha 1241) | Anexo I, Item 6.1.3.2.2 (Linha 1248) | Anexo I, Item 6.8.8 (Linha 1637) | Anexo I, Item 7.1.5.3.2 (Linha 1759)",
+      "trecho_identificado": "[Microsoft Active Directory | interoperabilidade_ambiente_legado] Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES. [VMware vSphere ESXi 8.0.3 | interoperabilidade_ambiente_legado] Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3 para a instalação do ambiente de produção e de homologação [Microsoft SQL Server Enterprise Edition, versão 2022 | interoperabilidade_ambiente_legado] Microsoft SQL Server Enterprise Edition, versão 2022, com collation SQL_Latin1_General_CP1_CI_AI, em instância compartilhada, e; [Oracle Database Enterprise Edition, versão 19c | interoperabilidade_ambiente_legado] Oracle Database Enterprise Edition, versão 19c, com Oracle Real Application Cluster 19c, partitioning option, utilizando codepage \"AL32UTF8\" em ambiente Linux, em instância compartilhada. [PaperCut MF 22.1.4 | referencia_exemplificativa] Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14). [BMC Remedy IT Service Management - ITSM | interoperabilidade_ambiente_legado] sistema de gerenciamento de chamados (atualmente o sistema BMC Remedy IT Service Management - ITSM)",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(equivalencia_ou_contexto_legitimo,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo I, Item 5.1.6.1.3 (Linha 1127) | Anexo I, Item 6.1.3.1 (Linha 1216) | Anexo I, Item 6.1.3.2.1 (Linha 1241) | Anexo I, Item 6.1.3.2.2 (Linha 1248) | Anexo I, Item 6.8.8 (Linha 1637) | Anexo I, Item 7.1.5.3.2 (Linha 1759)",
+      "trecho_identificado": "[Microsoft Active Directory | interoperabilidade_ambiente_legado] Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES. [VMware vSphere ESXi 8.0.3 | interoperabilidade_ambiente_legado] Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3 para a instalação do ambiente de produção e de homologação [Microsoft SQL Server Enterprise Edition, versão 2022 | interoperabilidade_ambiente_legado] Microsoft SQL Server Enterprise Edition, versão 2022, com collation SQL_Latin1_General_CP1_CI_AI, em instância compartilhada, e; [Oracle Database Enterprise Edition, versão 19c | interoperabilidade_ambiente_legado] Oracle Database Enterprise Edition, versão 19c, com Oracle Real Application Cluster 19c, partitioning option, utilizando codepage \"AL32UTF8\" em ambiente Linux, em instância compartilhada. [PaperCut MF 22.1.4 | referencia_exemplificativa] Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14). [BMC Remedy IT Service Management - ITSM | interoperabilidade_ambiente_legado] sistema de gerenciamento de chamados (atualmente o sistema BMC Remedy IT Service Management - ITSM)",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(padronizacao_ou_contexto_legitimo,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo IV (Linha 4608)",
+      "trecho_identificado": "ANEXO IV – MATRIZ DE RISCOS",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "Item 1.1.2 (Linha 183)",
+      "trecho_identificado": "Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Anexo I (Termo de Referência) deste Edital.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não exigida",
+      "trecho_identificado": "Não há exigência de amostra ou Prova de Conceito (PoC) no edital.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_nao_exigida,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Anexo I, Item 15.2.1 (Linha 3083) e Item 15.3 (Linha 3085)",
+      "trecho_identificado": "Prestação de serviços de gerenciamento total de ambientes de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão), com a disponibilização de equipamentos, reposição de suprimentos, solução de gerenciamento, monitoramento e bilhetagem, pelo período mínimo de 1 (um) ano, contemplando a quantidade mínima de 25 (vinte e cinco) equipamentos, dentre impressoras ou equipamentos multifuncionais, emitido por pessoa jurídica de direito público ou privado. Não serão aceitos somatórios de atestados para a comprovação da capacidade técnica.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_somatorio_sem_justificativa,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "Cláusula Nona, Parágrafo Segundo (Linha 4060)",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "Não exigido",
+      "trecho_identificado": "Não há exigência de credenciamento ou carta do fabricante. O item 11.3 (Linha 2935) menciona 'termos de garantia do fabricante', mas não exige credenciamento prévio ou carta de solidariedade.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "harmonia_normativa(sem_exigencia_credenciamento,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "Item 2.3.1, VIII (Linha 251)",
+      "trecho_identificado": "VIII. esteja organizado sob a forma de consórcio.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital menciona marcas nominais como 'Microsoft Active Directory', 'VMware vSphere ESXi', 'Windows Server', 'Microsoft SQL Server', 'Oracle Database', 'PaperCut MF' e 'BMC Remedy IT Service Management - ITSM'. No entanto, todas essas menções referem-se a componentes da infraestrutura de TI existente do BNDES com os quais a solução contratada deve ser compatível ou integrar-se, ou são citadas como referência da solução atual. Não há menção de marca nominal para novos equipamentos ou softwares a serem adquiridos sem a cláusula 'ou similar ou de melhor qualidade'.",
+      "trecho_citado_llm": "P23|L1125-L1127: 'Deve permitir a autenticação dos usuários de forma integrada com serviço de diretórios da Microsoft Active Directory do BNDES.'; P24|L1215-L1216: 'Até 4 (quatro) servidores virtuais na plataforma VMware vSphere ESXi 8.0.3'; P30|L1636-L1637: 'Para referência, a solução atual de bilhetagem implantada no BNDES pela atual prestadora é: PaperCut MF 22.1.4 (Build 67128 2023-08-14).'; P38|L2213-L2215: 'atualmente, o BMC Remedy IT Service Management - ITSM.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_act` / `permission_to_act`)."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não indica marca ou modelo específico para os equipamentos ou soluções a serem contratados. As especificações técnicas para os equipamentos multifuncionais (Categoria A4 e A3) são genéricas e baseadas em desempenho e funcionalidades (PPM, dpi, capacidade de bandeja, etc.), permitindo a participação de diversos fabricantes. As menções a marcas de software e plataformas são para integração com a infraestrutura existente do BNDES, não para aquisição de novos itens.",
+      "trecho_citado_llm": "P20|L0845-L0847: 'deverão estar em linha de produção de seu fabricante e atender às especificações mínimas definidas neste anexo.'; P21|L0916-P23|L1107: 'Requisitos operacionais e funcionais mínimos exigidos para os equipamentos multifuncionais:' (tabela de especificações técnicas).",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital inclui expressamente uma Matriz de Riscos como Anexo IV, conforme exigido para contratações de serviços complexos. A Cláusula Nona da Minuta de Contrato também faz referência a este anexo.",
+      "trecho_citado_llm": "P71|L4050-L4055: 'CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.'; P85|L4608: 'ANEXO IV – MATRIZ DE RISCOS'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital autoriza a subcontratação de parcela dos serviços, especifica qual parcela pode ser subcontratada (assistência técnica e manutenção fora do Rio de Janeiro) e estabelece um limite percentual de 20% do valor global do contrato para essa subcontratação. A minuta de contrato reitera essa possibilidade e os requisitos.",
+      "trecho_citado_llm": "P05|L0183-L0184: 'Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no Anexo I (Termo de Referência) deste Edital.'; P53|L3215-L3220: 'A CONTRATADA poderá, atendidas as exigências previstas nos subitens abaixo, promover a subcontratação da parcela do serviço de assistência técnica e manutenção – incluindo reposição de suprimento – que demande atendimento presencial nas unidades funcionais do BNDES situadas fora do Estado do Rio de Janeiro (item 9 deste Termo de Referência), sendo mantida toda a responsabilidade pela prestação dos serviços com a CONTRATADA.'; P58|L3474-L3475: 'observado o limite de 20% (vinte por cento) do valor global do Contrato.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não exige a apresentação de amostras ou provas de conceito na fase de propostas iniciais. A 'vistoria' é facultativa para as licitantes conhecerem o ambiente, e o 'projeto piloto' ocorre na fase de implantação, após a contratação, não sendo uma exigência para a fase de propostas.",
+      "trecho_citado_llm": "P50|L3026-L3032: '14.1. É facultado às licitantes vistoriar as dependências do BNDES na cidade do Rio de Janeiro, [...] com o objetivo de avaliar as características do ambiente computacional do BNDES e as condições da execução dos serviços; e esclarecer as dúvidas inerentes ao objeto deste certame, visando a adequada formulação da proposta.'; P35|L1957-L1967: 'O primeiro lote de equipamentos será considerado como o “projeto piloto” para a implantação dos serviços, o que permitirá à equipe de implantação identificar eventuais falhas e melhorias no processo de implantação...'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A exigência de qualificação técnica (atestado de capacidade técnica) solicita comprovação de experiência com no mínimo 25 equipamentos. O quantitativo total de equipamentos a serem contratados é de 51 (46 A4 + 5 A3). A exigência de 25 equipamentos representa aproximadamente 49% do total, o que não excede o limite de 50% estabelecido pela Súmula 263 do TCU, não sendo, portanto, restritiva à competitividade.",
+      "trecho_citado_llm": "P50|L3064-P51|L3084: '15.2.1. Prestação de serviços de gerenciamento total de ambientes de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão), com a disponibilização de equipamentos, reposição de suprimentos, solução de gerenciamento, monitoramento e bilhetagem, pelo período mínimo de 1 (um) ano, contemplando a quantidade mínima de 25 (vinte e cinco) equipamentos, dentre impressoras ou equipamentos multifuncionais, emitido por pessoa jurídica de direito público ou privado.'; P19|L0744-L0759: 'Categoria A4 [...] 46'; 'Categoria A3 [...] 5'.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`duty_to_omit` vs `permission_to_act`) com base em Anexo I, Item 15.2.1 (Linha 3083) e Item 15.3 (Linha 3085)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A minuta de contrato contém uma vedação expressa à celebração de aditivos decorrentes de riscos alocados ao particular, conforme exigido pelo Art. 81, § 8º da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P71|L4060-L4061: 'Parágrafo Segundo É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não exige declaração de credenciamento, anuência ou carta de solidariedade emitida pelo fabricante como condição de habilitação. A documentação técnica do fabricante é solicitada para comprovar a conformidade da solução proposta com os requisitos técnicos, não como um documento de habilitação em si.",
+      "trecho_citado_llm": "P12|L0441-L0444: '4.14.1. Para que seja habilitado, o Licitante deverá atender a todas as exigências abaixo listadas e as previstas no item 4.15 deste Edital:'; P51|L3093-L3097: '16.1.1. Documentação Técnica da solução: 16.1.1.1. O licitante deverá apresentar as referências técnicas à documentação técnica da solução proposta, na forma da planilha contida no Erro! Fonte de referência não encontrada.(Documentação Técnica da Solução).'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital veda expressamente a participação de empresas organizadas sob a forma de consórcio. O objeto da licitação, 'serviços de gerenciamento total do ambiente de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão)', é complexo e de vulto considerável, envolvendo múltiplas localidades, grande número de usuários, diversos equipamentos e integração com sistemas de TI existentes. A vedação à participação em consórcio, sem uma justificativa formal e detalhada que demonstre que tal restrição não compromete a competitividade ou a execução do objeto, é um indício de inconformidade com o Art. 31 da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P06|L0251: 'VIII. esteja organizado sob a forma de consórcio.'; P02|L0020-L0023: 'Contratação de serviços de gerenciamento total do ambiente de impressão, reprografia e digitalização de documentos (Outsourcing de Impressão) do Banco Nacional de Desenvolvimento Econômico e Social (BNDES), na modalidade Pregão Eletrônico, por menor preço global e modo de disputa aberto e fechado, conforme as especificações deste Edital e de seus Anexos.'; P59|L3568: 'VALOR GLOBAL ESTIMADO R$ 1.418.488,20'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

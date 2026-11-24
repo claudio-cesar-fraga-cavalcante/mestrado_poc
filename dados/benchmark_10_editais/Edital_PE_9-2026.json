@@ -1,0 +1,423 @@
+{
+  "timestamp_execucao": "2026-11-23T20:42:37",
+  "nome_arquivo": "Edital_PE_9-2026.pdf",
+  "identificador_edital": "pe_009_2026",
+  "total_paginas": 121,
+  "total_linhas": 6751,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 639,
+      "total_linhas": 639,
+      "pagina_inicio": 1,
+      "pagina_fim": 18
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 640,
+      "fim": 4704,
+      "total_linhas": 4065,
+      "pagina_inicio": 18,
+      "pagina_fim": 73
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 4705,
+      "fim": 5967,
+      "total_linhas": 1263,
+      "pagina_inicio": 74,
+      "pagina_fim": 102
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 24.01,
+  "tempo_prolog_ms": 702.157,
+  "tempo_somente_neural_s": 28.54,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 143548,
+    "thoughts_token_count": 4097,
+    "candidates_token_count": 4059,
+    "total_token_count": 151704
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 143229,
+    "thoughts_token_count": 4092,
+    "candidates_token_count": 2180,
+    "total_token_count": 149501
+  },
+  "fatos": {
+    "identificador_edital": "pe_009_2026",
+    "resumo_objeto": "Contratação de serviço de disponibilização de Data Center alternativo, incluindo implantação, migração e operação do ambiente por 60 meses.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "Takoda Data Centers",
+        "contexto_mencao": "referencia_exemplificativa",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, 2.4 (L0653)",
+        "trecho_literal": "O serviço de DC alternativo atualmente contratado pelo BNDES é prestado pela empresa Takoda Data Centers, na Estrada dos Bandeirantes, 10916, Vargem Pequena – Rio de Janeiro – RJ, CEP 22.783-111."
+      },
+      {
+        "marca_ou_produto": "Takoda",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, 3.2.3.1 (L0888)",
+        "trecho_literal": "A Contratada deverá planejar a migração de equipamentos em operação na área de colocation e mídias, do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada, que passará a ser o novo DC alternativo do BNDES, a fim de atingir o objetivo do serviço de Migração (ver seção 3.2.4)."
+      },
+      {
+        "marca_ou_produto": "Takoda",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, 3.2.3.9.2.2 (L1059)",
+        "trecho_literal": "Desconexão dos circuitos elétricos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada."
+      },
+      {
+        "marca_ou_produto": "Takoda",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, 3.2.3.9.2.3 (L1063)",
+        "trecho_literal": "Desconexão de cabos de dados ópticos e metálicos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada."
+      },
+      {
+        "marca_ou_produto": "Takoda",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, 3.2.4.1 (L1167)",
+        "trecho_literal": "do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada"
+      },
+      {
+        "marca_ou_produto": "IBM Mainframe Z16",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4458)",
+        "trecho_literal": "IBM Mainframe Z16"
+      },
+      {
+        "marca_ou_produto": "IBM Virtualizador de fitas Hydra TS7700",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4465)",
+        "trecho_literal": "IBM Virtualizador de fitas Hydra TS7700"
+      },
+      {
+        "marca_ou_produto": "EMC2 NAS VNX5600",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4472)",
+        "trecho_literal": "EMC2 NAS VNX5600"
+      },
+      {
+        "marca_ou_produto": "Hitachi Storage VSP 5200",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4479)",
+        "trecho_literal": "Hitachi Storage VSP 5200"
+      },
+      {
+        "marca_ou_produto": "Huawei Storage Oceanstor Dorado 6000 v6",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4486)",
+        "trecho_literal": "Huawei Storage Oceanstor Dorado 6000 v6"
+      },
+      {
+        "marca_ou_produto": "IBM Storage FlashSystem 5000",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4493)",
+        "trecho_literal": "IBM Storage FlashSystem 5000"
+      },
+      {
+        "marca_ou_produto": "Schneider Electric Rack AR3100",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4500)",
+        "trecho_literal": "Schneider Electric Rack AR3100"
+      },
+      {
+        "marca_ou_produto": "Cisco MDS",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4516)",
+        "trecho_literal": "Cisco MDS"
+      },
+      {
+        "marca_ou_produto": "Dell POWEREDGE R210",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4521)",
+        "trecho_literal": "Dell POWEREDGE R210"
+      },
+      {
+        "marca_ou_produto": "Dell POWEREDGE R440",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4526)",
+        "trecho_literal": "Dell POWEREDGE R440"
+      },
+      {
+        "marca_ou_produto": "Dell POWEREDGE R350",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4531)",
+        "trecho_literal": "Dell POWEREDGE R350"
+      },
+      {
+        "marca_ou_produto": "DNet KVM DN-JVM-1016-HDMI",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4536)",
+        "trecho_literal": "DNet KVM DN-JVM-1016-HDMI"
+      },
+      {
+        "marca_ou_produto": "Fortinet Fortigate 40F",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4541)",
+        "trecho_literal": "Fortinet Fortigate 40F"
+      },
+      {
+        "marca_ou_produto": "HP ACCESS POINT ARUBA 555",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4546)",
+        "trecho_literal": "HP ACCESS POINT ARUBA 555"
+      },
+      {
+        "marca_ou_produto": "HP ARUBA - CX6300",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4551)",
+        "trecho_literal": "HP ARUBA - CX6300"
+      },
+      {
+        "marca_ou_produto": "Huawei SW CORE HUAWEI 12808",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4556)",
+        "trecho_literal": "Huawei SW CORE HUAWEI 12808"
+      },
+      {
+        "marca_ou_produto": "Huawei SWITCH 12804S",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4561)",
+        "trecho_literal": "Huawei SWITCH 12804S"
+      },
+      {
+        "marca_ou_produto": "XFusion 2288HV7",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.A (L4566)",
+        "trecho_literal": "XFusion 2288HV7"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "Anexo III, CLÁUSULA NONA (L5031) e ANEXO IV (L5700)",
+    "matriz_riscos_trecho": "CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "Anexo III, CLÁUSULA NONA, Parágrafo Segundo (L5044)",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "Anexo I, 5. SUBCONTRATAÇÃO E CONSÓRCIO (L3430); Anexo III, CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro (L5531)",
+    "subcontratacao_trecho": "5. SUBCONTRATAÇÃO E CONSÓRCIO 5.1. Devido à abrangência de serviços que compõem o objeto, alguns dos serviços poderão ser subcontratados. Tal opção visa ampliar a competição, possibilitando a participação na licitação de empresas que, por si só, não possuam condições de executar integralmente todos os serviços. 5.2. Somente os seguintes serviços poderão ser subcontratados: 5.2.1. Planejamento da Migração. 5.2.2. Migração. 5.2.3. Rede metropolitana. 5.2.4. Rede de acesso à Internet. (...) Parágrafo Terceiro É admitida a subcontratação da parcela do objeto deste Contrato referente aos serviços de planejamento da migração, migração, rede metropolitana e rede de acesso à Internet, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.",
+    "escopo_exigencia_amostra": "nao_exigida",
+    "amostra_item": "Não exigida",
+    "amostra_trecho": "Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para os licitantes ou para o primeiro colocado no edital. A vistoria técnica (Anexo I, item 6) não se configura como amostra.",
+    "percentual_minimo_atestado": 0,
+    "veda_somatorio_atestados": true,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "Anexo I, 9.3 (L3634)",
+    "atestado_trecho": "Não será aceito o somatório de atestados para a comprovação da capacidade técnica mesmo que os serviços tenham sido prestados em período concomitante.",
+    "exige_credenciamento_ou_carta_fabricante": false,
+    "credenciamento_item": "Não exigido",
+    "credenciamento_trecho": "Não há exigência de declaração de revenda autorizada, credenciamento pelo fabricante ou carta de solidariedade/anuência emitida pelo fabricante.",
+    "veda_participacao_consorcio": false,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "SEÇÃO 1, 2.7 (L0260); Anexo I, 5.5 (L3471)",
+    "consorcio_trecho": "2.7 Será permitida a participação de sociedades organizadas sob a forma de Consórcio, observadas as orientações dispostas nos subitens a seguir. (...) 5.5. É admitida a participação de sociedades em consórcio."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_009_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_009_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_009_2026, 'Takoda Data Centers', referencia_exemplificativa, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, 2.4 (L0653)', 'O serviço de DC alternativo atualmente contratado pelo BNDES é prestado pela empresa Takoda Data Centers, na Estrada dos Bandeirantes, 10916, Vargem Pequena – Rio de Janeiro – RJ, CEP 22.783-111.').\nmencao_marca_exigida(pe_009_2026, 'Takoda', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, 3.2.3.1 (L0888)', 'A Contratada deverá planejar a migração de equipamentos em operação na área de colocation e mídias, do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada, que passará a ser o novo DC alternativo do BNDES, a fim de atingir o objetivo do serviço de Migração (ver seção 3.2.4).').\nmencao_marca_exigida(pe_009_2026, 'Takoda', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, 3.2.3.9.2.2 (L1059)', 'Desconexão dos circuitos elétricos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada.').\nmencao_marca_exigida(pe_009_2026, 'Takoda', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, 3.2.3.9.2.3 (L1063)', 'Desconexão de cabos de dados ópticos e metálicos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada.').\nmencao_marca_exigida(pe_009_2026, 'Takoda', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, 3.2.4.1 (L1167)', 'do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada').\nmencao_marca_exigida(pe_009_2026, 'IBM Mainframe Z16', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4458)', 'IBM Mainframe Z16').\nmencao_marca_exigida(pe_009_2026, 'IBM Virtualizador de fitas Hydra TS7700', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4465)', 'IBM Virtualizador de fitas Hydra TS7700').\nmencao_marca_exigida(pe_009_2026, 'EMC2 NAS VNX5600', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4472)', 'EMC2 NAS VNX5600').\nmencao_marca_exigida(pe_009_2026, 'Hitachi Storage VSP 5200', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4479)', 'Hitachi Storage VSP 5200').\nmencao_marca_exigida(pe_009_2026, 'Huawei Storage Oceanstor Dorado 6000 v6', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4486)', 'Huawei Storage Oceanstor Dorado 6000 v6').\nmencao_marca_exigida(pe_009_2026, 'IBM Storage FlashSystem 5000', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4493)', 'IBM Storage FlashSystem 5000').\nmencao_marca_exigida(pe_009_2026, 'Schneider Electric Rack AR3100', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4500)', 'Schneider Electric Rack AR3100').\nmencao_marca_exigida(pe_009_2026, 'Cisco MDS', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4516)', 'Cisco MDS').\nmencao_marca_exigida(pe_009_2026, 'Dell POWEREDGE R210', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4521)', 'Dell POWEREDGE R210').\nmencao_marca_exigida(pe_009_2026, 'Dell POWEREDGE R440', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4526)', 'Dell POWEREDGE R440').\nmencao_marca_exigida(pe_009_2026, 'Dell POWEREDGE R350', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4531)', 'Dell POWEREDGE R350').\nmencao_marca_exigida(pe_009_2026, 'DNet KVM DN-JVM-1016-HDMI', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4536)', 'DNet KVM DN-JVM-1016-HDMI').\nmencao_marca_exigida(pe_009_2026, 'Fortinet Fortigate 40F', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4541)', 'Fortinet Fortigate 40F').\nmencao_marca_exigida(pe_009_2026, 'HP ACCESS POINT ARUBA 555', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4546)', 'HP ACCESS POINT ARUBA 555').\nmencao_marca_exigida(pe_009_2026, 'HP ARUBA - CX6300', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4551)', 'HP ARUBA - CX6300').\nmencao_marca_exigida(pe_009_2026, 'Huawei SW CORE HUAWEI 12808', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4556)', 'Huawei SW CORE HUAWEI 12808').\nmencao_marca_exigida(pe_009_2026, 'Huawei SWITCH 12804S', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4561)', 'Huawei SWITCH 12804S').\nmencao_marca_exigida(pe_009_2026, 'XFusion 2288HV7', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.A (L4566)', 'XFusion 2288HV7').\nevidencia_regra(pe_009_2026, 'R01', 'Anexo I, 2.4 (L0653) | Anexo I, 3.2.3.1 (L0888) | Anexo I, 3.2.3.9.2.2 (L1059) | Anexo I, 3.2.3.9.2.3 (L1063) | Anexo I, 3.2.4.1 (L1167) | Anexo I.A (L4458) | Anexo I.A (L4465) | Anexo I.A (L4472) | Anexo I.A (L4479) | Anexo I.A (L4486) | Anexo I.A (L4493) | Anexo I.A (L4500) | Anexo I.A (L4516) | Anexo I.A (L4521) | Anexo I.A (L4526) | Anexo I.A (L4531) | Anexo I.A (L4536) | Anexo I.A (L4541) | Anexo I.A (L4546) | Anexo I.A (L4551) | Anexo I.A (L4556) | Anexo I.A (L4561) | Anexo I.A (L4566)', '[Takoda Data Centers | referencia_exemplificativa] O serviço de DC alternativo atualmente contratado pelo BNDES é prestado pela empresa Takoda Data Centers, na Estrada dos Bandeirantes, 10916, Vargem Pequena – Rio de Janeiro – RJ, CEP 22.783-111. [Takoda | interoperabilidade_ambiente_legado] A Contratada deverá planejar a migração de equipamentos em operação na área de colocation e mídias, do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada, que passará a ser o novo DC alternativo do BNDES, a fim de atingir o objetivo do serviço de Migração (ver seção 3.2.4). [Takoda | interoperabilidade_ambiente_legado] Desconexão dos circuitos elétricos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] Desconexão de cabos de dados ópticos e metálicos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada [IBM Mainframe Z16 | interoperabilidade_ambiente_legado] IBM Mainframe Z16 [IBM Virtualizador de fitas Hydra TS7700 | interoperabilidade_ambiente_legado] IBM Virtualizador de fitas Hydra TS7700 [EMC2 NAS VNX5600 | interoperabilidade_ambiente_legado] EMC2 NAS VNX5600 [Hitachi Storage VSP 5200 | interoperabilidade_ambiente_legado] Hitachi Storage VSP 5200 [Huawei Storage Oceanstor Dorado 6000 v6 | interoperabilidade_ambiente_legado] Huawei Storage Oceanstor Dorado 6000 v6 [IBM Storage FlashSystem 5000 | interoperabilidade_ambiente_legado] IBM Storage FlashSystem 5000 [Schneider Electric Rack AR3100 | interoperabilidade_ambiente_legado] Schneider Electric Rack AR3100 [Cisco MDS | interoperabilidade_ambiente_legado] Cisco MDS [Dell POWEREDGE R210 | interoperabilidade_ambiente_legado] Dell POWEREDGE R210 [Dell POWEREDGE R440 | interoperabilidade_ambiente_legado] Dell POWEREDGE R440 [Dell POWEREDGE R350 | interoperabilidade_ambiente_legado] Dell POWEREDGE R350 [DNet KVM DN-JVM-1016-HDMI | interoperabilidade_ambiente_legado] DNet KVM DN-JVM-1016-HDMI [Fortinet Fortigate 40F | interoperabilidade_ambiente_legado] Fortinet Fortigate 40F [HP ACCESS POINT ARUBA 555 | interoperabilidade_ambiente_legado] HP ACCESS POINT ARUBA 555 [HP ARUBA - CX6300 | interoperabilidade_ambiente_legado] HP ARUBA - CX6300 [Huawei SW CORE HUAWEI 12808 | interoperabilidade_ambiente_legado] Huawei SW CORE HUAWEI 12808 [Huawei SWITCH 12804S | interoperabilidade_ambiente_legado] Huawei SWITCH 12804S [XFusion 2288HV7 | interoperabilidade_ambiente_legado] XFusion 2288HV7').\nevidencia_regra(pe_009_2026, 'R02', 'Anexo I, 2.4 (L0653) | Anexo I, 3.2.3.1 (L0888) | Anexo I, 3.2.3.9.2.2 (L1059) | Anexo I, 3.2.3.9.2.3 (L1063) | Anexo I, 3.2.4.1 (L1167) | Anexo I.A (L4458) | Anexo I.A (L4465) | Anexo I.A (L4472) | Anexo I.A (L4479) | Anexo I.A (L4486) | Anexo I.A (L4493) | Anexo I.A (L4500) | Anexo I.A (L4516) | Anexo I.A (L4521) | Anexo I.A (L4526) | Anexo I.A (L4531) | Anexo I.A (L4536) | Anexo I.A (L4541) | Anexo I.A (L4546) | Anexo I.A (L4551) | Anexo I.A (L4556) | Anexo I.A (L4561) | Anexo I.A (L4566)', '[Takoda Data Centers | referencia_exemplificativa] O serviço de DC alternativo atualmente contratado pelo BNDES é prestado pela empresa Takoda Data Centers, na Estrada dos Bandeirantes, 10916, Vargem Pequena – Rio de Janeiro – RJ, CEP 22.783-111. [Takoda | interoperabilidade_ambiente_legado] A Contratada deverá planejar a migração de equipamentos em operação na área de colocation e mídias, do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada, que passará a ser o novo DC alternativo do BNDES, a fim de atingir o objetivo do serviço de Migração (ver seção 3.2.4). [Takoda | interoperabilidade_ambiente_legado] Desconexão dos circuitos elétricos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] Desconexão de cabos de dados ópticos e metálicos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada [IBM Mainframe Z16 | interoperabilidade_ambiente_legado] IBM Mainframe Z16 [IBM Virtualizador de fitas Hydra TS7700 | interoperabilidade_ambiente_legado] IBM Virtualizador de fitas Hydra TS7700 [EMC2 NAS VNX5600 | interoperabilidade_ambiente_legado] EMC2 NAS VNX5600 [Hitachi Storage VSP 5200 | interoperabilidade_ambiente_legado] Hitachi Storage VSP 5200 [Huawei Storage Oceanstor Dorado 6000 v6 | interoperabilidade_ambiente_legado] Huawei Storage Oceanstor Dorado 6000 v6 [IBM Storage FlashSystem 5000 | interoperabilidade_ambiente_legado] IBM Storage FlashSystem 5000 [Schneider Electric Rack AR3100 | interoperabilidade_ambiente_legado] Schneider Electric Rack AR3100 [Cisco MDS | interoperabilidade_ambiente_legado] Cisco MDS [Dell POWEREDGE R210 | interoperabilidade_ambiente_legado] Dell POWEREDGE R210 [Dell POWEREDGE R440 | interoperabilidade_ambiente_legado] Dell POWEREDGE R440 [Dell POWEREDGE R350 | interoperabilidade_ambiente_legado] Dell POWEREDGE R350 [DNet KVM DN-JVM-1016-HDMI | interoperabilidade_ambiente_legado] DNet KVM DN-JVM-1016-HDMI [Fortinet Fortigate 40F | interoperabilidade_ambiente_legado] Fortinet Fortigate 40F [HP ACCESS POINT ARUBA 555 | interoperabilidade_ambiente_legado] HP ACCESS POINT ARUBA 555 [HP ARUBA - CX6300 | interoperabilidade_ambiente_legado] HP ARUBA - CX6300 [Huawei SW CORE HUAWEI 12808 | interoperabilidade_ambiente_legado] Huawei SW CORE HUAWEI 12808 [Huawei SWITCH 12804S | interoperabilidade_ambiente_legado] Huawei SWITCH 12804S [XFusion 2288HV7 | interoperabilidade_ambiente_legado] XFusion 2288HV7').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_009_2026, 'Anexo III, CLÁUSULA NONA (L5031) e ANEXO IV (L5700)', 'CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.').\nevidencia_regra(pe_009_2026, 'R03', 'Anexo III, CLÁUSULA NONA (L5031) e ANEXO IV (L5700)', 'CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.').\nfato_vedacao_aditivo_risco(pe_009_2026, 'Anexo III, CLÁUSULA NONA, Parágrafo Segundo (L5044)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_009_2026, 'R38', 'Anexo III, CLÁUSULA NONA, Parágrafo Segundo (L5044)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_009_2026, 'Anexo I, 5. SUBCONTRATAÇÃO E CONSÓRCIO (L3430); Anexo III, CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro (L5531)', '5. SUBCONTRATAÇÃO E CONSÓRCIO 5.1. Devido à abrangência de serviços que compõem o objeto, alguns dos serviços poderão ser subcontratados. Tal opção visa ampliar a competição, possibilitando a participação na licitação de empresas que, por si só, não possuam condições de executar integralmente todos os serviços. 5.2. Somente os seguintes serviços poderão ser subcontratados: 5.2.1. Planejamento da Migração. 5.2.2. Migração. 5.2.3. Rede metropolitana. 5.2.4. Rede de acesso à Internet. (...) Parágrafo Terceiro É admitida a subcontratação da parcela do objeto deste Contrato referente aos serviços de planejamento da migração, migração, rede metropolitana e rede de acesso à Internet, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.').\nevidencia_regra(pe_009_2026, 'R09', 'Anexo I, 5. SUBCONTRATAÇÃO E CONSÓRCIO (L3430); Anexo III, CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro (L5531)', '5. SUBCONTRATAÇÃO E CONSÓRCIO 5.1. Devido à abrangência de serviços que compõem o objeto, alguns dos serviços poderão ser subcontratados. Tal opção visa ampliar a competição, possibilitando a participação na licitação de empresas que, por si só, não possuam condições de executar integralmente todos os serviços. 5.2. Somente os seguintes serviços poderão ser subcontratados: 5.2.1. Planejamento da Migração. 5.2.2. Migração. 5.2.3. Rede metropolitana. 5.2.4. Rede de acesso à Internet. (...) Parágrafo Terceiro É admitida a subcontratação da parcela do objeto deste Contrato referente aos serviços de planejamento da migração, migração, rede metropolitana e rede de acesso à Internet, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_009_2026, nao_exigida, 'Não exigida', 'Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para os licitantes ou para o primeiro colocado no edital. A vistoria técnica (Anexo I, item 6) não se configura como amostra.').\nevidencia_regra(pe_009_2026, 'R11', 'Não exigida', 'Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para os licitantes ou para o primeiro colocado no edital. A vistoria técnica (Anexo I, item 6) não se configura como amostra.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_009_2026, 0, 'Anexo I, 9.3 (L3634)', 'Não será aceito o somatório de atestados para a comprovação da capacidade técnica mesmo que os serviços tenham sido prestados em período concomitante.').\nfato_veda_somatorio(pe_009_2026, 'Anexo I, 9.3 (L3634)', 'Não será aceito o somatório de atestados para a comprovação da capacidade técnica mesmo que os serviços tenham sido prestados em período concomitante.').\nevidencia_regra(pe_009_2026, 'R29', 'Anexo I, 9.3 (L3634)', 'Não será aceito o somatório de atestados para a comprovação da capacidade técnica mesmo que os serviços tenham sido prestados em período concomitante.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\n% fato_credenciamento_exigido ausente -> NAF (\\+) confirmará conformidade em R41\nevidencia_regra(pe_009_2026, 'R41', 'Não exigido', 'Não há exigência de declaração de revenda autorizada, credenciamento pelo fabricante ou carta de solidariedade/anuência emitida pelo fabricante.').\n\n% --- R43: Participação em Consórcio ---\nevidencia_regra(pe_009_2026, 'R43', 'SEÇÃO 1, 2.7 (L0260); Anexo I, 5.5 (L3471)', '2.7 Será permitida a participação de sociedades organizadas sob a forma de Consórcio, observadas as orientações dispostas nos subitens a seguir. (...) 5.5. É admitida a participação de sociedades em consórcio.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "Anexo I, 2.4 (L0653) | Anexo I, 3.2.3.1 (L0888) | Anexo I, 3.2.3.9.2.2 (L1059) | Anexo I, 3.2.3.9.2.3 (L1063) | Anexo I, 3.2.4.1 (L1167) | Anexo I.A (L4458) | Anexo I.A (L4465) | Anexo I.A (L4472) | Anexo I.A (L4479) | Anexo I.A (L4486) | Anexo I.A (L4493) | Anexo I.A (L4500) | Anexo I.A (L4516) | Anexo I.A (L4521) | Anexo I.A (L4526) | Anexo I.A (L4531) | Anexo I.A (L4536) | Anexo I.A (L4541) | Anexo I.A (L4546) | Anexo I.A (L4551) | Anexo I.A (L4556) | Anexo I.A (L4561) | Anexo I.A (L4566)",
+      "trecho_identificado": "[Takoda Data Centers | referencia_exemplificativa] O serviço de DC alternativo atualmente contratado pelo BNDES é prestado pela empresa Takoda Data Centers, na Estrada dos Bandeirantes, 10916, Vargem Pequena – Rio de Janeiro – RJ, CEP 22.783-111. [Takoda | interoperabilidade_ambiente_legado] A Contratada deverá planejar a migração de equipamentos em operação na área de colocation e mídias, do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada, que passará a ser o novo DC alternativo do BNDES, a fim de atingir o objetivo do serviço de Migração (ver seção 3.2.4). [Takoda | interoperabilidade_ambiente_legado] Desconexão dos circuitos elétricos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] Desconexão de cabos de dados ópticos e metálicos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada [IBM Mainframe Z16 | interoperabilidade_ambiente_legado] IBM Mainframe Z16 [IBM Virtualizador de fitas Hydra TS7700 | interoperabilidade_ambiente_legado] IBM Virtualizador de fitas Hydra TS7700 [EMC2 NAS VNX5600 | interoperabilidade_ambiente_legado] EMC2 NAS VNX5600 [Hitachi Storage VSP 5200 | interoperabilidade_ambiente_legado] Hitachi Storage VSP 5200 [Huawei Storage Oceanstor Dorado 6000 v6 | interoperabilidade_ambiente_legado] Huawei Storage Oceanstor Dorado 6000 v6 [IBM Storage FlashSystem 5000 | interoperabilidade_ambiente_legado] IBM Storage FlashSystem 5000 [Schneider Electric Rack AR3100 | interoperabilidade_ambiente_legado] Schneider Electric Rack AR3100 [Cisco MDS | interoperabilidade_ambiente_legado] Cisco MDS [Dell POWEREDGE R210 | interoperabilidade_ambiente_legado] Dell POWEREDGE R210 [Dell POWEREDGE R440 | interoperabilidade_ambiente_legado] Dell POWEREDGE R440 [Dell POWEREDGE R350 | interoperabilidade_ambiente_legado] Dell POWEREDGE R350 [DNet KVM DN-JVM-1016-HDMI | interoperabilidade_ambiente_legado] DNet KVM DN-JVM-1016-HDMI [Fortinet Fortigate 40F | interoperabilidade_ambiente_legado] Fortinet Fortigate 40F [HP ACCESS POINT ARUBA 555 | interoperabilidade_ambiente_legado] HP ACCESS POINT ARUBA 555 [HP ARUBA - CX6300 | interoperabilidade_ambiente_legado] HP ARUBA - CX6300 [Huawei SW CORE HUAWEI 12808 | interoperabilidade_ambiente_legado] Huawei SW CORE HUAWEI 12808 [Huawei SWITCH 12804S | interoperabilidade_ambiente_legado] Huawei SWITCH 12804S [XFusion 2288HV7 | interoperabilidade_ambiente_legado] XFusion 2288HV7",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(equivalencia_ou_contexto_legitimo,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo I, 2.4 (L0653) | Anexo I, 3.2.3.1 (L0888) | Anexo I, 3.2.3.9.2.2 (L1059) | Anexo I, 3.2.3.9.2.3 (L1063) | Anexo I, 3.2.4.1 (L1167) | Anexo I.A (L4458) | Anexo I.A (L4465) | Anexo I.A (L4472) | Anexo I.A (L4479) | Anexo I.A (L4486) | Anexo I.A (L4493) | Anexo I.A (L4500) | Anexo I.A (L4516) | Anexo I.A (L4521) | Anexo I.A (L4526) | Anexo I.A (L4531) | Anexo I.A (L4536) | Anexo I.A (L4541) | Anexo I.A (L4546) | Anexo I.A (L4551) | Anexo I.A (L4556) | Anexo I.A (L4561) | Anexo I.A (L4566)",
+      "trecho_identificado": "[Takoda Data Centers | referencia_exemplificativa] O serviço de DC alternativo atualmente contratado pelo BNDES é prestado pela empresa Takoda Data Centers, na Estrada dos Bandeirantes, 10916, Vargem Pequena – Rio de Janeiro – RJ, CEP 22.783-111. [Takoda | interoperabilidade_ambiente_legado] A Contratada deverá planejar a migração de equipamentos em operação na área de colocation e mídias, do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada, que passará a ser o novo DC alternativo do BNDES, a fim de atingir o objetivo do serviço de Migração (ver seção 3.2.4). [Takoda | interoperabilidade_ambiente_legado] Desconexão dos circuitos elétricos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] Desconexão de cabos de dados ópticos e metálicos. Essa etapa deverá ser realizada pela Takoda, a pedido do BNDES, com acompanhamento da Contratada. [Takoda | interoperabilidade_ambiente_legado] do DC alternativo atual do BNDES (DC da Takoda) para o DC da Contratada [IBM Mainframe Z16 | interoperabilidade_ambiente_legado] IBM Mainframe Z16 [IBM Virtualizador de fitas Hydra TS7700 | interoperabilidade_ambiente_legado] IBM Virtualizador de fitas Hydra TS7700 [EMC2 NAS VNX5600 | interoperabilidade_ambiente_legado] EMC2 NAS VNX5600 [Hitachi Storage VSP 5200 | interoperabilidade_ambiente_legado] Hitachi Storage VSP 5200 [Huawei Storage Oceanstor Dorado 6000 v6 | interoperabilidade_ambiente_legado] Huawei Storage Oceanstor Dorado 6000 v6 [IBM Storage FlashSystem 5000 | interoperabilidade_ambiente_legado] IBM Storage FlashSystem 5000 [Schneider Electric Rack AR3100 | interoperabilidade_ambiente_legado] Schneider Electric Rack AR3100 [Cisco MDS | interoperabilidade_ambiente_legado] Cisco MDS [Dell POWEREDGE R210 | interoperabilidade_ambiente_legado] Dell POWEREDGE R210 [Dell POWEREDGE R440 | interoperabilidade_ambiente_legado] Dell POWEREDGE R440 [Dell POWEREDGE R350 | interoperabilidade_ambiente_legado] Dell POWEREDGE R350 [DNet KVM DN-JVM-1016-HDMI | interoperabilidade_ambiente_legado] DNet KVM DN-JVM-1016-HDMI [Fortinet Fortigate 40F | interoperabilidade_ambiente_legado] Fortinet Fortigate 40F [HP ACCESS POINT ARUBA 555 | interoperabilidade_ambiente_legado] HP ACCESS POINT ARUBA 555 [HP ARUBA - CX6300 | interoperabilidade_ambiente_legado] HP ARUBA - CX6300 [Huawei SW CORE HUAWEI 12808 | interoperabilidade_ambiente_legado] Huawei SW CORE HUAWEI 12808 [Huawei SWITCH 12804S | interoperabilidade_ambiente_legado] Huawei SWITCH 12804S [XFusion 2288HV7 | interoperabilidade_ambiente_legado] XFusion 2288HV7",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(padronizacao_ou_contexto_legitimo,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo III, CLÁUSULA NONA (L5031) e ANEXO IV (L5700)",
+      "trecho_identificado": "CLÁUSULA NONA – MATRIZ DE RISCOS O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "Anexo I, 5. SUBCONTRATAÇÃO E CONSÓRCIO (L3430); Anexo III, CLÁUSULA DÉCIMA SÉTIMA, Parágrafo Terceiro (L5531)",
+      "trecho_identificado": "5. SUBCONTRATAÇÃO E CONSÓRCIO 5.1. Devido à abrangência de serviços que compõem o objeto, alguns dos serviços poderão ser subcontratados. Tal opção visa ampliar a competição, possibilitando a participação na licitação de empresas que, por si só, não possuam condições de executar integralmente todos os serviços. 5.2. Somente os seguintes serviços poderão ser subcontratados: 5.2.1. Planejamento da Migração. 5.2.2. Migração. 5.2.3. Rede metropolitana. 5.2.4. Rede de acesso à Internet. (...) Parágrafo Terceiro É admitida a subcontratação da parcela do objeto deste Contrato referente aos serviços de planejamento da migração, migração, rede metropolitana e rede de acesso à Internet, condicionada aos seguintes requisitos: I. aquiescência prévia do BNDES, que analisará eventuais riscos ou prejuízos decorrentes de tal operação; e II. atendimento de todas as condições contratuais e requisitos para a subcontratação previstos no Edital e no Termo de Referência (Anexo I deste Contrato), cabendo ao CONTRATADO apresentar, sempre que solicitado pelo BNDES, os respectivos documentos comprobatórios.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não exigida",
+      "trecho_identificado": "Não há menção explícita à exigência de amostra ou Prova de Conceito (PoC) para os licitantes ou para o primeiro colocado no edital. A vistoria técnica (Anexo I, item 6) não se configura como amostra.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_nao_exigida,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Anexo I, 9.3 (L3634)",
+      "trecho_identificado": "Não será aceito o somatório de atestados para a comprovação da capacidade técnica mesmo que os serviços tenham sido prestados em período concomitante.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_somatorio_sem_justificativa,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "Anexo III, CLÁUSULA NONA, Parágrafo Segundo (L5044)",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "Não exigido",
+      "trecho_identificado": "Não há exigência de declaração de revenda autorizada, credenciamento pelo fabricante ou carta de solidariedade/anuência emitida pelo fabricante.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "harmonia_normativa(sem_exigencia_credenciamento,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "SEÇÃO 1, 2.7 (L0260); Anexo I, 5.5 (L3471)",
+      "trecho_identificado": "2.7 Será permitida a participação de sociedades organizadas sob a forma de Consórcio, observadas as orientações dispostas nos subitens a seguir. (...) 5.5. É admitida a participação de sociedades em consórcio.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(consorcio_permitido,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital menciona marcas nominais (IBM, EMC2, Hitachi, Huawei, Schneider Electric, Cisco, Dell, DNet, Fortinet, HP, XFusion) na seção 'ANEXO I.A - INFORMAÇÕES DE EQUIPAMENTOS'. No entanto, essa lista se refere a equipamentos *existentes* do BNDES que serão migrados para o novo Data Center alternativo, e não a equipamentos que o licitante deve fornecer ou adquirir como parte do objeto da contratação. As especificações técnicas para os serviços a serem prestados (como roteadores para acesso à Internet) são genéricas e baseadas em funcionalidades e padrões, sem direcionamento a marcas específicas sem a cláusula 'ou similar ou de melhor qualidade'.",
+      "trecho_citado_llm": "ANEXO I.A - INFORMAÇÕES DE EQUIPAMENTOS (P70|L4445-L4570)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_act` / `permission_to_act`)."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A menção de marcas e modelos específicos no Anexo I.A refere-se a equipamentos de propriedade do BNDES que serão migrados para o Data Center alternativo da Contratada. Não há indicação de que a Contratada deva fornecer equipamentos dessas marcas ou modelos específicos. As especificações técnicas para os serviços e infraestrutura a serem providos pela Contratada são descritas de forma funcional e baseadas em padrões, sem direcionamento a marcas ou modelos específicos que exijam justificativa de padronização prévia para a contratação do serviço em si.",
+      "trecho_citado_llm": "ANEXO I.A - INFORMAÇÕES DE EQUIPAMENTOS (P70|L4445-L4570)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital inclui expressamente uma Matriz de Riscos como Anexo IV, conforme exigido para contratações de obras, serviços ou compras complexas. O objeto da licitação, 'Contratação do serviço de disponibilização de Data Center alternativo', é um serviço complexo, e a presença da Matriz de Riscos atende à exigência legal.",
+      "trecho_citado_llm": "ANEXO IV – MATRIZ DE RISCOS (P99|L5700)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital e seu Termo de Referência abordam a subcontratação de forma clara, autorizando-a para serviços específicos e estabelecendo um limite percentual para o valor total da subcontratação. O item 5 do Anexo I lista os serviços que podem ser subcontratados e o item 8.12 do Anexo I estabelece o limite de 60% do valor global do Contrato para a subcontratação.",
+      "trecho_citado_llm": "1.1.2 Poderá ser subcontratada parcela dos serviços licitados por este Pregão, observados os limites previstos no item 5 do Anexo I (Termo de Referência) deste Edital. (P05|L0180-L0181); 5.2. Somente os seguintes serviços poderão ser subcontratados: 5.2.1. Planejamento da Migração. 5.2.2. Migração. 5.2.3. Rede metropolitana. 5.2.4. Rede de acesso à Internet. (P55|L3451-L3454); 8.12. Em caso de subcontratação das atividades e recursos acessórios, juntamente com a documentação de sua proposta, a Contratada deverá informar ao BNDES quais deles serão subcontratados, o nome das empresas por eles responsáveis e o valor total da subcontratação, o qual estará limitado a 60% do valor global do Contrato. (P57|L3606-L3609)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não apresenta exigência de amostra ou prova de conceito vinculada à fase de propostas iniciais para todos os licitantes. As diligências mencionadas no item 8.11 do Anexo I são para 'comprovação das características técnicas exigidas' e podem ser realizadas 'sempre que julgar necessário', o que não configura uma exigência de amostra para todos os participantes na fase de propostas iniciais.",
+      "trecho_citado_llm": "8.11. Como condição para aceitação da proposta, a equipe técnica que dará suporte à licitação poderá, sempre que julgar necessário, realizar diligência com vistas à comprovação das características técnicas exigidas. (P57|L3602-L3605)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "A exigência de qualificação técnica para comprovação de experiência pretérita em atestados, conforme item 9.2 do Anexo I, inclui '14 racks'. Considerando que o serviço de 'Racks' na Fase de Operação tem uma 'QUANTIDADE MÁXIMA' de 15 racks (item 4.1 do Anexo I), a exigência de 14 racks de experiência representa 93,33% do quantitativo máximo da contratação. Isso é superior ao limite de 50% estabelecido pela Súmula 263 do TCU, configurando um indício de restrição à competitividade.",
+      "trecho_citado_llm": "9.2. Consideram-se objetos da mesma natureza ou similares ao da presente Licitação a prestação de serviços continuados de colocation em DC próprio, sendo a prestação do colocation tendo no mínimo: [...] ou 14 racks. (P58|L3631-L3633); Fase de operação (Pagamento sob demanda) [...] Racks [...] QUANTIDADE MÁXIMA 15 (P54|L3424-L3426)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_omit` / `permission_to_act`)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A Cláusula Nona, Parágrafo Segundo, da Minuta do Contrato estabelece expressamente a vedação à celebração de aditivos decorrentes de riscos alocados como responsabilidade do Contratado na Matriz de Riscos. Esta disposição está em conformidade com o Art. 81, § 8º da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "CLÁUSULA NONA – MATRIZ DE RISCOS [...] Parágrafo Segundo É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO. (P82|L5044-L5045)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não exige declaração de credenciamento, anuência ou carta de solidariedade emitida pelo fabricante como condição de habilitação. As exigências de habilitação estão detalhadas no item 4.14.1 do Edital e no item 9 do Anexo I, e nenhuma delas inclui tal tipo de declaração de fabricante.",
+      "trecho_citado_llm": "4.14.1 Para que seja habilitado, o Licitante deverá atender a todas as exigências abaixo listadas e as previstas no item 4.15 deste Edital: (P12|L0447-L0448); 9. REQUISITOS PARA HABILITAÇÃO (P58|L3625)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital permite expressamente a participação de empresas em consórcio, conforme indicado nos itens 2.7 do Edital e 5.5 do Anexo I. Não há vedação à participação de consórcios, mas sim regras para sua constituição e participação, o que está em conformidade com a legislação e não restringe a competitividade.",
+      "trecho_citado_llm": "2.7 Será permitida a participação de sociedades organizadas sob a forma de Consórcio, observadas as orientações dispostas nos subitens a seguir. (P07|L0260-L0261); 5.5. É admitida a participação de sociedades em consórcio. (P55|L3471)",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    }
+  }
+}

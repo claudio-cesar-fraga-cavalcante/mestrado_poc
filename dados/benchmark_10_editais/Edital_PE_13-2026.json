@@ -1,0 +1,343 @@
+{
+  "timestamp_execucao": "2026-11-23T20:43:36",
+  "nome_arquivo": "Edital_PE_13-2026.pdf",
+  "identificador_edital": "pe_013_2026",
+  "total_paginas": 84,
+  "total_linhas": 3929,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 628,
+      "total_linhas": 628,
+      "pagina_inicio": 1,
+      "pagina_fim": 18
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 629,
+      "fim": 1915,
+      "total_linhas": 1287,
+      "pagina_inicio": 18,
+      "pagina_fim": 43
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 1916,
+      "fim": 3254,
+      "total_linhas": 1339,
+      "pagina_inicio": 43,
+      "pagina_fim": 68
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 28.73,
+  "tempo_prolog_ms": 754.895,
+  "tempo_somente_neural_s": 27.01,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 83877,
+    "thoughts_token_count": 4092,
+    "candidates_token_count": 2514,
+    "total_token_count": 90483
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 83558,
+    "thoughts_token_count": 4093,
+    "candidates_token_count": 1735,
+    "total_token_count": 89386
+  },
+  "fatos": {
+    "identificador_edital": "pe_013_2026",
+    "resumo_objeto": "Aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "IBM 3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P02|L0019",
+        "trecho_literal": "Aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica"
+      },
+      {
+        "marca_ou_produto": "IBM 3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P05|L0176",
+        "trecho_literal": "aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica"
+      },
+      {
+        "marca_ou_produto": "3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P23|L0913",
+        "trecho_literal": "A CONTRATADA deverá fornecer 1 (uma) solução para gerenciamento de fitas magnéticas tipo 3592 JC."
+      },
+      {
+        "marca_ou_produto": "3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P23|L0918",
+        "trecho_literal": "slots para fitas modelo 3592 JC"
+      },
+      {
+        "marca_ou_produto": "IBM 3592JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P23|L0920",
+        "trecho_literal": "drives modelo 3592, compatíveis com as fitas modelo IBM 3592JC para leitura e gravação"
+      },
+      {
+        "marca_ou_produto": "Windows Server versão 2019",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P23|L0928",
+        "trecho_literal": "gerenciável pelo sistema operacional Windows Server versão 2019 e superiores."
+      },
+      {
+        "marca_ou_produto": "IBM Storage Protect (antigo TSM)",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P23|L0929",
+        "trecho_literal": "A solução deve ser plenamente compatível com softwares de backup IBM Storage Protect (antigo TSM)."
+      },
+      {
+        "marca_ou_produto": "IBM TS1160/1150",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P24|L0954",
+        "trecho_literal": "plenamente compatíveis com drives de fita padrão IBM TS1160/1150"
+      },
+      {
+        "marca_ou_produto": "Part number 18P7535",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P24|L0957",
+        "trecho_literal": "Fitas de limpeza Part number 18P7535."
+      },
+      {
+        "marca_ou_produto": "3592",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P24|L0959",
+        "trecho_literal": "identificação eletrônica (memory chip) compatível com os drives 3592"
+      },
+      {
+        "marca_ou_produto": "IBM 3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P39|L1805",
+        "trecho_literal": "aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC e os serviços de instalação, configuração, garantia e assistência técnica"
+      },
+      {
+        "marca_ou_produto": "IBM 3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P41|L1887",
+        "trecho_literal": "Aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica"
+      },
+      {
+        "marca_ou_produto": "IBM 3592 JC",
+        "contexto_mencao": "objeto_licitado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "P43|L1952",
+        "trecho_literal": "aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "Anexo IV (P65|L2870)",
+    "matriz_riscos_trecho": "ANEXO IV – MATRIZ DE RISCOS",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "Cláusula Nona, Parágrafo Segundo (P50|L2252)",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "Anexo I, Item 16.1 (P39|L1796) e Minuta de Contrato, Cláusula Décima Sétima, Parágrafo Terceiro (P61|L2710)",
+    "subcontratacao_trecho": "Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual. (...) É vedada a subcontratação para a execução do objeto deste Contrato.",
+    "escopo_exigencia_amostra": "nao_exigida",
+    "amostra_item": "Não exigida",
+    "amostra_trecho": "Não há exigência de amostra ou PoC no edital.",
+    "percentual_minimo_atestado": 0,
+    "veda_somatorio_atestados": true,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "Anexo I, Item 6.3 (P21|L0824)",
+    "atestado_trecho": "Não será aceito somatório de atestados para a comprovação da capacidade técnica.",
+    "exige_credenciamento_ou_carta_fabricante": false,
+    "credenciamento_item": "Anexo I, Item 7.1.3 (P22|L0866)",
+    "credenciamento_trecho": "Caso o LICITANTE não seja o próprio fabricante da solução, declaração do próprio LICITANTE de que a garantia e o serviço de assistência técnica serão contratados pelo LICITANTE junto ao fabricante da solução ofertada, para todo o material e equipamentos fornecidos durante toda a vigência do serviço de assistência técnica, conforme modelo definido no Edital.",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "Corpo do Edital, Item 2.49 (P06|L0249) e Anexo I, Item 16.1 (P39|L1796)",
+    "consorcio_trecho": "VIII. esteja organizado sob a forma de consórcio. (...) Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_013_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_013_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_013_2026, 'IBM 3592 JC', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P02|L0019', 'Aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica').\nmencao_marca_exigida(pe_013_2026, 'IBM 3592 JC', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P05|L0176', 'aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica').\nmencao_marca_exigida(pe_013_2026, '3592 JC', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'P23|L0913', 'A CONTRATADA deverá fornecer 1 (uma) solução para gerenciamento de fitas magnéticas tipo 3592 JC.').\nmencao_marca_exigida(pe_013_2026, '3592 JC', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'P23|L0918', 'slots para fitas modelo 3592 JC').\nmencao_marca_exigida(pe_013_2026, 'IBM 3592JC', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P23|L0920', 'drives modelo 3592, compatíveis com as fitas modelo IBM 3592JC para leitura e gravação').\nmencao_marca_exigida(pe_013_2026, 'Windows Server versão 2019', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P23|L0928', 'gerenciável pelo sistema operacional Windows Server versão 2019 e superiores.').\nmencao_marca_exigida(pe_013_2026, 'IBM Storage Protect (antigo TSM)', interoperabilidade_ambiente_legado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P23|L0929', 'A solução deve ser plenamente compatível com softwares de backup IBM Storage Protect (antigo TSM).').\nmencao_marca_exigida(pe_013_2026, 'IBM TS1160/1150', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P24|L0954', 'plenamente compatíveis com drives de fita padrão IBM TS1160/1150').\nmencao_marca_exigida(pe_013_2026, 'Part number 18P7535', objeto_licitado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'P24|L0957', 'Fitas de limpeza Part number 18P7535.').\nmencao_marca_exigida(pe_013_2026, '3592', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P24|L0959', 'identificação eletrônica (memory chip) compatível com os drives 3592').\nmencao_marca_exigida(pe_013_2026, 'IBM 3592 JC', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P39|L1805', 'aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC e os serviços de instalação, configuração, garantia e assistência técnica').\nmencao_marca_exigida(pe_013_2026, 'IBM 3592 JC', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P41|L1887', 'Aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica').\nmencao_marca_exigida(pe_013_2026, 'IBM 3592 JC', objeto_licitado, com_clausula_similaridade, sem_justificativa_padronizacao, 'P43|L1952', 'aquisição de 1 (um) equipamento fitoteca automatizada compatível com o modelo de fita IBM 3592 JC, fitas de limpeza e os serviços de instalação, configuração, garantia e assistência técnica').\nevidencia_regra(pe_013_2026, 'R01', 'P23|L0913 | P23|L0918 | P24|L0957', '[3592 JC] A CONTRATADA deverá fornecer 1 (uma) solução para gerenciamento de fitas magnéticas tipo 3592 JC. [3592 JC] slots para fitas modelo 3592 JC [Part number 18P7535] Fitas de limpeza Part number 18P7535.').\nevidencia_regra(pe_013_2026, 'R02', 'P23|L0913 | P23|L0918 | P24|L0957', '[3592 JC] A CONTRATADA deverá fornecer 1 (uma) solução para gerenciamento de fitas magnéticas tipo 3592 JC. [3592 JC] slots para fitas modelo 3592 JC [Part number 18P7535] Fitas de limpeza Part number 18P7535.').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_013_2026, 'Anexo IV (P65|L2870)', 'ANEXO IV – MATRIZ DE RISCOS').\nevidencia_regra(pe_013_2026, 'R03', 'Anexo IV (P65|L2870)', 'ANEXO IV – MATRIZ DE RISCOS').\nfato_vedacao_aditivo_risco(pe_013_2026, 'Cláusula Nona, Parágrafo Segundo (P50|L2252)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_013_2026, 'R38', 'Cláusula Nona, Parágrafo Segundo (P50|L2252)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_013_2026, 'Anexo I, Item 16.1 (P39|L1796) e Minuta de Contrato, Cláusula Décima Sétima, Parágrafo Terceiro (P61|L2710)', 'Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual. (...) É vedada a subcontratação para a execução do objeto deste Contrato.').\nevidencia_regra(pe_013_2026, 'R09', 'Anexo I, Item 16.1 (P39|L1796) e Minuta de Contrato, Cláusula Décima Sétima, Parágrafo Terceiro (P61|L2710)', 'Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual. (...) É vedada a subcontratação para a execução do objeto deste Contrato.').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_013_2026, nao_exigida, 'Não exigida', 'Não há exigência de amostra ou PoC no edital.').\nevidencia_regra(pe_013_2026, 'R11', 'Não exigida', 'Não há exigência de amostra ou PoC no edital.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_013_2026, 0, 'Anexo I, Item 6.3 (P21|L0824)', 'Não será aceito somatório de atestados para a comprovação da capacidade técnica.').\nfato_veda_somatorio(pe_013_2026, 'Anexo I, Item 6.3 (P21|L0824)', 'Não será aceito somatório de atestados para a comprovação da capacidade técnica.').\nevidencia_regra(pe_013_2026, 'R29', 'Anexo I, Item 6.3 (P21|L0824)', 'Não será aceito somatório de atestados para a comprovação da capacidade técnica.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\n% fato_credenciamento_exigido ausente -> NAF (\\+) confirmará conformidade em R41\nevidencia_regra(pe_013_2026, 'R41', 'Anexo I, Item 7.1.3 (P22|L0866)', 'Caso o LICITANTE não seja o próprio fabricante da solução, declaração do próprio LICITANTE de que a garantia e o serviço de assistência técnica serão contratados pelo LICITANTE junto ao fabricante da solução ofertada, para todo o material e equipamentos fornecidos durante toda a vigência do serviço de assistência técnica, conforme modelo definido no Edital.').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_013_2026, 'Corpo do Edital, Item 2.49 (P06|L0249) e Anexo I, Item 16.1 (P39|L1796)', 'VIII. esteja organizado sob a forma de consórcio. (...) Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual.').\nevidencia_regra(pe_013_2026, 'R43', 'Corpo do Edital, Item 2.49 (P06|L0249) e Anexo I, Item 16.1 (P39|L1796)', 'VIII. esteja organizado sob a forma de consórcio. (...) Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "P23|L0913 | P23|L0918 | P24|L0957",
+      "trecho_identificado": "[3592 JC] A CONTRATADA deverá fornecer 1 (uma) solução para gerenciamento de fitas magnéticas tipo 3592 JC. [3592 JC] slots para fitas modelo 3592 JC [Part number 18P7535] Fitas de limpeza Part number 18P7535.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_similaridade,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "P23|L0913 | P23|L0918 | P24|L0957",
+      "trecho_identificado": "[3592 JC] A CONTRATADA deverá fornecer 1 (uma) solução para gerenciamento de fitas magnéticas tipo 3592 JC. [3592 JC] slots para fitas modelo 3592 JC [Part number 18P7535] Fitas de limpeza Part number 18P7535.",
+      "momento_edital": "power",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(marca_sem_padronizacao,power,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo IV (P65|L2870)",
+      "trecho_identificado": "ANEXO IV – MATRIZ DE RISCOS",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "Anexo I, Item 16.1 (P39|L1796) e Minuta de Contrato, Cláusula Décima Sétima, Parágrafo Terceiro (P61|L2710)",
+      "trecho_identificado": "Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual. (...) É vedada a subcontratação para a execução do objeto deste Contrato.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não exigida",
+      "trecho_identificado": "Não há exigência de amostra ou PoC no edital.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_nao_exigida,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Anexo I, Item 6.3 (P21|L0824)",
+      "trecho_identificado": "Não será aceito somatório de atestados para a comprovação da capacidade técnica.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_somatorio_sem_justificativa,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "Cláusula Nona, Parágrafo Segundo (P50|L2252)",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "Anexo I, Item 7.1.3 (P22|L0866)",
+      "trecho_identificado": "Caso o LICITANTE não seja o próprio fabricante da solução, declaração do próprio LICITANTE de que a garantia e o serviço de assistência técnica serão contratados pelo LICITANTE junto ao fabricante da solução ofertada, para todo o material e equipamentos fornecidos durante toda a vigência do serviço de assistência técnica, conforme modelo definido no Edital.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "harmonia_normativa(sem_exigencia_credenciamento,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "Corpo do Edital, Item 2.49 (P06|L0249) e Anexo I, Item 16.1 (P39|L1796)",
+      "trecho_identificado": "VIII. esteja organizado sob a forma de consórcio. (...) Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "Apesar da menção de marcas e modelos específicos (como 'IBM 3592 JC' e 'Part number 18P7535'), o item 3.5 do Anexo I (Termo de Referência) estabelece que as características técnicas são mínimas e que podem ser oferecidos produtos de desempenho equivalente ou superior, desde que compatíveis com os requisitos. Esta cláusula geral mitiga o direcionamento ao permitir alternativas.",
+      "trecho_citado_llm": "[P19|L0692] 3.5. As características técnicas descritas para todos os equipamentos, dispositivos, materiais, softwares e serviços solicitados neste documento são as características mínimas que devem ser atendidas pelos LICITANTES. Assim sendo, podem ser oferecidos quaisquer outros de desempenho equivalentes ou superiores, desde que compatíveis com os requisitos destas especificações.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`duty_to_omit` vs `permission_to_act`) com base em P23|L0913 | P23|L0918 | P24|L0957."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital indica um 'Part number 18P7535' para as fitas de limpeza. Embora o item 3.5 permita equivalentes, a regra R02 exige uma justificativa formal de padronização prévia para a indicação de um item tão específico (um part number). A ausência de tal justificativa no edital para a escolha inicial deste part number específico configura um indício de direcionamento.",
+      "trecho_citado_llm": "[P24|L0957] 8.4.4. Fitas de limpeza Part number 18P7535.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`power` / `disability`)."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital inclui expressamente uma 'Matriz de Riscos' como Anexo IV, conforme exigido para contratações de obras, serviços ou compras complexas. O objeto da licitação, que envolve aquisição de equipamento automatizado, fitas e serviços de instalação, configuração, garantia e assistência técnica, é considerado complexo.",
+      "trecho_citado_llm": "[P65|L2870] ANEXO IV – MATRIZ DE RISCOS",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital e a minuta de contrato vedam expressamente a subcontratação de qualquer parcela do objeto contratual, cumprindo a exigência de definir a possibilidade ou não de subcontratação.",
+      "trecho_citado_llm": "[P39|L1796] 16.1. Serão vedadas a subcontratação e consórcios de qualquer parcela do objeto contratual. [P61|L2710] Parágrafo Terceiro É vedada a subcontratação para a execução do objeto deste Contrato.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "Não há no edital qualquer exigência de apresentação de amostra ou prova de conceito em fase de propostas iniciais. As verificações técnicas são mencionadas para a fase de aceitação da proposta do licitante de melhor lance, o que está em conformidade com a legislação.",
+      "trecho_citado_llm": "Não há trecho no edital que exija amostra ou prova de conceito na fase de propostas iniciais.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A exigência de comprovação de experiência pretérita em atestados de capacidade técnica, conforme item 6.2 do Anexo I, refere-se ao fornecimento, instalação e prestação de serviços de assistência técnica de 'um equipamento fitoteca', o que corresponde a 100% do quantitativo do objeto licitado (1 equipamento fitoteca). No entanto, a Súmula 263 do TCU permite até 100% para itens de alta complexidade e relevância, como é o caso de um equipamento fitoteca automatizada, não excedendo o limite de 50% para itens de menor relevância ou complexidade. Para o item principal, 100% é aceitável.",
+      "trecho_citado_llm": "[P21|L0820] 6.2. Consideram-se objetos da mesma natureza ou similares ao da presente Licitação o fornecimento, instalação e prestação de serviços de assistência técnica por, pelo menos, 12 (doze) meses consecutivos, de um equipamento fitoteca.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`duty_to_omit` vs `permission_to_act`) com base em Anexo I, Item 6.3 (P21|L0824)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A minuta do contrato, na Cláusula Nona, Parágrafo Segundo, veda expressamente a celebração de aditivos decorrentes de eventos supervenientes alocados como responsabilidade do CONTRATADO na Matriz de Riscos, atendendo à exigência legal.",
+      "trecho_citado_llm": "[P50|L2252] Parágrafo Segundo É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital exige a 'declaração que possui autorização formal do fabricante para comercializar o equipamento e serviços objeto desta contratação' no item 7.2 do Anexo I, que está sob a seção '7. REQUISITOS PARA ACEITAÇÃO DA PROPOSTA'. A regra R41 se refere à exigência na fase de HABILITAÇÃO. Como a exigência está na fase de aceitação da proposta, e não de habilitação, não configura inconformidade com a regra R41.",
+      "trecho_citado_llm": "[P23|L0903] 7.2. A LICITANTE deverá apresentar declaração que possui autorização formal do fabricante para comercializar o equipamento e serviços objeto desta contratação.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital veda expressamente a participação de empresas organizadas sob a forma de consórcio (item 2.3.VIII). Dado que o objeto da licitação é complexo (aquisição e serviços de fitoteca automatizada) e de valor vultoso (R$ 3.818.140,40), a vedação à participação em consórcio sem uma justificativa formal específica no edital pode restringir indevidamente a competitividade do certame.",
+      "trecho_citado_llm": "[P06|L0249] VIII. esteja organizado sob a forma de consórcio.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

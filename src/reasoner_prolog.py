@@ -7,10 +7,10 @@ com rastreamento completo da árvore de prova formal (e suporte nativo a SWI-Pro
 
 from __future__ import annotations
 
-import copy
 import re
 import shutil
 import subprocess
+import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -36,6 +36,7 @@ class ResultadoInferenciaRegra:
     item_evidencia: str
     trecho_evidencia: str
     passos_prova_prolog: List[str] = field(default_factory=list)
+    validacao_cruzada_ok: bool = True
 
 
 # ==============================================================================
@@ -143,7 +144,7 @@ class PrologParser:
                 buf.append(ch)
                 escaped = False
                 continue
-            if ch == "\\":
+            if in_quote and ch == "\\":
                 buf.append(ch)
                 escaped = True
                 continue
@@ -241,7 +242,7 @@ class PrologParser:
                 escaped = False
                 i += 1
                 continue
-            if ch == "\\":
+            if in_quote and ch == "\\":
                 escaped = True
                 i += 1
                 continue
@@ -270,7 +271,7 @@ class PrologParser:
                 buf.append(ch)
                 escaped = False
                 continue
-            if ch == "\\":
+            if in_quote and ch == "\\":
                 buf.append(ch)
                 escaped = True
                 continue
@@ -439,10 +440,12 @@ class AvaliadorSimbolicoUfoL:
         self.caminho_regras_pl = Path(caminho_regras_pl)
         self.texto_ufol = self.caminho_ufol_pl.read_text(encoding="utf-8")
         self.texto_regras = self.caminho_regras_pl.read_text(encoding="utf-8")
+        self._swipl_version_cache: Dict[str, str] = {}
 
     def gerar_codigo_sessao_prolog(self, abox_prolog: str) -> str:
         """Gera o arquivo `.pl` completo e autocontido da sessão de validação."""
         return (
+            ":- encoding(utf8).\n"
             "% ==============================================================================\n"
             "% SESSÃO DE AUDITORIA NEURO-SIMBÓLICA (UFO-L + LEI 13.303/2016)\n"
             "% ==============================================================================\n\n"
@@ -455,10 +458,112 @@ class AvaliadorSimbolicoUfoL:
         bin_path = shutil.which("swipl")
         if bin_path:
             return bin_path
-        padrao_win = Path("C:/Program Files/swipl/bin/swipl.exe")
-        if padrao_win.exists():
-            return str(padrao_win)
+        for cand in (
+            Path("C:/Program Files/swipl/bin/swipl.exe"),
+            Path("C:/Program Files (x86)/swipl/bin/swipl.exe"),
+        ):
+            if cand.exists():
+                return str(cand)
         return None
+
+    def _obter_versao_swipl(self, swipl_bin: str) -> str:
+        if swipl_bin in self._swipl_version_cache:
+            return self._swipl_version_cache[swipl_bin]
+        versao = ""
+        try:
+            proc = subprocess.run(
+                [swipl_bin, "--version"],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=5,
+            )
+            m = re.search(r"version\s+([0-9]+\.[0-9]+\.[0-9]+)", proc.stdout or proc.stderr, re.IGNORECASE)
+            if m:
+                versao = m.group(1)
+        except Exception:
+            versao = ""
+        self._swipl_version_cache[swipl_bin] = versao
+        return versao
+
+    def _executar_via_swipl(
+        self,
+        swipl_bin: str,
+        caminho_pl: Path,
+        edital_atom: str,
+        regras_selecionadas: List[str],
+    ) -> Dict[str, dict]:
+        """Executa de fato o binário oficial do SWI-Prolog (`swipl`) via subprocesso."""
+        regras_pl = "[" + ",".join(f"'{r}'" for r in regras_selecionadas) + "]"
+        goal = (
+            "set_stream(current_output, encoding(utf8)), "
+            f"Regras = {regras_pl}, "
+            "forall(member(R, Regras), ("
+            "(once(norma_legal(R, Rel, _PapelLei, MomLeiN, Acao, Disp)) -> true ; "
+            "(Rel=administrative_tender_relation, MomLeiN=duty_to_act, Acao=cumprir_norma_licitatoria, Disp='')), "
+            "(once(correlative_moment(MomLeiN, Corr)) -> true ; Corr='n/a'), "
+            f"(once(evidencia_regra({edital_atom}, R, _ItemEv, TrechoEv)) -> true ; TrechoEv=''), "
+            f"(once(avaliar_regra({edital_atom}, R, Status, TipoInf, Papel, MomEd, MomLei, _FirstItem)) -> ("
+            f"findall(It, avaliar_regra({edital_atom}, R, Status, _, _, _, _, It), RawItens), "
+            "list_to_set(RawItens, UniqItens), "
+            "atomic_list_concat(UniqItens, ' | ', ItemRef), "
+            "(once(is_subclass(Papel, legal_role)) -> RoleOk='true' ; RoleOk='false'), "
+            "(once(is_legal_moment(MomEd)) -> MomOk='true' ; MomOk='false'), "
+            "format('<<<ROW>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<SEP>>>~w<<<END>>>~n', "
+            "[R, Status, TipoInf, Rel, Papel, MomEd, MomLei, Corr, Acao, Disp, ItemRef, TrechoEv, RoleOk, MomOk])"
+            ") ; true)"
+            "))"
+        )
+        proc = subprocess.run(
+            [swipl_bin, "-q", "-s", str(caminho_pl), "-g", goal, "-t", "halt"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=15,
+            check=True,
+        )
+        if proc.stderr and "error:" in proc.stderr.lower():
+            raise RuntimeError(f"Erro SWI-Prolog: {proc.stderr.strip()}")
+
+        saida_swipl: Dict[str, dict] = {}
+        for m in re.finditer(r"<<<ROW>>>(.*?)<<<END>>>", proc.stdout, re.DOTALL):
+            partes = m.group(1).split("<<<SEP>>>")
+            if len(partes) != 14:
+                continue
+            (
+                r_id,
+                status,
+                tipo_inf,
+                rel,
+                papel,
+                mom_ed,
+                mom_lei,
+                corr,
+                acao,
+                disp,
+                item_ref,
+                trecho_ev,
+                role_ok,
+                mom_ok,
+            ) = partes
+            saida_swipl[r_id] = {
+                "status": status,
+                "tipo_inferencia_ufol": tipo_inf,
+                "relacao_juridica_ufol": rel,
+                "papel_afetado": papel,
+                "momento_edital": mom_ed,
+                "momento_esperado_lei": mom_lei,
+                "momento_correlato_lei": corr,
+                "acao_juridica_ufol": acao,
+                "dispositivo_legal_ufol": disp,
+                "item_evidencia": item_ref,
+                "trecho_evidencia": trecho_ev,
+                "role_ok": role_ok == "true",
+                "mom_ok": mom_ok == "true",
+            }
+        return saida_swipl
 
     def executar_avaliacao(
         self,
@@ -469,28 +574,130 @@ class AvaliadorSimbolicoUfoL:
     ) -> Tuple[Dict[str, ResultadoInferenciaRegra], str, str]:
         """
         Executa a inferência lógica sobre a ontologia UFO-L e as regras da Lei 13.303.
-        Retorna (mapa_resultados_por_regra, codigo_prolog_completo, motor_utilizado).
+        Quando o executável oficial do SWI-Prolog (`swipl`) está disponível, delega a ele
+        a derivação formal dos vereditos via `subprocess`, usando o `PrologSLDEngine` para
+        reconstruir a trilha passo a passo de unificações (e como fallback se `swipl` não existir).
         """
         codigo_completo = self.gerar_codigo_sessao_prolog(abox_prolog)
+        edital_atom = re.sub(r"[^a-z0-9_]", "_", edital_id.lower()).strip("_") or "edital_analisado"
+
+        temp_file_path: Optional[Path] = None
         if salvar_sessao_em:
-            Path(salvar_sessao_em).write_text(codigo_completo, encoding="utf-8")
+            caminho_exec_pl = Path(salvar_sessao_em)
+            caminho_exec_pl.write_text(codigo_completo, encoding="utf-8")
+        else:
+            tmp = tempfile.NamedTemporaryFile(
+                mode="w",
+                suffix=".pl",
+                encoding="utf-8",
+                delete=False,
+            )
+            tmp.write(codigo_completo)
+            tmp.close()
+            temp_file_path = Path(tmp.name)
+            caminho_exec_pl = temp_file_path
+
+        swipl_bin = self._verificar_swipl_disponivel()
+        swipl_resultados: Dict[str, dict] = {}
+        motor_label = "Motor SLD ISO-Prolog Nativo em Python (Fallback — swipl não instalado)"
+
+        try:
+            if swipl_bin:
+                swipl_resultados = self._executar_via_swipl(
+                    swipl_bin=swipl_bin,
+                    caminho_pl=caminho_exec_pl,
+                    edital_atom=edital_atom,
+                    regras_selecionadas=regras_selecionadas,
+                )
+                versao_swipl = self._obter_versao_swipl(swipl_bin)
+                ver_txt = f" {versao_swipl}" if versao_swipl else ""
+                motor_label = f"SWI-Prolog{ver_txt} (Execução Real via swipl) + SLD Trace UFO-L"
+        finally:
+            if temp_file_path is not None and temp_file_path.exists():
+                temp_file_path.unlink(missing_ok=True)
 
         parser = PrologParser()
         clauses = parser.parse_program(codigo_completo)
         engine = PrologSLDEngine(clauses)
 
-        swipl_bin = self._verificar_swipl_disponivel()
-        motor_label = (
-            f"SWI-Prolog ({swipl_bin}) + SLD Trace UFO-L"
-            if swipl_bin
-            else "Motor SLD ISO-Prolog Nativo (UFO_L.pl + ufo_l_rules.pl)"
-        )
-
-        edital_atom = re.sub(r"[^a-z0-9_]", "_", edital_id.lower()).strip("_") or "edital_analisado"
         resultados: Dict[str, ResultadoInferenciaRegra] = {}
 
         for r_id in regras_selecionadas:
-            # 1. Consultar a Norma Legal esperada na UFO-L
+            # Gera o rastro SLD unificado de avaliar_regra/8 (que agora percorre
+            # norma_legal/6, posicao_edital/6 com NAF \+, is_subclass/2, is_legal_moment/1 e conflito_hohfeldiano/3)
+            q_aval = parser.parse_goal(
+                f"avaliar_regra({edital_atom}, '{r_id}', Status, TipoInf, PapelAfetado, MomEdital, MomLei, ItemRef)"
+            )
+            sol_aval = engine.solve([q_aval])
+            trace_passos = sol_aval[0][1] if sol_aval else []
+
+            if r_id in swipl_resultados:
+                sw = swipl_resultados[r_id]
+                passos_completos = [
+                    f"[SWI-Prolog Oficial] Veredito provado via subprocesso `{Path(swipl_bin).name}`.",
+                ]
+                validacao_cruzada_ok = False
+                if sol_aval:
+                    s0 = sol_aval[0][0]
+                    py_vals = (
+                        self._term_to_str(engine.deref(Var("Status"), s0)),
+                        self._term_to_str(engine.deref(Var("PapelAfetado"), s0)),
+                        self._term_to_str(engine.deref(Var("MomEdital"), s0)),
+                        self._term_to_str(engine.deref(Var("MomLei"), s0)),
+                    )
+                    sw_vals = (
+                        sw["status"],
+                        sw["papel_afetado"],
+                        sw["momento_edital"],
+                        sw["momento_esperado_lei"],
+                    )
+                    if py_vals == sw_vals:
+                        validacao_cruzada_ok = True
+                        passos_completos.extend([
+                            (
+                                f"[Validação Cruzada OK] SWI-Prolog == PrologSLDEngine "
+                                f"(Status={sw['status']}, Papel={sw['papel_afetado']}, "
+                                f"MomEdital={sw['momento_edital']}, MomLei={sw['momento_esperado_lei']})."
+                            ),
+                            f"Consulta Unificada: ?- avaliar_regra({edital_atom}, '{r_id}', Status, TipoInf, Papel, MomEdital, MomLei, Item).",
+                            "Árvore SLD Unificada (UFO-L + Lei 13.303):",
+                        ])
+                        passos_completos.extend(trace_passos)
+                        if len(sol_aval) > 1:
+                            itens_extras = []
+                            for s_sub, _ in sol_aval:
+                                it_s = self._term_to_str(engine.deref(Var("ItemRef"), s_sub))
+                                if it_s not in itens_extras:
+                                    itens_extras.append(it_s)
+                            passos_completos.append(f"Ocorrências agregadas (findall): {len(itens_extras)} -> {' | '.join(itens_extras)}")
+                    else:
+                        passos_completos.append(
+                            f"[Validação Cruzada DIVERGENTE] SWI-Prolog={sw_vals} vs. PrologSLDEngine={py_vals}."
+                        )
+                else:
+                    passos_completos.append(
+                        "[Validação Cruzada DIVERGENTE] PrologSLDEngine não derivou solução para a consulta unificada."
+                    )
+
+                resultados[r_id] = ResultadoInferenciaRegra(
+                    regra_id=r_id,
+                    status=sw["status"],
+                    tipo_inferencia_ufol=sw["tipo_inferencia_ufol"],
+                    relacao_juridica_ufol=sw["relacao_juridica_ufol"],
+                    papel_afetado=sw["papel_afetado"],
+                    momento_edital=sw["momento_edital"],
+                    momento_esperado_lei=sw["momento_esperado_lei"],
+                    momento_correlato_lei=sw["momento_correlato_lei"],
+                    acao_juridica_ufol=sw["acao_juridica_ufol"],
+                    dispositivo_legal_ufol=sw["dispositivo_legal_ufol"],
+                    item_evidencia=sw["item_evidencia"],
+                    trecho_evidencia=sw["trecho_evidencia"],
+                    passos_prova_prolog=passos_completos,
+                    validacao_cruzada_ok=validacao_cruzada_ok,
+                )
+                continue
+
+            # Fallback caso `swipl` não esteja instalado no ambiente
             q_norma = parser.parse_goal(
                 f"norma_legal('{r_id}', Relacao, PapelLei, MomentoLei, AcaoJuridica, Dispositivo)"
             )
@@ -506,7 +713,6 @@ class AvaliadorSimbolicoUfoL:
                 acao_str = self._term_to_str(engine.deref(Var("AcaoJuridica"), s_n))
                 disp_str = self._term_to_str(engine.deref(Var("Dispositivo"), s_n))
 
-            # 2. Consultar o Momento Correlato Hohfeldiano na UFO-L
             q_corr = parser.parse_goal(f"correlative_moment({momento_lei_norma}, Correlato)")
             sol_corr = engine.solve([q_corr])
             correlato_str = (
@@ -515,7 +721,6 @@ class AvaliadorSimbolicoUfoL:
                 else "n/a"
             )
 
-            # 3. Consultar a Evidência textual associada à regra
             q_ev = parser.parse_goal(f"evidencia_regra({edital_atom}, '{r_id}', ItemEv, TrechoEv)")
             sol_ev = engine.solve([q_ev])
             trecho_ev_str = (
@@ -524,12 +729,6 @@ class AvaliadorSimbolicoUfoL:
                 else ""
             )
 
-            # 4. Executar a avaliação deôntica avaliar_regra/8
-            q_aval = parser.parse_goal(
-                f"avaliar_regra({edital_atom}, '{r_id}', Status, TipoInf, PapelAfetado, MomEdital, MomLei, ItemRef)"
-            )
-            sol_aval = engine.solve([q_aval])
-
             if sol_aval:
                 subst_final, trace_passos = sol_aval[0]
                 status_val = self._term_to_str(engine.deref(Var("Status"), subst_final))
@@ -537,23 +736,17 @@ class AvaliadorSimbolicoUfoL:
                 papel_val = self._term_to_str(engine.deref(Var("PapelAfetado"), subst_final))
                 mom_edital_val = self._term_to_str(engine.deref(Var("MomEdital"), subst_final))
                 mom_lei_val = self._term_to_str(engine.deref(Var("MomLei"), subst_final))
-                item_val = self._term_to_str(engine.deref(Var("ItemRef"), subst_final))
-
-                # Validar também que PapelAfetado é subclasse de legal_role e MomEdital é legal_moment na UFO-L
-                q_role = parser.parse_goal(f"is_subclass({papel_val}, legal_role)")
-                sol_role = engine.solve([q_role])
-                q_mom = parser.parse_goal(f"is_legal_moment({mom_edital_val})")
-                sol_mom = engine.solve([q_mom])
+                itens_unicos = []
+                for s_sub, _ in sol_aval:
+                    it_s = self._term_to_str(engine.deref(Var("ItemRef"), s_sub))
+                    if it_s not in itens_unicos:
+                        itens_unicos.append(it_s)
+                item_val = " | ".join(itens_unicos)
 
                 passos_completos = [
-                    f"Consulta: ?- avaliar_regra({edital_atom}, '{r_id}', Status, TipoInf, Papel, MomEdital, MomLei, Item).",
-                    f"Norma UFO-L: norma_legal('{r_id}', {relacao_str}, {papel_val}, {mom_lei_val}, {acao_str}, '{disp_str}')",
-                    f"Correlato Hohfeldiano (UFO_L.pl): correlative_moment({mom_lei_val}, {correlato_str})",
+                    f"Consulta Unificada: ?- avaliar_regra({edital_atom}, '{r_id}', Status, TipoInf, Papel, MomEdital, MomLei, Item).",
+                    f"Árvore SLD Unificada (UFO-L + Lei 13.303):",
                 ]
-                if sol_role:
-                    passos_completos.append(f"Taxonomia UFO-L: is_subclass({papel_val}, legal_role) -> true")
-                if sol_mom:
-                    passos_completos.append(f"Taxonomia UFO-L: is_legal_moment({mom_edital_val}) -> true")
                 passos_completos.extend(trace_passos)
 
                 resultados[r_id] = ResultadoInferenciaRegra(

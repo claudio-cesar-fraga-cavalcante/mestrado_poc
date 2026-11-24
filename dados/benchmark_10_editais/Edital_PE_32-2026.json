@@ -1,0 +1,327 @@
+{
+  "timestamp_execucao": "2026-11-23T20:49:54",
+  "nome_arquivo": "Edital_PE_32-2026.pdf",
+  "identificador_edital": "pe_032_2026",
+  "total_paginas": 94,
+  "total_linhas": 4041,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 628,
+      "total_linhas": 628,
+      "pagina_inicio": 1,
+      "pagina_fim": 19
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 629,
+      "fim": 2667,
+      "total_linhas": 2039,
+      "pagina_inicio": 19,
+      "pagina_fim": 56
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 2668,
+      "fim": 3685,
+      "total_linhas": 1018,
+      "pagina_inicio": 57,
+      "pagina_fim": 79
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 30.52,
+  "tempo_prolog_ms": 678.829,
+  "tempo_somente_neural_s": 33.33,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 89384,
+    "thoughts_token_count": 4094,
+    "candidates_token_count": 3322,
+    "total_token_count": 96800
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 89065,
+    "thoughts_token_count": 4093,
+    "candidates_token_count": 2833,
+    "total_token_count": 95991
+  },
+  "fatos": {
+    "identificador_edital": "pe_032_2026",
+    "resumo_objeto": "Contratação de licenças de uso por subscrição para uma ferramenta de apoio nos processos de gestão e governança de dados pessoais, englobando os serviços de atualização e suporte técnico, bem como serviços de implantação, configuração, customização e treinamento, na modalidade Pregão Eletrônico, por menor preço global, e modo de disputa aberto e fechado.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "Oracle Database",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 9.1 (P41|L1796); Anexo I.1, Item 1 (P47|L2045-L2046)",
+        "trecho_literal": "1 servidor com o SGBD Oracle instalado, contendo no mínimo 1 banco de dados; Oracle Database versão 19c ou superior"
+      },
+      {
+        "marca_ou_produto": "Microsoft SQL Server",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": true,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 9.1 (P41|L1797-L1798); Anexo I.1, Item 2 (P47|L2052-L2055)",
+        "trecho_literal": "1 servidor com o SGBD Microsoft SQL Server instalado, contendo no mínimo 1 banco de dados; MS SQL Server Enterprise Edition versão 2017 ou superior"
+      },
+      {
+        "marca_ou_produto": "Microsoft 365",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074)",
+        "trecho_literal": "1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook."
+      },
+      {
+        "marca_ou_produto": "OneDrive",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074)",
+        "trecho_literal": "1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook."
+      },
+      {
+        "marca_ou_produto": "Outlook",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074)",
+        "trecho_literal": "1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook."
+      },
+      {
+        "marca_ou_produto": "SharePoint",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.1, Item 4 (P47|L2071)",
+        "trecho_literal": "b) MS 365 SharePoint;"
+      },
+      {
+        "marca_ou_produto": "Windows",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 9.1 (P41|L1800-L1801); Anexo I.1, Item 5 (P47|L2078-L2080)",
+        "trecho_literal": "1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados. Compartilhamentos de arquivos em rede do Windows"
+      },
+      {
+        "marca_ou_produto": "IBM Content Manager",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.1, Item 3 (P47|L2060-L2061)",
+        "trecho_literal": "IBM Content Manager"
+      },
+      {
+        "marca_ou_produto": "SAP",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.1, Item 6 (P47|L2087-L2090)",
+        "trecho_literal": "SAP Módulos ECC, FI, LSO, SRM, HR, Nota QM, HCM"
+      },
+      {
+        "marca_ou_produto": "Amazon AWS",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I.1, Item 7 (P47|L2092)",
+        "trecho_literal": "Amazon AWS"
+      },
+      {
+        "marca_ou_produto": "MS Excel",
+        "contexto_mencao": "interoperabilidade_ambiente_legado",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 2.4.4.11 (P22|L0830-L0831); Anexo I, Item 2.4.6.6 (P24|L0897); Anexo I, Item 2.6.1.9 (P29|L1191); Anexo I.3, Item 6 (P51|L2240)",
+        "trecho_literal": "planilha do MS Excel (formatos “.xlsx” ou “.xls”); planilhas MS Excel ou arquivos em formato “.csv”; planilhas de Excel; planilha no formato “.xlsx”"
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "CLÁUSULA OITAVA – MATRIZ DE RISCOS (P64|L2962) e ANEXO IV – MATRIZ DE RISCO (P77|L3621)",
+    "matriz_riscos_trecho": "O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. PREGÃO ELETRÔNICO Nº 032/2026 – BNDES ANEXO IV – MATRIZ DE RISCO",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "CLÁUSULA OITAVA – MATRIZ DE RISCOS, Parágrafo Segundo (P64|L2972-L2973)",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "Anexo I, Item 1.2 (P19|L0638-L0639); Anexo I, Item 2.9.2.7 (P34|L1464-L1479); Anexo I, Item 2.9.2.8 (P34|L1481-L1485); CLÁUSULA DÉCIMA QUINTA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO (P72|L3300-L3304)",
+    "subcontratacao_trecho": "Será permitida a subcontratação dos serviços de treinamento online previstos no item 2.7. Será admitida a possibilidade de subcontratação para a execução dos serviços de treinamento online. Em tal hipótese, o CONTRATADO deverá apresentar declaração, no momento em que o serviço de treinamento for demandado pelo BNDES, firmada por seu Representante Legal, informando que haverá subcontratação, contendo nome, CNPJ, endereço e telefone da(s) empresa(s) subcontratada(s) e a parte do serviço que lhe cabe; detalhamento dos serviços a serem subcontratados; e valor total da subcontratação, observado o valor máximo deste serviço. É permitida a subcontratação do fabricante da Solução ou de empresa credenciada e/ou autorizada pelo fabricante para a realização do treinamento na Solução, desde que previamente solicitado pelo Contratado e expressamente autorizado pelo BNDES, a fim de que a indicação da empresa subcontratada não venha a comprometer a qualidade técnica dos serviços a serem prestados. É vedada a cessão deste Contrato, total ou parcialmente, ou de qualquer crédito dele decorrente, bem como a emissão, por parte do CONTRATADO, de qualquer título de crédito em razão do mesmo.",
+    "escopo_exigencia_amostra": "apenas_primeiro_colocado",
+    "amostra_item": "SEÇÃO 1, Item 4.11.4 (P11|L0418-L0420); Anexo I, Item 16.1 (P45|L1981-L1986)",
+    "amostra_trecho": "Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra, observadas as condições e o procedimento descrito no item 16 do Anexo I (Termo de Referência) deste Edital. Por questões de economia e celeridade processuais, após a aprovação da Documentação relacionada à Proposta e à Habilitação do licitante melhor classificado, será agendada sessão pública de teste de amostra da solução ofertada, na qual deverão ser realizados todos os testes necessários à validação do funcionamento dos itens de software que compõem a solução, conforme Anexo I.3 (Roteiro do Teste de Amostra) do Edital.",
+    "percentual_minimo_atestado": 0,
+    "veda_somatorio_atestados": true,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "Anexo I, Item 9.2 (P41|L1803-L1805)",
+    "atestado_trecho": "Não serão aceitos somatórios de atestados para atingir o quantitativo mínimo indicado neste item. O atestado deve comprovar a execução conjunta da implantação, atualização e suporte técnico da ferramenta ofertada na proposta.",
+    "exige_credenciamento_ou_carta_fabricante": true,
+    "credenciamento_item": "Anexo I, Item 8.3, alínea 'c' (P40|L1776-L1778)",
+    "credenciamento_trecho": "Declaração assinada pela licitante em que afirme ser uma revendedora autorizada a fornecer, implementar e prestar suporte técnico relativo à solução objeto da contratação;",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "SEÇÃO 1, Item 2.3, inciso VIII (P06|L0254)",
+    "consorcio_trecho": "VIII. esteja organizado sob a forma de consórcio."
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_032_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_032_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_032_2026, 'Oracle Database', interoperabilidade_ambiente_legado, com_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 9.1 (P41|L1796); Anexo I.1, Item 1 (P47|L2045-L2046)', '1 servidor com o SGBD Oracle instalado, contendo no mínimo 1 banco de dados; Oracle Database versão 19c ou superior').\nmencao_marca_exigida(pe_032_2026, 'Microsoft SQL Server', interoperabilidade_ambiente_legado, com_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 9.1 (P41|L1797-L1798); Anexo I.1, Item 2 (P47|L2052-L2055)', '1 servidor com o SGBD Microsoft SQL Server instalado, contendo no mínimo 1 banco de dados; MS SQL Server Enterprise Edition versão 2017 ou superior').\nmencao_marca_exigida(pe_032_2026, 'Microsoft 365', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074)', '1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook.').\nmencao_marca_exigida(pe_032_2026, 'OneDrive', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074)', '1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook.').\nmencao_marca_exigida(pe_032_2026, 'Outlook', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074)', '1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook.').\nmencao_marca_exigida(pe_032_2026, 'SharePoint', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.1, Item 4 (P47|L2071)', 'b) MS 365 SharePoint;').\nmencao_marca_exigida(pe_032_2026, 'Windows', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 9.1 (P41|L1800-L1801); Anexo I.1, Item 5 (P47|L2078-L2080)', '1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados. Compartilhamentos de arquivos em rede do Windows').\nmencao_marca_exigida(pe_032_2026, 'IBM Content Manager', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.1, Item 3 (P47|L2060-L2061)', 'IBM Content Manager').\nmencao_marca_exigida(pe_032_2026, 'SAP', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.1, Item 6 (P47|L2087-L2090)', 'SAP Módulos ECC, FI, LSO, SRM, HR, Nota QM, HCM').\nmencao_marca_exigida(pe_032_2026, 'Amazon AWS', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I.1, Item 7 (P47|L2092)', 'Amazon AWS').\nmencao_marca_exigida(pe_032_2026, 'MS Excel', interoperabilidade_ambiente_legado, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 2.4.4.11 (P22|L0830-L0831); Anexo I, Item 2.4.6.6 (P24|L0897); Anexo I, Item 2.6.1.9 (P29|L1191); Anexo I.3, Item 6 (P51|L2240)', 'planilha do MS Excel (formatos “.xlsx” ou “.xls”); planilhas MS Excel ou arquivos em formato “.csv”; planilhas de Excel; planilha no formato “.xlsx”').\nevidencia_regra(pe_032_2026, 'R01', 'Anexo I, Item 9.1 (P41|L1796); Anexo I.1, Item 1 (P47|L2045-L2046) | Anexo I, Item 9.1 (P41|L1797-L1798); Anexo I.1, Item 2 (P47|L2052-L2055) | Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074) | Anexo I.1, Item 4 (P47|L2071) | Anexo I, Item 9.1 (P41|L1800-L1801); Anexo I.1, Item 5 (P47|L2078-L2080) | Anexo I.1, Item 3 (P47|L2060-L2061) | Anexo I.1, Item 6 (P47|L2087-L2090) | Anexo I.1, Item 7 (P47|L2092) | Anexo I, Item 2.4.4.11 (P22|L0830-L0831); Anexo I, Item 2.4.6.6 (P24|L0897); Anexo I, Item 2.6.1.9 (P29|L1191); Anexo I.3, Item 6 (P51|L2240)', '[Oracle Database | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Oracle instalado, contendo no mínimo 1 banco de dados; Oracle Database versão 19c ou superior [Microsoft SQL Server | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Microsoft SQL Server instalado, contendo no mínimo 1 banco de dados; MS SQL Server Enterprise Edition versão 2017 ou superior [Microsoft 365 | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [OneDrive | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [Outlook | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [SharePoint | interoperabilidade_ambiente_legado] b) MS 365 SharePoint; [Windows | interoperabilidade_ambiente_legado] 1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados. Compartilhamentos de arquivos em rede do Windows [IBM Content Manager | interoperabilidade_ambiente_legado] IBM Content Manager [SAP | interoperabilidade_ambiente_legado] SAP Módulos ECC, FI, LSO, SRM, HR, Nota QM, HCM [Amazon AWS | interoperabilidade_ambiente_legado] Amazon AWS [MS Excel | interoperabilidade_ambiente_legado] planilha do MS Excel (formatos “.xlsx” ou “.xls”); planilhas MS Excel ou arquivos em formato “.csv”; planilhas de Excel; planilha no formato “.xlsx”').\nevidencia_regra(pe_032_2026, 'R02', 'Anexo I, Item 9.1 (P41|L1796); Anexo I.1, Item 1 (P47|L2045-L2046) | Anexo I, Item 9.1 (P41|L1797-L1798); Anexo I.1, Item 2 (P47|L2052-L2055) | Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074) | Anexo I.1, Item 4 (P47|L2071) | Anexo I, Item 9.1 (P41|L1800-L1801); Anexo I.1, Item 5 (P47|L2078-L2080) | Anexo I.1, Item 3 (P47|L2060-L2061) | Anexo I.1, Item 6 (P47|L2087-L2090) | Anexo I.1, Item 7 (P47|L2092) | Anexo I, Item 2.4.4.11 (P22|L0830-L0831); Anexo I, Item 2.4.6.6 (P24|L0897); Anexo I, Item 2.6.1.9 (P29|L1191); Anexo I.3, Item 6 (P51|L2240)', '[Oracle Database | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Oracle instalado, contendo no mínimo 1 banco de dados; Oracle Database versão 19c ou superior [Microsoft SQL Server | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Microsoft SQL Server instalado, contendo no mínimo 1 banco de dados; MS SQL Server Enterprise Edition versão 2017 ou superior [Microsoft 365 | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [OneDrive | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [Outlook | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [SharePoint | interoperabilidade_ambiente_legado] b) MS 365 SharePoint; [Windows | interoperabilidade_ambiente_legado] 1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados. Compartilhamentos de arquivos em rede do Windows [IBM Content Manager | interoperabilidade_ambiente_legado] IBM Content Manager [SAP | interoperabilidade_ambiente_legado] SAP Módulos ECC, FI, LSO, SRM, HR, Nota QM, HCM [Amazon AWS | interoperabilidade_ambiente_legado] Amazon AWS [MS Excel | interoperabilidade_ambiente_legado] planilha do MS Excel (formatos “.xlsx” ou “.xls”); planilhas MS Excel ou arquivos em formato “.csv”; planilhas de Excel; planilha no formato “.xlsx”').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_032_2026, 'CLÁUSULA OITAVA – MATRIZ DE RISCOS (P64|L2962) e ANEXO IV – MATRIZ DE RISCO (P77|L3621)', 'O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. PREGÃO ELETRÔNICO Nº 032/2026 – BNDES ANEXO IV – MATRIZ DE RISCO').\nevidencia_regra(pe_032_2026, 'R03', 'CLÁUSULA OITAVA – MATRIZ DE RISCOS (P64|L2962) e ANEXO IV – MATRIZ DE RISCO (P77|L3621)', 'O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. PREGÃO ELETRÔNICO Nº 032/2026 – BNDES ANEXO IV – MATRIZ DE RISCO').\nfato_vedacao_aditivo_risco(pe_032_2026, 'CLÁUSULA OITAVA – MATRIZ DE RISCOS, Parágrafo Segundo (P64|L2972-L2973)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\nevidencia_regra(pe_032_2026, 'R38', 'CLÁUSULA OITAVA – MATRIZ DE RISCOS, Parágrafo Segundo (P64|L2972-L2973)', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_032_2026, 'Anexo I, Item 1.2 (P19|L0638-L0639); Anexo I, Item 2.9.2.7 (P34|L1464-L1479); Anexo I, Item 2.9.2.8 (P34|L1481-L1485); CLÁUSULA DÉCIMA QUINTA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO (P72|L3300-L3304)', 'Será permitida a subcontratação dos serviços de treinamento online previstos no item 2.7. Será admitida a possibilidade de subcontratação para a execução dos serviços de treinamento online. Em tal hipótese, o CONTRATADO deverá apresentar declaração, no momento em que o serviço de treinamento for demandado pelo BNDES, firmada por seu Representante Legal, informando que haverá subcontratação, contendo nome, CNPJ, endereço e telefone da(s) empresa(s) subcontratada(s) e a parte do serviço que lhe cabe; detalhamento dos serviços a serem subcontratados; e valor total da subcontratação, observado o valor máximo deste serviço. É permitida a subcontratação do fabricante da Solução ou de empresa credenciada e/ou autorizada pelo fabricante para a realização do treinamento na Solução, desde que previamente solicitado pelo Contratado e expressamente autorizado pelo BNDES, a fim de que a indicação da empresa subcontratada não venha a comprometer a qualidade técnica dos serviços a serem prestados. É vedada a cessão deste Contrato, total ou parcialmente, ou de qualquer crédito dele decorrente, bem como a emissão, por parte do CONTRATADO, de qualquer título de crédito em razão do mesmo.').\nevidencia_regra(pe_032_2026, 'R09', 'Anexo I, Item 1.2 (P19|L0638-L0639); Anexo I, Item 2.9.2.7 (P34|L1464-L1479); Anexo I, Item 2.9.2.8 (P34|L1481-L1485); CLÁUSULA DÉCIMA QUINTA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO (P72|L3300-L3304)', 'Será permitida a subcontratação dos serviços de treinamento online previstos no item 2.7. Será admitida a possibilidade de subcontratação para a execução dos serviços de treinamento online. Em tal hipótese, o CONTRATADO deverá apresentar declaração, no momento em que o serviço de treinamento for demandado pelo BNDES, firmada por seu Representante Legal, informando que haverá subcontratação, contendo nome, CNPJ, endereço e telefone da(s) empresa(s) subcontratada(s) e a parte do serviço que lhe cabe; detalhamento dos serviços a serem subcontratados; e valor total da subcontratação, observado o valor máximo deste serviço. É permitida a subcontratação do fabricante da Solução ou de empresa credenciada e/ou autorizada pelo fabricante para a realização do treinamento na Solução, desde que previamente solicitado pelo Contratado e expressamente autorizado pelo BNDES, a fim de que a indicação da empresa subcontratada não venha a comprometer a qualidade técnica dos serviços a serem prestados. É vedada a cessão deste Contrato, total ou parcialmente, ou de qualquer crédito dele decorrente, bem como a emissão, por parte do CONTRATADO, de qualquer título de crédito em razão do mesmo.').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_032_2026, apenas_primeiro_colocado, 'SEÇÃO 1, Item 4.11.4 (P11|L0418-L0420); Anexo I, Item 16.1 (P45|L1981-L1986)', 'Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra, observadas as condições e o procedimento descrito no item 16 do Anexo I (Termo de Referência) deste Edital. Por questões de economia e celeridade processuais, após a aprovação da Documentação relacionada à Proposta e à Habilitação do licitante melhor classificado, será agendada sessão pública de teste de amostra da solução ofertada, na qual deverão ser realizados todos os testes necessários à validação do funcionamento dos itens de software que compõem a solução, conforme Anexo I.3 (Roteiro do Teste de Amostra) do Edital.').\nevidencia_regra(pe_032_2026, 'R11', 'SEÇÃO 1, Item 4.11.4 (P11|L0418-L0420); Anexo I, Item 16.1 (P45|L1981-L1986)', 'Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra, observadas as condições e o procedimento descrito no item 16 do Anexo I (Termo de Referência) deste Edital. Por questões de economia e celeridade processuais, após a aprovação da Documentação relacionada à Proposta e à Habilitação do licitante melhor classificado, será agendada sessão pública de teste de amostra da solução ofertada, na qual deverão ser realizados todos os testes necessários à validação do funcionamento dos itens de software que compõem a solução, conforme Anexo I.3 (Roteiro do Teste de Amostra) do Edital.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_032_2026, 0, 'Anexo I, Item 9.2 (P41|L1803-L1805)', 'Não serão aceitos somatórios de atestados para atingir o quantitativo mínimo indicado neste item. O atestado deve comprovar a execução conjunta da implantação, atualização e suporte técnico da ferramenta ofertada na proposta.').\nfato_veda_somatorio(pe_032_2026, 'Anexo I, Item 9.2 (P41|L1803-L1805)', 'Não serão aceitos somatórios de atestados para atingir o quantitativo mínimo indicado neste item. O atestado deve comprovar a execução conjunta da implantação, atualização e suporte técnico da ferramenta ofertada na proposta.').\nevidencia_regra(pe_032_2026, 'R29', 'Anexo I, Item 9.2 (P41|L1803-L1805)', 'Não serão aceitos somatórios de atestados para atingir o quantitativo mínimo indicado neste item. O atestado deve comprovar a execução conjunta da implantação, atualização e suporte técnico da ferramenta ofertada na proposta.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\nfato_credenciamento_exigido(pe_032_2026, 'Anexo I, Item 8.3, alínea \\'c\\' (P40|L1776-L1778)', 'Declaração assinada pela licitante em que afirme ser uma revendedora autorizada a fornecer, implementar e prestar suporte técnico relativo à solução objeto da contratação;').\nevidencia_regra(pe_032_2026, 'R41', 'Anexo I, Item 8.3, alínea \\'c\\' (P40|L1776-L1778)', 'Declaração assinada pela licitante em que afirme ser uma revendedora autorizada a fornecer, implementar e prestar suporte técnico relativo à solução objeto da contratação;').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_032_2026, 'SEÇÃO 1, Item 2.3, inciso VIII (P06|L0254)', 'VIII. esteja organizado sob a forma de consórcio.').\nevidencia_regra(pe_032_2026, 'R43', 'SEÇÃO 1, Item 2.3, inciso VIII (P06|L0254)', 'VIII. esteja organizado sob a forma de consórcio.').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "Anexo I, Item 9.1 (P41|L1796); Anexo I.1, Item 1 (P47|L2045-L2046) | Anexo I, Item 9.1 (P41|L1797-L1798); Anexo I.1, Item 2 (P47|L2052-L2055) | Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074) | Anexo I.1, Item 4 (P47|L2071) | Anexo I, Item 9.1 (P41|L1800-L1801); Anexo I.1, Item 5 (P47|L2078-L2080) | Anexo I.1, Item 3 (P47|L2060-L2061) | Anexo I.1, Item 6 (P47|L2087-L2090) | Anexo I.1, Item 7 (P47|L2092) | Anexo I, Item 2.4.4.11 (P22|L0830-L0831); Anexo I, Item 2.4.6.6 (P24|L0897); Anexo I, Item 2.6.1.9 (P29|L1191); Anexo I.3, Item 6 (P51|L2240)",
+      "trecho_identificado": "[Oracle Database | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Oracle instalado, contendo no mínimo 1 banco de dados; Oracle Database versão 19c ou superior [Microsoft SQL Server | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Microsoft SQL Server instalado, contendo no mínimo 1 banco de dados; MS SQL Server Enterprise Edition versão 2017 ou superior [Microsoft 365 | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [OneDrive | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [Outlook | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [SharePoint | interoperabilidade_ambiente_legado] b) MS 365 SharePoint; [Windows | interoperabilidade_ambiente_legado] 1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados. Compartilhamentos de arquivos em rede do Windows [IBM Content Manager | interoperabilidade_ambiente_legado] IBM Content Manager [SAP | interoperabilidade_ambiente_legado] SAP Módulos ECC, FI, LSO, SRM, HR, Nota QM, HCM [Amazon AWS | interoperabilidade_ambiente_legado] Amazon AWS [MS Excel | interoperabilidade_ambiente_legado] planilha do MS Excel (formatos “.xlsx” ou “.xls”); planilhas MS Excel ou arquivos em formato “.csv”; planilhas de Excel; planilha no formato “.xlsx”",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(equivalencia_ou_contexto_legitimo,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo I, Item 9.1 (P41|L1796); Anexo I.1, Item 1 (P47|L2045-L2046) | Anexo I, Item 9.1 (P41|L1797-L1798); Anexo I.1, Item 2 (P47|L2052-L2055) | Anexo I, Item 9.1 (P41|L1799); Anexo I.1, Item 4 (P47|L2064-L2074) | Anexo I.1, Item 4 (P47|L2071) | Anexo I, Item 9.1 (P41|L1800-L1801); Anexo I.1, Item 5 (P47|L2078-L2080) | Anexo I.1, Item 3 (P47|L2060-L2061) | Anexo I.1, Item 6 (P47|L2087-L2090) | Anexo I.1, Item 7 (P47|L2092) | Anexo I, Item 2.4.4.11 (P22|L0830-L0831); Anexo I, Item 2.4.6.6 (P24|L0897); Anexo I, Item 2.6.1.9 (P29|L1191); Anexo I.3, Item 6 (P51|L2240)",
+      "trecho_identificado": "[Oracle Database | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Oracle instalado, contendo no mínimo 1 banco de dados; Oracle Database versão 19c ou superior [Microsoft SQL Server | interoperabilidade_ambiente_legado] 1 servidor com o SGBD Microsoft SQL Server instalado, contendo no mínimo 1 banco de dados; MS SQL Server Enterprise Edition versão 2017 ou superior [Microsoft 365 | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [OneDrive | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [Outlook | interoperabilidade_ambiente_legado] 1 nuvem Microsoft 365, contendo os produtos OneDrive e Outlook; Nuvem MS 365 OneDrive, contemplando, dentre outros: a) MS 365 OneDrive; b) MS 365 SharePoint; c) MS 365 Outlook. [SharePoint | interoperabilidade_ambiente_legado] b) MS 365 SharePoint; [Windows | interoperabilidade_ambiente_legado] 1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados. Compartilhamentos de arquivos em rede do Windows [IBM Content Manager | interoperabilidade_ambiente_legado] IBM Content Manager [SAP | interoperabilidade_ambiente_legado] SAP Módulos ECC, FI, LSO, SRM, HR, Nota QM, HCM [Amazon AWS | interoperabilidade_ambiente_legado] Amazon AWS [MS Excel | interoperabilidade_ambiente_legado] planilha do MS Excel (formatos “.xlsx” ou “.xls”); planilhas MS Excel ou arquivos em formato “.csv”; planilhas de Excel; planilha no formato “.xlsx”",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(padronizacao_ou_contexto_legitimo,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "CLÁUSULA OITAVA – MATRIZ DE RISCOS (P64|L2962) e ANEXO IV – MATRIZ DE RISCO (P77|L3621)",
+      "trecho_identificado": "O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. PREGÃO ELETRÔNICO Nº 032/2026 – BNDES ANEXO IV – MATRIZ DE RISCO",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "Anexo I, Item 1.2 (P19|L0638-L0639); Anexo I, Item 2.9.2.7 (P34|L1464-L1479); Anexo I, Item 2.9.2.8 (P34|L1481-L1485); CLÁUSULA DÉCIMA QUINTA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO (P72|L3300-L3304)",
+      "trecho_identificado": "Será permitida a subcontratação dos serviços de treinamento online previstos no item 2.7. Será admitida a possibilidade de subcontratação para a execução dos serviços de treinamento online. Em tal hipótese, o CONTRATADO deverá apresentar declaração, no momento em que o serviço de treinamento for demandado pelo BNDES, firmada por seu Representante Legal, informando que haverá subcontratação, contendo nome, CNPJ, endereço e telefone da(s) empresa(s) subcontratada(s) e a parte do serviço que lhe cabe; detalhamento dos serviços a serem subcontratados; e valor total da subcontratação, observado o valor máximo deste serviço. É permitida a subcontratação do fabricante da Solução ou de empresa credenciada e/ou autorizada pelo fabricante para a realização do treinamento na Solução, desde que previamente solicitado pelo Contratado e expressamente autorizado pelo BNDES, a fim de que a indicação da empresa subcontratada não venha a comprometer a qualidade técnica dos serviços a serem prestados. É vedada a cessão deste Contrato, total ou parcialmente, ou de qualquer crédito dele decorrente, bem como a emissão, por parte do CONTRATADO, de qualquer título de crédito em razão do mesmo.",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "SEÇÃO 1, Item 4.11.4 (P11|L0418-L0420); Anexo I, Item 16.1 (P45|L1981-L1986)",
+      "trecho_identificado": "Verificado o atendimento dos requisitos de habilitação do licitante, o Pregoeiro suspenderá a sessão pública para a apresentação de amostra, observadas as condições e o procedimento descrito no item 16 do Anexo I (Termo de Referência) deste Edital. Por questões de economia e celeridade processuais, após a aprovação da Documentação relacionada à Proposta e à Habilitação do licitante melhor classificado, será agendada sessão pública de teste de amostra da solução ofertada, na qual deverão ser realizados todos os testes necessários à validação do funcionamento dos itens de software que compõem a solução, conforme Anexo I.3 (Roteiro do Teste de Amostra) do Edital.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_restrita_primeiro_colocado,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Anexo I, Item 9.2 (P41|L1803-L1805)",
+      "trecho_identificado": "Não serão aceitos somatórios de atestados para atingir o quantitativo mínimo indicado neste item. O atestado deve comprovar a execução conjunta da implantação, atualização e suporte técnico da ferramenta ofertada na proposta.",
+      "momento_edital": "duty_to_omit",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_somatorio_sem_justificativa,duty_to_omit,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "CLÁUSULA OITAVA – MATRIZ DE RISCOS, Parágrafo Segundo (P64|L2972-L2973)",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "Anexo I, Item 8.3, alínea 'c' (P40|L1776-L1778)",
+      "trecho_identificado": "Declaração assinada pela licitante em que afirme ser uma revendedora autorizada a fornecer, implementar e prestar suporte técnico relativo à solução objeto da contratação;",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(credenciamento_fabricante_exigido,duty_to_act,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "SEÇÃO 1, Item 2.3, inciso VIII (P06|L0254)",
+      "trecho_identificado": "VIII. esteja organizado sob a forma de consórcio.",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não menciona marca nominal para o objeto da contratação ('ferramenta de apoio nos processos de gestão e governança de dados pessoais'). As marcas citadas no Anexo I.1 (Oracle, MS SQL Server, IBM Content Manager, MS 365, SAP, Amazon AWS) referem-se a tecnologias e sistemas existentes do BNDES com os quais a ferramenta a ser contratada deve ser compatível ou integrar, o que é uma exigência funcional de interoperabilidade, e não um direcionamento da marca do produto licitado. Portanto, a cláusula 'ou similar ou de melhor qualidade' não se aplica ao objeto principal.",
+      "trecho_citado_llm": "P19|L0633-L0636: 'Contratação de licenças de uso por subscrição para uma ferramenta de apoio nos processos de gestão e governança de dados pessoais...'; P47|L2044-L2093 (Anexo I.1): 'TABELA DE FONTES DE DADOS PARA DESCOBERTA AUTOMATIZADA' que lista as tecnologias existentes do BNDES.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_act` / `permission_to_act`)."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "Não há indicação de marca ou modelo específico para a ferramenta de gestão e governança de dados pessoais que é o objeto da licitação. As menções a marcas como Oracle, MS SQL Server, IBM, MS 365, SAP e Amazon AWS no Anexo I.1 são para fins de compatibilidade e integração com a infraestrutura de TI existente do BNDES, e não para especificar o produto a ser adquirido. O edital busca uma solução genérica que atenda aos requisitos funcionais e de segurança, sem direcionar para um fornecedor ou tecnologia específica para o objeto contratado.",
+      "trecho_citado_llm": "P19|L0633-L0636: 'Contratação de licenças de uso por subscrição para uma ferramenta de apoio nos processos de gestão e governança de dados pessoais...'; P47|L2044-L2093 (Anexo I.1): 'TABELA DE FONTES DE DADOS PARA DESCOBERTA AUTOMATIZADA' que lista as tecnologias existentes do BNDES.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital prevê expressamente a inclusão de uma Matriz de Riscos como Anexo III (embora numerado como Anexo IV no documento PDF). A Cláusula Oitava da Minuta de Contrato e o próprio Anexo IV detalham os riscos identificados e a alocação de responsabilidades entre o BNDES e o Contratado, o que atende à exigência legal para contratações complexas como a presente.",
+      "trecho_citado_llm": "P64|L2962-L2967: 'CLÁUSULA OITAVA – MATRIZ DE RISCOS: O BNDES e o CONTRATADO... identificam os riscos decorrentes da relação contratual e... estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato.'; P76|L3439: 'Anexo III - Matriz de Risco'; P77|L3621: 'ANEXO IV – MATRIZ DE RISCO'.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital autoriza a subcontratação apenas para os 'serviços de treinamento online' (P19|L0638-L0639, P34|L1464-L1465) e exige a informação do 'valor total da subcontratação, observado o valor máximo deste serviço' (P34|L1478-L1479). No entanto, a Lei nº 13.303/2016, Art. 78, II, estabelece que 'o valor máximo da subcontratação não poderá exceder a 30% (trinta por cento) do valor total do contrato, salvo em casos excepcionais, devidamente justificados no processo de licitação'. O edital não estabelece um limite percentual explícito do valor total do contrato para a subcontratação, nem apresenta justificativa formal caso o valor do serviço de treinamento exceda os 30% do valor global, o que pode gerar incertezas e potencial inconformidade.",
+      "trecho_citado_llm": "P19|L0638-L0639: 'Será permitida a subcontratação dos serviços de treinamento online previstos no item 2.7.'; P34|L1464-L1479: 'Será admitida a possibilidade de subcontratação para a execução dos serviços de treinamento online... e valor total da subcontratação, observado o valor máximo deste serviço.'; P72|L3301-L3304: 'É vedada a cessão deste Contrato, total ou parcialmente, ou de qualquer crédito dele decorrente...'",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Indício de Inconformidade vs. Prolog/UFO-L: Conforme — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Indício de Inconformidade', enquanto o motor Prolog + UFO-L derivou 'Conforme' via Resolução SLD (`duty_to_act` vs `duty_to_act`) com base em Anexo I, Item 1.2 (P19|L0638-L0639); Anexo I, Item 2.9.2.7 (P34|L1464-L1479); Anexo I, Item 2.9.2.8 (P34|L1481-L1485); CLÁUSULA DÉCIMA QUINTA – CESSÃO DE CONTRATO OU DE CRÉDITO, SUCESSÃO CONTRATUAL E SUBCONTRATAÇÃO (P72|L3300-L3304)."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A exigência de teste de amostra está vinculada à fase de julgamento da proposta do licitante 'ofertante do melhor lance' (P11|L0415-L0417, P45|L1987). O edital estabelece que a amostra será solicitada após a aprovação da documentação de proposta e habilitação do licitante melhor classificado, o que está em conformidade com o Art. 47, II, da Lei nº 13.303/2016, que permite a exigência de amostra na fase de julgamento das propostas, desde que restrita ao licitante provisoriamente classificado em primeiro lugar.",
+      "trecho_citado_llm": "P11|L0415-L0417: 'a apresentação da amostra e análise definitiva da proposta... somente será concluída se verificado o atendimento dos requisitos de habilitação do Licitante ofertante do melhor lance.'; P45|L1980-L1986: 'Após a aprovação da Documentação relacionada à Proposta e à Habilitação do licitante melhor classificado, será agendada sessão pública de teste de amostra da solução ofertada...'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital exige, para qualificação técnica, atestado de capacidade técnica que comprove a execução do serviço de implantação da ferramenta ofertada em ambiente com configurações mínimas específicas (P40|L1790-L1801). Não há exigência de quantitativos de experiência pretérita em atestados que superem 50% dos quantitativos da contratação. As especificações de ambiente (servidores, bancos de dados, nuvem, TB de dados) são requisitos de complexidade e não de volume de experiência que exceda o limite da Súmula 263 do TCU.",
+      "trecho_citado_llm": "P40|L1790-L1801: 'Para a comprovação da qualificação técnica, os Licitantes deverão apresentar atestado de capacidade técnica... que comprove que o Licitante executou o serviço de implantação da ferramenta ofertada na proposta, contemplando descoberta automatizada de dados pessoais, em ambiente com, no mínimo, a seguinte configuração: 1 servidor com o SGBD Oracle instalado... 1 servidor com o SGBD Microsoft SQL Server instalado... 1 nuvem Microsoft 365... 1 ou mais compartilhamentos de arquivos (file shares) em rede Windows contendo, no mínimo, 1 TB de dados armazenados.'",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Conforme vs. Prolog/UFO-L: Indício de Inconformidade — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Conforme', enquanto o motor Prolog + UFO-L derivou 'Indício de Inconformidade' via Resolução SLD (`duty_to_omit` vs `permission_to_act`) com base em Anexo I, Item 9.2 (P41|L1803-L1805)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A Cláusula Oitava da Minuta de Contrato, Parágrafo Segundo, estabelece expressamente a vedação à celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO. Isso está em plena conformidade com o Art. 81, § 8º, da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P64|L2972-L2973: 'Parágrafo Segundo: É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital exige, na documentação relacionada à proposta, uma 'Declaração assinada pela licitante em que afirme ser uma revendedora autorizada a fornecer, implementar e prestar suporte técnico relativo à solução objeto da contratação' (P40|L1776-L1778). Embora não seja uma 'carta de solidariedade' ou 'anuência' do fabricante, a exigência de ser 'revendedora autorizada' pode restringir a competitividade, pois impede a participação de empresas que, embora capazes de fornecer e implementar a solução, não possuam tal credenciamento formal do fabricante. A Lei nº 13.303/2016, Art. 31, visa a ampla competitividade, e tal exigência pode ser considerada restritiva se não houver justificativa robusta para que apenas revendedores autorizados possam participar.",
+      "trecho_citado_llm": "P40|L1776-L1778: 'c) Declaração assinada pela licitante em que afirme ser uma revendedora autorizada a fornecer, implementar e prestar suporte técnico relativo à solução objeto da contratação;'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital veda expressamente a participação de empresas organizadas sob a forma de consórcio (P06|L0254: 'VIII. esteja organizado sob a forma de consórcio.'). Considerando que o objeto da licitação é a contratação de licenças de uso por subscrição para uma ferramenta de apoio nos processos de gestão e governança de dados pessoais, englobando serviços de atualização, suporte técnico, implantação, configuração, customização e treinamento, trata-se de um objeto complexo e de vulto (valor estimado de R$ 2.694.069,18). A vedação à participação em consórcio, sem justificativa formal e robusta que demonstre que a participação em consórcio inviabilizaria ou prejudicaria a execução do objeto, pode ser considerada restritiva à competitividade, em desacordo com o Art. 31 da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P06|L0254: 'VIII. esteja organizado sob a forma de consórcio.'; P39|L1724-L1725: 'O valor máximo estimado da licitação é até R$ 2.694.069.18 (dois milhões, seiscentos e noventa e quatro mil, sessenta e nove reais e dezoito centavos) para o período de vigência contratual...'",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "timestamp_execucao": "2026-11-23T20:48:47",
+  "nome_arquivo": "Edital_PE_30-2026.pdf",
+  "identificador_edital": "pe_030_2026",
+  "total_paginas": 74,
+  "total_linhas": 3177,
+  "resumo_secoes": {
+    "Corpo do Edital": {
+      "inicio": 1,
+      "fim": 625,
+      "total_linhas": 625,
+      "pagina_inicio": 1,
+      "pagina_fim": 17
+    },
+    "Anexo I / Termo de Referência": {
+      "inicio": 626,
+      "fim": 1374,
+      "total_linhas": 749,
+      "pagina_inicio": 17,
+      "pagina_fim": 31
+    },
+    "Minuta de Contrato (+ Matriz de Riscos)": {
+      "inicio": 1375,
+      "fim": 2454,
+      "total_linhas": 1080,
+      "pagina_inicio": 32,
+      "pagina_fim": 56
+    }
+  },
+  "modelo_gemini": "gemini-2.5-flash",
+  "temperatura_extrator": 0.0,
+  "temperatura_somente_neural": 0.0,
+  "thinking_budget": 4096,
+  "motor_simbolico": "SWI-Prolog 11.0.0 (Execução Real via swipl) + SLD Trace UFO-L",
+  "validacao_cruzada_prolog_ok": true,
+  "tempo_extracao_nesy_s": 21.45,
+  "tempo_prolog_ms": 616.106,
+  "tempo_somente_neural_s": 32.55,
+  "usage_extracao_nesy": {
+    "prompt_token_count": 63518,
+    "thoughts_token_count": 4019,
+    "candidates_token_count": 1037,
+    "total_token_count": 68574
+  },
+  "usage_somente_neural": {
+    "prompt_token_count": 63199,
+    "thoughts_token_count": 4094,
+    "candidates_token_count": 3050,
+    "total_token_count": 70343
+  },
+  "fatos": {
+    "identificador_edital": "pe_030_2026",
+    "resumo_objeto": "Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200 da plataforma de mainframe do BNDES, incluindo suporte técnico do fabricante.",
+    "mencoes_marca": [
+      {
+        "marca_ou_produto": "Hitachi VSP 5200",
+        "contexto_mencao": "manutencao_parque_existente",
+        "possui_clausula_similaridade": false,
+        "possui_justificativa_padronizacao": false,
+        "item_edital": "Anexo I, Item 1.1 [P17|L0630]",
+        "trecho_literal": "Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento, de acordo com as especificações constantes deste documento."
+      }
+    ],
+    "matriz_riscos_presente": true,
+    "matriz_riscos_item": "Cláusula Nona [P39|L1672] e Anexo IV [P53|L2197]",
+    "matriz_riscos_trecho": "O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. [P39|L1673]",
+    "vedacao_aditivo_risco_presente": true,
+    "vedacao_aditivo_risco_item": "Cláusula Nona, Parágrafo Segundo [P39|L1682]",
+    "vedacao_aditivo_risco_trecho": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO. [P39|L1682]",
+    "subcontratacao_definida": true,
+    "subcontratacao_item": "Cláusula Décima Sexta, Parágrafo Terceiro [P48|L2041]",
+    "subcontratacao_trecho": "É vedada a subcontratação para a execução do objeto deste Contrato. [P48|L2041]",
+    "escopo_exigencia_amostra": "nao_exigida",
+    "amostra_item": "Não exigida.",
+    "amostra_trecho": "Não há exigência de amostra ou Prova de Conceito (PoC) no edital.",
+    "percentual_minimo_atestado": 0,
+    "veda_somatorio_atestados": false,
+    "possui_justificativa_vedacao_somatorio": false,
+    "atestado_item": "Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.",
+    "atestado_trecho": "Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.",
+    "exige_credenciamento_ou_carta_fabricante": true,
+    "credenciamento_item": "Anexo I, Item 10.8 [P28|L1278]",
+    "credenciamento_trecho": "Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar a assistência e suporte técnico descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). [P28|L1278]",
+    "veda_participacao_consorcio": true,
+    "possui_justificativa_vedacao_consorcio": false,
+    "consorcio_item": "Item 2.3, inciso VIII [P06|L0248]",
+    "consorcio_trecho": "VIII. esteja organizado sob a forma de consórcio. [P06|L0248]"
+  },
+  "abox_prolog": "% ==============================================================================\n% Fatos Positivos Extraídos do Edital (ABox UFO-L) - Instância: pe_030_2026\n% (Ausência de fato é tratada via Closed-World Assumption / NAF '\\+')\n% ==============================================================================\nedital_instancia(pe_030_2026).\n\n% --- R01 & R02: Menções de Marca / Produto Específico ---\nmencao_marca_exigida(pe_030_2026, 'Hitachi VSP 5200', manutencao_parque_existente, sem_clausula_similaridade, sem_justificativa_padronizacao, 'Anexo I, Item 1.1 [P17|L0630]', 'Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento, de acordo com as especificações constantes deste documento.').\nevidencia_regra(pe_030_2026, 'R01', 'Anexo I, Item 1.1 [P17|L0630]', '[Hitachi VSP 5200 | manutencao_parque_existente] Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento, de acordo com as especificações constantes deste documento.').\nevidencia_regra(pe_030_2026, 'R02', 'Anexo I, Item 1.1 [P17|L0630]', '[Hitachi VSP 5200 | manutencao_parque_existente] Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento, de acordo com as especificações constantes deste documento.').\n\n% --- R03 & R38: Matriz de Riscos e Vedação de Aditivos ---\nfato_matriz_riscos(pe_030_2026, 'Cláusula Nona [P39|L1672] e Anexo IV [P53|L2197]', 'O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. [P39|L1673]').\nevidencia_regra(pe_030_2026, 'R03', 'Cláusula Nona [P39|L1672] e Anexo IV [P53|L2197]', 'O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. [P39|L1673]').\nfato_vedacao_aditivo_risco(pe_030_2026, 'Cláusula Nona, Parágrafo Segundo [P39|L1682]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO. [P39|L1682]').\nevidencia_regra(pe_030_2026, 'R38', 'Cláusula Nona, Parágrafo Segundo [P39|L1682]', 'É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO. [P39|L1682]').\n\n% --- R09: Regra de Subcontratação ---\nfato_subcontratacao_definida(pe_030_2026, 'Cláusula Décima Sexta, Parágrafo Terceiro [P48|L2041]', 'É vedada a subcontratação para a execução do objeto deste Contrato. [P48|L2041]').\nevidencia_regra(pe_030_2026, 'R09', 'Cláusula Décima Sexta, Parágrafo Terceiro [P48|L2041]', 'É vedada a subcontratação para a execução do objeto deste Contrato. [P48|L2041]').\n\n% --- R11: Exigência de Amostra / PoC ---\nfato_amostra(pe_030_2026, nao_exigida, 'Não exigida.', 'Não há exigência de amostra ou Prova de Conceito (PoC) no edital.').\nevidencia_regra(pe_030_2026, 'R11', 'Não exigida.', 'Não há exigência de amostra ou Prova de Conceito (PoC) no edital.').\n\n% --- R29: Qualificação Técnica (Quantitativo e Somatório de Atestados) ---\nfato_atestado_percentual(pe_030_2026, 0, 'Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.', 'Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.').\nevidencia_regra(pe_030_2026, 'R29', 'Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.', 'Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.').\n\n% --- R41: Credenciamento / Revenda Autorizada do Fabricante ---\nfato_credenciamento_exigido(pe_030_2026, 'Anexo I, Item 10.8 [P28|L1278]', 'Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar a assistência e suporte técnico descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). [P28|L1278]').\nevidencia_regra(pe_030_2026, 'R41', 'Anexo I, Item 10.8 [P28|L1278]', 'Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar a assistência e suporte técnico descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). [P28|L1278]').\n\n% --- R43: Participação em Consórcio ---\nfato_veda_consorcio(pe_030_2026, 'Item 2.3, inciso VIII [P06|L0248]', 'VIII. esteja organizado sob a forma de consórcio. [P06|L0248]').\nevidencia_regra(pe_030_2026, 'R43', 'Item 2.3, inciso VIII [P06|L0248]', 'VIII. esteja organizado sob a forma de consórcio. [P06|L0248]').",
+  "resumo_regras_nesy": {
+    "R01": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Não conformidade",
+      "item_identificado": "Anexo I, Item 1.1 [P17|L0630]",
+      "trecho_identificado": "[Hitachi VSP 5200 | manutencao_parque_existente] Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento, de acordo com as especificações constantes deste documento.",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(equivalencia_ou_contexto_legitimo,permission_to_act,no_right_to_omission)"
+    },
+    "R02": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Anexo I, Item 1.1 [P17|L0630]",
+      "trecho_identificado": "[Hitachi VSP 5200 | manutencao_parque_existente] Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento, de acordo com as especificações constantes deste documento.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(padronizacao_ou_contexto_legitimo,disability,immunity)"
+    },
+    "R03": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Crítico",
+      "item_identificado": "Cláusula Nona [P39|L1672] e Anexo IV [P53|L2197]",
+      "trecho_identificado": "O BNDES e o CONTRATADO, tendo como premissa a obtenção do melhor custo contratual mediante a alocação do risco à parte com maior capacidade para geri-lo e absorvê-lo, identificam os riscos decorrentes da relação contratual e, sem prejuízo de outras previsões contratuais, estabelecem os respectivos responsáveis na Matriz de Riscos constante do Anexo III deste Contrato. [P39|L1673]",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(matriz_riscos_presente,duty_to_act,right_to_action)"
+    },
+    "R09": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Baixo / Omissão Formal",
+      "item_identificado": "Cláusula Décima Sexta, Parágrafo Terceiro [P48|L2041]",
+      "trecho_identificado": "É vedada a subcontratação para a execução do objeto deste Contrato. [P48|L2041]",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(subcontratacao_definida,duty_to_act,right_to_action)"
+    },
+    "R11": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não exigida.",
+      "trecho_identificado": "Não há exigência de amostra ou Prova de Conceito (PoC) no edital.",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(amostra_nao_exigida,disability,immunity)"
+    },
+    "R29": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Restrição",
+      "item_identificado": "Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.",
+      "trecho_identificado": "Não há exigência de atestados de capacidade técnica com percentual mínimo ou vedação de somatório no edital.",
+      "momento_edital": "permission_to_act",
+      "momento_esperado_lei": "permission_to_act",
+      "tipo_inferencia_ufol": "harmonia_normativa(atestado_conforme,permission_to_act,no_right_to_omission)"
+    },
+    "R38": {
+      "status_verificacao": "Conforme",
+      "classificacao_risco": "Alto / Risco Contratual",
+      "item_identificado": "Cláusula Nona, Parágrafo Segundo [P39|L1682]",
+      "trecho_identificado": "É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO. [P39|L1682]",
+      "momento_edital": "disability",
+      "momento_esperado_lei": "disability",
+      "tipo_inferencia_ufol": "harmonia_normativa(vedacao_aditivo_presente,disability,immunity)"
+    },
+    "R41": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Crítico / Restrição",
+      "item_identificado": "Anexo I, Item 10.8 [P28|L1278]",
+      "trecho_identificado": "Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar a assistência e suporte técnico descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade). [P28|L1278]",
+      "momento_edital": "duty_to_act",
+      "momento_esperado_lei": "permission_to_omit",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(credenciamento_fabricante_exigido,duty_to_act,permission_to_omit,no_right_to_action)"
+    },
+    "R43": {
+      "status_verificacao": "Indício de Inconformidade",
+      "classificacao_risco": "Médio / Restrição",
+      "item_identificado": "Item 2.3, inciso VIII [P06|L0248]",
+      "trecho_identificado": "VIII. esteja organizado sob a forma de consórcio. [P06|L0248]",
+      "momento_edital": "permission_to_omit",
+      "momento_esperado_lei": "duty_to_act",
+      "tipo_inferencia_ufol": "conflito_hohfeldiano(veda_consorcio_sem_justificativa,permission_to_omit,duty_to_act,right_to_action)"
+    }
+  },
+  "julgamentos_somente_neural": {
+    "R01": {
+      "regra_id": "R01",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O edital menciona a marca e modelo específicos 'Hitachi VSP 5200' para as unidades de armazenamento de dados, sem incluir a cláusula 'ou similar ou de melhor qualidade', o que configura direcionamento e restrição à competitividade, em desacordo com o Art. 47, I, 'c' da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P17|L0630: Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento; P17|L0636: Duas unidades de armazenamento de dados HITACHI VSP 5200 idênticas.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Indício de Inconformidade vs. Prolog/UFO-L: Conforme — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Indício de Inconformidade', enquanto o motor Prolog + UFO-L derivou 'Conforme' via Resolução SLD (`permission_to_act` vs `permission_to_act`) com base em Anexo I, Item 1.1 [P17|L0630]."
+    },
+    "R02": {
+      "regra_id": "R02",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "A especificação da marca e modelo 'Hitachi VSP 5200' sem uma justificativa formal de padronização prévia ou de que apenas essa marca atende às necessidades, conforme exigido pelo Art. 47, I, 'a' e 'b' da Lei nº 13.303/2016, configura direcionamento. Embora o serviço seja para equipamentos existentes, a lei requer a formalização da justificativa.",
+      "trecho_citado_llm": "P17|L0630: Contratação de serviço de assistência técnica para duas unidades de armazenamento de dados Hitachi VSP 5200, com suporte técnico do fabricante do equipamento; P17|L0636: Duas unidades de armazenamento de dados HITACHI VSP 5200 idênticas.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Indício de Inconformidade vs. Prolog/UFO-L: Conforme — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Indício de Inconformidade', enquanto o motor Prolog + UFO-L derivou 'Conforme' via Resolução SLD (`disability` vs `disability`) com base em Anexo I, Item 1.1 [P17|L0630]."
+    },
+    "R03": {
+      "regra_id": "R03",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital inclui expressamente a Matriz de Riscos como Anexo IV e a Cláusula Nona do contrato, atendendo ao requisito do Art. 42, X, da Lei nº 13.303/2016 para serviços complexos.",
+      "trecho_citado_llm": "P53|L2197: ANEXO IV – MATRIZ DE RISCOS; P39|L1672: CLÁUSULA NONA – MATRIZ DE RISCOS.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R09": {
+      "regra_id": "R09",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital, na Cláusula Décima Sexta, Parágrafo Terceiro, veda expressamente a subcontratação para a execução do objeto, cumprindo o Art. 78 da Lei nº 13.303/2016 ao definir claramente a regra.",
+      "trecho_citado_llm": "P48|L2041: É vedada a subcontratação para a execução do objeto deste Contrato.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `duty_to_act`)."
+    },
+    "R11": {
+      "regra_id": "R11",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O item 10.10 do Anexo I (Termo de Referência) permite a realização de diligência para comprovação de características técnicas 'como condição para aceitação da proposta', sem restringir essa exigência ao primeiro colocado provisório. Essa formulação pode ser interpretada como uma exigência de amostra ou prova de conceito na fase de propostas iniciais, o que restringe a competitividade e contraria o Art. 47, II, da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P28|L1285-L1287: 10.10 Como condição para aceitação da proposta, a equipe técnica que dará suporte à licitação poderá, sempre que julgar necessário, realizar diligência com vistas à comprovação das características técnicas exigidas.",
+      "tipo_limitacao_observada": "🔀 Divergência (LLM Puro: Indício de Inconformidade vs. Prolog/UFO-L: Conforme — requer auditoria)",
+      "analise_diferenca_nesy": "Divergência que requer conferência frente ao gabarito humano: no julgamento direto (end-to-end), o LLM puro concluiu 'Indício de Inconformidade', enquanto o motor Prolog + UFO-L derivou 'Conforme' via Resolução SLD (`disability` vs `disability`) com base em Não exigida.."
+    },
+    "R29": {
+      "regra_id": "R29",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "O edital não estabelece exigências de comprovação de experiência pretérita em atestados com quantitativos superiores a 50% da contratação, nem qualquer outro limite percentual, não incorrendo na vedação da Súmula 263 do TCU, que é base para o Art. 58, II, da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "Não há trecho específico que trate de qualificação técnica com limites quantitativos de experiência pretérita. A seção '11 REQUISITOS PARA HABILITAÇÃO' (P29|L1299) aborda apenas índices econômico-financeiros.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_act` / `permission_to_act`)."
+    },
+    "R38": {
+      "regra_id": "R38",
+      "status_verificacao": "Conforme",
+      "justificativa_livre_llm": "A Cláusula Nona, Parágrafo Segundo, da Minuta de Contrato estabelece expressamente a vedação à celebração de aditivos decorrentes de riscos alocados ao CONTRATADO na Matriz de Riscos, em conformidade com o Art. 81, § 8º, da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P39|L1681-L1683: É vedada a celebração de aditivos decorrentes de eventos supervenientes alocados, na Matriz de Riscos, como de responsabilidade do CONTRATADO.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`disability` / `disability`)."
+    },
+    "R41": {
+      "regra_id": "R41",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O item 10.8 do Anexo I (Termo de Referência) exige que a licitante vencedora, caso não seja o fabricante, apresente uma 'declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar a assistência e suporte técnico'. Embora seja uma declaração da licitante, a exigência de 'autorização do fabricante' implica a necessidade de um vínculo formal com o fabricante, o que pode ser interpretado como uma forma indireta de exigir credenciamento ou anuência do fabricante, restringindo a competitividade e contrariando o Art. 31 da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P28|L1278-L1282: 10.8 Caso a LICITANTE VENCEDORA não seja o próprio fabricante da solução, deverá ser apresentada declaração da própria LICITANTE de que está autorizada pelo fabricante para comercializar a assistência e suporte técnico descritos nestas Especificações Técnicas, e de que não obteve vantagens comerciais junto ao fabricante (registro de oportunidade).",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`duty_to_act` / `permission_to_omit`)."
+    },
+    "R43": {
+      "regra_id": "R43",
+      "status_verificacao": "Indício de Inconformidade",
+      "justificativa_livre_llm": "O item 2.3, inciso VIII, do edital veda expressamente a participação de empresas organizadas sob a forma de consórcio ('esteja organizado sob a forma de consórcio'). Para um objeto de 'serviço de assistência técnica para dispositivos de armazenamento de dados da plataforma de mainframe', que pode ser considerado complexo ou de vulto, a vedação à participação em consórcio sem justificativa formal restringe indevidamente a competitividade, em desacordo com o Art. 31 da Lei nº 13.303/2016.",
+      "trecho_citado_llm": "P06|L0248: VIII. esteja organizado sob a forma de consórcio.",
+      "tipo_limitacao_observada": "⚖️ Convergente no Veredito (Sem Prova Formal SLD / UFO-L no LLM Puro)",
+      "analise_diferenca_nesy": "Embora o veredito final tenha coincidido, o LLM puro produziu apenas texto opinativo sem garantia de consistência axiomática. O motor Neuro-Simbólico entrega a árvore de Resolução SLD completa e o par hohfeldiano (`permission_to_omit` / `duty_to_act`)."
+    }
+  }
+}

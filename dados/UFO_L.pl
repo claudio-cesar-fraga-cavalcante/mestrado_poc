@@ -174,8 +174,8 @@ hohfeldian_opposite(subjection, immunity).
 % 5. Relational Consistency & Inference Rules
 % ------------------------------------------------------------------------------
 
-% Transitive subclass reasoning
-is_subclass(X, X).
+% Transitive subclass reasoning (restricted to declared ontology classes)
+is_subclass(X, X) :- class(X).
 is_subclass(X, Y) :- subclass_of(X, Z), is_subclass(Z, Y).
 
 % Check if a given class is a valid UFO-L Legal Moment

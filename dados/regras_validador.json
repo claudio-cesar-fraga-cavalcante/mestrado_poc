@@ -40,8 +40,8 @@
     "se_aplica": "",
     "classificacao_risco": "Crítico",
     "status_verificacao": "Pendente",
-    "trecho_identificado": "Elaborar o Projeto Básico ou reclassificar regime contratual com fundamentação válida",
-    "acao_recomendacao": ""
+    "trecho_identificado": "",
+    "acao_recomendacao": "Elaborar o Projeto Básico ou reclassificar regime contratual com fundamentação válida"
   },
   {
     "id": "R05",
@@ -101,7 +101,7 @@
   {
     "id": "R10",
     "categoria": "Engenharia",
-    "dispositivo_legal": "Art. 42, X, \"b\" e \"",
+    "dispositivo_legal": "Art. 42, X, \"b\" e \"c\"",
     "criterio_validacao": "Matriz de riscos sem segregação explícita entre obrigações de meio e obrigações de resultado",
     "se_aplica": "",
     "classificacao_risco": "Alto / Vício Estrutural",
@@ -326,8 +326,8 @@
     "se_aplica": "",
     "classificacao_risco": "Médio / Ineficiência",
     "status_verificacao": "Pendente",
-    "trecho_identificado": "Demonstrar que os padrões de qualidade e desempenho seguem especificações usuais de mercado",
-    "acao_recomendacao": ""
+    "trecho_identificado": "",
+    "acao_recomendacao": "Demonstrar que os padrões de qualidade e desempenho seguem especificações usuais de mercado"
   },
   {
     "id": "R31",
