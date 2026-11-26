@@ -51,6 +51,9 @@ echo "======================================================================"
 mkdir -p "${APP_DIR}"
 cp -r "${SOURCE_DIR}/app.py" "${SOURCE_DIR}/VERSION" "${SOURCE_DIR}/requirements.txt" "${SOURCE_DIR}/README.md" "${APP_DIR}/"
 cp -r "${SOURCE_DIR}/src" "${SOURCE_DIR}/dados" "${APP_DIR}/"
+if [ -d "${SOURCE_DIR}/.streamlit" ]; then
+    cp -r "${SOURCE_DIR}/.streamlit" "${APP_DIR}/"
+fi
 
 python3 -m venv "${APP_DIR}/.venv"
 "${APP_DIR}/.venv/bin/pip" install --upgrade pip
