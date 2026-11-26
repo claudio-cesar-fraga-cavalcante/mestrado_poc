@@ -1,0 +1,363 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <style>
+      .font-sans { font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+      .font-mono { font-family: "Consolas", "Courier New", monospace; }
+    </style>
+
+    <!-- Gradiente do Cabeçalho -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+
+    <!-- Gradiente sutil de fundo -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <!-- Sombra suave para cards -->
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.07"/>
+    </filter>
+
+    <!-- Marcadores de Seta -->
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0D9488"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <!-- Fundo Geral -->
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="1918" height="1078" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- ===================================================================== -->
+  <!-- CABEÇALHO (y = 0..104)                                                -->
+  <!-- ===================================================================== -->
+  <rect x="0" y="0" width="1920" height="104" fill="url(#headerGrad)"/>
+  <line x1="0" y1="104" x2="1920" y2="104" stroke="#3B82F6" stroke-width="3"/>
+
+  <text x="44" y="47" class="font-sans" font-size="28" font-weight="700" fill="#FFFFFF">
+    Arquitetura do Validador Neuro-Simbólico de Editais
+  </text>
+  <text x="44" y="79" class="font-sans" font-size="15.5" font-weight="400" fill="#CBD5E1">
+    Lei nº 13.303/2016 + Ontologia Jurídica UFO-L (Hohfeld &amp; Alexy)  |  Da Linguagem Natural à Prova Formal Auditável
+  </text>
+
+  <!-- Selo à Direita -->
+  <rect x="1420" y="29" width="456" height="46" rx="23" fill="#1D4ED8" stroke="#60A5FA" stroke-width="1.5"/>
+  <text x="1648" y="57" text-anchor="middle" class="font-sans" font-size="14.5" font-weight="600" fill="#EFF6FF">
+    PoC Mestrado • 9 Regras • Benchmark 10 Editais BNDES
+  </text>
+
+  <!-- ===================================================================== -->
+  <!-- METADE SUPERIOR: FLUXO DA ARQUITETURA (y = 128..576)                  -->
+  <!-- ===================================================================== -->
+
+  <!-- CARD 0: ENTRADA (x=44, w=230, y=128, h=292) -->
+  <g filter="url(#cardShadow)">
+    <rect x="44" y="128" width="230" height="292" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <path d="M 44 140 Q 44 128 56 128 L 262 128 Q 274 128 274 140 L 274 166 L 44 166 Z" fill="#475569"/>
+    <text x="60" y="152" class="font-sans" font-size="12" font-weight="700" fill="#F8FAFC" letter-spacing="0.8">ENTRADA</text>
+    <text x="60" y="196" class="font-sans" font-size="19" font-weight="700" fill="#0F172A">Edital de Licitação</text>
+    <line x1="60" y1="210" x2="258" y2="210" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="60" y="238" class="font-sans" font-size="13" fill="#334155">• Arquivos .pdf e .txt</text>
+    <text x="70" y="256" class="font-sans" font-size="12.5" fill="#64748B">(80 a 120+ páginas)</text>
+    <text x="60" y="286" class="font-sans" font-size="13" fill="#334155">• 10 Editais reais BNDES</text>
+    <text x="60" y="316" class="font-sans" font-size="13" fill="#334155">• Editais sintéticos (teste)</text>
+    <text x="60" y="346" class="font-sans" font-size="13" fill="#334155">• Upload livre na interface</text>
+    <rect x="60" y="370" width="198" height="32" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="159" y="391" text-anchor="middle" class="font-mono" font-size="12" font-weight="600" fill="#475569">dados/editais_bndes_pdf/</text>
+  </g>
+
+  <!-- Seta 0 -> 1 -->
+  <line x1="274" y1="274" x2="306" y2="274" stroke="#475569" stroke-width="2.5" marker-end="url(#arrowSlate)"/>
+
+  <!-- CARD 1: ETAPA 1 (x=312, w=315, y=128, h=292) -->
+  <g filter="url(#cardShadow)">
+    <rect x="312" y="128" width="315" height="292" rx="12" fill="#FFFFFF" stroke="#99F6E4" stroke-width="1.5"/>
+    <path d="M 312 140 Q 312 128 324 128 L 615 128 Q 627 128 627 140 L 627 166 L 312 166 Z" fill="#0D9488"/>
+    <text x="328" y="152" class="font-sans" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="0.7">ETAPA 1 • PRÉ-PROCESSAMENTO</text>
+    <text x="328" y="196" class="font-sans" font-size="19" font-weight="700" fill="#0F172A">Parser Estrutural</text>
+    <rect x="328" y="208" width="166" height="24" rx="12" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
+    <text x="411" y="224" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#0F766E">src/parser_edital.py</text>
+    <text x="328" y="256" class="font-sans" font-size="13" fill="#334155">• Extração de texto via PyMuPDF</text>
+    <text x="328" y="282" class="font-sans" font-size="13" fill="#334155">• Indexação exata [Pxx|Lxxxx]</text>
+    <text x="328" y="308" class="font-sans" font-size="13" fill="#334155">• Segmentação tripartite:</text>
+    <text x="340" y="328" class="font-sans" font-size="12.5" font-weight="600" fill="#0F766E">Corpo • Anexo I (TR) • Minuta</text>
+    <text x="328" y="356" class="font-sans" font-size="13" fill="#334155">• Indexa Lei 13.303 e catálogo JSON</text>
+    <text x="328" y="390" class="font-sans" font-size="12" font-style="italic" fill="#64748B">Saída: EditalSegmentado numerado</text>
+  </g>
+
+  <!-- Seta 1 -> 2 -->
+  <line x1="627" y1="274" x2="659" y2="274" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrowTeal)"/>
+
+  <!-- CARD 2: ETAPA 2 (x=665, w=355, y=128, h=292) -->
+  <g filter="url(#cardShadow)">
+    <rect x="665" y="128" width="355" height="292" rx="12" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+    <path d="M 665 140 Q 665 128 677 128 L 1008 128 Q 1020 128 1020 140 L 1020 166 L 665 166 Z" fill="#2563EB"/>
+    <text x="681" y="152" class="font-sans" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="0.7">ETAPA 2 • CAMADA NEURAL (LLM)</text>
+    <text x="681" y="196" class="font-sans" font-size="19" font-weight="700" fill="#0F172A">Extrator Ontológico</text>
+    <rect x="681" y="208" width="168" height="24" rx="12" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+    <text x="765" y="224" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#1D4ED8">src/extractor_llm.py</text>
+    <text x="681" y="256" class="font-sans" font-size="13" fill="#334155">• Google Gemini (Structured Outputs, T=0)</text>
+    <text x="681" y="282" class="font-sans" font-size="13" fill="#334155">• Contrato estrito Pydantic (JSON)</text>
+    <text x="681" y="308" class="font-sans" font-size="13" fill="#334155">• Extrai fatos objetivos (sem opinar)</text>
+    <text x="681" y="334" class="font-sans" font-size="13" fill="#334155">• Classifica marca: objeto vs. legado</text>
+    <text x="681" y="360" class="font-sans" font-size="13" fill="#334155">• Emite ABox Prolog (só fatos positivos)</text>
+    <text x="681" y="390" class="font-sans" font-size="12" font-style="italic" fill="#64748B">Fallback offline: cache auditado / heurístico</text>
+  </g>
+
+  <!-- Seta 2 -> 3 -->
+  <line x1="1020" y1="274" x2="1052" y2="274" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- CARD 3: ETAPA 3 (x=1058, w=395, y=128, h=292) -->
+  <g filter="url(#cardShadow)">
+    <rect x="1058" y="128" width="395" height="292" rx="12" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+    <path d="M 1058 140 Q 1058 128 1070 128 L 1441 128 Q 1453 128 1453 140 L 1453 166 L 1058 166 Z" fill="#7C3AED"/>
+    <text x="1074" y="152" class="font-sans" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="0.7">ETAPA 3 • CAMADA SIMBÓLICA (PROLOG)</text>
+    <text x="1074" y="196" class="font-sans" font-size="19" font-weight="700" fill="#0F172A">Motor Deôntico UFO-L</text>
+    <rect x="1074" y="208" width="184" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+    <text x="1166" y="224" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#5B21B6">src/reasoner_prolog.py</text>
+    <text x="1074" y="256" class="font-sans" font-size="13" fill="#334155">• Execução real no SWI-Prolog (swipl)</text>
+    <text x="1074" y="282" class="font-sans" font-size="13" fill="#334155">• Resolução SLD + trace passo a passo</text>
+    <text x="1074" y="308" class="font-sans" font-size="13" fill="#334155">• Mundo Fechado: Negação por Falha (\+)</text>
+    <text x="1074" y="334" class="font-sans" font-size="13" fill="#334155">• Confronto Hohfeldiano (Oposto/Correlato)</text>
+    <text x="1074" y="360" class="font-sans" font-size="13" fill="#334155">• Validação cruzada (swipl == Python SLD)</text>
+    <text x="1074" y="390" class="font-sans" font-size="12" font-style="italic" fill="#64748B">Gera: dados/ultima_sessao_validacao.pl</text>
+  </g>
+
+  <!-- Seta 3 -> 4 -->
+  <line x1="1453" y1="274" x2="1485" y2="274" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+
+  <!-- CARD 4: ETAPA 4 (x=1491, w=385, y=128, h=292) -->
+  <g filter="url(#cardShadow)">
+    <rect x="1491" y="128" width="385" height="292" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5"/>
+    <path d="M 1491 140 Q 1491 128 1503 128 L 1864 128 Q 1876 128 1876 140 L 1876 166 L 1491 166 Z" fill="#059669"/>
+    <text x="1507" y="152" class="font-sans" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="0.7">ETAPA 4 • EXPLICABILIDADE &amp; UI</text>
+    <text x="1507" y="196" class="font-sans" font-size="19" font-weight="700" fill="#0F172A">Pareceres &amp; Interface Web</text>
+    <rect x="1507" y="208" width="138" height="24" rx="12" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1"/>
+    <text x="1576" y="224" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#047857">src/explainer.py</text>
+    <rect x="1653" y="208" width="84" height="24" rx="12" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1"/>
+    <text x="1695" y="224" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#047857">app.py</text>
+    <text x="1507" y="256" class="font-sans" font-size="13" fill="#334155">• Traduz UFO-L p/ português jurídico</text>
+    <text x="1507" y="282" class="font-sans" font-size="13" fill="#334155">• Cita página/linha + artigo da Lei 13.303</text>
+    <text x="1507" y="308" class="font-sans" font-size="13" fill="#334155">• Interface Streamlit com 6 abas:</text>
+    <text x="1519" y="328" class="font-sans" font-size="12.5" font-weight="600" fill="#047857">Diagnóstico • Prova SLD • Comparativo</text>
+    <text x="1519" y="346" class="font-sans" font-size="12.5" font-weight="600" fill="#047857">Benchmark • Lab What-If • Edital</text>
+    <text x="1507" y="376" class="font-sans" font-size="13" fill="#334155">• Exporta JSON auditável e sessão .pl</text>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LINHA 2: BASES DE CONHECIMENTO, BENCHMARK & SIMULADOR (y=456..576)    -->
+  <!-- ===================================================================== -->
+
+  <!-- Caixa Apoio 1: Bases Normativas Estáticas (x=312, w=315) -->
+  <g filter="url(#cardShadow)">
+    <rect x="312" y="456" width="315" height="120" rx="10" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="328" y="482" class="font-sans" font-size="14.5" font-weight="700" fill="#0F766E">Bases Normativas Estáticas</text>
+    <text x="328" y="510" class="font-mono" font-size="12" fill="#134E4A">• dados/L13303.txt <tspan class="font-sans" fill="#334155">(Arts. 1 a 97)</tspan></text>
+    <text x="328" y="534" class="font-mono" font-size="12" fill="#134E4A">• dados/regras_validador.json</text>
+    <text x="340" y="554" class="font-sans" font-size="12" fill="#64748B">(Catálogo completo de 80 regras)</text>
+  </g>
+  <!-- Seta Apoio 1 -> Etapa 1 -->
+  <line x1="469" y1="456" x2="469" y2="426" stroke="#0D9488" stroke-width="2" marker-end="url(#arrowTeal)"/>
+
+  <!-- Caixa Apoio 2: Benchmark em Lote (x=665, w=355) -->
+  <g filter="url(#cardShadow)">
+    <rect x="665" y="456" width="355" height="120" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+    <text x="681" y="481" class="font-sans" font-size="14.5" font-weight="700" fill="#B45309">Avaliação Empírica em Lote</text>
+    <rect x="681" y="491" width="268" height="21" rx="10" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+    <text x="815" y="505" text-anchor="middle" class="font-mono" font-size="11.5" font-weight="700" fill="#92400E">scripts/executar_benchmark_10_editais.py</text>
+    <text x="681" y="533" class="font-sans" font-size="12.5" fill="#334155">• 10 PDFs BNDES × 9 regras = 90 testes</text>
+    <text x="681" y="555" class="font-sans" font-size="12.5" fill="#334155">• Compara LLM Puro vs. NeSy (T=0.0)</text>
+  </g>
+  <!-- Seta Apoio 2 <-> Etapa 2 -->
+  <line x1="842" y1="456" x2="842" y2="426" stroke="#D97706" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrowAmber)" marker-start="url(#arrowAmber)"/>
+
+  <!-- Caixa Apoio 3: TBox & Regras Prolog (x=1058, w=395) -->
+  <g filter="url(#cardShadow)">
+    <rect x="1058" y="456" width="395" height="120" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+    <text x="1074" y="482" class="font-sans" font-size="14.5" font-weight="700" fill="#5B21B6">TBox Ontológica &amp; Regras Prolog</text>
+    <text x="1074" y="512" class="font-mono" font-size="12" fill="#4C1D95">• dados/UFO_L.pl <tspan class="font-sans" fill="#334155">(12 posições Hohfeld/Alexy)</tspan></text>
+    <text x="1074" y="538" class="font-mono" font-size="12" fill="#4C1D95">• src/ufo_l_rules.pl <tspan class="font-sans" fill="#334155">(9 regras Lei 13.303)</tspan></text>
+    <text x="1074" y="560" class="font-sans" font-size="11.5" font-style="italic" fill="#6D28D9">Base formal imutável carregada pelo SWI-Prolog</text>
+  </g>
+  <!-- Seta Apoio 3 -> Etapa 3 -->
+  <line x1="1255" y1="456" x2="1255" y2="426" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrowPurple)"/>
+
+  <!-- Caixa Apoio 4: Laboratório What-If (x=1491, w=385) -->
+  <g filter="url(#cardShadow)">
+    <rect x="1491" y="456" width="385" height="120" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+    <text x="1507" y="482" class="font-sans" font-size="14.5" font-weight="700" fill="#047857">Laboratório Interativo "What-If"</text>
+    <text x="1507" y="512" class="font-sans" font-size="12.5" fill="#334155">• Perturba fatos da ABox sem re-chamar LLM</text>
+    <text x="1507" y="536" class="font-sans" font-size="12.5" fill="#334155">• Recalcula SWI-Prolog + NAF (\+) na hora</text>
+    <text x="1507" y="560" class="font-sans" font-size="11.5" font-style="italic" fill="#059669">Simulação instantânea de cenários jurídicos</text>
+  </g>
+  <!-- Seta Apoio 4 -> Etapa 4 -->
+  <line x1="1683" y1="456" x2="1683" y2="426" stroke="#059669" stroke-width="2" marker-end="url(#arrowEmerald)"/>
+  <!-- Seta tracejada What-If -> Etapa 3 (recalcula Prolog) -->
+  <path d="M 1491 506 L 1471 506 L 1471 382 L 1459 382" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrowEmerald)"/>
+
+  <!-- ===================================================================== -->
+  <!-- DIVISOR DE SEÇÃO (y = 598..630)                                       -->
+  <!-- ===================================================================== -->
+  <line x1="44" y1="614" x2="590" y2="614" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="604" y="598" width="712" height="32" rx="16" fill="#E2E8F0"/>
+  <text x="960" y="619" text-anchor="middle" class="font-sans" font-size="13" font-weight="700" fill="#1E293B" letter-spacing="0.9">
+    DETALHAMENTO DOS MÓDULOS DA FERRAMENTA (ARQUIVOS PYTHON .py E PROLOG .pl)
+  </text>
+  <line x1="1330" y1="614" x2="1876" y2="614" stroke="#CBD5E1" stroke-width="2"/>
+
+  <!-- ===================================================================== -->
+  <!-- METADE INFERIOR: 8 CARDS DE DETALHAMENTO (2 linhas × 4 colunas)       -->
+  <!-- X: 44, 506, 968, 1430 (w=446, gap=16) | Y: 640, 846 (h=190, gap=16)   -->
+  <!-- ===================================================================== -->
+
+  <!-- MÓDULO 1: src/parser_edital.py -->
+  <g filter="url(#cardShadow)">
+    <rect x="44" y="640" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 44 650 Q 44 640 54 640 L 480 640 Q 490 640 490 650 L 490 646 L 44 646 Z" fill="#0D9488"/>
+    <rect x="62" y="658" width="182" height="24" rx="12" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
+    <text x="153" y="674" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#0F766E">src/parser_edital.py</text>
+    <rect x="414" y="658" width="58" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="443" y="673" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#0D9488">PYTHON</text>
+    <text x="62" y="704" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Ingestão e Indexação Estrutural</text>
+    <text x="62" y="730" class="font-sans" font-size="13" fill="#334155">• Lê .pdf (PyMuPDF) e .txt, limpando rodapés</text>
+    <text x="62" y="753" class="font-sans" font-size="13" fill="#334155">• Marca cada linha com tag exata [Pxx|Lxxxx]</text>
+    <text x="62" y="776" class="font-sans" font-size="13" fill="#334155">• Separa Corpo, Termo de Ref. e Minuta</text>
+    <text x="62" y="799" class="font-sans" font-size="13" fill="#334155">• Indexa arts. 1–97 da Lei 13.303 e catálogo</text>
+  </g>
+
+  <!-- MÓDULO 2: src/extractor_llm.py -->
+  <g filter="url(#cardShadow)">
+    <rect x="506" y="640" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 506 650 Q 506 640 516 640 L 942 640 Q 952 640 952 650 L 952 646 L 506 646 Z" fill="#2563EB"/>
+    <rect x="524" y="658" width="184" height="24" rx="12" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+    <text x="616" y="674" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#1D4ED8">src/extractor_llm.py</text>
+    <rect x="876" y="658" width="58" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="905" y="673" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#2563EB">PYTHON</text>
+    <text x="524" y="704" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Extração Neural e Ponte ABox</text>
+    <text x="524" y="730" class="font-sans" font-size="13" fill="#334155">• Define contrato Pydantic FatosExtraidosEdital</text>
+    <text x="524" y="753" class="font-sans" font-size="13" fill="#334155">• Chama Gemini (T=0, retry e JSON estrito)</text>
+    <text x="524" y="776" class="font-sans" font-size="13" fill="#334155">• Converte fatos positivos em cláusulas Prolog</text>
+    <text x="524" y="799" class="font-sans" font-size="13" fill="#334155">• Inclui extrator offline e baseline LLM Puro</text>
+  </g>
+
+  <!-- MÓDULO 3: dados/UFO_L.pl -->
+  <g filter="url(#cardShadow)">
+    <rect x="968" y="640" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 968 650 Q 968 640 978 640 L 1404 640 Q 1414 640 1414 650 L 1414 646 L 968 646 Z" fill="#7C3AED"/>
+    <rect x="986" y="658" width="144" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+    <text x="1058" y="674" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#5B21B6">dados/UFO_L.pl</text>
+    <rect x="1338" y="658" width="58" height="22" rx="6" fill="#F5F3FF"/>
+    <text x="1367" y="673" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#7C3AED">PROLOG</text>
+    <text x="986" y="704" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Ontologia Núcleo Jurídica (TBox)</text>
+    <text x="986" y="730" class="font-sans" font-size="13" fill="#334155">• Taxonomia de agentes, papéis e relações</text>
+    <text x="986" y="753" class="font-sans" font-size="13" fill="#334155">• Modela 12 posições de Hohfeld e Alexy</text>
+    <text x="986" y="776" class="font-sans" font-size="13" fill="#334155">• Axiomas de correlação e oposição lógica</text>
+    <text x="986" y="799" class="font-sans" font-size="13" fill="#334155">• Regras transitivas is_subclass/2 e momentos</text>
+  </g>
+
+  <!-- MÓDULO 4: src/ufo_l_rules.pl -->
+  <g filter="url(#cardShadow)">
+    <rect x="1430" y="640" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 1430 650 Q 1430 640 1440 640 L 1866 640 Q 1876 640 1876 650 L 1876 646 L 1430 646 Z" fill="#7C3AED"/>
+    <rect x="1448" y="658" width="166" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+    <text x="1531" y="674" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#5B21B6">src/ufo_l_rules.pl</text>
+    <rect x="1800" y="658" width="58" height="22" rx="6" fill="#F5F3FF"/>
+    <text x="1829" y="673" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#7C3AED">PROLOG</text>
+    <text x="1448" y="704" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Regras Formais da Lei 13.303</text>
+    <text x="1448" y="730" class="font-sans" font-size="13" fill="#334155">• Formaliza as 9 regras (R01 a R43) em norma_legal/6</text>
+    <text x="1448" y="753" class="font-sans" font-size="13" fill="#334155">• Instancia posicao_edital/6 a partir dos fatos</text>
+    <text x="1448" y="776" class="font-sans" font-size="13" fill="#334155">• Detecta omissões via Negação por Falha (\+)</text>
+    <text x="1448" y="799" class="font-sans" font-size="13" fill="#334155">• Predicado avaliar_regra/8 prova conflito</text>
+  </g>
+
+  <!-- MÓDULO 5: src/reasoner_prolog.py -->
+  <g filter="url(#cardShadow)">
+    <rect x="44" y="846" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 44 856 Q 44 846 54 846 L 480 846 Q 490 846 490 856 L 490 852 L 44 852 Z" fill="#6D28D9"/>
+    <rect x="62" y="864" width="204" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+    <text x="164" y="880" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#5B21B6">src/reasoner_prolog.py</text>
+    <rect x="414" y="864" width="58" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="443" y="879" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#6D28D9">PYTHON</text>
+    <text x="62" y="910" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Motor de Inferência SLD</text>
+    <text x="62" y="936" class="font-sans" font-size="13" fill="#334155">• Une UFO_L.pl, regras e ABox da sessão</text>
+    <text x="62" y="959" class="font-sans" font-size="13" fill="#334155">• Executa provas no binário oficial SWI-Prolog</text>
+    <text x="62" y="982" class="font-sans" font-size="13" fill="#334155">• Engine SLD em Python gera árvore de prova</text>
+    <text x="62" y="1005" class="font-sans" font-size="13" fill="#334155">• Faz validação cruzada e fallback sem swipl</text>
+  </g>
+
+  <!-- MÓDULO 6: src/explainer.py -->
+  <g filter="url(#cardShadow)">
+    <rect x="506" y="846" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 506 856 Q 506 846 516 846 L 942 846 Q 952 846 952 856 L 952 852 L 506 852 Z" fill="#059669"/>
+    <rect x="524" y="864" width="154" height="24" rx="12" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1"/>
+    <text x="601" y="880" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#047857">src/explainer.py</text>
+    <rect x="876" y="864" width="58" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="905" y="879" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#059669">PYTHON</text>
+    <text x="524" y="910" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Explicabilidade e Pareceres</text>
+    <text x="524" y="936" class="font-sans" font-size="13" fill="#334155">• Traduz termos UFO-L p/ português claro</text>
+    <text x="524" y="959" class="font-sans" font-size="13" fill="#334155">• Monta parecer técnico + artigo da Lei 13.303</text>
+    <text x="524" y="982" class="font-sans" font-size="13" fill="#334155">• Anexa item, linha citada e recomendação</text>
+    <text x="524" y="1005" class="font-sans" font-size="13" fill="#334155">• Exporta relatório JSON completo auditável</text>
+  </g>
+
+  <!-- MÓDULO 7: app.py -->
+  <g filter="url(#cardShadow)">
+    <rect x="968" y="846" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 968 856 Q 968 846 978 846 L 1404 846 Q 1414 846 1414 856 L 1414 852 L 968 852 Z" fill="#047857"/>
+    <rect x="986" y="864" width="94" height="24" rx="12" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1"/>
+    <text x="1033" y="880" text-anchor="middle" class="font-mono" font-size="12.5" font-weight="700" fill="#065F46">app.py</text>
+    <rect x="1338" y="864" width="58" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="1367" y="879" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#047857">PYTHON</text>
+    <text x="986" y="910" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Interface Web (Streamlit)</text>
+    <text x="986" y="936" class="font-sans" font-size="13" fill="#334155">• Orquestra pipeline Live e Demo na web</text>
+    <text x="986" y="959" class="font-sans" font-size="13" fill="#334155">• 6 abas: Diagnóstico, Prova, Comparativo,</text>
+    <text x="996" y="979" class="font-sans" font-size="12.5" fill="#475569">Benchmark, Laboratório What-If e Edital</text>
+    <text x="986" y="1005" class="font-sans" font-size="13" fill="#334155">• Download da base .pl e relatório JSON</text>
+  </g>
+
+  <!-- MÓDULO 8: scripts/executar_benchmark_10_editais.py -->
+  <g filter="url(#cardShadow)">
+    <rect x="1430" y="846" width="446" height="190" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M 1430 856 Q 1430 846 1440 846 L 1866 846 Q 1876 846 1876 856 L 1876 852 L 1430 852 Z" fill="#D97706"/>
+    <rect x="1448" y="864" width="320" height="24" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+    <text x="1608" y="880" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#92400E">scripts/executar_benchmark_10_editais.py</text>
+    <rect x="1800" y="864" width="58" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="1829" y="879" text-anchor="middle" class="font-sans" font-size="11" font-weight="700" fill="#D97706">PYTHON</text>
+    <text x="1448" y="910" class="font-sans" font-size="14.5" font-weight="700" fill="#0F172A">Benchmark Empírico (10 Editais)</text>
+    <text x="1448" y="936" class="font-sans" font-size="13" fill="#334155">• Processa em lote os 10 PDFs reais BNDES</text>
+    <text x="1448" y="959" class="font-sans" font-size="13" fill="#334155">• Executa NeSy vs. LLM Puro (T=0.0, 90 casos)</text>
+    <text x="1448" y="982" class="font-sans" font-size="13" fill="#334155">• Mede latência, tokens e divergências (16,7%)</text>
+    <text x="1448" y="1005" class="font-sans" font-size="13" fill="#334155">• Gera resumo_consolidado.json e CSV</text>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- RODAPÉ (y = 1052..1072)                                               -->
+  <!-- ===================================================================== -->
+  <text x="44" y="1064" class="font-sans" font-size="11.5" fill="#64748B">
+    Validador Neuro-Simbólico de Editais (Lei nº 13.303/2016 + Ontologia UFO-L) • Arquitetura v0.1.0
+  </text>
+  <text x="1876" y="1064" text-anchor="end" class="font-sans" font-size="11.5" fill="#64748B">
+    Artefatos auxiliares: dados/ultima_sessao_validacao.pl (sessão Prolog exportada) • dissertacao/manuscrito/codes/ (recortes LaTeX)
+  </text>
+</svg>
